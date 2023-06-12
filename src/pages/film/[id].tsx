@@ -4,7 +4,7 @@ import { DescriptionCard } from "@/components/DescriptionCard";
 import SliderContinueBrowsing from "@/components/Sliders/SliderContinueBrowsing";
 import moviesData from "@/data/One_film_response_v2.json";
 import { Comments } from "@/components/Comments";
-import { GetStaticProps, NextPage } from "next";
+import { GetStaticPaths, GetStaticProps, NextPage } from "next";
 import { useRouter } from "next/router";
 import { IMovieRes } from "@/types/types";
 import { useTranslation } from "next-export-i18n";
@@ -129,7 +129,7 @@ const CardId: NextPage = ({ movie }: any) => {
     </div>
   );
 };
-export const getServerSideProps = wrapper.getServerSideProps(
+export const getStaticProps = wrapper.getStaticProps(
   (store) => async (context) => {
     console.log(context);
     await store.dispatch(
@@ -140,4 +140,17 @@ export const getServerSideProps = wrapper.getServerSideProps(
   }
 );
 
+export const getStaticPaths: GetStaticPaths = async () => {
+  const locales = ["ru", "en"];
+  const paths = locales.flatMap((locale) => {
+    return [Array(1)].map((item) => ({
+      params: { id: moviesData.id.toString(), lang: locale },
+    }));
+  });
+
+  return {
+    paths,
+    fallback: "blocking",
+  };
+};
 export default CardId;
