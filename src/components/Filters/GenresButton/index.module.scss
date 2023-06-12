@@ -1,0 +1,88 @@
+@import "../../../styles/color.scss";
+@import "../../../styles/mixins.scss";
+
+.container {
+  margin: 0 12px;
+}
+
+.bigButton {
+  flex-direction: column;
+  padding: 24px 8px;
+  width: 100%;
+  max-width: 300px;
+  outline: none;
+  background-color: $base-dark-purple;
+  border-radius: 8px;
+  color: $base-white;
+  &:hover {
+    background-color: #231f34;
+  }
+  .icon::before {
+    color: $base-pink;
+  }
+  .icon::after {
+    color: #7e798f;
+  }
+  .text {
+    @include font-regular-m;
+    line-height: 20px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    max-width: 100%;
+  }
+}
+
+.smallButton {
+  flex-direction: column;
+  padding: 16px 8px;
+  width: 108px;
+  color: #fff;
+  background-color: $base-dark-grey;
+  border: 1px solid rgba(255, 255, 255, 0.32);
+  border-radius: 6px;
+  transition: all 0.4s ease 0s;
+  @media screen and (max-width: 744px) {
+    width: 116px;
+  }
+  @media screen and (max-width: 600px) {
+    width: 100%;
+  }
+  &:hover {
+    background-color: $base-ligth-grey;
+    border-color: $base-ligth-grey;
+    transition: all 0.4s ease 0s;
+  }
+  .text {
+    font-size: 13px;
+    line-height: 16px;
+    font-weight: 500;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    max-width: 100%;
+  }
+}
+
+.icon {
+  position: relative;
+  margin-bottom: 8px;
+  width: 32px;
+  height: 32px;
+  font-size: 32px;
+  line-height: 32px;
+  &::before {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+  }
+  &::after {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+  }
+}

@@ -1,0 +1,34 @@
+@import "../../../styles/mixins.scss";
+@import "../../../styles/color.scss";
+
+.raiting_cart {
+  width: 60px;
+  margin-right: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  .raiting {
+    width: 56px;
+    height: 56px;
+    background-color: $base-light-grey;
+    border-radius: 12px;
+    padding: 6px;
+    box-sizing: border-box;
+    margin-bottom: 5px;
+
+    .green_div {
+      width: 100%;
+      height: 100%;
+      border-radius: 12px;
+      background-color: $base-green;
+      text-align: center;
+      padding: 30% 0;
+    }
+  }
+  .name {
+    width: inherit;
+    @include font-light-s;
+    color: $base-grey;
+    text-align: center;
+  }
+}

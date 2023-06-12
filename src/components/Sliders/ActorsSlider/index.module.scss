@@ -1,0 +1,13 @@
+@import "../../../styles/color.scss";
+@import "../../../styles/mixins.scss";
+
+.container {
+  width: 100%;
+  // margin-top: 30px;
+  padding-left: 20px;
+  .slider {
+    max-width: 500px;
+  }
+  @include mobile_s {
+  }
+}

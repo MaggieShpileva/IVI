@@ -1,0 +1,40 @@
+@import "../../../styles/mixins.scss";
+@import "../../../styles/color.scss";
+
+.container {
+  width: 100%;
+
+  .edit {
+    input {
+      @include font-bold-xl;
+
+      width: 100%;
+      font-size: 36px;
+      background-color: transparent;
+      text-align: center;
+      color: $base-white;
+      outline: 0;
+    }
+  }
+
+  .result,
+  .edit {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    min-height: 50px;
+
+    h1 {
+      text-align: center;
+    }
+    .button {
+      width: 30px;
+      height: 30px;
+      position: absolute;
+      top: 0;
+      right: 0;
+    }
+  }
+}

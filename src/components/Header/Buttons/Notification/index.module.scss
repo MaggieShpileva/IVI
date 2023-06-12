@@ -1,0 +1,28 @@
+@import "../../../../styles/color.scss";
+@import "../../../../styles/mixins.scss";
+
+.button_notification {
+  width: 36px;
+  height: 44px;
+  cursor: pointer;
+  padding: 14px 10px;
+  margin-left: 12px;
+
+  div {
+    width: 16px;
+    height: 16px;
+    color: $base-ligth-grey;
+    transition: 0.1s;
+  }
+
+  &:hover {
+    div {
+      color: $base-white;
+      transform: scale(1.1);
+      transition-duration: 0.3s;
+    }
+  }
+  @media screen and (max-width: 600px) {
+    display: none;
+  }
+}

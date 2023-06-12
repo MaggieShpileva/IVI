@@ -1,0 +1,15 @@
+@import "../../styles/mixins.scss";
+@import "../../styles/color.scss";
+
+.submenu {
+  @include font-light-m;
+  line-height: 20px;
+  background-color: transparent;
+  h2 {
+    font-weight: 400;
+  }
+}
+.content {
+  display: flex;
+  flex-wrap: wrap;
+}

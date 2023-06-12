@@ -1,0 +1,39 @@
+@import "../../../../styles/mixins.scss";
+@import "../../../../styles/color.scss";
+
+.blocks {
+  width: inherit;
+  height: 280px;
+  margin: 35px 0;
+  display: grid;
+  grid-template-columns: repeat(3, 170px);
+  grid-gap: 25px;
+
+  .news,
+  .catalogs,
+  .movies,
+  .family_account,
+  .download {
+    height: 130px;
+    background-color: $base-light-purple;
+    border-radius: 12px;
+    padding: 20px 17px;
+    box-sizing: border-box;
+    color: white;
+    line-height: 20px;
+    position: relative;
+    cursor: pointer;
+
+    .description {
+      position: absolute;
+      bottom: 15px;
+      padding-right: 8px;
+      box-sizing: border-box;
+    }
+  }
+
+  .catalogs {
+    grid-column-start: span 2;
+    cursor: pointer;
+  }
+}

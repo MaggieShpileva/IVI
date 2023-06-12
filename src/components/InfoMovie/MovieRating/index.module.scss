@@ -1,0 +1,78 @@
+@import "../../../styles/color.scss";
+@import "../../../styles/mixins.scss";
+
+.raiting {
+  margin-top: 0px;
+
+  .title {
+    @include font-regular-s;
+
+    font-size: 20px;
+    color: $base-grey;
+    margin: 30px 0 10px 0;
+  }
+  .row {
+    display: flex;
+    flex-direction: row;
+
+    .stars {
+      display: flex;
+      margin-right: 30px;
+      margin-top: 5px;
+      .star {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+        flex-shrink: 0;
+        padding: 0 3px;
+        .grey_star,
+        .red_star {
+          display: block;
+          width: 32px;
+          height: 32px;
+
+          background-position: 0 0;
+          background-size: 32px 32px;
+        }
+        .grey_star {
+          background-image: url("../../../images/icons/start.svg");
+        }
+
+        .red_star {
+          position: absolute;
+          top: 0;
+          left: 3px;
+          background-image: url("../../../images/icons/bright-star.svg");
+        }
+        p {
+          @include font-light-xs;
+          color: $base-grey;
+        }
+        img {
+          width: 32px;
+          height: 32px;
+        }
+      }
+    }
+
+    .raiting_value {
+      height: 98px;
+      display: flex;
+      align-items: flex-start;
+      flex-direction: column;
+      h1 {
+        font-size: 48px;
+        margin: 0;
+      }
+
+      .count {
+        @include font-light-s;
+
+        margin-top: 5px;
+        color: $base-grey;
+        word-wrap: normal;
+      }
+    }
+  }
+}

@@ -1,0 +1,28 @@
+@import "../../../styles/color.scss";
+@import "../../../styles/mixins.scss";
+
+.filtersItem {
+  position: relative;
+  .content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    column-gap: 10px;
+    padding: 8px 16px;
+    height: 56px;
+    width: 100%;
+    @include font-light-l;
+    font-family: "IviSans-light";
+    line-height: 16px;
+    color: $base-white;
+    white-space: nowrap;
+    background-color: $base-dark-grey;
+    border-radius: 4px;
+    svg {
+      stroke-width: 1px;
+    }
+    &_active {
+      background-color: #7e798f !important;
+    }
+  }
+}

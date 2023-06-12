@@ -1,0 +1,56 @@
+@import "../../../styles/color.scss";
+@import "../../../styles/mixins.scss";
+
+.philmographyItem {
+  display: flex;
+  align-items: center;
+  column-gap: 16px;
+  &__imgContainer {
+    position: relative;
+    flex-shrink: 0;
+    width: 80px;
+    height: 123px;
+    @include mobile_600 {
+      width: 75px;
+      height: 115px;
+    }
+    .img {
+      object-fit: contain;
+      object-position: center;
+    }
+  }
+  &__body {
+    flex: 1 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    @include font-regular-m;
+    line-height: 22px;
+    color: $base-white;
+    @include mobile_600 {
+      flex-direction: column;
+      row-gap: 10px;
+    }
+  }
+  &__content {
+    display: flex;
+    flex-direction: column;
+    grid-row: 4px;
+    margin-right: 16px;
+  }
+  &__rating {
+    @include font-regular-s;
+    line-height: 16px;
+    color: $base-ligth-grey;
+  }
+  &__btn {
+    padding: 9px 30px;
+    max-height: 40px;
+    @include font-regular-m;
+    line-height: 20px;
+    color: $base-white;
+    @include mobile_600 {
+      width: 100%;
+    }
+  }
+}

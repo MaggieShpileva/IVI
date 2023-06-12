@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "poster": "https://st.kp.yandex.net/images/film_big/535341.jpg",
+    "name": {
+      "ruName": "Стажер",
+      "enName": "Intern"
+    },
+    "description": {
+      "ruName": "Строгий майор получает в помощницы красавицу-мажорку, которая быстро доказывает, что не стоит судить о ней по обложке. Полицейский служебный роман с Андреем Чадовым и Алиной Ланиной на грани ироничного детектива и мелодрамы о притяжении противоположностей.",
+      "enName": "The strict major gets a beautiful major as his assistant, who quickly proves that you should not judge her by the cover. A police office romance with Andrey Chadov and Alina Lanina on the verge of an ironic detective story and a melodrama about the attraction of opposites."
+    }
+  },
+  {
+    "id": 2,
+    "poster": "https://st.kp.yandex.net/images/film_big/535341.jpg",
+    "name": {
+      "ruName": "Моя ужасная сестра",
+      "enName": "My terrible sister"
+    },
+    "description": {
+      "ruName": "Что делать, если тебе навязывают в сёстры почти незнакомую и довольно-таки вредную девочку? Маленькие соперницы Лена и Соня пытаются расстроить свадьбу своих родителей-одиночек.",
+      "enName": "What to do if an almost unfamiliar and rather harmful girl is imposed on you as a sister? Little rivals Lena and Sonya try to upset the wedding of their single parents."
+    }
+  }
+]

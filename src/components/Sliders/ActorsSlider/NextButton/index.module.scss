@@ -1,0 +1,35 @@
+@import "../../../../styles/color.scss";
+@import "../../../../styles/mixins.scss";
+
+.next_button {
+  display: block;
+  width: 30px;
+  height: 50px;
+  z-index: 100;
+  top: 35%;
+  position: absolute;
+  color: $base-light-blue;
+  right: -30px;
+
+  * {
+    width: inherit;
+    height: inherit;
+    object-fit: fill;
+  }
+
+  @media screen and (min-width: 600px) and (max-width: 1280px) {
+    right: -20px;
+  }
+
+  @media screen and (min-width: 380px) and (max-width: 600px) {
+    right: -20px;
+    width: 35px;
+    height: 40px;
+  }
+
+  @media screen and (max-width: 380px) {
+    right: -10px;
+    width: 30px;
+    height: 40px;
+  }
+}

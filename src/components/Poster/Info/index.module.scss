@@ -1,0 +1,23 @@
+@import "../../../styles/color.scss";
+@import "../../../styles/mixins.scss";
+
+.container {
+  width: inherit;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  padding: 20px 25px 20px 20px;
+  box-sizing: border-box;
+  transition-duration: 0.2s;
+  background-color: rgba(7, 5, 14, 0.8);
+  animation: ani 0.4s forwards;
+}
+
+@keyframes ani {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

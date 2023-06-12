@@ -1,0 +1,58 @@
+@import "../../styles/color.scss";
+@import "../../styles/mixins.scss";
+
+.container {
+  .title {
+    font-family: "IviSans-bold", Arial, Helvetica, sans-serif;
+    margin-top: 24px;
+    text-align: left;
+    font-size: 40px;
+    font-weight: bold;
+    line-height: 1.1;
+    color: $base-white;
+  }
+  .description {
+    width: 76%;
+    @include mobile_screen {
+      width: 100%;
+    }
+  }
+  .suggestionRow {
+    margin-top: 20px;
+  }
+  .headerbar {
+    margin: 32px 0 16px;
+  }
+  .sortRow {
+    margin-top: 20px;
+  }
+  .filtersRow {
+    margin-top: 20px;
+  }
+  .resultsRow {
+    margin-top: 20px;
+  }
+  @include container_1280 {
+  }
+  @include container_s {
+  }
+}
+.genresRow,
+.personRow {
+  width: 100%;
+  max-width: 1280px;
+  margin: 12px auto 0;
+  padding: 30px 0;
+  &__title {
+    font-family: "IviSans-bold", Arial, Helvetica, sans-serif;
+    margin: 0 30px 15px;
+    font-size: 24px;
+    font-weight: 700;
+    color: $base-white;
+  }
+}
+.resultsEmpty {
+  margin: 40px auto;
+  @include font-bold-xl;
+  text-align: center;
+}

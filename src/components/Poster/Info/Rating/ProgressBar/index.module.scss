@@ -1,0 +1,25 @@
+@import "../../../../../styles/color.scss";
+@import "../../../../../styles/mixins.scss";
+
+.container_small,
+.container_big {
+  border-radius: 30px;
+  background-color: rgba(165, 161, 178, 0.32);
+  margin-bottom: 3px;
+
+  .bar {
+    height: inherit;
+    background-color: $base-pink;
+    border-radius: 30px;
+  }
+}
+
+.container_small {
+  width: 21px;
+  height: 2.08px;
+}
+
+.container_big {
+  width: 108px;
+  height: 4.16px;
+}

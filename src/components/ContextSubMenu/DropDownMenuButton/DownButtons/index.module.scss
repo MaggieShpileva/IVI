@@ -1,0 +1,25 @@
+@import "../../../../styles/mixins.scss";
+@import "../../../../styles/color.scss";
+
+.down_buttons {
+  width: 100%;
+  margin-top: 20px;
+
+  .button_watch {
+    @include pink-button;
+    width: 365px;
+    height: 40px;
+  }
+
+  .button_turn_off {
+    width: 120px;
+    height: 40px;
+    margin-left: 25px;
+    background-color: transparent;
+    color: $base-grey-topmenu;
+    position: relative;
+    top: -8px;
+    text-align: left;
+    cursor: pointer;
+  }
+}

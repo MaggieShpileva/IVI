@@ -1,0 +1,54 @@
+@import "../../../../styles/mixins.scss";
+@import "../../../../styles/color.scss";
+
+.list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 12px;
+  color: $base-light-blue;
+  &:hover svg {
+    display: block;
+  }
+  svg {
+    display: none;
+  }
+}
+.input {
+  width: 100%;
+  @include font-regular-s;
+  line-height: 16px;
+  color: $base-light-blue;
+  cursor: pointer;
+  background-color: transparent;
+  outline: 0;
+  transition: color 0.4s ease 0s;
+  &:hover {
+    color: $base-white;
+    transition: color 0.4s ease 0s;
+  }
+}
+.item {
+  @include font-regular-s;
+  line-height: 16px;
+  cursor: pointer;
+  transition: color 0.4s ease 0s;
+  &:hover {
+    color: $base-white;
+    transition: color 0.4s ease 0s;
+  }
+}
+.active {
+  color: $base-white;
+  transition: color 0.4s ease 0s;
+  svg {
+    display: block;
+  }
+}
+.save {
+  background: $base-dark-purple;
+  color: $base-light-blue;
+  & .active {
+    display: block;
+  }
+}

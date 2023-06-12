@@ -1,0 +1,19 @@
+@import "../../styles/color.scss";
+@import "../../styles/mixins.scss";
+
+.rangeContainer {
+  flex: 1 1 auto;
+  min-width: 320px;
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 30px;
+  align-items: center;
+}
+.title {
+  @include font-light-l;
+  font-family: "IviSans-light";
+  line-height: 16px;
+  color: $base-white;
+  white-space: nowrap;
+}

@@ -1,0 +1,36 @@
+@import "../../../../../styles/color.scss";
+@import "../../../../../styles/mixins.scss";
+
+.container {
+  position: relative;
+  margin-bottom: 5px;
+
+  &:hover {
+    .description {
+      display: block;
+    }
+  }
+
+  .icon {
+    width: 21px;
+    height: 21px;
+    color: $base-light-blue;
+  }
+
+  .description {
+    display: none;
+    position: absolute;
+    top: -30px;
+    right: 0;
+    transition: 0.2s;
+
+    span {
+      font-size: 10px;
+      color: $base-light-blue;
+      white-space: nowrap;
+      background-color: $base-dark-purple;
+      border-radius: 3px;
+      padding: 5px;
+    }
+  }
+}

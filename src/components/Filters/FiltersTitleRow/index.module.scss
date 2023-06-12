@@ -1,0 +1,8 @@
+@import "../../../styles/mixins.scss";
+@import "../../../styles/color.scss";
+
+.filtersTitleRow {
+  @include font-light-m;
+  line-height: 20px;
+  color: $base-ligth-grey;
+}

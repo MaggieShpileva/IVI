@@ -1,0 +1,11 @@
+@import "../index.module.scss";
+
+.yearsDropdown {
+  @extend .narrow;
+  .allYear {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+  }
+}

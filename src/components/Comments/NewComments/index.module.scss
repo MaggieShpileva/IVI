@@ -1,0 +1,56 @@
+@import "../../../styles/mixins.scss";
+@import "../../../styles/color.scss";
+
+.container {
+  width: 700px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 30px;
+  h2 {
+    @include font-regular-l;
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+
+  input {
+    width: 200px;
+    height: 30px;
+    margin-bottom: 10px;
+    background-color: $base-dark-grey;
+    border-radius: 4px;
+    padding: 10px;
+    appearance: none;
+    color: $base-white;
+    @include font-light-m;
+    &::placeholder {
+      color: $base-grey-topmenu;
+    }
+  }
+  textarea {
+    width: 100%;
+    height: 80px;
+    background-color: $base-dark-grey;
+    border-radius: 12px;
+    margin-bottom: 20px;
+    resize: none;
+    padding: 10px;
+    box-sizing: border-box;
+    @include font-light-m;
+    color: $base-grey-menu;
+    outline: none;
+  }
+
+  span {
+    position: relative;
+    top: -15px;
+    left: 10px;
+    color: $base-pink;
+    @include font-light-s;
+  }
+  button {
+    @include pink-button;
+    width: 120px;
+    height: 30px;
+    margin-left: 10px;
+  }
+}

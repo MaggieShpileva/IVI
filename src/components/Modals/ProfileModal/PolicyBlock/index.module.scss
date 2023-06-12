@@ -1,0 +1,25 @@
+@import "../../../../styles/mixins.scss";
+@import "../../../../styles/color.scss";
+
+.continue_policy {
+  @include font-light-s;
+  width: 65%;
+  font-size: 13px;
+  line-height: 1.3;
+  color: $base-ligth-grey;
+  padding-top: 24px;
+
+  a {
+    color: $base-white;
+    box-shadow: 0 2px 0 #7e798f, inset 0 0 0 #7e798f;
+    transition: all 0.8s ease 0s;
+
+    &:hover {
+      box-shadow: 0 0 0 #7e798f, inset 0 -1.5em 0 #7e798f;
+      transition: all 0.8s ease 0s;
+    }
+  }
+  @include mobile_s {
+    width: 80%;
+  }
+}

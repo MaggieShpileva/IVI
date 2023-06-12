@@ -1,0 +1,890 @@
+{
+  "id": 309,
+  "filmType": "FILM",
+  "filmLink": "https://www.kinopoisk.ru/film/309/",
+  "filmTrailer": "https://widgets.kinopoisk.ru/discovery/trailer/83327?onlyPlayer=1&autoplay=1&cover=1",
+  "filmYear": 2002,
+  "filmTime": 107,
+  "filmGrade": 7.9,
+  "filmTotalGrade": 292176,
+  "filmR": "r",
+  "filmAge": "16",
+  "filmPoster": "https://kinopoiskapiunofficial.tech/images/posters/kp/309.jpg",
+  "filmLang": [
+    {
+      "lang": "ru",
+      "filmName": "Эквилибриум",
+      "filmDescription": "Агент идет против системы, которая подавляет эмоции. Стильная антиутопия с Кристианом Бэйлом"
+    },
+    {
+      "lang": "en",
+      "filmName": "Equilibrium",
+      "filmDescription": null
+    }
+  ],
+  "genres": [
+    {
+      "id": 1,
+      "name": "триллер"
+    },
+    {
+      "id": 9,
+      "name": "драма"
+    },
+    {
+      "id": 2,
+      "name": "фантастика"
+    },
+    {
+      "id": 4,
+      "name": "боевик"
+    }
+  ],
+  "countries": [
+    {
+      "id": 1,
+      "name": "США"
+    }
+  ],
+  "similarFilms": [
+    {
+      "id": 361,
+      "filmPoster": "https://kinopoiskapiunofficial.tech/images/posters/kp/361.jpg",
+      "filmGrade": 8.7,
+      "filmYear": 1999,
+      "filmTime": 139,
+      "filmAge": "18",
+      "filmLang": [
+        {
+          "lang": "ru",
+          "filmName": "Бойцовский клуб"
+        },
+        {
+          "lang": "en",
+          "filmName": "Fight Club"
+        }
+      ],
+      "genres": [
+        {
+          "id": 1,
+          "name": "триллер"
+        }
+      ],
+      "countries": [
+        {
+          "id": 1,
+          "name": "США"
+        },
+        {
+          "id": 4,
+          "name": "Германия"
+        }
+      ]
+    },
+    {
+      "id": 345,
+      "filmPoster": "https://kinopoiskapiunofficial.tech/images/posters/kp/345.jpg",
+      "filmGrade": 8.3,
+      "filmYear": 1990,
+      "filmTime": 118,
+      "filmAge": "18",
+      "filmLang": [
+        {
+          "lang": "ru",
+          "filmName": "Молчание ягнят"
+        },
+        {
+          "lang": "en",
+          "filmName": "The Silence of the Lambs"
+        }
+      ],
+      "genres": [
+        {
+          "id": 1,
+          "name": "триллер"
+        }
+      ],
+      "countries": [
+        {
+          "id": 1,
+          "name": "США"
+        }
+      ]
+    },
+    {
+      "id": 362,
+      "filmPoster": "https://kinopoiskapiunofficial.tech/images/posters/kp/362.jpg",
+      "filmGrade": 8.1,
+      "filmYear": 1981,
+      "filmTime": 150,
+      "filmAge": "16",
+      "filmLang": [
+        {
+          "lang": "ru",
+          "filmName": "Подводная лодка"
+        },
+        {
+          "lang": "en",
+          "filmName": "Das Boot"
+        }
+      ],
+      "genres": [
+        {
+          "id": 1,
+          "name": "триллер"
+        }
+      ],
+      "countries": [
+        {
+          "id": 7,
+          "name": "Великобритания"
+        },
+        {
+          "id": 8,
+          "name": "Франция"
+        },
+        {
+          "id": 9,
+          "name": "Италия"
+        },
+        {
+          "id": 12,
+          "name": "Германия (ФРГ)"
+        }
+      ]
+    },
+    {
+      "id": 344,
+      "filmPoster": "https://kinopoiskapiunofficial.tech/images/posters/kp/344.jpg",
+      "filmGrade": 8.1,
+      "filmYear": 1960,
+      "filmTime": 109,
+      "filmAge": "16",
+      "filmLang": [
+        {
+          "lang": "ru",
+          "filmName": "Психо"
+        },
+        {
+          "lang": "en",
+          "filmName": "Psycho"
+        }
+      ],
+      "genres": [
+        {
+          "id": 1,
+          "name": "триллер"
+        }
+      ],
+      "countries": [
+        {
+          "id": 1,
+          "name": "США"
+        }
+      ]
+    },
+    {
+      "id": 364,
+      "filmPoster": "https://kinopoiskapiunofficial.tech/images/posters/kp/364.jpg",
+      "filmGrade": 8,
+      "filmYear": 1944,
+      "filmTime": 107,
+      "filmAge": "12",
+      "filmLang": [
+        {
+          "lang": "ru",
+          "filmName": "Двойная страховка"
+        },
+        {
+          "lang": "en",
+          "filmName": "Double Indemnity"
+        }
+      ],
+      "genres": [
+        {
+          "id": 1,
+          "name": "триллер"
+        }
+      ],
+      "countries": [
+        {
+          "id": 1,
+          "name": "США"
+        }
+      ]
+    },
+    {
+      "id": 334,
+      "filmPoster": "https://kinopoiskapiunofficial.tech/images/posters/kp/334.jpg",
+      "filmGrade": 8,
+      "filmYear": 1963,
+      "filmTime": 95,
+      "filmAge": "12",
+      "filmLang": [
+        {
+          "lang": "ru",
+          "filmName": "Доктор Стрейнджлав, или Как я научился не волноваться и полюбил атомную бомбу"
+        },
+        {
+          "lang": "en",
+          "filmName": "Dr. Strangelove or: How I Learned to Stop Worrying and Love the Bomb"
+        }
+      ],
+      "genres": [
+        {
+          "id": 1,
+          "name": "триллер"
+        }
+      ],
+      "countries": [
+        {
+          "id": 1,
+          "name": "США"
+        },
+        {
+          "id": 7,
+          "name": "Великобритания"
+        }
+      ]
+    },
+    {
+      "id": 337,
+      "filmPoster": "https://kinopoiskapiunofficial.tech/images/posters/kp/337.jpg",
+      "filmGrade": 8,
+      "filmYear": 1954,
+      "filmTime": 112,
+      "filmAge": "12",
+      "filmLang": [
+        {
+          "lang": "ru",
+          "filmName": "Окно во двор"
+        },
+        {
+          "lang": "en",
+          "filmName": "Rear Window"
+        }
+      ],
+      "genres": [
+        {
+          "id": 1,
+          "name": "триллер"
+        }
+      ],
+      "countries": [
+        {
+          "id": 1,
+          "name": "США"
+        }
+      ]
+    },
+    {
+      "id": 343,
+      "filmPoster": "https://kinopoiskapiunofficial.tech/images/posters/kp/343.jpg",
+      "filmGrade": 7.9,
+      "filmYear": 1959,
+      "filmTime": 136,
+      "filmAge": "12",
+      "filmLang": [
+        {
+          "lang": "ru",
+          "filmName": "На север через северо-запад"
+        },
+        {
+          "lang": "en",
+          "filmName": "North by Northwest"
+        }
+      ],
+      "genres": [
+        {
+          "id": 1,
+          "name": "триллер"
+        }
+      ],
+      "countries": [
+        {
+          "id": 1,
+          "name": "США"
+        }
+      ]
+    },
+    {
+      "id": 335,
+      "filmPoster": "https://kinopoiskapiunofficial.tech/images/posters/kp/335.jpg",
+      "filmGrade": 7.9,
+      "filmYear": 2000,
+      "filmTime": 113,
+      "filmAge": "16",
+      "filmLang": [
+        {
+          "lang": "ru",
+          "filmName": "Мементо"
+        },
+        {
+          "lang": "en",
+          "filmName": "Memento"
+        }
+      ],
+      "genres": [
+        {
+          "id": 1,
+          "name": "триллер"
+        }
+      ],
+      "countries": [
+        {
+          "id": 1,
+          "name": "США"
+        }
+      ]
+    },
+    {
+      "id": 358,
+      "filmPoster": "https://kinopoiskapiunofficial.tech/images/posters/kp/358.jpg",
+      "filmGrade": 7.8,
+      "filmYear": 1976,
+      "filmTime": 114,
+      "filmAge": "18",
+      "filmLang": [
+        {
+          "lang": "ru",
+          "filmName": "Таксист"
+        },
+        {
+          "lang": "en",
+          "filmName": "Taxi Driver"
+        }
+      ],
+      "genres": [
+        {
+          "id": 1,
+          "name": "триллер"
+        }
+      ],
+      "countries": [
+        {
+          "id": 1,
+          "name": "США"
+        }
+      ]
+    },
+    {
+      "id": 340,
+      "filmPoster": "https://kinopoiskapiunofficial.tech/images/posters/kp/340.jpg",
+      "filmGrade": 7.8,
+      "filmYear": 1995,
+      "filmTime": 106,
+      "filmAge": "16",
+      "filmLang": [
+        {
+          "lang": "ru",
+          "filmName": "Подозрительные лица"
+        },
+        {
+          "lang": "en",
+          "filmName": "The Usual Suspects"
+        }
+      ],
+      "genres": [
+        {
+          "id": 1,
+          "name": "триллер"
+        }
+      ],
+      "countries": [
+        {
+          "id": 1,
+          "name": "США"
+        },
+        {
+          "id": 4,
+          "name": "Германия"
+        }
+      ]
+    },
+    {
+      "id": 365,
+      "filmPoster": "https://kinopoiskapiunofficial.tech/images/posters/kp/365.jpg",
+      "filmGrade": 7.7,
+      "filmYear": 1974,
+      "filmTime": 130,
+      "filmAge": "16",
+      "filmLang": [
+        {
+          "lang": "ru",
+          "filmName": "Китайский квартал"
+        },
+        {
+          "lang": "en",
+          "filmName": "Chinatown"
+        }
+      ],
+      "genres": [
+        {
+          "id": 1,
+          "name": "триллер"
+        }
+      ],
+      "countries": [
+        {
+          "id": 1,
+          "name": "США"
+        }
+      ]
+    },
+    {
+      "id": 305,
+      "filmPoster": "https://kinopoiskapiunofficial.tech/images/posters/kp/305.jpg",
+      "filmGrade": 7.6,
+      "filmYear": 2002,
+      "filmTime": 81,
+      "filmAge": "16",
+      "filmLang": [
+        {
+          "lang": "ru",
+          "filmName": "Телефонная будка"
+        },
+        {
+          "lang": "en",
+          "filmName": "Phone Booth"
+        }
+      ],
+      "genres": [
+        {
+          "id": 1,
+          "name": "триллер"
+        }
+      ],
+      "countries": [
+        {
+          "id": 1,
+          "name": "США"
+        }
+      ]
+    },
+    {
+      "id": 298,
+      "filmPoster": "https://kinopoiskapiunofficial.tech/images/posters/kp/298.jpg",
+      "filmGrade": 7.6,
+      "filmYear": 2003,
+      "filmTime": 134,
+      "filmAge": "12",
+      "filmLang": [
+        {
+          "lang": "ru",
+          "filmName": "Люди Икс 2"
+        },
+        {
+          "lang": "en",
+          "filmName": "X2"
+        }
+      ],
+      "genres": [
+        {
+          "id": 1,
+          "name": "триллер"
+        }
+      ],
+      "countries": [
+        {
+          "id": 1,
+          "name": "США"
+        },
+        {
+          "id": 2,
+          "name": "Канада"
+        }
+      ]
+    },
+    {
+      "id": 318,
+      "filmPoster": "https://kinopoiskapiunofficial.tech/images/posters/kp/318.jpg",
+      "filmGrade": 7.6,
+      "filmYear": 2003,
+      "filmTime": 111,
+      "filmAge": "12",
+      "filmLang": [
+        {
+          "lang": "ru",
+          "filmName": "Ограбление по-итальянски"
+        },
+        {
+          "lang": "en",
+          "filmName": "The Italian Job"
+        }
+      ],
+      "genres": [
+        {
+          "id": 1,
+          "name": "триллер"
+        }
+      ],
+      "countries": [
+        {
+          "id": 1,
+          "name": "США"
+        },
+        {
+          "id": 4,
+          "name": "Германия"
+        },
+        {
+          "id": 7,
+          "name": "Великобритания"
+        },
+        {
+          "id": 8,
+          "name": "Франция"
+        },
+        {
+          "id": 9,
+          "name": "Италия"
+        }
+      ]
+    },
+    {
+      "id": 359,
+      "filmPoster": "https://kinopoiskapiunofficial.tech/images/posters/kp/359.jpg",
+      "filmGrade": 7.6,
+      "filmYear": 1949,
+      "filmTime": 104,
+      "filmAge": "12",
+      "filmLang": [
+        {
+          "lang": "ru",
+          "filmName": "Третий человек"
+        },
+        {
+          "lang": "en",
+          "filmName": "The Third Man"
+        }
+      ],
+      "genres": [
+        {
+          "id": 1,
+          "name": "триллер"
+        }
+      ],
+      "countries": [
+        {
+          "id": 7,
+          "name": "Великобритания"
+        }
+      ]
+    },
+    {
+      "id": 306,
+      "filmPoster": "https://kinopoiskapiunofficial.tech/images/posters/kp/306.jpg",
+      "filmGrade": 7.3,
+      "filmYear": 2003,
+      "filmTime": 115,
+      "filmAge": "16",
+      "filmLang": [
+        {
+          "lang": "ru",
+          "filmName": "Рекрут"
+        },
+        {
+          "lang": "en",
+          "filmName": "The Recruit"
+        }
+      ],
+      "genres": [
+        {
+          "id": 1,
+          "name": "триллер"
+        }
+      ],
+      "countries": [
+        {
+          "id": 1,
+          "name": "США"
+        },
+        {
+          "id": 5,
+          "name": "Швейцария"
+        }
+      ]
+    },
+    {
+      "id": 323,
+      "filmPoster": "https://kinopoiskapiunofficial.tech/images/posters/kp/323.jpg",
+      "filmGrade": 7.2,
+      "filmYear": 2003,
+      "filmTime": 107,
+      "filmAge": "12",
+      "filmLang": [
+        {
+          "lang": "ru",
+          "filmName": "Двойной форсаж"
+        },
+        {
+          "lang": "en",
+          "filmName": "2 Fast 2 Furious"
+        }
+      ],
+      "genres": [
+        {
+          "id": 1,
+          "name": "триллер"
+        }
+      ],
+      "countries": [
+        {
+          "id": 1,
+          "name": "США"
+        },
+        {
+          "id": 4,
+          "name": "Германия"
+        }
+      ]
+    },
+    {
+      "id": 304,
+      "filmPoster": "https://kinopoiskapiunofficial.tech/images/posters/kp/304.jpg",
+      "filmGrade": 7,
+      "filmYear": 2003,
+      "filmTime": 97,
+      "filmAge": "16",
+      "filmLang": [
+        {
+          "lang": "ru",
+          "filmName": "Афера"
+        },
+        {
+          "lang": "en",
+          "filmName": "Confidence"
+        }
+      ],
+      "genres": [
+        {
+          "id": 1,
+          "name": "триллер"
+        }
+      ],
+      "countries": [
+        {
+          "id": 1,
+          "name": "США"
+        },
+        {
+          "id": 2,
+          "name": "Канада"
+        },
+        {
+          "id": 4,
+          "name": "Германия"
+        }
+      ]
+    },
+    {
+      "id": 321,
+      "filmPoster": "https://kinopoiskapiunofficial.tech/images/posters/kp/321.jpg",
+      "filmGrade": 6.7,
+      "filmYear": 2002,
+      "filmTime": 116,
+      "filmAge": "12",
+      "filmLang": [
+        {
+          "lang": "ru",
+          "filmName": "Звездный путь: Возмездие"
+        },
+        {
+          "lang": "en",
+          "filmName": "Star Trek: Nemesis"
+        }
+      ],
+      "genres": [
+        {
+          "id": 1,
+          "name": "триллер"
+        }
+      ],
+      "countries": [
+        {
+          "id": 1,
+          "name": "США"
+        }
+      ]
+    }
+  ],
+  "actors": [
+    {
+      "id": 2110,
+      "name": "Энгус Макфадьен",
+      "photo": "https://kinopoiskapiunofficial.tech/images/actor_posters/kp/2110.jpg"
+    },
+    {
+      "id": 3713,
+      "name": "Дэвид Хеммингс",
+      "photo": "https://kinopoiskapiunofficial.tech/images/actor_posters/kp/3713.jpg"
+    },
+    {
+      "id": 7090,
+      "name": "Тэй Диггз",
+      "photo": "https://kinopoiskapiunofficial.tech/images/actor_posters/kp/7090.jpg"
+    },
+    {
+      "id": 12557,
+      "name": "Эмили Уотсон",
+      "photo": "https://kinopoiskapiunofficial.tech/images/actor_posters/kp/12557.jpg"
+    },
+    {
+      "id": 13096,
+      "name": "Уильям Фихтнер",
+      "photo": "https://kinopoiskapiunofficial.tech/images/actor_posters/kp/13096.jpg"
+    },
+    {
+      "id": 15704,
+      "name": "Шон Пертуи",
+      "photo": "https://kinopoiskapiunofficial.tech/images/actor_posters/kp/15704.jpg"
+    },
+    {
+      "id": 21495,
+      "name": "Кристиан Бэйл",
+      "photo": "https://kinopoiskapiunofficial.tech/images/actor_posters/kp/21495.jpg"
+    },
+    {
+      "id": 23243,
+      "name": "Анатоль Таубман",
+      "photo": "https://kinopoiskapiunofficial.tech/images/actor_posters/kp/23243.jpg"
+    },
+    {
+      "id": 25995,
+      "name": "Курт Уиммер",
+      "photo": "https://kinopoiskapiunofficial.tech/images/actor_posters/kp/25995.jpg"
+    },
+    {
+      "id": 28092,
+      "name": "Шон Бин",
+      "photo": "https://kinopoiskapiunofficial.tech/images/actor_posters/kp/28092.jpg"
+    },
+    {
+      "id": 28132,
+      "name": "Кристиан Карманн",
+      "photo": "https://kinopoiskapiunofficial.tech/images/actor_posters/kp/28132.jpg"
+    },
+    {
+      "id": 35901,
+      "name": "Доминик Пёрселл",
+      "photo": "https://kinopoiskapiunofficial.tech/images/actor_posters/kp/35901.jpg"
+    },
+    {
+      "id": 35902,
+      "name": "Джон Кеог",
+      "photo": "https://kinopoiskapiunofficial.tech/images/actor_posters/kp/35902.jpg"
+    },
+    {
+      "id": 35903,
+      "name": "Дэвид Барраш",
+      "photo": "https://kinopoiskapiunofficial.tech/images/actor_posters/kp/35903.jpg"
+    },
+    {
+      "id": 35904,
+      "name": "Дирк Мартенс",
+      "photo": "https://kinopoiskapiunofficial.tech/images/actor_posters/kp/35904.jpg"
+    },
+    {
+      "id": 35905,
+      "name": "Мэттью Харбор",
+      "photo": "https://kinopoiskapiunofficial.tech/images/actor_posters/kp/35905.jpg"
+    },
+    {
+      "id": 35906,
+      "name": "Мария Пиа Кальцоне",
+      "photo": "https://kinopoiskapiunofficial.tech/images/actor_posters/kp/35906.jpg"
+    },
+    {
+      "id": 35907,
+      "name": "Эмили Сьеверт",
+      "photo": "https://kinopoiskapiunofficial.tech/images/actor_posters/kp/35907.jpg"
+    },
+    {
+      "id": 35908,
+      "name": "Майк Смит",
+      "photo": "https://kinopoiskapiunofficial.tech/images/actor_posters/kp/35908.jpg"
+    },
+    {
+      "id": 35909,
+      "name": "Флориан Фиц",
+      "photo": "https://kinopoiskapiunofficial.tech/images/actor_posters/kp/35909.jpg"
+    },
+    {
+      "id": 35910,
+      "name": "Дэнни Ли Кларк",
+      "photo": "https://kinopoiskapiunofficial.tech/images/actor_posters/kp/35910.jpg"
+    },
+    {
+      "id": 35911,
+      "name": "Франческо Кабрас",
+      "photo": "https://kinopoiskapiunofficial.tech/images/actor_posters/kp/35911.jpg"
+    },
+    {
+      "id": 35912,
+      "name": "Брайан Конли",
+      "photo": "https://kinopoiskapiunofficial.tech/images/actor_posters/kp/35912.jpg"
+    },
+    {
+      "id": 35913,
+      "name": "Алекса Саммер",
+      "photo": "https://kinopoiskapiunofficial.tech/images/actor_posters/kp/35913.jpg"
+    },
+    {
+      "id": 35914,
+      "name": "Мехмет Куртулуш",
+      "photo": "https://kinopoiskapiunofficial.tech/images/actor_posters/kp/35914.jpg"
+    },
+    {
+      "id": 35915,
+      "name": "Клаус Шиндлер",
+      "photo": "https://kinopoiskapiunofficial.tech/images/actor_posters/kp/35915.jpg"
+    },
+    {
+      "id": 35916,
+      "name": "Оливер Брандль",
+      "photo": "https://kinopoiskapiunofficial.tech/images/actor_posters/kp/35916.jpg"
+    },
+    {
+      "id": 35917,
+      "name": "Армин Маревски",
+      "photo": "https://kinopoiskapiunofficial.tech/images/actor_posters/kp/35917.jpg"
+    },
+    {
+      "id": 457676,
+      "name": "Денненеш Цоуде",
+      "photo": "https://kinopoiskapiunofficial.tech/images/actor_posters/kp/457676.jpg"
+    },
+    {
+      "id": 852710,
+      "name": "Вольфганг Штегеман",
+      "photo": "https://kinopoiskapiunofficial.tech/images/actor_posters/kp/852710.jpg"
+    },
+    {
+      "id": 1048465,
+      "name": "Брайан Кук",
+      "photo": "https://kinopoiskapiunofficial.tech/images/actor_posters/kp/1048465.jpg"
+    },
+    {
+      "id": 1916402,
+      "name": null,
+      "photo": "https://kinopoiskapiunofficial.tech/images/actor_posters/kp/1916402.jpg"
+    },
+    {
+      "id": 2287382,
+      "name": "Сай Тернер",
+      "photo": "https://kinopoiskapiunofficial.tech/images/actor_posters/kp/2287382.jpg"
+    },
+    {
+      "id": 5141662,
+      "name": null,
+      "photo": "https://kinopoiskapiunofficial.tech/images/actor_posters/kp/5141662.jpg"
+    }
+  ],
+  "directors": [
+    {
+      "id": 25995,
+      "name": "Курт Уиммер",
+      "photo": "https://kinopoiskapiunofficial.tech/images/actor_posters/kp/25995.jpg"
+    }
+  ]
+}

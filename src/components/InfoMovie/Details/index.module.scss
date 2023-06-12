@@ -1,0 +1,45 @@
+@import "../../../styles/mixins.scss";
+@import "../../../styles/color.scss";
+.details {
+  @include font-light-m;
+  color: $base-grey;
+
+  h3 {
+    margin: 8px 0;
+    cursor: pointer;
+  }
+
+  .show_details {
+    animation: show 1s linear;
+
+    h3 {
+      @include font-light-s;
+    }
+    .row {
+      @include font-light-s;
+      display: flex;
+      align-items: baseline;
+      padding: 8px 0;
+
+      h5 {
+        width: 160px;
+        height: 18px;
+        cursor: default;
+      }
+
+      p {
+        cursor: pointer;
+        margin-right: 5px;
+      }
+    }
+  }
+}
+
+@keyframes show {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

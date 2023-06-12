@@ -1,0 +1,29 @@
+@import "../../styles/color.scss";
+@import "../../styles/mixins.scss";
+
+.filmography {
+  .titleRow {
+    padding-bottom: 20px;
+    display: flex;
+    align-items: center;
+    column-gap: 8px;
+    border-bottom: 1px solid $base-light-grey;
+  }
+  .title {
+    font-size: 24px;
+    line-height: 28px;
+    font-weight: 700;
+    color: $base-white;
+  }
+  .count {
+    @include font-light-m;
+    color: $base-ligth-grey;
+    line-height: 20px;
+  }
+  .filmographyContent {
+    padding: 20px 0;
+    display: flex;
+    flex-direction: column;
+    row-gap: 16px;
+  }
+}

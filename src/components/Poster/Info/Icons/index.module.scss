@@ -1,0 +1,15 @@
+@import "../../../../styles/color.scss";
+@import "../../../../styles/mixins.scss";
+
+.icons {
+  height: 125px;
+  width: 21px;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  float: right;
+}

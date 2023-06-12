@@ -1,0 +1,43 @@
+@import "../../styles/mixins.scss";
+@import "../../styles/color.scss";
+
+.container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.slide {
+  margin: 0 6px;
+  padding: 6px 16px;
+  @include font-regular-m;
+  line-height: 20px;
+  color: $base-ligth-grey;
+  background-color: $base-dark-grey;
+  border-radius: 16px;
+  &:hover {
+    background-color: $base-dark-grey-hover;
+  }
+}
+.next,
+.prev {
+  position: absolute;
+  color: $base-grey-menu;
+  width: 20px;
+  height: 100%;
+  background-color: transparent;
+  svg {
+    stroke-width: 2px;
+  }
+  z-index: 10;
+}
+.prev {
+  left: -15px;
+}
+.next {
+  right: -15px;
+}
+.disabled {
+  display: none;
+}

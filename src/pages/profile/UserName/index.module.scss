@@ -1,0 +1,43 @@
+@import "../../../styles/color.scss";
+@import "../../../styles/mixins.scss";
+
+.loginRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+
+  .profile_data {
+    input {
+      @include font-bold-xl;
+
+      width: 100%;
+      font-size: 32px;
+      line-height: 36px;
+      background-color: transparent;
+      text-align: left;
+      color: $base-white;
+      outline: 0;
+      margin: 0;
+    }
+
+    .userName {
+      font-size: 32px;
+      line-height: 36px;
+      font-family: "IviSans-bold";
+      font-weight: 700;
+      color: $base-grey-menu;
+    }
+
+    .userEmail {
+      display: flex;
+      column-gap: 8px;
+      white-space: nowrap;
+      @include font-light-m;
+      line-height: 20px;
+      color: $base-ligth-grey;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+  }
+}

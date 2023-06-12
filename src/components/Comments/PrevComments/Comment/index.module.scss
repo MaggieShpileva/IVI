@@ -1,0 +1,66 @@
+@import "../../../../styles/mixins.scss";
+@import "../../../../styles/color.scss";
+
+.comment {
+  width: 800px;
+  min-height: 100px;
+  padding: 15px;
+  box-sizing: border-box;
+  background-color: $base-dark-grey;
+  border-radius: 12px;
+  margin: 20px 0;
+
+  .name,
+  .comment_text,
+  .date {
+    margin-bottom: 10px;
+  }
+  .name {
+    @include font-light-s;
+    color: $base-ligth-grey;
+  }
+
+  .comment_text {
+    @include font-light-m;
+  }
+
+  .date {
+    @include font-light-xs;
+    color: $base-ligth-grey;
+  }
+
+  .buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 20px;
+    .comment_button {
+      height: 30px;
+      background-color: $base-dark-purple;
+      border-radius: 12px;
+      border-radius: 8px;
+      color: $base-white;
+
+      &:hover {
+        background-color: $base-pink;
+        transition-duration: 0.3s;
+      }
+    }
+
+    .votes {
+      .vote {
+        position: relative;
+        width: 25px;
+        height: 25px;
+        margin: 0 5px;
+        color: $base-ligth-grey;
+        bottom: -10px;
+      }
+    }
+  }
+}
+
+.children {
+  margin-left: 55px;
+}

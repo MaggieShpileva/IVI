@@ -1,0 +1,46 @@
+{
+  "id": 305,
+  "personLink": "https://www.kinopoisk.ru/name/305/",
+  "personPicture": "https://kinopoiskapiunofficial.tech/images/actor_posters/kp/305.jpg",
+  "personGender": "MALE",
+  "height": 178,
+  "age": 49,
+  "birthDate": "1972-06-16",
+  "personLang": [
+    {
+      "lang": "ru",
+      "personName": "Джон Чо",
+      "career": "Актер, Продюсер",
+      "birthPlace": "Сеул, Южная Корея"
+    },
+    {
+      "lang": "en",
+      "personName": "John Cho",
+      "career": null,
+      "birthPlace": null
+    }
+  ],
+  "films": [
+    {
+      "id": 351,
+      "name": "Красота по-американски",
+      "year": 1999,
+      "rating": 8,
+      "poster": "https://kinopoiskapiunofficial.tech/images/posters/kp/351.jpg"
+    },
+    {
+      "id": 587,
+      "name": "Американский пирог 2",
+      "year": 2001,
+      "rating": 7,
+      "poster": "https://kinopoiskapiunofficial.tech/images/posters/kp/587.jpg"
+    },
+    {
+      "id": 835,
+      "name": "Солярис",
+      "year": 2002,
+      "rating": 6.1,
+      "poster": "https://kinopoiskapiunofficial.tech/images/posters/kp/835.jpg"
+    }
+  ]
+}

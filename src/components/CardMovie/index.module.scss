@@ -1,0 +1,111 @@
+@import "../../styles/color.scss";
+@import "../../styles/mixins.scss";
+
+.container_detailed,
+.container_summary {
+  max-width: 350px;
+  max-height: 300px;
+  color: black;
+  padding: 10px;
+  .banner {
+    width: 100%;
+    padding-top: 50%;
+    position: relative;
+
+    img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 15px;
+    }
+  }
+
+  .decription {
+    margin-top: 10px;
+    width: inherit;
+
+    .title {
+      color: $base-light-blue;
+      @include font-regular-l;
+    }
+
+    .text {
+      @include font-regular-s;
+      margin-top: 5px;
+      color: $base-ligth-grey;
+    }
+  }
+}
+
+.container_detailed {
+  width: 350px;
+  height: 300px;
+
+  .decription {
+    .text {
+      width: inherit;
+      word-wrap: break-word;
+      max-height: 64px;
+    }
+  }
+}
+
+.container_summary {
+  // width: 224px;
+  // height: 176px;
+  aspect-ratio: 5/3;
+  .banner {
+    position: relative;
+
+    img {
+      z-index: 0;
+    }
+
+    .profile_time {
+      position: relative;
+      width: inherit;
+      .time {
+        position: absolute;
+        right: 5px;
+        bottom: 5px;
+        width: 60px;
+        height: 20px;
+        background-color: $base-light-black;
+        border-radius: 10px;
+        padding: 5px 5px;
+        box-sizing: border-box;
+        z-index: 5;
+        p {
+          @include font-small-p;
+          font-size: 0.5em;
+          text-align: center;
+          color: $base-light-blue;
+        }
+      }
+      .progress {
+        position: absolute;
+        bottom: 0px;
+        height: 2px;
+        width: calc(100% - 18px);
+        left: 8px;
+        background-color: $base-light-blue;
+        z-index: 5;
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+        .active {
+          height: inherit;
+          background-color: $base-pink;
+        }
+      }
+    }
+  }
+  .decription {
+    .text {
+      height: 20px;
+      font-size: 12px;
+    }
+  }
+}

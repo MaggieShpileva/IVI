@@ -1,0 +1,71 @@
+@import "../../styles/color.scss";
+@import "../../styles/mixins.scss";
+.topBtnRow {
+  display: grid;
+  justify-content: space-between;
+  gap: 24px;
+  grid-template-columns: 0.44fr 0.28fr 0.28fr;
+  @media screen and (min-width: 1096px) and (max-width: 1271px) {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  @media screen and (min-width: 920px) and (max-width: 1095px) {
+    grid-template-columns: 2fr 2fr 1fr;
+  }
+  @media screen and (min-width: 744px) and (max-width: 919px) {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+  @media screen and (min-width: 600px) and (max-width: 743px) {
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+  @media screen and (max-width: 600px) {
+    grid-template-columns: 1fr;
+  }
+  .subscribeBtn {
+    @media screen and (min-width: 600px) and (max-width: 919px) {
+      grid-column: 1 /3;
+    }
+  }
+  .accountBtn {
+    cursor: inherit;
+    &:hover {
+      background-color: $base-dark-purple;
+      border: 1px solid $base-dark-purple;
+    }
+  }
+  button {
+    width: 100%;
+  }
+}
+.subscribePresentBtn {
+  margin-top: 24px;
+  margin-bottom: 24px;
+  button {
+    width: 100%;
+  }
+}
+.inviteBtnRow {
+  margin-bottom: 24px;
+  display: grid;
+  gap: 24px;
+  justify-content: space-between;
+  grid-template-columns: 69.5fr 26.6fr;
+  @media screen and (min-width: 744px) and (max-width: 919px) {
+    grid-template-columns: 1fr 1fr;
+  }
+  @media screen and (max-width: 744px) {
+    grid-template-columns: 1fr;
+  }
+  button {
+    width: 100%;
+  }
+}
+.bottomBtnRow {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 24px;
+  button {
+    width: 100%;
+  }
+}

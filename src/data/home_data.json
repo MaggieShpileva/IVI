@@ -1,0 +1,2382 @@
+{
+  "bestFilmsSet": [
+    {
+      "id": 435,
+      "filmPoster": "https://kinopoiskapiunofficial.tech/images/posters/kp/435.jpg",
+      "filmGrade": 9.1,
+      "filmYear": 1999,
+      "filmTime": 189,
+      "filmAge": "16",
+      "filmLang": [
+        {
+          "lang": "ru",
+          "filmName": "Зеленая миля"
+        },
+        {
+          "lang": "en",
+          "filmName": "The Green Mile"
+        }
+      ],
+      "genres": [
+        {
+          "id": 9,
+          "name": "драма"
+        },
+        {
+          "id": 11,
+          "name": "криминал"
+        },
+        {
+          "id": 12,
+          "name": "фэнтези"
+        }
+      ],
+      "countries": [
+        {
+          "id": 1,
+          "name": "США"
+        }
+      ]
+    },
+    {
+      "id": 326,
+      "filmPoster": "https://kinopoiskapiunofficial.tech/images/posters/kp/326.jpg",
+      "filmGrade": 9.1,
+      "filmYear": 1994,
+      "filmTime": 142,
+      "filmAge": "16",
+      "filmLang": [
+        {
+          "lang": "ru",
+          "filmName": "Побег из Шоушенка"
+        },
+        {
+          "lang": "en",
+          "filmName": "The Shawshank Redemption"
+        }
+      ],
+      "genres": [
+        {
+          "id": 9,
+          "name": "драма"
+        }
+      ],
+      "countries": [
+        {
+          "id": 1,
+          "name": "США"
+        }
+      ]
+    },
+    {
+      "id": 448,
+      "filmPoster": "https://kinopoiskapiunofficial.tech/images/posters/kp/448.jpg",
+      "filmGrade": 8.9,
+      "filmYear": 1994,
+      "filmTime": 142,
+      "filmAge": "16",
+      "filmLang": [
+        {
+          "lang": "ru",
+          "filmName": "Форрест Гамп"
+        },
+        {
+          "lang": "en",
+          "filmName": "Forrest Gump"
+        }
+      ],
+      "genres": [
+        {
+          "id": 5,
+          "name": "мелодрама"
+        },
+        {
+          "id": 6,
+          "name": "комедия"
+        },
+        {
+          "id": 9,
+          "name": "драма"
+        },
+        {
+          "id": 15,
+          "name": "военный"
+        },
+        {
+          "id": 16,
+          "name": "история"
+        }
+      ],
+      "countries": [
+        {
+          "id": 1,
+          "name": "США"
+        }
+      ]
+    },
+    {
+      "id": 329,
+      "filmPoster": "https://kinopoiskapiunofficial.tech/images/posters/kp/329.jpg",
+      "filmGrade": 8.8,
+      "filmYear": 1993,
+      "filmTime": 195,
+      "filmAge": "16",
+      "filmLang": [
+        {
+          "lang": "ru",
+          "filmName": "Список Шиндлера"
+        },
+        {
+          "lang": "en",
+          "filmName": "Schindler's List"
+        }
+      ],
+      "genres": [
+        {
+          "id": 9,
+          "name": "драма"
+        },
+        {
+          "id": 14,
+          "name": "биография"
+        },
+        {
+          "id": 15,
+          "name": "военный"
+        },
+        {
+          "id": 16,
+          "name": "история"
+        }
+      ],
+      "countries": [
+        {
+          "id": 1,
+          "name": "США"
+        }
+      ]
+    },
+    {
+      "id": 325,
+      "filmPoster": "https://kinopoiskapiunofficial.tech/images/posters/kp/325.jpg",
+      "filmGrade": 8.7,
+      "filmYear": 1972,
+      "filmTime": 175,
+      "filmAge": "16",
+      "filmLang": [
+        {
+          "lang": "ru",
+          "filmName": "Крестный отец"
+        },
+        {
+          "lang": "en",
+          "filmName": "The Godfather"
+        }
+      ],
+      "genres": [
+        {
+          "id": 9,
+          "name": "драма"
+        },
+        {
+          "id": 11,
+          "name": "криминал"
+        }
+      ],
+      "countries": [
+        {
+          "id": 1,
+          "name": "США"
+        }
+      ]
+    },
+    {
+      "id": 389,
+      "filmPoster": "https://kinopoiskapiunofficial.tech/images/posters/kp/389.jpg",
+      "filmGrade": 8.7,
+      "filmYear": 1994,
+      "filmTime": 133,
+      "filmAge": "16",
+      "filmLang": [
+        {
+          "lang": "ru",
+          "filmName": "Леон"
+        },
+        {
+          "lang": "en",
+          "filmName": "Léon"
+        }
+      ],
+      "genres": [
+        {
+          "id": 1,
+          "name": "триллер"
+        },
+        {
+          "id": 4,
+          "name": "боевик"
+        },
+        {
+          "id": 9,
+          "name": "драма"
+        },
+        {
+          "id": 11,
+          "name": "криминал"
+        }
+      ],
+      "countries": [
+        {
+          "id": 1,
+          "name": "США"
+        },
+        {
+          "id": 8,
+          "name": "Франция"
+        }
+      ]
+    },
+    {
+      "id": 361,
+      "filmPoster": "https://kinopoiskapiunofficial.tech/images/posters/kp/361.jpg",
+      "filmGrade": 8.7,
+      "filmYear": 1999,
+      "filmTime": 139,
+      "filmAge": "18",
+      "filmLang": [
+        {
+          "lang": "ru",
+          "filmName": "Бойцовский клуб"
+        },
+        {
+          "lang": "en",
+          "filmName": "Fight Club"
+        }
+      ],
+      "genres": [
+        {
+          "id": 1,
+          "name": "триллер"
+        },
+        {
+          "id": 9,
+          "name": "драма"
+        },
+        {
+          "id": 11,
+          "name": "криминал"
+        }
+      ],
+      "countries": [
+        {
+          "id": 1,
+          "name": "США"
+        },
+        {
+          "id": 4,
+          "name": "Германия"
+        }
+      ]
+    },
+    {
+      "id": 312,
+      "filmPoster": "https://kinopoiskapiunofficial.tech/images/posters/kp/312.jpg",
+      "filmGrade": 8.6,
+      "filmYear": 2002,
+      "filmTime": 179,
+      "filmAge": "12",
+      "filmLang": [
+        {
+          "lang": "ru",
+          "filmName": "Властелин колец: Две крепости"
+        },
+        {
+          "lang": "en",
+          "filmName": "The Lord of the Rings: The Two Towers"
+        }
+      ],
+      "genres": [
+        {
+          "id": 3,
+          "name": "приключения"
+        },
+        {
+          "id": 4,
+          "name": "боевик"
+        },
+        {
+          "id": 9,
+          "name": "драма"
+        },
+        {
+          "id": 12,
+          "name": "фэнтези"
+        }
+      ],
+      "countries": [
+        {
+          "id": 1,
+          "name": "США"
+        },
+        {
+          "id": 6,
+          "name": "Новая Зеландия"
+        }
+      ]
+    },
+    {
+      "id": 476,
+      "filmPoster": "https://kinopoiskapiunofficial.tech/images/posters/kp/476.jpg",
+      "filmGrade": 8.6,
+      "filmYear": 1985,
+      "filmTime": 116,
+      "filmAge": "12",
+      "filmLang": [
+        {
+          "lang": "ru",
+          "filmName": "Назад в будущее"
+        },
+        {
+          "lang": "en",
+          "filmName": "Back to the Future"
+        }
+      ],
+      "genres": [
+        {
+          "id": 2,
+          "name": "фантастика"
+        },
+        {
+          "id": 3,
+          "name": "приключения"
+        },
+        {
+          "id": 6,
+          "name": "комедия"
+        }
+      ],
+      "countries": [
+        {
+          "id": 1,
+          "name": "США"
+        }
+      ]
+    },
+    {
+      "id": 522,
+      "filmPoster": "https://kinopoiskapiunofficial.tech/images/posters/kp/522.jpg",
+      "filmGrade": 8.6,
+      "filmYear": 1998,
+      "filmTime": 107,
+      "filmAge": "18",
+      "filmLang": [
+        {
+          "lang": "ru",
+          "filmName": "Карты, деньги, два ствола"
+        },
+        {
+          "lang": "en",
+          "filmName": "Lock, Stock and Two Smoking Barrels"
+        }
+      ],
+      "genres": [
+        {
+          "id": 4,
+          "name": "боевик"
+        },
+        {
+          "id": 6,
+          "name": "комедия"
+        },
+        {
+          "id": 11,
+          "name": "криминал"
+        }
+      ],
+      "countries": [
+        {
+          "id": 7,
+          "name": "Великобритания"
+        }
+      ]
+    },
+    {
+      "id": 474,
+      "filmPoster": "https://kinopoiskapiunofficial.tech/images/posters/kp/474.jpg",
+      "filmGrade": 8.6,
+      "filmYear": 2000,
+      "filmTime": 155,
+      "filmAge": "16",
+      "filmLang": [
+        {
+          "lang": "ru",
+          "filmName": "Гладиатор"
+        },
+        {
+          "lang": "en",
+          "filmName": "Gladiator"
+        }
+      ],
+      "genres": [
+        {
+          "id": 3,
+          "name": "приключения"
+        },
+        {
+          "id": 4,
+          "name": "боевик"
+        },
+        {
+          "id": 9,
+          "name": "драма"
+        },
+        {
+          "id": 16,
+          "name": "история"
+        }
+      ],
+      "countries": [
+        {
+          "id": 1,
+          "name": "США"
+        },
+        {
+          "id": 7,
+          "name": "Великобритания"
+        },
+        {
+          "id": 21,
+          "name": "Мальта"
+        },
+        {
+          "id": 22,
+          "name": "Марокко"
+        }
+      ]
+    },
+    {
+      "id": 342,
+      "filmPoster": "https://kinopoiskapiunofficial.tech/images/posters/kp/342.jpg",
+      "filmGrade": 8.6,
+      "filmYear": 1994,
+      "filmTime": 154,
+      "filmAge": "18",
+      "filmLang": [
+        {
+          "lang": "ru",
+          "filmName": "Криминальное чтиво"
+        },
+        {
+          "lang": "en",
+          "filmName": "Pulp Fiction"
+        }
+      ],
+      "genres": [
+        {
+          "id": 9,
+          "name": "драма"
+        },
+        {
+          "id": 11,
+          "name": "криминал"
+        }
+      ],
+      "countries": [
+        {
+          "id": 1,
+          "name": "США"
+        }
+      ]
+    },
+    {
+      "id": 381,
+      "filmPoster": "https://kinopoiskapiunofficial.tech/images/posters/kp/381.jpg",
+      "filmGrade": 8.6,
+      "filmYear": 1997,
+      "filmTime": 116,
+      "filmAge": "12",
+      "filmLang": [
+        {
+          "lang": "ru",
+          "filmName": "Жизнь прекрасна"
+        },
+        {
+          "lang": "en",
+          "filmName": "La vita è bella"
+        }
+      ],
+      "genres": [
+        {
+          "id": 5,
+          "name": "мелодрама"
+        },
+        {
+          "id": 6,
+          "name": "комедия"
+        },
+        {
+          "id": 9,
+          "name": "драма"
+        },
+        {
+          "id": 15,
+          "name": "военный"
+        }
+      ],
+      "countries": [
+        {
+          "id": 9,
+          "name": "Италия"
+        }
+      ]
+    },
+    {
+      "id": 328,
+      "filmPoster": "https://kinopoiskapiunofficial.tech/images/posters/kp/328.jpg",
+      "filmGrade": 8.6,
+      "filmYear": 2001,
+      "filmTime": 178,
+      "filmAge": "12",
+      "filmLang": [
+        {
+          "lang": "ru",
+          "filmName": "Властелин колец: Братство Кольца"
+        },
+        {
+          "lang": "en",
+          "filmName": "The Lord of the Rings: The Fellowship of the Ring"
+        }
+      ],
+      "genres": [
+        {
+          "id": 3,
+          "name": "приключения"
+        },
+        {
+          "id": 4,
+          "name": "боевик"
+        },
+        {
+          "id": 9,
+          "name": "драма"
+        },
+        {
+          "id": 12,
+          "name": "фэнтези"
+        }
+      ],
+      "countries": [
+        {
+          "id": 1,
+          "name": "США"
+        },
+        {
+          "id": 6,
+          "name": "Новая Зеландия"
+        }
+      ]
+    },
+    {
+      "id": 327,
+      "filmPoster": "https://kinopoiskapiunofficial.tech/images/posters/kp/327.jpg",
+      "filmGrade": 8.5,
+      "filmYear": 1974,
+      "filmTime": 202,
+      "filmAge": "16",
+      "filmLang": [
+        {
+          "lang": "ru",
+          "filmName": "Крестный отец 2"
+        },
+        {
+          "lang": "en",
+          "filmName": "The Godfather: Part II"
+        }
+      ],
+      "genres": [
+        {
+          "id": 9,
+          "name": "драма"
+        },
+        {
+          "id": 11,
+          "name": "криминал"
+        }
+      ],
+      "countries": [
+        {
+          "id": 1,
+          "name": "США"
+        }
+      ]
+    },
+    {
+      "id": 336,
+      "filmPoster": "https://kinopoiskapiunofficial.tech/images/posters/kp/336.jpg",
+      "filmGrade": 8.5,
+      "filmYear": 1975,
+      "filmTime": 133,
+      "filmAge": "18",
+      "filmLang": [
+        {
+          "lang": "ru",
+          "filmName": "Пролетая над гнездом кукушки"
+        },
+        {
+          "lang": "en",
+          "filmName": "One Flew Over the Cuckoo's Nest"
+        }
+      ],
+      "genres": [
+        {
+          "id": 9,
+          "name": "драма"
+        }
+      ],
+      "countries": [
+        {
+          "id": 1,
+          "name": "США"
+        }
+      ]
+    },
+    {
+      "id": 370,
+      "filmPoster": "https://kinopoiskapiunofficial.tech/images/posters/kp/370.jpg",
+      "filmGrade": 8.5,
+      "filmYear": 2001,
+      "filmTime": 125,
+      "filmAge": "12",
+      "filmLang": [
+        {
+          "lang": "ru",
+          "filmName": "Унесённые призраками"
+        },
+        {
+          "lang": "en",
+          "filmName": "Sen to Chihiro no kamikakushi"
+        }
+      ],
+      "genres": [
+        {
+          "id": 3,
+          "name": "приключения"
+        },
+        {
+          "id": 8,
+          "name": "семейный"
+        },
+        {
+          "id": 12,
+          "name": "фэнтези"
+        },
+        {
+          "id": 21,
+          "name": "мультфильм"
+        },
+        {
+          "id": 22,
+          "name": "аниме"
+        }
+      ],
+      "countries": [
+        {
+          "id": 10,
+          "name": "Япония"
+        }
+      ]
+    },
+    {
+      "id": 346,
+      "filmPoster": "https://kinopoiskapiunofficial.tech/images/posters/kp/346.jpg",
+      "filmGrade": 8.5,
+      "filmYear": 1956,
+      "filmTime": 96,
+      "filmAge": "16",
+      "filmLang": [
+        {
+          "lang": "ru",
+          "filmName": "12 разгневанных мужчин"
+        },
+        {
+          "lang": "en",
+          "filmName": "12 Angry Men"
+        }
+      ],
+      "genres": [
+        {
+          "id": 9,
+          "name": "драма"
+        },
+        {
+          "id": 10,
+          "name": "детектив"
+        },
+        {
+          "id": 11,
+          "name": "криминал"
+        }
+      ],
+      "countries": [
+        {
+          "id": 1,
+          "name": "США"
+        }
+      ]
+    },
+    {
+      "id": 349,
+      "filmPoster": "https://kinopoiskapiunofficial.tech/images/posters/kp/349.jpg",
+      "filmGrade": 8.5,
+      "filmYear": 1966,
+      "filmTime": 178,
+      "filmAge": "16",
+      "filmLang": [
+        {
+          "lang": "ru",
+          "filmName": "Хороший, плохой, злой"
+        },
+        {
+          "lang": "en",
+          "filmName": "Il buono, il brutto, il cattivo"
+        }
+      ],
+      "genres": [
+        {
+          "id": 4,
+          "name": "боевик"
+        },
+        {
+          "id": 11,
+          "name": "криминал"
+        },
+        {
+          "id": 18,
+          "name": "вестерн"
+        }
+      ],
+      "countries": [
+        {
+          "id": 9,
+          "name": "Италия"
+        },
+        {
+          "id": 11,
+          "name": "Испания"
+        },
+        {
+          "id": 12,
+          "name": "Германия (ФРГ)"
+        }
+      ]
+    },
+    {
+      "id": 530,
+      "filmPoster": "https://kinopoiskapiunofficial.tech/images/posters/kp/530.jpg",
+      "filmGrade": 8.5,
+      "filmYear": 2001,
+      "filmTime": 135,
+      "filmAge": "12",
+      "filmLang": [
+        {
+          "lang": "ru",
+          "filmName": "Игры разума"
+        },
+        {
+          "lang": "en",
+          "filmName": "A Beautiful Mind"
+        }
+      ],
+      "genres": [
+        {
+          "id": 5,
+          "name": "мелодрама"
+        },
+        {
+          "id": 9,
+          "name": "драма"
+        },
+        {
+          "id": 14,
+          "name": "биография"
+        }
+      ],
+      "countries": [
+        {
+          "id": 1,
+          "name": "США"
+        }
+      ]
+    },
+    {
+      "id": 356,
+      "filmPoster": "https://kinopoiskapiunofficial.tech/images/posters/kp/356.jpg",
+      "filmGrade": 8.5,
+      "filmYear": 1959,
+      "filmTime": 119,
+      "filmAge": "12",
+      "filmLang": [
+        {
+          "lang": "ru",
+          "filmName": "В джазе только девушки"
+        },
+        {
+          "lang": "en",
+          "filmName": "Some Like It Hot"
+        }
+      ],
+      "genres": [
+        {
+          "id": 5,
+          "name": "мелодрама"
+        },
+        {
+          "id": 6,
+          "name": "комедия"
+        },
+        {
+          "id": 7,
+          "name": "музыка"
+        },
+        {
+          "id": 11,
+          "name": "криминал"
+        }
+      ],
+      "countries": [
+        {
+          "id": 1,
+          "name": "США"
+        }
+      ]
+    },
+    {
+      "id": 414,
+      "filmPoster": "https://kinopoiskapiunofficial.tech/images/posters/kp/414.jpg",
+      "filmGrade": 8.5,
+      "filmYear": 1931,
+      "filmTime": 87,
+      "filmAge": "0",
+      "filmLang": [
+        {
+          "lang": "ru",
+          "filmName": "Огни большого города"
+        },
+        {
+          "lang": "en",
+          "filmName": "City Lights"
+        }
+      ],
+      "genres": [
+        {
+          "id": 5,
+          "name": "мелодрама"
+        },
+        {
+          "id": 6,
+          "name": "комедия"
+        },
+        {
+          "id": 9,
+          "name": "драма"
+        }
+      ],
+      "countries": [
+        {
+          "id": 1,
+          "name": "США"
+        }
+      ]
+    },
+    {
+      "id": 355,
+      "filmPoster": "https://kinopoiskapiunofficial.tech/images/posters/kp/355.jpg",
+      "filmGrade": 8.5,
+      "filmYear": 2002,
+      "filmTime": 149,
+      "filmAge": "16",
+      "filmLang": [
+        {
+          "lang": "ru",
+          "filmName": "Пианист"
+        },
+        {
+          "lang": "en",
+          "filmName": "The Pianist"
+        }
+      ],
+      "genres": [
+        {
+          "id": 7,
+          "name": "музыка"
+        },
+        {
+          "id": 9,
+          "name": "драма"
+        },
+        {
+          "id": 14,
+          "name": "биография"
+        },
+        {
+          "id": 15,
+          "name": "военный"
+        }
+      ],
+      "countries": [
+        {
+          "id": 4,
+          "name": "Германия"
+        },
+        {
+          "id": 7,
+          "name": "Великобритания"
+        },
+        {
+          "id": 8,
+          "name": "Франция"
+        },
+        {
+          "id": 13,
+          "name": "Польша"
+        }
+      ]
+    },
+    {
+      "id": 301,
+      "filmPoster": "https://kinopoiskapiunofficial.tech/images/posters/kp/301.jpg",
+      "filmGrade": 8.5,
+      "filmYear": 1999,
+      "filmTime": 136,
+      "filmAge": "16",
+      "filmLang": [
+        {
+          "lang": "ru",
+          "filmName": "Матрица"
+        },
+        {
+          "lang": "en",
+          "filmName": "The Matrix"
+        }
+      ],
+      "genres": [
+        {
+          "id": 2,
+          "name": "фантастика"
+        },
+        {
+          "id": 4,
+          "name": "боевик"
+        }
+      ],
+      "countries": [
+        {
+          "id": 1,
+          "name": "США"
+        },
+        {
+          "id": 3,
+          "name": "Австралия"
+        }
+      ]
+    },
+    {
+      "id": 324,
+      "filmPoster": "https://kinopoiskapiunofficial.tech/images/posters/kp/324.jpg",
+      "filmGrade": 8.5,
+      "filmYear": 2002,
+      "filmTime": 141,
+      "filmAge": "16",
+      "filmLang": [
+        {
+          "lang": "ru",
+          "filmName": "Поймай меня, если сможешь"
+        },
+        {
+          "lang": "en",
+          "filmName": "Catch Me If You Can"
+        }
+      ],
+      "genres": [
+        {
+          "id": 6,
+          "name": "комедия"
+        },
+        {
+          "id": 11,
+          "name": "криминал"
+        },
+        {
+          "id": 14,
+          "name": "биография"
+        }
+      ],
+      "countries": [
+        {
+          "id": 1,
+          "name": "США"
+        },
+        {
+          "id": 2,
+          "name": "Канада"
+        }
+      ]
+    },
+    {
+      "id": 526,
+      "filmPoster": "https://kinopoiskapiunofficial.tech/images/posters/kp/526.jpg",
+      "filmGrade": 8.5,
+      "filmYear": 2000,
+      "filmTime": 104,
+      "filmAge": "16",
+      "filmLang": [
+        {
+          "lang": "ru",
+          "filmName": "Большой куш"
+        },
+        {
+          "lang": "en",
+          "filmName": "Snatch"
+        }
+      ],
+      "genres": [
+        {
+          "id": 4,
+          "name": "боевик"
+        },
+        {
+          "id": 6,
+          "name": "комедия"
+        },
+        {
+          "id": 11,
+          "name": "криминал"
+        }
+      ],
+      "countries": [
+        {
+          "id": 1,
+          "name": "США"
+        },
+        {
+          "id": 7,
+          "name": "Великобритания"
+        }
+      ]
+    },
+    {
+      "id": 456,
+      "filmPoster": "https://kinopoiskapiunofficial.tech/images/posters/kp/456.jpg",
+      "filmGrade": 8.4,
+      "filmYear": 1939,
+      "filmTime": 222,
+      "filmAge": "12",
+      "filmLang": [
+        {
+          "lang": "ru",
+          "filmName": "Унесённые ветром"
+        },
+        {
+          "lang": "en",
+          "filmName": "Gone with the Wind"
+        }
+      ],
+      "genres": [
+        {
+          "id": 5,
+          "name": "мелодрама"
+        },
+        {
+          "id": 9,
+          "name": "драма"
+        },
+        {
+          "id": 15,
+          "name": "военный"
+        },
+        {
+          "id": 16,
+          "name": "история"
+        }
+      ],
+      "countries": [
+        {
+          "id": 1,
+          "name": "США"
+        }
+      ]
+    },
+    {
+      "id": 348,
+      "filmPoster": "https://kinopoiskapiunofficial.tech/images/posters/kp/348.jpg",
+      "filmGrade": 8.4,
+      "filmYear": 1947,
+      "filmTime": 130,
+      "filmAge": "12",
+      "filmLang": [
+        {
+          "lang": "ru",
+          "filmName": "Эта замечательная жизнь"
+        },
+        {
+          "lang": "en",
+          "filmName": "It's a Wonderful Life"
+        }
+      ],
+      "genres": [
+        {
+          "id": 5,
+          "name": "мелодрама"
+        },
+        {
+          "id": 8,
+          "name": "семейный"
+        },
+        {
+          "id": 9,
+          "name": "драма"
+        },
+        {
+          "id": 12,
+          "name": "фэнтези"
+        }
+      ],
+      "countries": [
+        {
+          "id": 1,
+          "name": "США"
+        }
+      ]
+    },
+    {
+      "id": 399,
+      "filmPoster": "https://kinopoiskapiunofficial.tech/images/posters/kp/399.jpg",
+      "filmGrade": 8.3,
+      "filmYear": 1995,
+      "filmTime": 178,
+      "filmAge": "16",
+      "filmLang": [
+        {
+          "lang": "ru",
+          "filmName": "Храброе сердце"
+        },
+        {
+          "lang": "en",
+          "filmName": "Braveheart"
+        }
+      ],
+      "genres": [
+        {
+          "id": 9,
+          "name": "драма"
+        },
+        {
+          "id": 14,
+          "name": "биография"
+        },
+        {
+          "id": 15,
+          "name": "военный"
+        },
+        {
+          "id": 16,
+          "name": "история"
+        }
+      ],
+      "countries": [
+        {
+          "id": 1,
+          "name": "США"
+        }
+      ]
+    },
+    {
+      "id": 469,
+      "filmPoster": "https://kinopoiskapiunofficial.tech/images/posters/kp/469.jpg",
+      "filmGrade": 8.3,
+      "filmYear": 1983,
+      "filmTime": 229,
+      "filmAge": "16",
+      "filmLang": [
+        {
+          "lang": "ru",
+          "filmName": "Однажды в Америке"
+        },
+        {
+          "lang": "en",
+          "filmName": "Once Upon a Time in America"
+        }
+      ],
+      "genres": [
+        {
+          "id": 9,
+          "name": "драма"
+        },
+        {
+          "id": 11,
+          "name": "криминал"
+        }
+      ],
+      "countries": [
+        {
+          "id": 1,
+          "name": "США"
+        },
+        {
+          "id": 9,
+          "name": "Италия"
+        }
+      ]
+    }
+  ],
+  "bestFantasyFilmsSet": [
+    {
+      "id": 435,
+      "filmPoster": "https://kinopoiskapiunofficial.tech/images/posters/kp/435.jpg",
+      "filmGrade": 9.1,
+      "filmYear": 1999,
+      "filmTime": 189,
+      "filmAge": "16",
+      "filmLang": [
+        {
+          "lang": "ru",
+          "filmName": "Зеленая миля"
+        },
+        {
+          "lang": "en",
+          "filmName": "The Green Mile"
+        }
+      ],
+      "genres": [
+        {
+          "id": 12,
+          "name": "фэнтези"
+        }
+      ],
+      "countries": [
+        {
+          "id": 1,
+          "name": "США"
+        }
+      ]
+    },
+    {
+      "id": 312,
+      "filmPoster": "https://kinopoiskapiunofficial.tech/images/posters/kp/312.jpg",
+      "filmGrade": 8.6,
+      "filmYear": 2002,
+      "filmTime": 179,
+      "filmAge": "12",
+      "filmLang": [
+        {
+          "lang": "ru",
+          "filmName": "Властелин колец: Две крепости"
+        },
+        {
+          "lang": "en",
+          "filmName": "The Lord of the Rings: The Two Towers"
+        }
+      ],
+      "genres": [
+        {
+          "id": 12,
+          "name": "фэнтези"
+        }
+      ],
+      "countries": [
+        {
+          "id": 1,
+          "name": "США"
+        },
+        {
+          "id": 6,
+          "name": "Новая Зеландия"
+        }
+      ]
+    },
+    {
+      "id": 328,
+      "filmPoster": "https://kinopoiskapiunofficial.tech/images/posters/kp/328.jpg",
+      "filmGrade": 8.6,
+      "filmYear": 2001,
+      "filmTime": 178,
+      "filmAge": "12",
+      "filmLang": [
+        {
+          "lang": "ru",
+          "filmName": "Властелин колец: Братство Кольца"
+        },
+        {
+          "lang": "en",
+          "filmName": "The Lord of the Rings: The Fellowship of the Ring"
+        }
+      ],
+      "genres": [
+        {
+          "id": 12,
+          "name": "фэнтези"
+        }
+      ],
+      "countries": [
+        {
+          "id": 1,
+          "name": "США"
+        },
+        {
+          "id": 6,
+          "name": "Новая Зеландия"
+        }
+      ]
+    },
+    {
+      "id": 370,
+      "filmPoster": "https://kinopoiskapiunofficial.tech/images/posters/kp/370.jpg",
+      "filmGrade": 8.5,
+      "filmYear": 2001,
+      "filmTime": 125,
+      "filmAge": "12",
+      "filmLang": [
+        {
+          "lang": "ru",
+          "filmName": "Унесённые призраками"
+        },
+        {
+          "lang": "en",
+          "filmName": "Sen to Chihiro no kamikakushi"
+        }
+      ],
+      "genres": [
+        {
+          "id": 12,
+          "name": "фэнтези"
+        }
+      ],
+      "countries": [
+        {
+          "id": 10,
+          "name": "Япония"
+        }
+      ]
+    },
+    {
+      "id": 348,
+      "filmPoster": "https://kinopoiskapiunofficial.tech/images/posters/kp/348.jpg",
+      "filmGrade": 8.4,
+      "filmYear": 1947,
+      "filmTime": 130,
+      "filmAge": "12",
+      "filmLang": [
+        {
+          "lang": "ru",
+          "filmName": "Эта замечательная жизнь"
+        },
+        {
+          "lang": "en",
+          "filmName": "It's a Wonderful Life"
+        }
+      ],
+      "genres": [
+        {
+          "id": 12,
+          "name": "фэнтези"
+        }
+      ],
+      "countries": [
+        {
+          "id": 1,
+          "name": "США"
+        }
+      ]
+    },
+    {
+      "id": 689,
+      "filmPoster": "https://kinopoiskapiunofficial.tech/images/posters/kp/689.jpg",
+      "filmGrade": 8.3,
+      "filmYear": 2001,
+      "filmTime": 152,
+      "filmAge": "12",
+      "filmLang": [
+        {
+          "lang": "ru",
+          "filmName": "Гарри Поттер и философский камень"
+        },
+        {
+          "lang": "en",
+          "filmName": "Harry Potter and the Sorcerer's Stone"
+        }
+      ],
+      "genres": [
+        {
+          "id": 12,
+          "name": "фэнтези"
+        }
+      ],
+      "countries": [
+        {
+          "id": 1,
+          "name": "США"
+        },
+        {
+          "id": 7,
+          "name": "Великобритания"
+        }
+      ]
+    },
+    {
+      "id": 540,
+      "filmPoster": "https://kinopoiskapiunofficial.tech/images/posters/kp/540.jpg",
+      "filmGrade": 8.3,
+      "filmYear": 1991,
+      "filmTime": 84,
+      "filmAge": "6",
+      "filmLang": [
+        {
+          "lang": "ru",
+          "filmName": "Красавица и чудовище"
+        },
+        {
+          "lang": "en",
+          "filmName": "Beauty and the Beast"
+        }
+      ],
+      "genres": [
+        {
+          "id": 12,
+          "name": "фэнтези"
+        }
+      ],
+      "countries": [
+        {
+          "id": 1,
+          "name": "США"
+        }
+      ]
+    },
+    {
+      "id": 322,
+      "filmPoster": "https://kinopoiskapiunofficial.tech/images/posters/kp/322.jpg",
+      "filmGrade": 8.2,
+      "filmYear": 2004,
+      "filmTime": 142,
+      "filmAge": "12",
+      "filmLang": [
+        {
+          "lang": "ru",
+          "filmName": "Гарри Поттер и узник Азкабана"
+        },
+        {
+          "lang": "en",
+          "filmName": "Harry Potter and the Prisoner of Azkaban"
+        }
+      ],
+      "genres": [
+        {
+          "id": 12,
+          "name": "фэнтези"
+        }
+      ],
+      "countries": [
+        {
+          "id": 1,
+          "name": "США"
+        },
+        {
+          "id": 7,
+          "name": "Великобритания"
+        }
+      ]
+    },
+    {
+      "id": 395,
+      "filmPoster": "https://kinopoiskapiunofficial.tech/images/posters/kp/395.jpg",
+      "filmGrade": 8.2,
+      "filmYear": 1999,
+      "filmTime": 107,
+      "filmAge": "12",
+      "filmLang": [
+        {
+          "lang": "ru",
+          "filmName": "Шестое чувство"
+        },
+        {
+          "lang": "en",
+          "filmName": "The Sixth Sense"
+        }
+      ],
+      "genres": [
+        {
+          "id": 12,
+          "name": "фэнтези"
+        }
+      ],
+      "countries": [
+        {
+          "id": 1,
+          "name": "США"
+        }
+      ]
+    },
+    {
+      "id": 441,
+      "filmPoster": "https://kinopoiskapiunofficial.tech/images/posters/kp/441.jpg",
+      "filmGrade": 8.2,
+      "filmYear": 1997,
+      "filmTime": 134,
+      "filmAge": "12",
+      "filmLang": [
+        {
+          "lang": "ru",
+          "filmName": "Принцесса Мононоке"
+        },
+        {
+          "lang": "en",
+          "filmName": "Mononoke-hime"
+        }
+      ],
+      "genres": [
+        {
+          "id": 12,
+          "name": "фэнтези"
+        }
+      ],
+      "countries": [
+        {
+          "id": 10,
+          "name": "Япония"
+        }
+      ]
+    },
+    {
+      "id": 447,
+      "filmPoster": "https://kinopoiskapiunofficial.tech/images/posters/kp/447.jpg",
+      "filmGrade": 8.2,
+      "filmYear": 1983,
+      "filmTime": 131,
+      "filmAge": "12",
+      "filmLang": [
+        {
+          "lang": "ru",
+          "filmName": "Звёздные войны: Эпизод 6 — Возвращение Джедая"
+        },
+        {
+          "lang": "en",
+          "filmName": "Star Wars: Episode VI - Return of the Jedi"
+        }
+      ],
+      "genres": [
+        {
+          "id": 12,
+          "name": "фэнтези"
+        }
+      ],
+      "countries": [
+        {
+          "id": 1,
+          "name": "США"
+        }
+      ]
+    },
+    {
+      "id": 458,
+      "filmPoster": "https://kinopoiskapiunofficial.tech/images/posters/kp/458.jpg",
+      "filmGrade": 8.1,
+      "filmYear": 2001,
+      "filmTime": 92,
+      "filmAge": "0",
+      "filmLang": [
+        {
+          "lang": "ru",
+          "filmName": "Корпорация монстров"
+        },
+        {
+          "lang": "en",
+          "filmName": "Monsters, Inc."
+        }
+      ],
+      "genres": [
+        {
+          "id": 12,
+          "name": "фэнтези"
+        }
+      ],
+      "countries": [
+        {
+          "id": 1,
+          "name": "США"
+        }
+      ]
+    },
+    {
+      "id": 688,
+      "filmPoster": "https://kinopoiskapiunofficial.tech/images/posters/kp/688.jpg",
+      "filmGrade": 8.1,
+      "filmYear": 2002,
+      "filmTime": 161,
+      "filmAge": "12",
+      "filmLang": [
+        {
+          "lang": "ru",
+          "filmName": "Гарри Поттер и Тайная комната"
+        },
+        {
+          "lang": "en",
+          "filmName": "Harry Potter and the Chamber of Secrets"
+        }
+      ],
+      "genres": [
+        {
+          "id": 12,
+          "name": "фэнтези"
+        }
+      ],
+      "countries": [
+        {
+          "id": 1,
+          "name": "США"
+        },
+        {
+          "id": 7,
+          "name": "Великобритания"
+        }
+      ]
+    },
+    {
+      "id": 864,
+      "filmPoster": "https://kinopoiskapiunofficial.tech/images/posters/kp/864.jpg",
+      "filmGrade": 8.1,
+      "filmYear": 2002,
+      "filmTime": 95,
+      "filmAge": "0",
+      "filmLang": [
+        {
+          "lang": "ru",
+          "filmName": "Планета сокровищ"
+        },
+        {
+          "lang": "en",
+          "filmName": "Treasure Planet"
+        }
+      ],
+      "genres": [
+        {
+          "id": 12,
+          "name": "фэнтези"
+        }
+      ],
+      "countries": [
+        {
+          "id": 1,
+          "name": "США"
+        }
+      ]
+    },
+    {
+      "id": 425,
+      "filmPoster": "https://kinopoiskapiunofficial.tech/images/posters/kp/425.jpg",
+      "filmGrade": 8.1,
+      "filmYear": 1957,
+      "filmTime": 96,
+      "filmAge": "16",
+      "filmLang": [
+        {
+          "lang": "ru",
+          "filmName": "Седьмая печать"
+        },
+        {
+          "lang": "en",
+          "filmName": "Det sjunde inseglet"
+        }
+      ],
+      "genres": [
+        {
+          "id": 12,
+          "name": "фэнтези"
+        }
+      ],
+      "countries": [
+        {
+          "id": 18,
+          "name": "Швеция"
+        }
+      ]
+    },
+    {
+      "id": 430,
+      "filmPoster": "https://kinopoiskapiunofficial.tech/images/posters/kp/430.jpg",
+      "filmGrade": 8.1,
+      "filmYear": 2001,
+      "filmTime": 90,
+      "filmAge": "12",
+      "filmLang": [
+        {
+          "lang": "ru",
+          "filmName": "Шрэк"
+        },
+        {
+          "lang": "en",
+          "filmName": "Shrek"
+        }
+      ],
+      "genres": [
+        {
+          "id": 12,
+          "name": "фэнтези"
+        }
+      ],
+      "countries": [
+        {
+          "id": 1,
+          "name": "США"
+        },
+        {
+          "id": 2,
+          "name": "Канада"
+        },
+        {
+          "id": 18,
+          "name": "Швеция"
+        }
+      ]
+    },
+    {
+      "id": 333,
+      "filmPoster": "https://kinopoiskapiunofficial.tech/images/posters/kp/333.jpg",
+      "filmGrade": 8.1,
+      "filmYear": 1977,
+      "filmTime": 121,
+      "filmAge": "6",
+      "filmLang": [
+        {
+          "lang": "ru",
+          "filmName": "Звёздные войны: Эпизод 4 — Новая надежда"
+        },
+        {
+          "lang": "en",
+          "filmName": "Star Wars"
+        }
+      ],
+      "genres": [
+        {
+          "id": 12,
+          "name": "фэнтези"
+        }
+      ],
+      "countries": [
+        {
+          "id": 1,
+          "name": "США"
+        }
+      ]
+    },
+    {
+      "id": 527,
+      "filmPoster": "https://kinopoiskapiunofficial.tech/images/posters/kp/527.jpg",
+      "filmGrade": 8.1,
+      "filmYear": 1993,
+      "filmTime": 101,
+      "filmAge": "12",
+      "filmLang": [
+        {
+          "lang": "ru",
+          "filmName": "День сурка"
+        },
+        {
+          "lang": "en",
+          "filmName": "Groundhog Day"
+        }
+      ],
+      "genres": [
+        {
+          "id": 12,
+          "name": "фэнтези"
+        }
+      ],
+      "countries": [
+        {
+          "id": 1,
+          "name": "США"
+        }
+      ]
+    },
+    {
+      "id": 338,
+      "filmPoster": "https://kinopoiskapiunofficial.tech/images/posters/kp/338.jpg",
+      "filmGrade": 8.1,
+      "filmYear": 1980,
+      "filmTime": 124,
+      "filmAge": "12",
+      "filmLang": [
+        {
+          "lang": "ru",
+          "filmName": "Звёздные войны: Эпизод 5 — Империя наносит ответный удар"
+        },
+        {
+          "lang": "en",
+          "filmName": "Star Wars: Episode V - The Empire Strikes Back"
+        }
+      ],
+      "genres": [
+        {
+          "id": 12,
+          "name": "фэнтези"
+        }
+      ],
+      "countries": [
+        {
+          "id": 1,
+          "name": "США"
+        }
+      ]
+    },
+    {
+      "id": 844,
+      "filmPoster": "https://kinopoiskapiunofficial.tech/images/posters/kp/844.jpg",
+      "filmGrade": 8,
+      "filmYear": 2002,
+      "filmTime": 142,
+      "filmAge": "12",
+      "filmLang": [
+        {
+          "lang": "ru",
+          "filmName": "Звёздные войны: Эпизод 2 — Атака клонов"
+        },
+        {
+          "lang": "en",
+          "filmName": "Star Wars: Episode II - Attack of the Clones"
+        }
+      ],
+      "genres": [
+        {
+          "id": 12,
+          "name": "фэнтези"
+        }
+      ],
+      "countries": [
+        {
+          "id": 1,
+          "name": "США"
+        }
+      ]
+    },
+    {
+      "id": 873,
+      "filmPoster": "https://kinopoiskapiunofficial.tech/images/posters/kp/873.jpg",
+      "filmGrade": 7.9,
+      "filmYear": 2001,
+      "filmTime": 99,
+      "filmAge": "16",
+      "filmLang": [
+        {
+          "lang": "ru",
+          "filmName": "Пробуждение жизни"
+        },
+        {
+          "lang": "en",
+          "filmName": "Waking Life"
+        }
+      ],
+      "genres": [
+        {
+          "id": 12,
+          "name": "фэнтези"
+        }
+      ],
+      "countries": [
+        {
+          "id": 1,
+          "name": "США"
+        }
+      ]
+    },
+    {
+      "id": 658,
+      "filmPoster": "https://kinopoiskapiunofficial.tech/images/posters/kp/658.jpg",
+      "filmGrade": 7.9,
+      "filmYear": 2000,
+      "filmTime": 78,
+      "filmAge": "0",
+      "filmLang": [
+        {
+          "lang": "ru",
+          "filmName": "Похождения императора"
+        },
+        {
+          "lang": "en",
+          "filmName": "The Emperor's New Groove"
+        }
+      ],
+      "genres": [
+        {
+          "id": 12,
+          "name": "фэнтези"
+        }
+      ],
+      "countries": [
+        {
+          "id": 1,
+          "name": "США"
+        }
+      ]
+    },
+    {
+      "id": 482,
+      "filmPoster": "https://kinopoiskapiunofficial.tech/images/posters/kp/482.jpg",
+      "filmGrade": 7.9,
+      "filmYear": 1995,
+      "filmTime": 81,
+      "filmAge": "0",
+      "filmLang": [
+        {
+          "lang": "ru",
+          "filmName": "История игрушек"
+        },
+        {
+          "lang": "en",
+          "filmName": "Toy Story"
+        }
+      ],
+      "genres": [
+        {
+          "id": 12,
+          "name": "фэнтези"
+        }
+      ],
+      "countries": [
+        {
+          "id": 1,
+          "name": "США"
+        }
+      ]
+    },
+    {
+      "id": 889,
+      "filmPoster": "https://kinopoiskapiunofficial.tech/images/posters/kp/889.jpg",
+      "filmGrade": 7.9,
+      "filmYear": 2002,
+      "filmTime": 93,
+      "filmAge": "12",
+      "filmLang": [
+        {
+          "lang": "ru",
+          "filmName": "Герой"
+        },
+        {
+          "lang": "en",
+          "filmName": "Ying xiong"
+        }
+      ],
+      "genres": [
+        {
+          "id": 12,
+          "name": "фэнтези"
+        }
+      ],
+      "countries": [
+        {
+          "id": 14,
+          "name": "Гонконг"
+        },
+        {
+          "id": 15,
+          "name": "Китай"
+        }
+      ]
+    },
+    {
+      "id": 551,
+      "filmPoster": "https://kinopoiskapiunofficial.tech/images/posters/kp/551.jpg",
+      "filmGrade": 7.9,
+      "filmYear": 1937,
+      "filmTime": 83,
+      "filmAge": "0",
+      "filmLang": [
+        {
+          "lang": "ru",
+          "filmName": "Белоснежка и семь гномов"
+        },
+        {
+          "lang": "en",
+          "filmName": "Snow White and the Seven Dwarfs"
+        }
+      ],
+      "genres": [
+        {
+          "id": 12,
+          "name": "фэнтези"
+        }
+      ],
+      "countries": [
+        {
+          "id": 1,
+          "name": "США"
+        }
+      ]
+    },
+    {
+      "id": 597,
+      "filmPoster": "https://kinopoiskapiunofficial.tech/images/posters/kp/597.jpg",
+      "filmGrade": 7.9,
+      "filmYear": 2001,
+      "filmTime": 95,
+      "filmAge": "0",
+      "filmLang": [
+        {
+          "lang": "ru",
+          "filmName": "Атлантида: Затерянный мир"
+        },
+        {
+          "lang": "en",
+          "filmName": "Atlantis: The Lost Empire"
+        }
+      ],
+      "genres": [
+        {
+          "id": 12,
+          "name": "фэнтези"
+        }
+      ],
+      "countries": [
+        {
+          "id": 1,
+          "name": "США"
+        }
+      ]
+    },
+    {
+      "id": 375,
+      "filmPoster": "https://kinopoiskapiunofficial.tech/images/posters/kp/375.jpg",
+      "filmGrade": 7.8,
+      "filmYear": 1975,
+      "filmTime": 91,
+      "filmAge": "12",
+      "filmLang": [
+        {
+          "lang": "ru",
+          "filmName": "Монти Пайтон и Священный Грааль"
+        },
+        {
+          "lang": "en",
+          "filmName": "Monty Python and the Holy Grail"
+        }
+      ],
+      "genres": [
+        {
+          "id": 12,
+          "name": "фэнтези"
+        }
+      ],
+      "countries": [
+        {
+          "id": 7,
+          "name": "Великобритания"
+        }
+      ]
+    },
+    {
+      "id": 806,
+      "filmPoster": "https://kinopoiskapiunofficial.tech/images/posters/kp/806.jpg",
+      "filmGrade": 7.8,
+      "filmYear": 2000,
+      "filmTime": 89,
+      "filmAge": "0",
+      "filmLang": [
+        {
+          "lang": "ru",
+          "filmName": "Дорога на Эльдорадо"
+        },
+        {
+          "lang": "en",
+          "filmName": "The Road to El Dorado"
+        }
+      ],
+      "genres": [
+        {
+          "id": 12,
+          "name": "фэнтези"
+        }
+      ],
+      "countries": [
+        {
+          "id": 1,
+          "name": "США"
+        }
+      ]
+    },
+    {
+      "id": 740,
+      "filmPoster": "https://kinopoiskapiunofficial.tech/images/posters/kp/740.jpg",
+      "filmGrade": 7.8,
+      "filmYear": 2002,
+      "filmTime": 85,
+      "filmAge": "0",
+      "filmLang": [
+        {
+          "lang": "ru",
+          "filmName": "Лило и Стич"
+        },
+        {
+          "lang": "en",
+          "filmName": "Lilo & Stitch"
+        }
+      ],
+      "genres": [
+        {
+          "id": 12,
+          "name": "фэнтези"
+        }
+      ],
+      "countries": [
+        {
+          "id": 1,
+          "name": "США"
+        }
+      ]
+    },
+    {
+      "id": 405,
+      "filmPoster": "https://kinopoiskapiunofficial.tech/images/posters/kp/405.jpg",
+      "filmGrade": 7.8,
+      "filmYear": 1999,
+      "filmTime": 92,
+      "filmAge": "0",
+      "filmLang": [
+        {
+          "lang": "ru",
+          "filmName": "История игрушек 2"
+        },
+        {
+          "lang": "en",
+          "filmName": "Toy Story 2"
+        }
+      ],
+      "genres": [
+        {
+          "id": 12,
+          "name": "фэнтези"
+        }
+      ],
+      "countries": [
+        {
+          "id": 1,
+          "name": "США"
+        }
+      ]
+    }
+  ],
+  "familyFriendlyComediesSet": [
+    {
+      "id": 310,
+      "filmPoster": "https://kinopoiskapiunofficial.tech/images/posters/kp/310.jpg",
+      "filmGrade": 6.8,
+      "filmYear": 2003,
+      "filmTime": 89,
+      "filmAge": "6",
+      "filmLang": [
+        {
+          "lang": "ru",
+          "filmName": "Дежурный папа"
+        },
+        {
+          "lang": "en",
+          "filmName": "Daddy Day Care"
+        }
+      ],
+      "genres": [
+        {
+          "id": 6,
+          "name": "комедия"
+        }
+      ],
+      "countries": [
+        {
+          "id": 1,
+          "name": "США"
+        }
+      ]
+    },
+    {
+      "id": 383,
+      "filmPoster": "https://kinopoiskapiunofficial.tech/images/posters/kp/383.jpg",
+      "filmGrade": 8.1,
+      "filmYear": 1973,
+      "filmTime": 129,
+      "filmAge": "6",
+      "filmLang": [
+        {
+          "lang": "ru",
+          "filmName": "Афера"
+        },
+        {
+          "lang": "en",
+          "filmName": "The Sting"
+        }
+      ],
+      "genres": [
+        {
+          "id": 6,
+          "name": "комедия"
+        }
+      ],
+      "countries": [
+        {
+          "id": 1,
+          "name": "США"
+        }
+      ]
+    },
+    {
+      "id": 497,
+      "filmPoster": "https://kinopoiskapiunofficial.tech/images/posters/kp/497.jpg",
+      "filmGrade": 8.3,
+      "filmYear": 1953,
+      "filmTime": 118,
+      "filmAge": "6",
+      "filmLang": [
+        {
+          "lang": "ru",
+          "filmName": "Римские каникулы"
+        },
+        {
+          "lang": "en",
+          "filmName": "Roman Holiday"
+        }
+      ],
+      "genres": [
+        {
+          "id": 6,
+          "name": "комедия"
+        }
+      ],
+      "countries": [
+        {
+          "id": 1,
+          "name": "США"
+        }
+      ]
+    },
+    {
+      "id": 538,
+      "filmPoster": "https://kinopoiskapiunofficial.tech/images/posters/kp/538.jpg",
+      "filmGrade": 8.1,
+      "filmYear": 1999,
+      "filmTime": 86,
+      "filmAge": "6",
+      "filmLang": [
+        {
+          "lang": "ru",
+          "filmName": "Стальной гигант"
+        },
+        {
+          "lang": "en",
+          "filmName": "The Iron Giant"
+        }
+      ],
+      "genres": [
+        {
+          "id": 6,
+          "name": "комедия"
+        }
+      ],
+      "countries": [
+        {
+          "id": 1,
+          "name": "США"
+        }
+      ]
+    },
+    {
+      "id": 776,
+      "filmPoster": "https://kinopoiskapiunofficial.tech/images/posters/kp/776.jpg",
+      "filmGrade": 7.1,
+      "filmYear": 2001,
+      "filmTime": 95,
+      "filmAge": "6",
+      "filmLang": [
+        {
+          "lang": "ru",
+          "filmName": "Осмосис Джонс"
+        },
+        {
+          "lang": "en",
+          "filmName": "Osmosis Jones"
+        }
+      ],
+      "genres": [
+        {
+          "id": 6,
+          "name": "комедия"
+        }
+      ],
+      "countries": [
+        {
+          "id": 1,
+          "name": "США"
+        },
+        {
+          "id": 20,
+          "name": "Дания"
+        }
+      ]
+    },
+    {
+      "id": 841,
+      "filmPoster": "https://kinopoiskapiunofficial.tech/images/posters/kp/841.jpg",
+      "filmGrade": 6.6,
+      "filmYear": 2001,
+      "filmTime": 88,
+      "filmAge": "6",
+      "filmLang": [
+        {
+          "lang": "ru",
+          "filmName": "Дети шпионов"
+        },
+        {
+          "lang": "en",
+          "filmName": "Spy Kids"
+        }
+      ],
+      "genres": [
+        {
+          "id": 6,
+          "name": "комедия"
+        }
+      ],
+      "countries": [
+        {
+          "id": 1,
+          "name": "США"
+        }
+      ]
+    },
+    {
+      "id": 842,
+      "filmPoster": "https://kinopoiskapiunofficial.tech/images/posters/kp/842.jpg",
+      "filmGrade": 6.1,
+      "filmYear": 2002,
+      "filmTime": 100,
+      "filmAge": "6",
+      "filmLang": [
+        {
+          "lang": "ru",
+          "filmName": "Дети шпионов 2: Остров несбывшихся надежд"
+        },
+        {
+          "lang": "en",
+          "filmName": "Spy Kids 2: Island of Lost Dreams"
+        }
+      ],
+      "genres": [
+        {
+          "id": 6,
+          "name": "комедия"
+        }
+      ],
+      "countries": [
+        {
+          "id": 1,
+          "name": "США"
+        }
+      ]
+    }
+  ]
+}

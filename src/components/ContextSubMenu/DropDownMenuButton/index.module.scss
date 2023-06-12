@@ -1,0 +1,88 @@
+@import "../../../styles/mixins.scss";
+@import "../../../styles/color.scss";
+
+.container {
+  width: 100%;
+  height: 508px;
+  padding: 20px;
+  background-color: $base-dark-purple;
+  border-radius: 0px 0px 14px 14px;
+  box-sizing: border-box;
+  position: absolute;
+  top: 0;
+
+  .content {
+    width: 600px;
+    height: inherit;
+
+    .title {
+      h3 {
+        @include font-regular-xl;
+        font-size: 26px;
+      }
+
+      p {
+        @include font-light-m;
+        color: $base-grey-menu;
+        margin-top: 10px;
+      }
+    }
+
+    .blocks {
+      width: inherit;
+      height: 280px;
+      margin: 35px 0;
+      display: grid;
+      grid-template-columns: repeat(3, 170px);
+      grid-gap: 25px;
+
+      .news,
+      .catalogs,
+      .movies,
+      .family_account,
+      .download {
+        height: 130px;
+        background-color: $base-light-purple;
+        border-radius: 12px;
+        padding: 20px 17px;
+        box-sizing: border-box;
+        color: $base-grey-menu;
+        position: relative;
+        cursor: pointer;
+
+        .description {
+          position: absolute;
+          bottom: 20px;
+          padding-right: 8px;
+          box-sizing: border-box;
+        }
+      }
+
+      .catalogs {
+        grid-column-start: span 2;
+      }
+    }
+    .down_buttons {
+      width: 100%;
+      margin-top: 20px;
+
+      .button_watch {
+        @include pink-button;
+        width: 365px;
+        height: 40px;
+      }
+
+      .button_turn_off {
+        width: 120px;
+        height: 40px;
+        margin-left: 25px;
+        background-color: transparent;
+        color: $base-grey-topmenu;
+        position: relative;
+        top: -8px;
+        text-align: left;
+        cursor: pointer;
+      }
+    }
+  }
+}

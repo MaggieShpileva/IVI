@@ -1,0 +1,115 @@
+@import "../../../styles/mixins.scss";
+@import "../../../styles/color.scss";
+
+.profileModal {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  display: none;
+  overflow: hidden;
+  z-index: 1000;
+
+  &_open {
+    display: flex;
+    flex-direction: column;
+    background-color: $base-dark-blue;
+  }
+
+  .headerRow {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 40px;
+    padding-right: 40px;
+    height: 52px;
+    width: 100%;
+  }
+
+  .content {
+    padding: 16px 12px 48px;
+    width: 100%;
+    max-width: 1240px;
+    @media screen and (min-width: 599px) {
+      margin-left: 24px;
+      margin-right: 24px;
+    }
+  }
+
+  .title {
+    @include font-bold-m;
+
+    margin-top: 0;
+    color: $base-white;
+    line-height: 20px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+
+  .closeBtn {
+    position: absolute;
+    right: 0;
+    top: 0;
+    left: auto !important;
+    height: 52px;
+    padding: 16px;
+    background-color: transparent;
+    cursor: pointer;
+
+    & > div {
+      width: 20px;
+      height: 20px;
+      font-size: 20px;
+      line-height: 20px;
+      color: $base-white;
+      opacity: 0.72;
+      transform: scale(1);
+      transition: all 0.4s ease 0s;
+      &:hover {
+        transform: scale(1.1);
+        opacity: 1;
+        transition: all 0.3s ease 0s;
+      }
+    }
+  }
+  .bar {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 2px;
+    background-color: $base-dark-grey;
+    z-index: 10;
+
+    .bar_line {
+      //width: 33%;
+      height: 2px;
+      background-color: $base-pink;
+    }
+  }
+  .googleInput {
+    column-gap: 10px;
+    width: 100%;
+    padding: 9px 15px;
+  }
+  .vkInput {
+    margin-top: 12px;
+    column-gap: 10px;
+    width: 100%;
+    padding: 9px 15px;
+    svg {
+      font-size: 20px;
+    }
+  }
+
+  button {
+    outline: 0;
+    @include font-regular-m;
+    line-height: 20px;
+  }
+}

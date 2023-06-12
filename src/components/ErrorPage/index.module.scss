@@ -1,0 +1,19 @@
+@import "../../styles/color.scss";
+@import "../../styles/mixins.scss";
+
+.errorPage {
+  margin: 0 auto;
+  display: flex;
+  min-height: 350px;
+  background-image: url("/bg404.png");
+  background-repeat: no-repeat;
+  background-position: 50% 0;
+  background-size: auto 540px;
+  justify-content: center;
+  align-items: center;
+  font-family: "IviSans-bold";
+  @media screen and (max-width: 600px) {
+    background-size: auto 380px;
+    min-height: 244px;
+  }
+}

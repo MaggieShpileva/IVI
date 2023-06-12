@@ -1,0 +1,15 @@
+@import "../../../../styles/mixins.scss";
+@import "../../../../styles/color.scss";
+
+.title {
+  h3 {
+    @include font-regular-xl;
+    font-size: 26px;
+  }
+
+  p {
+    @include font-light-m;
+    color: $base-grey-menu;
+    margin-top: 10px;
+  }
+}
