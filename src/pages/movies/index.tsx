@@ -15,6 +15,7 @@ import {
   IMovie,
   IPerson,
   ISimpleMovie,
+  MoviesForFilmsPageT,
   SearchParamsType,
   SortType,
 } from "@/types/types";
@@ -39,10 +40,12 @@ import { sortHandler } from "@/Redux/filter/worker";
 import { filterRangesHandler } from "@/Redux/filter/worker";
 import { useRouter } from "next/router";
 import { Loader } from "@/components/Loader";
-import { getMoviesData, getMoviesDataStart } from "@/Redux/movies/actions";
+// import { getMoviesData, getMoviesDataStart } from "@/Redux/movies/actions";
 import axios from "axios";
+import { getMoviesData } from "@/Redux/movies/actions";
 
-const Movies: NextPage = (context) => {
+const Movies: NextPage = ({ data }: any) => {
+  console.log("data", data);
   const router = useRouter();
   const { t } = useTranslation();
   const [isLoading, setIsLoading] = useState(false);
@@ -268,7 +271,6 @@ const Movies: NextPage = (context) => {
   }, [sort]);
 
   useEffect(() => {
-    console.log(123);
     // dispatch(setSortFilter(value));
   }, [router.query]);
 
@@ -320,11 +322,11 @@ const Movies: NextPage = (context) => {
             <h2 className={styles.genresRow__title}>
               {t("contextSubMenu.genres")}
             </h2>
-            <GenresSlider />
+            <GenresSlider genresRu={data.genresRu} genresEn={data.genresEn} />
           </div>
           <SimpleSlider
             title={t("sliders_title.top_movies")}
-            films={bestFilmsSet as ISimpleMovie[]}
+            films={data.bestFilmsSet as ISimpleMovie[]}
             isLoading={isLoading}
             setIsLoading={setIsLoading}
           />
@@ -332,7 +334,7 @@ const Movies: NextPage = (context) => {
             <h2 className={styles.personRow__title}>
               {t("sliders_title.persons")}{" "}
             </h2>
-            <PersonsSlider />
+            {/* <PersonsSlider popularActors={data.popularActors} /> */}
           </div>
         </section>
       )}
@@ -353,35 +355,17 @@ const Movies: NextPage = (context) => {
   );
 };
 
-// export const getServerSideProps: GetServerSideProps = wrapper.getServerSideProps(
-//   (store) => async (context) => {
-
 export const getStaticProps: GetStaticProps = wrapper.getStaticProps(
   (store) => async (context) => {
-    console.log("SSH movie page");
-    // const { data } = await axios.get(`https://84.201.131.92:5003/movies?lang=ru`);
-    // store.dispatch({
-    //   type: MOVIES_ACTIONS.GET_MOVIES_DATA,
-    //   payload: data,
-    // });
+    store.dispatch(getMoviesData());
+    await new Promise((resolve) => setTimeout(resolve, 1000));
+    const data = await store.getState().movies;
 
-    // store.dispatch(END);
-
-    // if (!data) {
-    //   return {
-    //     notFound: true,
-    //   };
-    // }
-
-    // return {
-    //   props: { data },
-    //   revalidate: 10,
-    // };
     return {
-      props: {},
+      props: { data },
     };
   }
 );
 
-export default connect((state) => state)(Movies);
+export default Movies;
 //export default Movies;

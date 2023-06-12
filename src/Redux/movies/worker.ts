@@ -6,6 +6,20 @@ import { useRouter } from "next/router";
 import movies from "@/data/movies.json";
 
 export const movieAllApi = async () => {
+  try {
+    const response = await axios.get(
+      `http://84.201.131.92:5003/movies?lang=ru`
+    );
+    return response.data;
+  } catch (e) {
+    const data = new Promise((resolve, reject) => {
+      setTimeout(() => {
+        resolve(movies);
+      }, 1000);
+    });
+    return data;
+  }
+  // }
   // const https = require("https");
   // const agent = new https.Agent({
   //   rejectUnauthorized: false,
@@ -17,14 +31,6 @@ export const movieAllApi = async () => {
 
   // const response = await fetch(`https://84.201.131.92:5003/movies?lang=ru`);
   // const data = await response.json();
-
-  const data = new Promise((resolve, reject) => {
-    setTimeout(() => {
-      resolve(movies);
-    }, 1000);
-  });
-
-  return data;
 };
 
 export const editGenresApi = async (args: any) => {

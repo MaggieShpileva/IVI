@@ -23,16 +23,17 @@ import TrailerCard from "@/components/TrailerCard";
 import { getMovieData } from "@/Redux/movie/actions";
 import { selectMovieUser } from "@/Redux/movie/selectors";
 import { RootState, wrapper } from "@/Redux/store";
+import { selectBrowsingMovie } from "@/Redux/continue_browsing/selectors";
 
 const CardId: NextPage = ({ movie }: any) => {
   const [id, setId] = useState<any>();
   const { t } = useTranslation();
   const [isLoading, setIsLoading] = useState(false);
   const [isOpenModal, setIsOpenModal] = useState(false);
-  const put = useDispatch();
   const router = useRouter();
-  const movieTest = useSelector(selectMovieUser);
-
+  const continueBrowsing = useSelector(selectBrowsingMovie);
+  const put = useDispatch();
+  console.log(movie);
   const breadcrumbs: Breadcrumb[] = [
     { item: "Фильмы", path: "/movies" },
     { item: movie.genres[0].name, path: "/movies" },
@@ -54,15 +55,8 @@ const CardId: NextPage = ({ movie }: any) => {
       })
     );
     setId(router.asPath);
-
-    console.log(movieTest);
   }, []);
-  console.log(movie);
 
-  useEffect(() => {
-    console.log(movieTest);
-  }, [movieTest]);
-  //при изменения id фильма лоудер убирается
   useEffect(() => {
     if (router.asPath !== id) {
       setIsLoading(false);
@@ -73,8 +67,7 @@ const CardId: NextPage = ({ movie }: any) => {
     <div className={styles.container}>
       <Breadcrumbs breadcrumbs={breadcrumbs} type="pages" del="/" />
 
-      {isLoading && <Loader type="loading_page" />}
-
+      {isLoading && <Loader type={"loading_page"} />}
       <div className={styles.wrapper}>
         <TrailerCard
           filmPicture={movie.filmPoster}
@@ -111,7 +104,7 @@ const CardId: NextPage = ({ movie }: any) => {
       <SliderContinueBrowsing
         title={t("movie.trailers")}
         type={"detailed"}
-        movies={dataForTrailers}
+        movies={continueBrowsing}
         isLoading={isLoading}
         setIsLoading={setIsLoading}
       />
@@ -129,13 +122,16 @@ const CardId: NextPage = ({ movie }: any) => {
     </div>
   );
 };
+
 export const getStaticProps = wrapper.getStaticProps(
   (store) => async (context) => {
-    console.log(context);
     await store.dispatch(
-      getMovieData({ id: context.params?.id ? +context.params?.id : 1 })
+      getMovieData({ id: context.params?.id ? context.params?.id : "" })
     );
+    await new Promise((resolve) => setTimeout(resolve, 5000));
+
     const movie = await store.getState().movie;
+
     return { props: { movie } };
   }
 );

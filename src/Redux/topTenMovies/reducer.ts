@@ -17,7 +17,7 @@ export const topMovieReducer = (state = initialState, action: any) => {
       return action.type;
 
     case DATA_TOP_MOVIES.GET_DATA_TOP_MOVIES:
-      return { data: action.payload };
+      return action.type;
 
     case DATA_TOP_MOVIES.GET_DATA_TOP_MOVIES_SUCCESS:
       return { data: action.payload };

@@ -23,13 +23,7 @@ const Banner: FC<Props> = ({ movies }) => {
   const renderSlides = () => {
     return movies?.map((item, index) => {
       return (
-        <div
-          key={`${item}-${index}`}
-          className={styles.slide}
-          onClick={() => {
-            // console.log(item.id);
-          }}
-        >
+        <div key={`${item}-${index}`} className={styles.slide}>
           <iframe
             className={styles.slide_img}
             src={`${item.trailer}?version=3&controls=0&autoplay=1&&controls=0disablekb=1&fs=0&loop=1&modestbranding=1&playsinline=1&iv_load_policy=3&mute=1`}

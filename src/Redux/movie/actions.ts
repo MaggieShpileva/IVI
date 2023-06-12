@@ -1,6 +1,6 @@
 import { MOVIE_DATA } from "./action-types";
 
-export const getMovieData = (payload: { id: number }) => {
+export const getMovieData = (payload: { id: string | string[] }) => {
   return {
     type: MOVIE_DATA.GET_MOVIE_DATA,
     ...payload,

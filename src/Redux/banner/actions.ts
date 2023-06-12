@@ -1,6 +1,6 @@
 import { DATA_BANNER } from "./action-types";
 
-export const getDataBanner = (value: any) => {
+export const getDataBanner = () => {
   return {
     type: DATA_BANNER.GET_DATA_BANNER,
   };

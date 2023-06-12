@@ -1,13 +1,6 @@
 import { IMovie, MoviesForFilmsPageT } from "@/types/types";
 import { MOVIES_ACTIONS } from "./action-types";
 
-export const getMoviesData = (data: MoviesForFilmsPageT) => {
-  return {
-    type: MOVIES_ACTIONS.GET_MOVIES_DATA,
-    payload: data,
-  };
-};
-
 export const getMoviesError = (error: string) => {
   return {
     type: MOVIES_ACTIONS.GET_MOVIES_ERROR,
@@ -32,5 +25,18 @@ export const editGenre = (editGenre: { id: number; genre: string }) => {
 export const getMoviesDataStart = () => {
   return {
     type: MOVIES_ACTIONS.GET_MOVIES_START,
+  };
+};
+
+export const getMoviesDataSuccess = (data: MoviesForFilmsPageT) => {
+  return {
+    type: MOVIES_ACTIONS.GET_MOVIES_DATA_SUCCESS,
+    payload: data,
+  };
+};
+
+export const getMoviesData = () => {
+  return {
+    type: MOVIES_ACTIONS.GET_MOVIES_DATA,
   };
 };

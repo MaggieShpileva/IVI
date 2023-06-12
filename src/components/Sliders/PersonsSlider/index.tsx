@@ -6,21 +6,24 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import GenresButton from "@/components/Filters/GenresButton";
 import { settings } from "./../settings";
-import { IPerson } from "@/types/types";
+import { IPerson, PersonForSliderType } from "@/types/types";
 import PosterPerson from "@/components/PosterPerson";
 import { useAppSelector } from "@/hooks/hooks";
 import { Loader } from "@/components/Loader";
 import { useRouter } from "next/router";
 import { selectMovies } from "@/Redux/movies/selectors";
 
-const PersonsSlider: FC = () => {
+type Props = {
+  popularActors: PersonForSliderType[];
+};
+const PersonsSlider: FC<Props> = ({ popularActors }) => {
+  console.log(popularActors);
   const newSettings = {
     ...settings, // текущие настройки слайдера
     centerMode: false, // дополнительные свойства
     slidesToShow: 7,
   };
 
-  const { popularActors } = useAppSelector(selectMovies);
   const router = useRouter();
   const lang = router.asPath.includes("lang=en") ? "en" : "ru";
 
@@ -30,7 +33,7 @@ const PersonsSlider: FC = () => {
         <Loader type="loading_simple" />
       ) : (
         <Slider {...newSettings} className={styles.container}>
-          {popularActors.map((item, i) => (
+          {popularActors?.map((item, i) => (
             <PosterPerson key={i} person={item} lang={lang} />
           ))}
         </Slider>

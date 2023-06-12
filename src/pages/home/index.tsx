@@ -20,40 +20,16 @@ import SliderTopTen from "@/components/Sliders/SliderTopTen";
 import { selectHomePage } from "@/Redux/homePage/selectors";
 import { selectBrowsingMovie } from "@/Redux/continue_browsing/selectors";
 import { BrowsingMovie } from "@/Redux/continue_browsing/reducer";
+import { NextPage } from "next";
 
 const inter = Inter({ subsets: ["latin"] });
-type Props = {
-  startMovies: any;
-  error: any;
-};
 
-const Home: FC<Props> = (context: any) => {
-  // const [data, setData] = useState(startMovies);
-  const dataBanner = useSelector(selectBanner);
+const Home: NextPage = ({ movies, banner }: any) => {
   const { t } = useTranslation();
-  const put = useDispatch();
-
-  const data = useSelector(selectHomePage);
   const ContinueBrowingmovies: BrowsingMovie[] =
     useSelector(selectBrowsingMovie);
-  const [moviesForSliders, setMoviesForSliders] =
-    useState<MoviesForSlidersOnHomePageT>(data);
+
   const [isLoading, setIsLoading] = useState(false);
-  const res = main_banner;
-
-  // useEffect(() => {
-  //   try {
-  //     put(getDataBanner(res));
-  //     put(getDataHomePage());
-  //     setIsLoading(false);
-  //   } catch (error) {
-  //     console.log(error);
-  //   }
-  // }, []);
-
-  useEffect(() => {
-    setMoviesForSliders(data);
-  }, [data]);
   return (
     <div className={styles.wrapper}>
       <Head>
@@ -64,7 +40,7 @@ const Home: FC<Props> = (context: any) => {
         <meta httpEquiv="Permissions-Policy" content="interest-cohort=()" />
       </Head>
 
-      <Banner movies={dataBanner.data} />
+      <Banner movies={banner} />
       <SliderContinueBrowsing
         title={t("sliders_title.continue_browsing")}
         type={"summary"}
@@ -76,21 +52,21 @@ const Home: FC<Props> = (context: any) => {
       {isLoading && <Loader type="loading_page" />}
       <SimpleSlider
         title={t("sliders_title.best_films")}
-        films={moviesForSliders.bestFilmsSet as ISimpleMovie[]}
+        films={movies.bestFilmsSet as ISimpleMovie[]}
         isLoading={isLoading}
         setIsLoading={setIsLoading}
       />
 
       <SimpleSlider
         title={t("sliders_title.family_comedies")}
-        films={moviesForSliders.familyFriendlyComediesSet as ISimpleMovie[]}
+        films={movies.familyFriendlyComediesSet as ISimpleMovie[]}
         isLoading={isLoading}
         setIsLoading={setIsLoading}
       />
 
       <SimpleSlider
         title={t("sliders_title.best_fantasy_films")}
-        films={moviesForSliders.bestFantasyFilmsSet as ISimpleMovie[]}
+        films={movies.bestFantasyFilmsSet as ISimpleMovie[]}
         isLoading={isLoading}
         setIsLoading={setIsLoading}
       />
@@ -99,7 +75,12 @@ const Home: FC<Props> = (context: any) => {
 };
 export const getStaticProps = wrapper.getServerSideProps(
   (store) => async (context) => {
-    return { props: {} };
+    await store.dispatch(getDataHomePage());
+    await store.dispatch(getDataBanner());
+    await new Promise((resolve) => setTimeout(resolve, 1000));
+    const movies = await store.getState().homePage;
+    const banner = await store.getState().banner.data;
+    return { props: { movies, banner } };
   }
 );
-export default connect((state) => state)(Home);
+export default Home;

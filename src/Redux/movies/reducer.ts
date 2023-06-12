@@ -36,33 +36,23 @@ const initialState: IMoviesState = {
   error: "",
 };
 
-export const moviesReducer = (state = initialState, action: AnyAction): IMoviesState => {
+export const moviesReducer = (
+  state = initialState,
+  action: AnyAction
+): IMoviesState => {
   switch (action.type) {
-    case MOVIES_ACTIONS.GET_MOVIES_DATA:
-      return {
-        ...state,
-        actors: action.payload.actors,
-        directors: action.payload.directors,
-        genresRu: action.payload.genresRu,
-        genresEn: action.payload.genresEn,
-        countriesRu: action.payload.countriesRu,
-        countriesEn: action.payload.countriesEn,
-        popularActors: action.payload.popularActors,
-        bestFilmsSet: action.payload.bestFilmsSet,
-        error: "",
-      };
+    case MOVIES_ACTIONS.GET_MOVIES_DATA_SUCCESS:
+      return action.payload;
 
     case MOVIES_ACTIONS.GET_MOVIES_ERROR:
       return { ...state, error: action.payload };
 
     case MOVIES_ACTIONS.GET_MOVIES_START:
-      return { ...state, start: "START" };
+      return action.type;
 
-    // case HYDRATE:
-    //   return {
-    //     ...state,
-    //     ...action.payload.moviesReducer,
-    //   };
+    case MOVIES_ACTIONS.GET_MOVIES_DATA:
+      return action.type;
+
     default:
       return state;
   }

@@ -37,7 +37,6 @@ const initialState: IMovieRes = {
 export const MovieReducer = (state = initialState, action: Actions) => {
   switch (action.type) {
     case MOVIE_DATA.GET_MOVIE_DATA:
-      console.log("action.id", action.id);
       return action.type;
 
     case MOVIE_DATA.GET_MOVIE_DATA_START:

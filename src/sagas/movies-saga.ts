@@ -2,6 +2,7 @@ import { call, put, takeEvery, take } from "redux-saga/effects";
 import {
   getMoviesData,
   getMoviesDataStart,
+  getMoviesDataSuccess,
   getMoviesError,
 } from "@/Redux/movies/actions";
 import {
@@ -23,9 +24,8 @@ export function* watchMoviesSaga() {
 export function* getMoviesSaga() {
   yield put(getMoviesDataStart());
   try {
-    console.log("start movies get saga !!!!!!!!!!!!");
     const responseMovies: MoviesForFilmsPageT = yield call(movieAllApi);
-    yield put(getMoviesData(responseMovies));
+    yield put(getMoviesDataSuccess(responseMovies));
   } catch (error) {
     console.log("error in getMoviesSaga", error);
     yield put(getMoviesError(String(error)));
