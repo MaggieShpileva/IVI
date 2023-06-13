@@ -33,9 +33,11 @@ export const DescriptionCard: FC<Props> = ({
   const [title, setTitle] = useState<string>();
 
   useEffect(() => {
-    router.asPath.includes("?lang=en")
-      ? setTitle(filmLang[1].filmName)
-      : setTitle(filmLang[0].filmName);
+    if (router.asPath.includes("?lang=en")) {
+      setTitle(filmLang[1].filmName);
+    } else {
+      setTitle(filmLang[0].filmName);
+    }
   }, [router]);
 
   useEffect(() => {
@@ -58,11 +60,12 @@ export const DescriptionCard: FC<Props> = ({
           <span>{filmTime} мин.</span>
           <span>{filmAge}+</span>
         </div>
+
         <div className={styles.row_theme}>
-          {countries.map((item) => {
+          {countries?.map((item) => {
             return <span key={item.id}> {item.name}</span>;
           })}
-          {genres.slice(0, 2).map((item) => {
+          {genres?.slice(0, 2).map((item) => {
             return (
               <div className={styles.genres} key={item.id}>
                 <span>{item.name}</span>
@@ -70,13 +73,14 @@ export const DescriptionCard: FC<Props> = ({
             );
           })}
         </div>
+
         <div className={styles.row_buttons}>
           <div>
             <Button color={"darkbluegrey"} className={styles.button_full_hd}>
               FullHD
             </Button>
           </div>
-          {filmLang.map((item, index) => {
+          {filmLang?.map((item, index) => {
             return (
               <div className={styles.watch_params} key={`${index}`}>
                 <div className="nbl-icon nbl-icon_player_volumeMidRegular_16 watchParams__nbl-icon"></div>
@@ -85,14 +89,6 @@ export const DescriptionCard: FC<Props> = ({
             );
           })}
         </div>
-      </div>
-
-      <div className={styles.description}>
-        <p>
-          {router.locale === "ru"
-            ? filmLang[0]?.filmDescription
-            : filmLang[1].filmDescription}
-        </p>
       </div>
     </div>
   );

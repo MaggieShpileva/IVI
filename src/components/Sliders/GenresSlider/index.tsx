@@ -35,25 +35,27 @@ const GenresSlider: FC<Props> = ({ genresRu, genresEn }) => {
   console.log(genres);
   return (
     <div>
-      {/* {!genres.length ? (
+      {genres === undefined ? (
         <Loader type="loading_simple" />
-      ) : ( */}
-      <Slider {...newSettings} className={styles.container}>
-        {genres?.map((item, i) => {
-          const findItem = genresIcons.find((elem) => elem.title === item.name);
-          return (
-            <GenresButton
-              key={item.id}
-              size="big"
-              genres={item.name}
-              id={findItem?.id || 1}
-              onClick={() => dispatch(setGenres(item.name))}
-              iconClass={findItem?.icon || ""}
-            />
-          );
-        })}
-      </Slider>
-      {/* )} */}
+      ) : (
+        <Slider {...newSettings} className={styles.container}>
+          {genres?.map((item, i) => {
+            const findItem = genresIcons.find(
+              (elem) => elem.title === item.name
+            );
+            return (
+              <GenresButton
+                key={item.id}
+                size="big"
+                genres={item.name}
+                id={findItem?.id || 1}
+                onClick={() => dispatch(setGenres(item.name))}
+                iconClass={findItem?.icon || ""}
+              />
+            );
+          })}
+        </Slider>
+      )}
     </div>
   );
 };

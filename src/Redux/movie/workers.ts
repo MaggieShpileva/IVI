@@ -4,7 +4,8 @@ import { IMovieRes } from "@/types/types";
 export const getDatMovieWorker = async (id: string | string[]) => {
   try {
     const response = await axios.get(
-      `http://84.201.131.92:5003/film/${id}?lang=ru`
+      `http://84.201.131.92:5003/film/${id}?lang=ru`,
+      { timeout: 5000 }
     );
     return response.data;
   } catch (e) {

@@ -31,7 +31,34 @@ const initialState: IMovieRes = {
       name: "",
     },
   ],
-  similarFilms: [],
+  similarFilms: [
+    {
+      id: 0,
+      filmPoster: "",
+      filmGrade: 0,
+      filmYear: 0,
+      filmTime: 0,
+      filmAge: "",
+      filmLang: [
+        {
+          lang: "",
+          filmName: "",
+        },
+      ],
+      genres: [
+        {
+          id: 0,
+          name: "",
+        },
+      ],
+      countries: [
+        {
+          id: 0,
+          name: "",
+        },
+      ],
+    },
+  ],
 };
 
 export const MovieReducer = (state = initialState, action: Actions) => {

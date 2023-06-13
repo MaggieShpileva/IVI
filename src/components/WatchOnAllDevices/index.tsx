@@ -17,7 +17,7 @@ export const WatchOnAllDevices: FC<Props> = (props) => {
   const { t } = useTranslation();
   const router = useRouter();
   const [locale, setLocale] = useState<any>("ru");
-
+  const [filmName, setFilmName] = useState<string>();
   useEffect(() => {
     if (router.query?.lang) {
       setLocale(router.query?.lang);
@@ -25,14 +25,21 @@ export const WatchOnAllDevices: FC<Props> = (props) => {
       setLocale("ru");
     }
   }, [router]);
+
+  useEffect(() => {
+    if (locale === "ru") {
+      setFilmName(props.filmLang[0]?.filmName);
+    } else if (locale === "en") {
+      setFilmName(props.filmLang[1]?.filmName);
+    } else {
+      setFilmName("");
+    }
+  }, []);
   return (
     <div className={styles.container}>
       <div className={styles.title}>
         <h2>
-          {t("movie.watch")}{" "}
-          {locale === "ru"
-            ? props.filmLang[0].filmName
-            : props.filmLang[1].filmName}
+          {t("movie.watch")} {filmName}
           {t("movie.all_devices")}
         </h2>
         <p>{t("movie.download")}</p>

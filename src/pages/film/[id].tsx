@@ -33,92 +33,108 @@ const CardId: NextPage = ({ movie }: any) => {
   const router = useRouter();
   const continueBrowsing = useSelector(selectBrowsingMovie);
   const put = useDispatch();
-  console.log(movie);
-  const breadcrumbs: Breadcrumb[] = [
-    { item: "Фильмы", path: "/movies" },
-    { item: movie.genres[0].name, path: "/movies" },
-  ];
+  const idTest = router.query?.id ? router.query?.id : "300";
+  const movieData = useSelector(selectMovieUser);
 
   useEffect(() => {
-    put(
-      getContinueBrowsing({
-        id: movie.id,
-        poster: movie.filmPoster,
-        name: {
-          ruName: movie.filmLang[0].filmName,
-          enName: movie.filmLang[1].filmName,
-        },
-        description: {
-          ruName: movie.filmLang[0].filmDescription,
-          enName: movie.filmLang[1].filmDescription,
-        },
-      })
-    );
-    setId(router.asPath);
+    put(getMovieData({ id: idTest }));
   }, []);
+  console.log(movie, movieData);
+  // const breadcrumbs: Breadcrumb[] = [
+  //   { item: "Фильмы", path: "/movies" },
+  //   {
+  //     item: movieData.genres !== undefined ? movieData?.genres[0].name : "",
+  //     path: "/movies",
+  //   },
+  // ];
+
+  // useEffect(() => {
+  //   put(
+  //     getContinueBrowsing({
+  //       id: movie.id,
+  //       poster: movie.filmPoster,
+  //       name: {
+  //         ruName: movie.filmLang[0].filmName,
+  //         enName: movie.filmLang[1].filmName,
+  //       },
+  //       description: {
+  //         ruName: movie.filmLang[0].filmDescription,
+  //         enName: movie.filmLang[1].filmDescription,
+  //       },
+  //     })
+  //   );
+  //   setId(router.asPath);
+  // }, []);
 
   useEffect(() => {
     if (router.asPath !== id) {
       setIsLoading(false);
     }
   }, [router]);
-
+  console.log(movieData);
   return (
     <div className={styles.container}>
-      <Breadcrumbs breadcrumbs={breadcrumbs} type="pages" del="/" />
-
-      {isLoading && <Loader type={"loading_page"} />}
-      <div className={styles.wrapper}>
-        <TrailerCard
-          filmPicture={movie.filmPoster}
-          filmLink={movie.filmLink}
-          isOpenModal={isOpenModal}
-          setIsOpenModal={setIsOpenModal}
-          className={styles.trailer}
-        />
-        <DescriptionCard
-          filmAge={movie.filmAge}
-          filmYear={movie.filmYear}
-          filmLang={movie.filmLang}
-          filmTime={movie.filmTime}
-          countries={movie.countries}
-          genres={movie.genres}
-          className={styles.discription}
-        />
-        <ActorsSlider
-          filmGrade={movie.filmGrade}
-          actors={movie.actors || []}
-          className={styles.slider_actors}
-          isLoading={isLoading}
-          setIsLoading={setIsLoading}
-        />
-        <InfoMovie className={styles.info} movie={movie} />
-      </div>
-      <Comments />
-      <SimpleSlider
-        title={t("sliders_title.watching_with_a_movie")}
-        films={movie.similarFilms}
-        isLoading={isLoading}
-        setIsLoading={setIsLoading}
-      />
-      <SliderContinueBrowsing
-        title={t("movie.trailers")}
-        type={"detailed"}
-        movies={continueBrowsing}
-        isLoading={isLoading}
-        setIsLoading={setIsLoading}
-      />
-      {isOpenModal && (
-        <TrailerModal
-          isOpenModal={isOpenModal}
-          setIsOpenModal={setIsOpenModal}
-          trailer={movie.filmTrailer}
-        />
+      {movie.id === 0 || movie === undefined ? (
+        <Loader type={"loading_page"} />
+      ) : (
+        <div>
+          <div className={styles.wrapper}>
+            <TrailerCard
+              filmPicture={movie.filmPoster}
+              filmLink={movie.filmLink}
+              isOpenModal={isOpenModal}
+              setIsOpenModal={setIsOpenModal}
+              className={styles.trailer}
+            />
+            <DescriptionCard
+              filmAge={movie.filmAge}
+              filmYear={movie.filmYear}
+              filmLang={movie.filmLang}
+              filmTime={movie.filmTime}
+              countries={movie.countries}
+              genres={movie.genres}
+              className={styles.discription}
+            />
+            <ActorsSlider
+              filmGrade={movie.filmGrade}
+              actors={movie.actors || []}
+              className={styles.slider_actors}
+              isLoading={isLoading}
+              setIsLoading={setIsLoading}
+            />
+            <InfoMovie className={styles.info} movie={movie} />
+          </div>
+          <Comments />
+          <SimpleSlider
+            title={t("sliders_title.watching_with_a_movie")}
+            films={movie.similarFilms}
+            isLoading={isLoading}
+            setIsLoading={setIsLoading}
+          />
+          <SliderContinueBrowsing
+            title={t("movie.trailers")}
+            type={"detailed"}
+            movies={continueBrowsing}
+            isLoading={isLoading}
+            setIsLoading={setIsLoading}
+          />
+          {isOpenModal && (
+            <TrailerModal
+              isOpenModal={isOpenModal}
+              setIsOpenModal={setIsOpenModal}
+              trailer={movie.filmTrailer}
+            />
+          )}
+          <WatchOnAllDevices
+            filmLang={movie.filmLang}
+            filmPicture={movie.filmPoster}
+          />
+        </div>
       )}
-      <WatchOnAllDevices
-        filmLang={movie.filmLang}
-        filmPicture={movie.filmPoster}
-      />
+      {/* <Breadcrumbs breadcrumbs={breadcrumbs} type="pages" del="/" /> */}
+
+      {/* {isLoading && <Loader type={"loading_page"} />}
+       */}
     </div>
   );
 };
@@ -137,16 +153,23 @@ export const getStaticProps = wrapper.getStaticProps(
 );
 
 export const getStaticPaths: GetStaticPaths = async () => {
-  const locales = ["ru", "en"];
-  const paths = locales.flatMap((locale) => {
-    return [Array(1)].map((item) => ({
-      params: { id: moviesData.id.toString(), lang: locale },
-    }));
-  });
+  // const locales = ["ru", "en"];
+  // const paths = locales.flatMap((locale) => {
+  //   return [Array(1)].map((item) => ({
+  //     params: { id: moviesData.id.toString(), lang: locale },
+  //   }));
+  // });
+
+  // return {
+  //   paths,
+  // };
 
   return {
-    paths,
-    fallback: "blocking",
+    paths: [
+      { params: { id: "1", lang: "ru" } },
+      { params: { id: "1", lang: "en" } },
+    ],
+    fallback: "blocking", // can also be true or 'blocking'
   };
 };
 export default CardId;

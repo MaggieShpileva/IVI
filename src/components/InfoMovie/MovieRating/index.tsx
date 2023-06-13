@@ -1,3 +1,4 @@
+import { useRouter } from "next/router";
 import { DetailedHTMLProps, Dispatch, FC, useEffect, useState } from "react";
 import styles from "./index.module.scss";
 
@@ -37,7 +38,7 @@ const MovieRating: FC<MovieRatingProps> = ({ raiting, totalGrade }) => {
           )}
 
           <p className={styles.count}>
-            {totalGrade.toLocaleString("ru-RU")} оценок
+            {totalGrade?.toLocaleString("ru-RU")} оценок
           </p>
         </div>
       </div>

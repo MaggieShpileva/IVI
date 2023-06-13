@@ -8,7 +8,8 @@ import movies from "@/data/movies.json";
 export const movieAllApi = async () => {
   try {
     const response = await axios.get(
-      `http://84.201.131.92:5003/movies?lang=ru`
+      `http://84.201.131.92:5003/movies?lang=ru`,
+      { timeout: 5000 }
     );
     return response.data;
   } catch (e) {

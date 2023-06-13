@@ -45,7 +45,16 @@ import axios from "axios";
 import { getMoviesData } from "@/Redux/movies/actions";
 
 const Movies: NextPage = ({ data }: any) => {
-  console.log("data", data);
+  const put = useDispatch();
+  const dataMovie = useSelector(selectMovies);
+  useEffect(() => {
+    put(getMoviesData());
+    console.log("datatest", dataMovie);
+  }, []);
+
+  useEffect(() => {
+    // Здесь вы можете выполнять необходимые действия с datatest
+  }, []);
   const router = useRouter();
   const { t } = useTranslation();
   const [isLoading, setIsLoading] = useState(false);
@@ -322,11 +331,14 @@ const Movies: NextPage = ({ data }: any) => {
             <h2 className={styles.genresRow__title}>
               {t("contextSubMenu.genres")}
             </h2>
-            <GenresSlider genresRu={data.genresRu} genresEn={data.genresEn} />
+            <GenresSlider
+              genresRu={dataMovie.genresRu}
+              genresEn={dataMovie.genresEn}
+            />
           </div>
           <SimpleSlider
             title={t("sliders_title.top_movies")}
-            films={data.bestFilmsSet as ISimpleMovie[]}
+            films={dataMovie.bestFilmsSet as ISimpleMovie[]}
             isLoading={isLoading}
             setIsLoading={setIsLoading}
           />
@@ -334,7 +346,7 @@ const Movies: NextPage = ({ data }: any) => {
             <h2 className={styles.personRow__title}>
               {t("sliders_title.persons")}{" "}
             </h2>
-            {/* <PersonsSlider popularActors={data.popularActors} /> */}
+            <PersonsSlider popularActors={dataMovie.popularActors} />
           </div>
         </section>
       )}
@@ -358,11 +370,24 @@ const Movies: NextPage = ({ data }: any) => {
 export const getStaticProps: GetStaticProps = wrapper.getStaticProps(
   (store) => async (context) => {
     store.dispatch(getMoviesData());
-    await new Promise((resolve) => setTimeout(resolve, 1000));
+    // await new Promise((resolve) => {
+    //   const unsubscribe = store.subscribe(() => {
+    //     const data = store.getState().movies;
+    //     if (data) {
+    //       unsubscribe();
+    //       // resolve();
+    //     }
+    //   });
+    // });
     const data = await store.getState().movies;
-
+    if (!data) {
+      return {
+        notFound: true,
+      };
+    }
     return {
       props: { data },
+      revalidate: true,
     };
   }
 );

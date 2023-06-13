@@ -29,7 +29,7 @@ const PersonsSlider: FC<Props> = ({ popularActors }) => {
 
   return (
     <div>
-      {!popularActors.length ? (
+      {popularActors === undefined ? (
         <Loader type="loading_simple" />
       ) : (
         <Slider {...newSettings} className={styles.container}>
