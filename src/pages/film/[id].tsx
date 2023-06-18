@@ -4,9 +4,16 @@ import { DescriptionCard } from "@/components/DescriptionCard";
 import SliderContinueBrowsing from "@/components/Sliders/SliderContinueBrowsing";
 import moviesData from "@/data/One_film_response_v2.json";
 import { Comments } from "@/components/Comments";
-import { GetStaticPaths, GetStaticProps, NextPage } from "next";
+import {
+  GetStaticPaths,
+  GetStaticProps,
+  GetStaticPropsContext,
+  InferGetStaticPropsType,
+  NextPage,
+  PreviewData,
+} from "next";
 import { useRouter } from "next/router";
-import { IMovieRes } from "@/types/types";
+import { IMovieRes, MovieKinopoiskT } from "@/types/types";
 import { useTranslation } from "next-export-i18n";
 import SimpleSlider from "@/components/Sliders/SimpleSlider";
 import React, { useEffect, useState } from "react";
@@ -24,8 +31,10 @@ import { getMovieData } from "@/Redux/movie/actions";
 import { selectMovieUser } from "@/Redux/movie/selectors";
 import { RootState, wrapper } from "@/Redux/store";
 import { selectBrowsingMovie } from "@/Redux/continue_browsing/selectors";
+import { END } from "redux-saga";
+import { ParsedUrlQuery } from "querystring";
 
-const CardId: NextPage = ({ movie }: any) => {
+const CardId = ({ movie }: InferGetStaticPropsType<typeof getStaticProps>) => {
   const [id, setId] = useState<any>();
   const { t } = useTranslation();
   const [isLoading, setIsLoading] = useState(false);
@@ -36,10 +45,10 @@ const CardId: NextPage = ({ movie }: any) => {
   const idTest = router.query?.id ? router.query?.id : "300";
   const movieData = useSelector(selectMovieUser);
 
-  useEffect(() => {
-    put(getMovieData({ id: idTest }));
-  }, []);
-  console.log(movie, movieData);
+  // useEffect(() => {
+  //   put(getMovieData({ id: idTest }));
+  // }, []);
+  console.log(movie);
   // const breadcrumbs: Breadcrumb[] = [
   //   { item: "Фильмы", path: "/movies" },
   //   {
@@ -71,22 +80,23 @@ const CardId: NextPage = ({ movie }: any) => {
       setIsLoading(false);
     }
   }, [router]);
-  console.log(movieData);
+
   return (
     <div className={styles.container}>
+      {/* {movie.id} */}
       {movie.id === 0 || movie === undefined ? (
         <Loader type={"loading_page"} />
       ) : (
         <div>
           <div className={styles.wrapper}>
             <TrailerCard
-              filmPicture={movie.filmPoster}
+              filmPicture={movie.poster.url}
               filmLink={movie.filmLink}
               isOpenModal={isOpenModal}
               setIsOpenModal={setIsOpenModal}
               className={styles.trailer}
             />
-            <DescriptionCard
+            {/* <DescriptionCard
               filmAge={movie.filmAge}
               filmYear={movie.filmYear}
               filmLang={movie.filmLang}
@@ -94,31 +104,31 @@ const CardId: NextPage = ({ movie }: any) => {
               countries={movie.countries}
               genres={movie.genres}
               className={styles.discription}
-            />
-            <ActorsSlider
+            /> */}
+            {/* <ActorsSlider
               filmGrade={movie.filmGrade}
               actors={movie.actors || []}
               className={styles.slider_actors}
               isLoading={isLoading}
               setIsLoading={setIsLoading}
-            />
-            <InfoMovie className={styles.info} movie={movie} />
+            /> */}
+            {/* <InfoMovie className={styles.info} movie={movie} /> */}
           </div>
           <Comments />
-          <SimpleSlider
+          {/* <SimpleSlider
             title={t("sliders_title.watching_with_a_movie")}
             films={movie.similarFilms}
             isLoading={isLoading}
             setIsLoading={setIsLoading}
-          />
-          <SliderContinueBrowsing
+          /> */}
+          {/* <SliderContinueBrowsing
             title={t("movie.trailers")}
             type={"detailed"}
             movies={continueBrowsing}
             isLoading={isLoading}
             setIsLoading={setIsLoading}
-          />
-          {isOpenModal && (
+          /> */}
+          {/* {isOpenModal && (
             <TrailerModal
               isOpenModal={isOpenModal}
               setIsOpenModal={setIsOpenModal}
@@ -128,42 +138,46 @@ const CardId: NextPage = ({ movie }: any) => {
           <WatchOnAllDevices
             filmLang={movie.filmLang}
             filmPicture={movie.filmPoster}
-          />
+          /> */}
         </div>
       )}
-      {/* <Breadcrumbs breadcrumbs={breadcrumbs} type="pages" del="/" /> */}
-
-      {/* {isLoading && <Loader type={"loading_page"} />}
-       */}
+      {isLoading && <Loader type={"loading_page"} />}
     </div>
   );
 };
 
-export const getStaticProps = wrapper.getStaticProps(
-  (store) => async (context) => {
-    await store.dispatch(
-      getMovieData({ id: context.params?.id ? context.params?.id : "" })
+export const getStaticProps = async (
+  context: GetStaticPropsContext<ParsedUrlQuery, PreviewData>
+) => {
+  try {
+    const movieResponse = await axios.get(
+      `https://api.kinopoisk.dev/v1.3/movie/${context.params?.id}`,
+      {
+        headers: {
+          "Content-Type": "application/json",
+          "X-API-KEY": `13RH6Q2-2T1M1E7-M50R852-366EP7D`,
+        },
+      }
     );
-    await new Promise((resolve) => setTimeout(resolve, 5000));
-
-    const movie = await store.getState().movie;
-
-    return { props: { movie } };
+    return {
+      props: { movie: movieResponse.data },
+      revalidate: 60,
+    };
+  } catch (e) {
+    return { notFound: true };
   }
-);
+};
+// const movie = await axios({
+//   method: "get",
+//   url: `https://api.kinopoisk.dev/v1.3/movie/${context.params.id}`,
+//   headers: {
+//     "Content-Type": "application/json",
+//     "X-API-KEY": `13RH6Q2-2T1M1E7-M50R852-366EP7D`,
+//   },
+
+// });
 
 export const getStaticPaths: GetStaticPaths = async () => {
-  // const locales = ["ru", "en"];
-  // const paths = locales.flatMap((locale) => {
-  //   return [Array(1)].map((item) => ({
-  //     params: { id: moviesData.id.toString(), lang: locale },
-  //   }));
-  // });
-
-  // return {
-  //   paths,
-  // };
-
   return {
     paths: [
       { params: { id: "1", lang: "ru" } },

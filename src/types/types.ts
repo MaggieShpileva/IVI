@@ -244,3 +244,149 @@ interface ISimilarFilmRes {
     name: string;
   }[];
 }
+
+///////////////////////////////////////////////////
+export type MovieKinopoiskT = {
+  fees: MovieFees;
+  status: any;
+  externalId: ExternalId;
+  id: number;
+  type: string;
+  name: string;
+  description: string;
+  rating: Grade;
+  votes: Grade;
+  backdrop: Poster;
+  movieLength: number;
+  images?: any;
+  productionCompanies: ProductionCompanies[];
+  spokenLanguages?: SpokenLanguages[];
+  distributors: Distributors;
+  premiere: Premiere;
+  slogan: string;
+  year: number;
+  budget: Price;
+  poster: Poster;
+  facts: Facts[];
+  genres: Name[];
+  countries: Name[];
+  videos: Videos;
+  seasonsInfo: any;
+  persons: Person[];
+  lists: any;
+  typeNumber: number;
+  alternativeName: string;
+  enName: any;
+  names: Name[];
+  ageRating: number;
+  ratingMpaa: string;
+  updateDates: any;
+  sequelsAndPrequels: any;
+  updatedAt: string;
+  shortDescription: string;
+  technology?: any;
+  ticketsOnSale?: any;
+  similarMovies: SimilarMovie[];
+  imagesInfo: any;
+  logo: Poster;
+  watchability: any;
+  top10: null | number;
+  top250: null | number;
+  audience: any;
+  deletedAt: null | string;
+  isSeries: boolean;
+  seriesLength: any;
+  totalSeriesLength: any;
+};
+
+////////////////////////////////
+type MovieFees = {
+  world: Price[];
+  russia?: Price[];
+  usa?: Price[];
+};
+
+type Price = {
+  value: number;
+  currency: string;
+};
+
+type ExternalId = {
+  kpHD: string;
+  imdb: string;
+  tmdb: number;
+};
+
+type Grade = {
+  kp: number;
+  imdb: number;
+  filmCritics: number;
+  russianFilmCritics: number;
+  await: any;
+};
+
+type Poster = {
+  previewUrl?: string;
+  url: string;
+};
+
+type ProductionCompanies = {
+  name: string;
+  url: null | string;
+  previewUrl: null | string;
+};
+
+type SpokenLanguages = { name: string; nameEn: string };
+
+type Distributors = {
+  distributor: string;
+  distributorRelease: string;
+};
+
+type Premiere = {
+  world: string;
+  russia: string;
+};
+
+type Facts = {
+  value: string;
+  type: string;
+  spoiler: boolean;
+};
+
+type Name = {
+  name: string;
+  language?: string;
+  type: any;
+};
+
+type Videos = {
+  trailers: Video[];
+  teasers?: any;
+};
+
+type Video = {
+  url: string;
+  name: string;
+  site: string;
+  type: string;
+};
+
+type Person = {
+  id: number;
+  photo: string;
+  name: string;
+  enName: string;
+  description: string;
+  profession: string;
+  enProfession: string;
+};
+
+type SimilarMovie = {
+  id: number;
+  name: string;
+  enName: null | any;
+  alternativeName: string;
+  type: string;
+  poster: Poster[];
+};
