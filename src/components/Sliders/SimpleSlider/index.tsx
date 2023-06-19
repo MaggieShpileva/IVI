@@ -12,13 +12,13 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Link from "next/link";
 import { settings } from "../settings";
-import { ISimpleMovie } from "@/types/types";
+import { ISimpleMovie, SimilarMovie } from "@/types/types";
 import { Loader } from "@/components/Loader";
 import { useRouter } from "next/router";
 
 type Props = {
   title: string;
-  films: ISimpleMovie[];
+  films: SimilarMovie[];
   isLoading: boolean;
   setIsLoading: Dispatch<SetStateAction<boolean>>;
 };
@@ -66,7 +66,7 @@ const SimpleSlider: FC<Props> = ({ title, films, isLoading, setIsLoading }) => {
                 setIsLoading(true);
               }}
             >
-              <Poster film={item} />
+              {/* <Poster film={item} /> */}
             </Link>
           ))}
         </Slider>

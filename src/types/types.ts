@@ -317,7 +317,7 @@ type ExternalId = {
   tmdb: number;
 };
 
-type Grade = {
+export type Grade = {
   kp: number;
   imdb: number;
   filmCritics: number;
@@ -354,7 +354,7 @@ type Facts = {
   spoiler: boolean;
 };
 
-type Name = {
+export type Name = {
   name: string;
   language?: string;
   type: any;
@@ -372,7 +372,7 @@ type Video = {
   type: string;
 };
 
-type Person = {
+export type Person = {
   id: number;
   photo: string;
   name: string;
@@ -382,7 +382,7 @@ type Person = {
   enProfession: string;
 };
 
-type SimilarMovie = {
+export type SimilarMovie = {
   id: number;
   name: string;
   enName: null | any;

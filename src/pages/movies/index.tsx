@@ -336,12 +336,12 @@ const Movies: NextPage = ({ data }: any) => {
               genresEn={dataMovie.genresEn}
             />
           </div>
-          <SimpleSlider
+          {/* <SimpleSlider
             title={t("sliders_title.top_movies")}
             films={dataMovie.bestFilmsSet as ISimpleMovie[]}
             isLoading={isLoading}
             setIsLoading={setIsLoading}
-          />
+          /> */}
           <div className={styles.personRow}>
             <h2 className={styles.personRow__title}>
               {t("sliders_title.persons")}{" "}

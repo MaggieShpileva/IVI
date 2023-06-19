@@ -1,31 +1,24 @@
 import { FC, useEffect, useState } from "react";
 import styles from "./index.module.scss";
 import { Button } from "../Button/Button";
-import { CountriesType, FilmLangType, GenresType } from "@/types/types";
+import {
+  CountriesType,
+  FilmLangType,
+  GenresType,
+  MovieKinopoiskT,
+  Name,
+} from "@/types/types";
 import { useRouter } from "next/router";
 import { useTranslation } from "next-export-i18n";
 import { EditTitle } from "./EditTitle";
 import { useSession } from "next-auth/react";
 
 type Props = {
-  filmAge: string;
-  filmYear: number;
-  filmLang: FilmLangType[];
-  filmTime: number;
-  countries: CountriesType[];
-  genres: GenresType[];
+  movie: MovieKinopoiskT;
   className: string;
 };
 
-export const DescriptionCard: FC<Props> = ({
-  filmAge,
-  filmYear,
-  filmLang,
-  filmTime,
-  countries,
-  genres,
-  className,
-}) => {
+export const DescriptionCard: FC<Props> = ({ movie, className }) => {
   const router = useRouter();
   const { data: session } = useSession();
   const [isAdmin, setIsAdmin] = useState<boolean>(false);
@@ -34,9 +27,9 @@ export const DescriptionCard: FC<Props> = ({
 
   useEffect(() => {
     if (router.asPath.includes("?lang=en")) {
-      setTitle(filmLang[1].filmName);
+      setTitle(movie.alternativeName);
     } else {
-      setTitle(filmLang[0].filmName);
+      setTitle(movie.name);
     }
   }, [router]);
 
@@ -56,18 +49,18 @@ export const DescriptionCard: FC<Props> = ({
       <h1>{t("movie.watch_online")}</h1>
       <div className={styles.data}>
         <div className={styles.row_time}>
-          <span>{filmYear}</span>
-          <span>{filmTime} мин.</span>
-          <span>{filmAge}+</span>
+          <span>{movie.year} г.</span>
+          <span>{movie.movieLength} мин.</span>
+          <span>{movie.ageRating}+</span>
         </div>
 
         <div className={styles.row_theme}>
-          {countries?.map((item) => {
-            return <span key={item.id}> {item.name}</span>;
+          {movie.countries?.map((item, index) => {
+            return <span key={`${item.name}-${index}`}> {item.name}</span>;
           })}
-          {genres?.slice(0, 2).map((item) => {
+          {movie.genres?.slice(0, 2).map((item, index) => {
             return (
-              <div className={styles.genres} key={item.id}>
+              <div className={styles.genres} key={`${item.name}-${index}`}>
                 <span>{item.name}</span>
               </div>
             );
@@ -80,14 +73,15 @@ export const DescriptionCard: FC<Props> = ({
               FullHD
             </Button>
           </div>
-          {filmLang?.map((item, index) => {
+          {/* {filmLang?.map((item, index) => {
             return (
               <div className={styles.watch_params} key={`${index}`}>
                 <div className="nbl-icon nbl-icon_player_volumeMidRegular_16 watchParams__nbl-icon"></div>
-                <span>{item.lang}</span>
+              <span>{item.lang}</span> 
               </div>
             );
-          })}
+          })} 
+        */}
         </div>
       </div>
     </div>

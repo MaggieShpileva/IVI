@@ -50,26 +50,26 @@ const Home: NextPage = ({ movies, banner }: any) => {
       />
       <SliderTopTen />
       {isLoading && <Loader type="loading_page" />}
-      <SimpleSlider
+      {/* <SimpleSlider
         title={t("sliders_title.best_films")}
         films={movies.bestFilmsSet as ISimpleMovie[]}
         isLoading={isLoading}
         setIsLoading={setIsLoading}
-      />
+      /> */}
 
-      <SimpleSlider
+      {/* <SimpleSlider
         title={t("sliders_title.family_comedies")}
         films={movies.familyFriendlyComediesSet as ISimpleMovie[]}
         isLoading={isLoading}
         setIsLoading={setIsLoading}
-      />
+      /> */}
 
-      <SimpleSlider
+      {/* <SimpleSlider
         title={t("sliders_title.best_fantasy_films")}
         films={movies.bestFantasyFilmsSet as ISimpleMovie[]}
         isLoading={isLoading}
         setIsLoading={setIsLoading}
-      />
+      /> */}
     </div>
   );
 };

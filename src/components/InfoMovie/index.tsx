@@ -1,14 +1,14 @@
 import { DetailedHTMLProps, Dispatch, FC, useEffect, useState } from "react";
 import styles from "./index.module.scss";
 import { useTranslation } from "next-export-i18n";
-import { FilmLangType, IMovie } from "@/types/types";
+import { FilmLangType, IMovie, MovieKinopoiskT } from "@/types/types";
 import { useRouter } from "next/router";
 import DetailsMovie from "./Details";
 import MovieRating from "./MovieRating";
 
 type Props = {
   className: string;
-  movie: IMovie;
+  movie: MovieKinopoiskT;
 };
 
 export const InfoMovie: FC<Props> = ({ className, movie }) => {
@@ -26,18 +26,15 @@ export const InfoMovie: FC<Props> = ({ className, movie }) => {
 
   return (
     <div className={[styles.container, className].join(" ")}>
-      {movie.filmLang && (
+      {/* {movie.filmLang && (
         <div className={styles.datas}>
           {locale === "en"
             ? movie.filmLang[1].filmDescription
             : movie.filmLang[0].filmDescription}
         </div>
-      )}
+      )} */}
       <DetailsMovie movie={movie} />
-      <MovieRating
-        raiting={movie.filmGrade}
-        totalGrade={movie.filmTotalGrade}
-      />
+      <MovieRating raiting={movie.rating} votes={movie.votes} />
     </div>
   );
 };

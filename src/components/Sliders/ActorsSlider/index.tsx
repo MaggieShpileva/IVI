@@ -11,22 +11,22 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Link from "next/link";
 import { settings } from "./settings";
-import { ActorsType } from "@/types/types";
+import { ActorsType, Person } from "@/types/types";
 import { Actor } from "@/components/DescriptionCard/Actors";
 import { Raiting } from "@/components/DescriptionCard/Raiting";
 import { useRouter } from "next/router";
 
 type Props = {
-  actors: ActorsType[];
-  filmGrade: number;
+  persons: Person[];
+  // filmGrade: number;
   className: string;
   isLoading: boolean;
   setIsLoading: Dispatch<SetStateAction<boolean>>;
 };
 
 const ActorsSlider: FC<Props> = ({
-  actors,
-  filmGrade,
+  persons,
+  // filmGrade,
   className,
   isLoading,
   setIsLoading,
@@ -49,8 +49,8 @@ const ActorsSlider: FC<Props> = ({
   return (
     <div className={[styles.container, className].join(" ")}>
       <Slider {...newSettings} className={styles.slider}>
-        <Raiting filmGrade={filmGrade} />
-        {actors.map((item: any) => (
+        {/* <Raiting filmGrade={filmGrade} /> */}
+        {persons.map((item: any) => (
           <Link
             href={`/person/${item.id}?lang=${locale}`}
             key={`${item.id}`}

@@ -42,7 +42,6 @@ const CardId = ({ movie }: InferGetStaticPropsType<typeof getStaticProps>) => {
   const router = useRouter();
   const continueBrowsing = useSelector(selectBrowsingMovie);
   const put = useDispatch();
-  const idTest = router.query?.id ? router.query?.id : "300";
   const movieData = useSelector(selectMovieUser);
 
   // useEffect(() => {
@@ -91,33 +90,25 @@ const CardId = ({ movie }: InferGetStaticPropsType<typeof getStaticProps>) => {
           <div className={styles.wrapper}>
             <TrailerCard
               filmPicture={movie.poster.url}
-              filmLink={movie.filmLink}
+              filmLink={movie.videos.trailers[0].url}
               isOpenModal={isOpenModal}
               setIsOpenModal={setIsOpenModal}
               className={styles.trailer}
             />
-            {/* <DescriptionCard
-              filmAge={movie.filmAge}
-              filmYear={movie.filmYear}
-              filmLang={movie.filmLang}
-              filmTime={movie.filmTime}
-              countries={movie.countries}
-              genres={movie.genres}
-              className={styles.discription}
-            /> */}
-            {/* <ActorsSlider
-              filmGrade={movie.filmGrade}
-              actors={movie.actors || []}
+            <DescriptionCard movie={movie} className={styles.discription} />
+            <ActorsSlider
+              // filmGrade={movie.filmGrade}
+              persons={movie.persons || []}
               className={styles.slider_actors}
               isLoading={isLoading}
               setIsLoading={setIsLoading}
-            /> */}
-            {/* <InfoMovie className={styles.info} movie={movie} /> */}
+            />
+            <InfoMovie className={styles.info} movie={movie} />
           </div>
           <Comments />
           {/* <SimpleSlider
             title={t("sliders_title.watching_with_a_movie")}
-            films={movie.similarFilms}
+            films={movie.similarMovies}
             isLoading={isLoading}
             setIsLoading={setIsLoading}
           /> */}
@@ -160,22 +151,13 @@ export const getStaticProps = async (
       }
     );
     return {
-      props: { movie: movieResponse.data },
+      props: { movie: movieResponse.data as MovieKinopoiskT },
       revalidate: 60,
     };
   } catch (e) {
     return { notFound: true };
   }
 };
-// const movie = await axios({
-//   method: "get",
-//   url: `https://api.kinopoisk.dev/v1.3/movie/${context.params.id}`,
-//   headers: {
-//     "Content-Type": "application/json",
-//     "X-API-KEY": `13RH6Q2-2T1M1E7-M50R852-366EP7D`,
-//   },
-
-// });
 
 export const getStaticPaths: GetStaticPaths = async () => {
   return {

@@ -1,10 +1,10 @@
 import { DetailedHTMLProps, Dispatch, FC, useEffect, useState } from "react";
 import styles from "./index.module.scss";
 import { useTranslation } from "next-export-i18n";
-import { IMovie } from "@/types/types";
+import { IMovie, MovieKinopoiskT } from "@/types/types";
 
 type Props = {
-  movie: IMovie;
+  movie: MovieKinopoiskT;
 };
 
 const DetailsMovie: FC<Props> = ({ movie }) => {
@@ -17,7 +17,7 @@ const DetailsMovie: FC<Props> = ({ movie }) => {
         <div className={styles.show_details}>
           <div className={styles.row}>
             <h5>Год производства</h5>
-            <p>{movie.filmYear}</p>
+            <p>{movie.year}</p>
           </div>
           <div className={styles.row}>
             <h5>Страна</h5>
@@ -34,25 +34,25 @@ const DetailsMovie: FC<Props> = ({ movie }) => {
 
           <div className={styles.row}>
             <h5>Режиссер</h5>
-            {movie?.directors ? (
+            {/* {movie?.directors ? (
               movie.directors.map((item, index) => {
                 return <p key={index}>{item.name}</p>;
               })
             ) : (
               <p> — </p>
-            )}
+            )} */}
           </div>
           <div className={styles.row}>
             <h5> Возраст</h5>
-            <p>{movie.filmAge} + </p>
+            <p>{movie.ageRating} + </p>
           </div>
           <div className={styles.row}>
             <h5> Время</h5>
-            <p>{movie.filmTime} мин.</p>
+            <p>{movie.movieLength} мин.</p>
           </div>
           <div className={styles.row}>
             <h5> Рейтинг MPAA</h5>
-            <p>{movie.filmR}</p>
+            <p>{movie.ratingMpaa}</p>
           </div>
           <h3 onClick={() => setIsDetails(false)}>Свернуть детали фильма</h3>
         </div>
