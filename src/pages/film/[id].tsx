@@ -55,23 +55,23 @@ const CardId = ({ movie }: InferGetStaticPropsType<typeof getStaticProps>) => {
   //   },
   // ];
 
-  // useEffect(() => {
-  //   put(
-  //     getContinueBrowsing({
-  //       id: movie.id,
-  //       poster: movie.filmPoster,
-  //       name: {
-  //         ruName: movie.filmLang[0].filmName,
-  //         enName: movie.filmLang[1].filmName,
-  //       },
-  //       description: {
-  //         ruName: movie.filmLang[0].filmDescription,
-  //         enName: movie.filmLang[1].filmDescription,
-  //       },
-  //     })
-  //   );
-  //   setId(router.asPath);
-  // }, []);
+  useEffect(() => {
+    put(
+      getContinueBrowsing({
+        id: movie.id,
+        poster: movie.poster.url,
+        name: {
+          ruName: movie.name,
+          enName: movie.enName,
+        },
+        description: {
+          ruName: movie.description,
+          enName: movie.description,
+        },
+      })
+    );
+    setId(router.asPath);
+  }, []);
 
   useEffect(() => {
     if (router.asPath !== id) {
@@ -81,7 +81,6 @@ const CardId = ({ movie }: InferGetStaticPropsType<typeof getStaticProps>) => {
 
   return (
     <div className={styles.container}>
-      {/* {movie.id} */}
       {movie.id === 0 || movie === undefined ? (
         <Loader type={"loading_page"} />
       ) : (

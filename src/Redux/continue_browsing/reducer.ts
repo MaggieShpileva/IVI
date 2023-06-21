@@ -8,22 +8,15 @@ export type BrowsingMovie = {
   description: { ruName: string; enName: string };
 };
 
-const initialState: BrowsingMovie[] = [
-  {
-    id: 300,
-    poster: "https://st.kp.yandex.net/images/film_big/535341.jpg",
-    name: {
-      ruName: "фильм",
-      enName: "film",
-    },
-    description: { ruName: " Самый лучший фильм", enName: "film" },
-  },
-];
+const initialState: BrowsingMovie[] = [];
 
 export const continueBrowsingReducer = (state = initialState, action: any) => {
   switch (action.type) {
     case DATA_CONTINUE_BROWSING.GET_CONTINUE_BROWSING:
-      if (state[state.length - 1].id === action.payload.id) {
+      if (
+        state.length !== 0 &&
+        state[state.length - 1].id === action.payload.id
+      ) {
         return state;
       } else {
         return [...state, action.payload];

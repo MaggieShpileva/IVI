@@ -48,31 +48,35 @@ const SliderContinueBrowsing: FC<Props> = ({
       setLocale("ru");
     }
   }, [router]);
+
   return (
-    <div className={styles.container}>
-      <div className={styles.title}>
-        <h4>{title}</h4>
-      </div>
-      <Slider {...newSettings} className={styles.container_slider}>
-        {movies.map((item, index) => (
-          <Link
-            href={`/film/${item.id}?lang=${locale}`}
-            key={`${item}-${index}`}
-            onClick={() => {
-              setIsLoading(true);
-            }}
-          >
-            <CardMovie
-              title={item.name}
-              type={type}
-              text={item.description}
-              img={item.poster}
-            />
-          </Link>
-        ))}
-      </Slider>
-      <></>
-    </div>
+    <>
+      {movies.length !== 0 && (
+        <div className={styles.container}>
+          <div className={styles.title}>
+            <h4>{title}</h4>
+          </div>
+          <Slider {...newSettings} className={styles.container_slider}>
+            {movies.map((item, index) => (
+              <Link
+                href={`/film/${item.id}?lang=${locale}`}
+                key={`${item}-${index}`}
+                onClick={() => {
+                  setIsLoading(true);
+                }}
+              >
+                <CardMovie
+                  title={item.name}
+                  type={type}
+                  text={item.description}
+                  img={item.poster}
+                />
+              </Link>
+            ))}
+          </Slider>
+        </div>
+      )}
+    </>
   );
 };
 

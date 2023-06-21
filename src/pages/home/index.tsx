@@ -28,8 +28,9 @@ const Home: NextPage = ({ movies, banner }: any) => {
   const { t } = useTranslation();
   const ContinueBrowingmovies: BrowsingMovie[] =
     useSelector(selectBrowsingMovie);
-  console.log(movies.bestFantasyFilmsSet);
+
   const [isLoading, setIsLoading] = useState(false);
+
   return (
     <div className={styles.wrapper}>
       <Head>
@@ -41,14 +42,15 @@ const Home: NextPage = ({ movies, banner }: any) => {
       </Head>
 
       <Banner movies={banner} />
+
       <SliderContinueBrowsing
         title={t("sliders_title.continue_browsing")}
-        type={"summary"}
+        type={"detailed"}
         movies={ContinueBrowingmovies}
         isLoading={isLoading}
         setIsLoading={setIsLoading}
       />
-      <SliderTopTen />
+
       {isLoading && <Loader type="loading_page" />}
       <SimpleSlider
         title={t("sliders_title.best_films")}
@@ -63,6 +65,7 @@ const Home: NextPage = ({ movies, banner }: any) => {
         isLoading={isLoading}
         setIsLoading={setIsLoading}
       />
+      <SliderTopTen />
 
       <SimpleSlider
         title={t("sliders_title.best_fantasy_films")}
