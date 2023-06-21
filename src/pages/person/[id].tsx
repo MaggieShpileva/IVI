@@ -142,11 +142,6 @@ export const getStaticPaths: GetStaticPaths = async () => {
 //   const response = await axios.get(`http://84.201.131.92:5002/persons/${id}?lang=${lang}`);
 //   const person = response.data as IPerson;
 
-//   if (!person) {
-//     return {
-//       notFound: true,
-//     };
-//   }
 //   return {
 //     props: { person },
 //   };
