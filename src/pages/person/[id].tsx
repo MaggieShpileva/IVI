@@ -114,11 +114,6 @@ export const getStaticProps: GetStaticProps = async (context) => {
   } catch (e) {
     person = personData;
   }
-  if (!person) {
-    return {
-      notFound: true,
-    };
-  }
 
   return {
     props: { person },
