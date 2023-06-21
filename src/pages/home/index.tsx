@@ -28,7 +28,7 @@ const Home: NextPage = ({ movies, banner }: any) => {
   const { t } = useTranslation();
   const ContinueBrowingmovies: BrowsingMovie[] =
     useSelector(selectBrowsingMovie);
-
+  console.log(movies.bestFantasyFilmsSet);
   const [isLoading, setIsLoading] = useState(false);
   return (
     <div className={styles.wrapper}>
@@ -50,26 +50,26 @@ const Home: NextPage = ({ movies, banner }: any) => {
       />
       <SliderTopTen />
       {isLoading && <Loader type="loading_page" />}
-      {/* <SimpleSlider
+      <SimpleSlider
         title={t("sliders_title.best_films")}
-        films={movies.bestFilmsSet as ISimpleMovie[]}
+        films={movies.bestFantasyFilmsSet as ISimpleMovie[]}
         isLoading={isLoading}
         setIsLoading={setIsLoading}
-      /> */}
+      />
 
-      {/* <SimpleSlider
+      <SimpleSlider
         title={t("sliders_title.family_comedies")}
         films={movies.familyFriendlyComediesSet as ISimpleMovie[]}
         isLoading={isLoading}
         setIsLoading={setIsLoading}
-      /> */}
+      />
 
-      {/* <SimpleSlider
+      <SimpleSlider
         title={t("sliders_title.best_fantasy_films")}
         films={movies.bestFantasyFilmsSet as ISimpleMovie[]}
         isLoading={isLoading}
         setIsLoading={setIsLoading}
-      /> */}
+      />
     </div>
   );
 };
@@ -78,7 +78,8 @@ export const getStaticProps = wrapper.getServerSideProps(
     await store.dispatch(getDataHomePage());
     await store.dispatch(getDataBanner());
     await new Promise((resolve) => setTimeout(resolve, 1000));
-    const movies = await store.getState().homePage;
+    const movies = (await store.getState()
+      .homePage) as MoviesForSlidersOnHomePageT;
     const banner = await store.getState().banner.data;
     return { props: { movies, banner } };
   }

@@ -28,6 +28,10 @@
         cursor: default;
       }
 
+      .date {
+        text-transform: lowercase;
+      }
+
       p {
         cursor: pointer;
         margin-right: 5px;

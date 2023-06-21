@@ -47,7 +47,6 @@ const CardId = ({ movie }: InferGetStaticPropsType<typeof getStaticProps>) => {
   // useEffect(() => {
   //   put(getMovieData({ id: idTest }));
   // }, []);
-  console.log(movie);
   // const breadcrumbs: Breadcrumb[] = [
   //   { item: "Фильмы", path: "/movies" },
   //   {
@@ -97,7 +96,6 @@ const CardId = ({ movie }: InferGetStaticPropsType<typeof getStaticProps>) => {
             />
             <DescriptionCard movie={movie} className={styles.discription} />
             <ActorsSlider
-              // filmGrade={movie.filmGrade}
               persons={movie.persons || []}
               className={styles.slider_actors}
               isLoading={isLoading}
@@ -140,32 +138,33 @@ const CardId = ({ movie }: InferGetStaticPropsType<typeof getStaticProps>) => {
 export const getStaticProps = async (
   context: GetStaticPropsContext<ParsedUrlQuery, PreviewData>
 ) => {
-  try {
-    const movieResponse = await axios.get(
-      `https://api.kinopoisk.dev/v1.3/movie/${context.params?.id}`,
-      {
-        headers: {
-          "Content-Type": "application/json",
-          "X-API-KEY": `13RH6Q2-2T1M1E7-M50R852-366EP7D`,
-        },
-      }
-    );
-    return {
-      props: { movie: movieResponse.data as MovieKinopoiskT },
-      revalidate: 60,
-    };
-  } catch (e) {
-    return { notFound: true };
-  }
+  const movieResponse = await axios.get(
+    `https://api.kinopoisk.dev/v1.3/movie/${context.params?.id}`,
+    {
+      headers: {
+        "Content-Type": "application/json",
+        "X-API-KEY": `13RH6Q2-2T1M1E7-M50R852-366EP7D`,
+      },
+    }
+  );
+  return {
+    props: { movie: movieResponse.data as MovieKinopoiskT },
+    revalidate: 60,
+  };
 };
 
-export const getStaticPaths: GetStaticPaths = async () => {
+export const getStaticPaths: GetStaticPaths = async (context) => {
+  const locales = ["ru", "en"];
+
+  const paths = locales.flatMap((locale) => {
+    return [Array(1)].map((movie) => ({
+      params: { id: moviesData.id.toString(), lang: locale },
+    }));
+  });
+
   return {
-    paths: [
-      { params: { id: "1", lang: "ru" } },
-      { params: { id: "1", lang: "en" } },
-    ],
-    fallback: "blocking", // can also be true or 'blocking'
+    paths,
+    fallback: "blocking",
   };
 };
 export default CardId;

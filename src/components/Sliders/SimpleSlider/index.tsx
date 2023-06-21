@@ -18,7 +18,7 @@ import { useRouter } from "next/router";
 
 type Props = {
   title: string;
-  films: SimilarMovie[];
+  films: ISimpleMovie[];
   isLoading: boolean;
   setIsLoading: Dispatch<SetStateAction<boolean>>;
 };
@@ -66,7 +66,7 @@ const SimpleSlider: FC<Props> = ({ title, films, isLoading, setIsLoading }) => {
                 setIsLoading(true);
               }}
             >
-              {/* <Poster film={item} /> */}
+              <Poster film={item} />
             </Link>
           ))}
         </Slider>

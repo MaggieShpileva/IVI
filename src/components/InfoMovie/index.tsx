@@ -12,27 +12,9 @@ type Props = {
 };
 
 export const InfoMovie: FC<Props> = ({ className, movie }) => {
-  const { t } = useTranslation();
-  const router = useRouter();
-  const [locale, setLocale] = useState<any>("ru");
-
-  useEffect(() => {
-    if (router.query?.lang) {
-      setLocale(router.query?.lang);
-    } else {
-      setLocale("ru");
-    }
-  }, [router]);
-
   return (
     <div className={[styles.container, className].join(" ")}>
-      {/* {movie.filmLang && (
-        <div className={styles.datas}>
-          {locale === "en"
-            ? movie.filmLang[1].filmDescription
-            : movie.filmLang[0].filmDescription}
-        </div>
-      )} */}
+      <div className={styles.datas}>{movie.description}</div>
       <DetailsMovie movie={movie} />
       <MovieRating raiting={movie.rating} votes={movie.votes} />
     </div>

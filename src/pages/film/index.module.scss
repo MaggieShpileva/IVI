@@ -9,6 +9,7 @@
     display: grid;
     margin: 20px 0 50px 0;
     box-sizing: border-box;
+    padding-right: 30px;
     grid-template-columns: 100%;
     grid-template-areas:
       "discription"
@@ -17,8 +18,8 @@
       "info";
 
     @include desktop {
-      grid-template-columns: repeat(2, 1fr);
-      grid-template-rows: minmax(100px, 200px) 110px 1fr;
+      grid-template-columns: repeat(2, 50%);
+      grid-template-rows: minmax(100px, 200px) 140px 1fr;
       grid-template-areas:
         "trailer discription"
         "trailer slider_actors"
@@ -26,9 +27,10 @@
         "trailer info"
         "trailer info";
     }
+
     @include laptop {
-      grid-template-columns: repeat(2, 1fr);
-      grid-template-rows: minmax(100px, 200px) 110px 1fr;
+      grid-template-columns: repeat(2, 50%);
+      grid-template-rows: minmax(100px, 200px) 140px 1fr;
       grid-template-areas:
         "trailer discription"
         "trailer slider_actors"
@@ -44,6 +46,7 @@
     .discription {
       grid-area: discription;
     }
+
     .slider_actors {
       grid-area: slider_actors;
     }

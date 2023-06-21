@@ -18,7 +18,6 @@ import { useRouter } from "next/router";
 
 type Props = {
   persons: Person[];
-  // filmGrade: number;
   className: string;
   isLoading: boolean;
   setIsLoading: Dispatch<SetStateAction<boolean>>;
@@ -26,7 +25,6 @@ type Props = {
 
 const ActorsSlider: FC<Props> = ({
   persons,
-  // filmGrade,
   className,
   isLoading,
   setIsLoading,
@@ -49,7 +47,6 @@ const ActorsSlider: FC<Props> = ({
   return (
     <div className={[styles.container, className].join(" ")}>
       <Slider {...newSettings} className={styles.slider}>
-        {/* <Raiting filmGrade={filmGrade} /> */}
         {persons.map((item: any) => (
           <Link
             href={`/person/${item.id}?lang=${locale}`}

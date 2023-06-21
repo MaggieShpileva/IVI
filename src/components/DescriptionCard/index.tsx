@@ -73,15 +73,14 @@ export const DescriptionCard: FC<Props> = ({ movie, className }) => {
               FullHD
             </Button>
           </div>
-          {/* {filmLang?.map((item, index) => {
+          {movie.spokenLanguages?.map((item, index) => {
             return (
               <div className={styles.watch_params} key={`${index}`}>
                 <div className="nbl-icon nbl-icon_player_volumeMidRegular_16 watchParams__nbl-icon"></div>
-              <span>{item.lang}</span> 
+                <span>{item.name}</span>
               </div>
             );
-          })} 
-        */}
+          })}
         </div>
       </div>
     </div>

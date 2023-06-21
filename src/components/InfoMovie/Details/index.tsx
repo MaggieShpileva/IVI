@@ -2,14 +2,14 @@ import { DetailedHTMLProps, Dispatch, FC, useEffect, useState } from "react";
 import styles from "./index.module.scss";
 import { useTranslation } from "next-export-i18n";
 import { IMovie, MovieKinopoiskT } from "@/types/types";
-
+import dayjs from "dayjs";
+import "dayjs/locale/ru";
 type Props = {
   movie: MovieKinopoiskT;
 };
 
 const DetailsMovie: FC<Props> = ({ movie }) => {
   const [isDetails, setIsDetails] = useState(false);
-
   return (
     <div className={styles.details}>
       <h3 onClick={() => setIsDetails(true)}> Детали о фильме</h3>
@@ -33,15 +33,31 @@ const DetailsMovie: FC<Props> = ({ movie }) => {
           </div>
 
           <div className={styles.row}>
-            <h5>Режиссер</h5>
-            {/* {movie?.directors ? (
-              movie.directors.map((item, index) => {
-                return <p key={index}>{item.name}</p>;
-              })
-            ) : (
-              <p> — </p>
-            )} */}
+            <h5> Слоган</h5>
+            <p>{movie.slogan}</p>
           </div>
+          <div className={styles.row}>
+            <h5> Бюджет</h5>
+            <p>
+              {movie.budget.value.toLocaleString("ru-RU")}{" "}
+              {movie.budget.currency}
+            </p>
+          </div>
+
+          <div className={styles.row}>
+            <h5>Премьера в России</h5>
+            <p className={styles.date}>
+              {dayjs(movie.premiere.russia).locale("ru").format("D MMMM YYYY")}
+            </p>
+          </div>
+
+          <div className={styles.row}>
+            <h5>Премьера в мире</h5>
+            <p className={styles.date}>
+              {dayjs(movie.premiere.world).locale("ru").format("D MMMM YYYY")}
+            </p>
+          </div>
+
           <div className={styles.row}>
             <h5> Возраст</h5>
             <p>{movie.ageRating} + </p>

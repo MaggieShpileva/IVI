@@ -3,10 +3,10 @@
 
 .container {
   width: 100%;
-  // margin-top: 30px;
-  padding-left: 20px;
+  padding: 0 30px;
+
   .slider {
-    max-width: 500px;
+    max-width: 600px;
   }
   @include mobile_s {
   }
