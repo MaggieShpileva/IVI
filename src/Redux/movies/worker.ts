@@ -54,3 +54,17 @@ export const editGenresApi = async (args: any) => {
 
   return data;
 };
+
+export const initialMovies = async (page: number) => {
+  console.log(page);
+  const { data } = await axios.get(
+    `https://kinopoiskapiunofficial.tech/api/v2.2/films?genres=1&order=RATING&type=ALL&ratingFrom=0&ratingTo=10&yearFrom=1000&yearTo=3000&page=${page}`,
+    {
+      headers: {
+        "X-API-KEY": "d85327c7-e40f-41b6-9e03-c4a8e6da1d4d",
+        "Content-type": "application/json; charset=UTF-8",
+      },
+    }
+  );
+  return data.items;
+};

@@ -4,7 +4,6 @@ import { IconType } from "react-icons";
 import styles from "./index.module.scss";
 import { GiSave } from "react-icons/gi";
 import { useAppDispatch } from "@/hooks/hooks";
-import { editGenre, watchEditGenre } from "@/Redux/movies/actions";
 
 type Props = {
   item: string;
@@ -15,7 +14,14 @@ type Props = {
   editMode?: boolean;
 };
 
-const ListItem: FC<Props> = ({ item, icon, id, onClick, activeFilter, editMode }) => {
+const ListItem: FC<Props> = ({
+  item,
+  icon,
+  id,
+  onClick,
+  activeFilter,
+  editMode,
+}) => {
   const IconItem = icon ? icon : undefined;
   const [inputGenre, setInputGenre] = useState<string>(item);
   const [active, setActive] = useState(false);
@@ -26,12 +32,12 @@ const ListItem: FC<Props> = ({ item, icon, id, onClick, activeFilter, editMode }
     setActive(true);
   };
 
-  const saveHandler = () => {
-    setActive(false);
-    if (id) {
-      dispatch(watchEditGenre({ id: id, genre: inputGenre }));
-    }
-  };
+  // const saveHandler = () => {
+  //   setActive(false);
+  //   if (id) {
+  //     dispatch(watchEditGenre({ id: id, genre: inputGenre }));
+  //   }
+  // };
 
   return (
     <>
@@ -50,13 +56,13 @@ const ListItem: FC<Props> = ({ item, icon, id, onClick, activeFilter, editMode }
             defaultValue={inputGenre}
             onChange={onChangeInput}
           />
-          <button
+          {/* <button
             title="сохранить"
             className={`${styles.save} ${active && styles.active}`}
             onClick={saveHandler}
           >
             <GiSave />
-          </button>
+          </button> */}
         </li>
       )}
     </>

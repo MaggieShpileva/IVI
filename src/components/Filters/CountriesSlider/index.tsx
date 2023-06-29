@@ -13,7 +13,9 @@ import { useRouter } from "next/router";
 const PrevButton: FC = (props: any) => {
   return (
     <Button
-      className={`${styles.prev} ${props.className.includes("slick-disabled") && styles.disabled}`}
+      className={`${styles.prev} ${
+        props.className.includes("slick-disabled") && styles.disabled
+      }`}
       onClick={props.onClick}
     >
       <BsChevronCompactLeft />
@@ -24,7 +26,9 @@ const PrevButton: FC = (props: any) => {
 const NextButton: FC = (props: any) => {
   return (
     <Button
-      className={`${styles.next} ${props.className.includes("slick-disabled") && styles.disabled}`}
+      className={`${styles.next} ${
+        props.className.includes("slick-disabled") && styles.disabled
+      }`}
       onClick={props.onClick}
     >
       <BsChevronCompactRight />
@@ -43,15 +47,15 @@ const CountriesSlider: FC = () => {
     nextArrow: <NextButton />,
   };
 
-  const { countriesRu, countriesEn } = useAppSelector(selectMovies);
+  // const { countriesRu, countriesEn } = useAppSelector(selectMovies);
   const dispatch = useAppDispatch();
   const router = useRouter();
   const lang = router.asPath.includes("lang=en") ? "en" : "ru";
-  const countries = lang === "en" ? countriesEn : countriesRu;
+  // const countries = lang === "en" ? countriesEn : countriesRu;
 
   return (
     <Slider {...settings} className={styles.container}>
-      {countries.map((item, i) => (
+      {/* {countries.map((item, i) => (
         <Button
           className={styles.slide}
           key={item.id}
@@ -59,7 +63,7 @@ const CountriesSlider: FC = () => {
         >
           {item.name}
         </Button>
-      ))}
+      ))} */}
     </Slider>
   );
 };

@@ -5,7 +5,8 @@
   position: relative;
   display: flex;
   align-items: center;
-  width: 100%;
+  width: calc(100% - 10px);
+  margin-bottom: 20px;
 }
 
 .slide {

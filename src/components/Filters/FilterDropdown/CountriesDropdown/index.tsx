@@ -14,9 +14,9 @@ import { useRouter } from "next/router";
 const CountriesDropdown: FC = () => {
   const router = useRouter();
   const lang = router.asPath.includes("lang=en") ? "en" : "ru";
-  const { countriesEn, countriesRu } = useAppSelector(selectMovies);
-  const countries = lang === "en" ? countriesEn : countriesRu;
-  const { countries: countriesFilter } = useAppSelector(selectFilters);
+  // const { countriesEn, countriesRu } = useAppSelector(selectMovies);
+  // const countries = lang === "en" ? countriesEn : countriesRu;
+  // const { countries: countriesFilter } = useAppSelector(selectFilters);
   const dispatch = useAppDispatch();
 
   return (
@@ -25,7 +25,7 @@ const CountriesDropdown: FC = () => {
         <CountriesSlider />
       </div>
       <ul className={styles.content}>
-        {countries.map((item, i) => (
+        {/* {countries.map((item, i) => (
           <ListItem
             item={item.name}
             key={item.id}
@@ -33,7 +33,7 @@ const CountriesDropdown: FC = () => {
             onClick={() => dispatch(setCountries(item.name))}
             activeFilter={countriesFilter.includes(item.name)}
           />
-        ))}
+        ))} */}
       </ul>
     </div>
   );

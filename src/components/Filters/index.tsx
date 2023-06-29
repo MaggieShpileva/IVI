@@ -23,7 +23,7 @@ const Filters: FC = () => {
 
   const [isOpen, setIsOpen] = useState("");
   const dispatch = useAppDispatch();
-  const { ratingMin, ratingMax, scoreMin, scoreMax, isFilter } = useAppSelector(selectFilters);
+  // const { ratingMin, ratingMax, scoreMin, scoreMax, isFilter } = useAppSelector(selectFilters);
 
   return (
     <div className={styles.filters}>
@@ -35,17 +35,17 @@ const Filters: FC = () => {
         ))}
       </div>
       <div className={styles.rangeRow}>
-        <RangeRating rtl={false} ratingMin={ratingMin} ratingMax={ratingMax} />
-        <RangeScore rtl={false} scoreMin={scoreMin} scoreMax={scoreMax} />
+        {/* <RangeRating rtl={false} ratingMin={ratingMin} ratingMax={ratingMax} />
+        <RangeScore rtl={false} scoreMin={scoreMin} scoreMax={scoreMax} /> */}
       </div>
-      <button
+      {/* <button
         className={`${styles.filtersBtn} ${isFilter && styles.filtersBtn_active}`}
         disabled={!isFilter}
         onClick={() => dispatch(resetFilters())}
       >
         <TfiClose />
         {t("filters.reset_filters")}
-      </button>
+      </button> */}
     </div>
   );
 };

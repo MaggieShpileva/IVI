@@ -13,7 +13,7 @@ import { selectFilters } from "@/Redux/filter/selectors";
 const YearsDropdown: FC = () => {
   const { t } = useTranslation();
   const dispatch = useAppDispatch();
-  const { yearsMin, yearsMax } = useAppSelector(selectFilters);
+  // const { yearsMin, yearsMax } = useAppSelector(selectFilters);
 
   type yearsFilterType = {
     years: string;
@@ -28,9 +28,9 @@ const YearsDropdown: FC = () => {
     { years: `${t("filters.before_year")} 1980`, range: [1940, 1980] },
   ];
 
-  const findFilter = yearsFilter.find(
-    (item) => item.range[0] === yearsMin && item.range[1] === yearsMax,
-  );
+  // const findFilter = yearsFilter.find(
+  //   (item) => item.range[0] === yearsMin && item.range[1] === yearsMax,
+  // );
 
   const onClickHandler = (range: [number, number]) => {
     dispatch(setYears(range));
@@ -38,7 +38,7 @@ const YearsDropdown: FC = () => {
 
   return (
     <div className={styles.yearsDropdown}>
-      <ul className={styles.content}>
+      {/* <ul className={styles.content}>
         <ListItem
           item={t("filters.all_year")}
           key={100}
@@ -55,7 +55,7 @@ const YearsDropdown: FC = () => {
             activeFilter={findFilter && item.years === findFilter.years}
           />
         ))}
-      </ul>
+      </ul> */}
     </div>
   );
 };

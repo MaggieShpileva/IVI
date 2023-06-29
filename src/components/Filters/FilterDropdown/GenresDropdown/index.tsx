@@ -17,10 +17,10 @@ const GenresDropdown: FC = () => {
   const router = useRouter();
   const lang = router.asPath.includes("lang=en") ? "en" : "ru";
 
-  const { genresRu, genresEn } = useAppSelector(selectMovies);
-  const genres = lang === "en" ? genresEn : genresRu;
-  const genresCopy = [...genres];
-  const { genres: genresFilter } = useAppSelector(selectFilters);
+  // const { genresRu, genresEn } = useAppSelector(selectMovies);
+  // const genres = lang === "en" ? genresEn : genresRu;
+  // const genresCopy = [...genres];
+  // const { genres: genresFilter } = useAppSelector(selectFilters);
 
   // связать с правами пользователя
   const [adminMode, setAdminMode] = useState(true);
@@ -44,18 +44,26 @@ const GenresDropdown: FC = () => {
         {adminMode && (
           <div className={styles.btns}>
             {editMode && (
-              <Button color="darkbluegrey" className={styles.button} title="выйти">
+              <Button
+                color="darkbluegrey"
+                className={styles.button}
+                title="выйти"
+              >
                 <BiExit onClick={exitHandler} />
               </Button>
             )}
             {!editMode && (
-              <Button color="darkbluegrey" className={styles.button} title="редактировать">
+              <Button
+                color="darkbluegrey"
+                className={styles.button}
+                title="редактировать"
+              >
                 <TiPencil onClick={toEditMode} />
               </Button>
             )}
           </div>
         )}
-
+        {/* 
         {editMode ? (
           <ul className={styles.list} key={0}>
             {genresCopy.length &&
@@ -82,7 +90,7 @@ const GenresDropdown: FC = () => {
                 />
               ))}
           </ul>
-        )}
+        )} */}
       </div>
     </div>
   );

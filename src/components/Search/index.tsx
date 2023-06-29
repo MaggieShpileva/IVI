@@ -16,22 +16,22 @@ const Search: FC<Props> = ({ className, placeholder, type }) => {
   const [searchValue, setSearchValue] = useState("");
   const [results, setResults] = useState<PersonForSearchType[]>([]);
 
-  const { actors, directors } = useAppSelector(selectMovies);
-  const persons = type == "actors" ? actors : directors;
+  // const { actors, directors } = useAppSelector(selectMovies);
+  // const persons = type == "actors" ? actors : directors;
 
-  useEffect(() => {
-    const findPersons = persons.filter(
-      (item) =>
-        item.personLang[0].personName &&
-        item.personLang[0].personName.toLowerCase().includes(searchValue.toLowerCase()),
-    );
+  // useEffect(() => {
+  //   const findPersons = persons.filter(
+  //     (item) =>
+  //       item.personLang[0].personName &&
+  //       item.personLang[0].personName.toLowerCase().includes(searchValue.toLowerCase()),
+  //   );
 
-    if (searchValue.trim() && findPersons.length) {
-      setResults((state) => findPersons);
-    } else {
-      setResults([]);
-    }
-  }, [searchValue]);
+  //   if (searchValue.trim() && findPersons.length) {
+  //     setResults((state) => findPersons);
+  //   } else {
+  //     setResults([]);
+  //   }
+  // }, [searchValue]);
 
   return (
     <div className={className}>

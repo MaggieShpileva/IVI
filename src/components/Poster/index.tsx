@@ -3,7 +3,7 @@ import styles from "./index.module.scss";
 import Image from "next/image";
 import Icons from "./Info/Icons";
 import Info from "./Info";
-import { ISimpleMovie, SimilarMovie } from "@/types/types";
+import { ISimpleMovie, MovieT, SimilarMovie } from "@/types/types";
 import { useRouter } from "next/router";
 import { useTranslation } from "next-export-i18n";
 const posterImage = require("../../images/posterImage.jpeg");
@@ -24,6 +24,7 @@ const Poster: FC<PosterMovieProps> = ({ film }) => {
       setLocale("ru");
     }
   }, [router]);
+
   return (
     <div className={styles.wrapper}>
       <div
@@ -39,14 +40,6 @@ const Poster: FC<PosterMovieProps> = ({ film }) => {
             fill
             sizes="100%"
           ></Image>
-          {isOpen && (
-            <Info
-              raiting={film.filmGrade}
-              filmYear={film.filmYear}
-              country={film.countries}
-              genres={film.genres}
-            />
-          )}
         </div>
         <div className={styles.description}>
           <span className={styles.name}>

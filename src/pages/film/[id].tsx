@@ -33,6 +33,7 @@ import { RootState, wrapper } from "@/Redux/store";
 import { selectBrowsingMovie } from "@/Redux/continue_browsing/selectors";
 import { END } from "redux-saga";
 import { ParsedUrlQuery } from "querystring";
+import SimpleSliderMovie from "@/components/Sliders/SimpleSliderMovie";
 
 const CardId = ({ movie }: InferGetStaticPropsType<typeof getStaticProps>) => {
   const [id, setId] = useState<any>();
@@ -78,6 +79,7 @@ const CardId = ({ movie }: InferGetStaticPropsType<typeof getStaticProps>) => {
       setIsLoading(false);
     }
   }, [router]);
+  console.log(movie);
 
   return (
     <div className={styles.container}>
@@ -103,12 +105,12 @@ const CardId = ({ movie }: InferGetStaticPropsType<typeof getStaticProps>) => {
             <InfoMovie className={styles.info} movie={movie} />
           </div>
           <Comments />
-          {/* <SimpleSlider
+          <SimpleSliderMovie
             title={t("sliders_title.watching_with_a_movie")}
             films={movie.similarMovies}
             isLoading={isLoading}
             setIsLoading={setIsLoading}
-          /> */}
+          />
           {/* <SliderContinueBrowsing
             title={t("movie.trailers")}
             type={"detailed"}

@@ -27,6 +27,8 @@ export type FilmLangType = {
 };
 
 export interface ISimpleMovie {
+  countries: CountriesType[];
+  genres: GenresType[];
   id: number;
   filmPoster: string;
   filmGrade: number;
@@ -34,11 +36,10 @@ export interface ISimpleMovie {
   filmTime: number;
   filmAge: string;
   filmLang: FilmLangType[];
-  genres: GenresType[];
-  countries: CountriesType[];
   actors?: ActorsType[];
   directors?: DirectorsType[];
 }
+
 export interface IMovie extends ISimpleMovie {
   filmType: string;
   filmLink: string;
@@ -388,5 +389,21 @@ export type SimilarMovie = {
   enName: null | any;
   alternativeName: string;
   type: string;
-  poster: Poster[];
+  poster: Poster;
+};
+
+export type MovieT = {
+  countries: { country: string }[];
+  genres: { genre: string }[];
+  imdbId: string;
+  kinopoiskId: number;
+  nameEn: any;
+  nameOriginal: string;
+  nameRu: string;
+  posterUrl: string;
+  posterUrlPreview: string;
+  ratingImdb: number;
+  ratingKinopoisk: number;
+  type: string;
+  year: number;
 };

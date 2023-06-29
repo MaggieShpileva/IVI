@@ -1,42 +1,20 @@
-import { IMovie, MoviesForFilmsPageT } from "@/types/types";
+import { IMovie, MoviesForFilmsPageT, MovieT } from "@/types/types";
 import { MOVIES_ACTIONS } from "./action-types";
 
-export const getMoviesError = (error: string) => {
-  return {
-    type: MOVIES_ACTIONS.GET_MOVIES_ERROR,
-    payload: error,
-  };
-};
+export const getInitialMoviesStart = () => ({
+  type: MOVIES_ACTIONS.GET_INITIAL_MOVIES_START,
+});
 
-export const watchEditGenre = (editGenre: { id: number; genre: string }) => {
-  return {
-    type: MOVIES_ACTIONS.WATCH_EDIT_GENRE,
-    payload: editGenre,
-  };
-};
+export const getInitialMovies = (payload: { page: number }) => ({
+  type: MOVIES_ACTIONS.GET_INITIAL_MOVIES,
+  ...payload,
+});
 
-export const editGenre = (editGenre: { id: number; genre: string }) => {
-  return {
-    type: MOVIES_ACTIONS.EDIT_GENRE,
-    payload: editGenre,
-  };
-};
+export const getInitialMoviesSuccess = (payload: MovieT[]) => ({
+  type: MOVIES_ACTIONS.GET_INITIAL_MOVIES_SUCCESS,
+  payload,
+});
 
-export const getMoviesDataStart = () => {
-  return {
-    type: MOVIES_ACTIONS.GET_MOVIES_START,
-  };
-};
-
-export const getMoviesDataSuccess = (data: MoviesForFilmsPageT) => {
-  return {
-    type: MOVIES_ACTIONS.GET_MOVIES_DATA_SUCCESS,
-    payload: data,
-  };
-};
-
-export const getMoviesData = () => {
-  return {
-    type: MOVIES_ACTIONS.GET_MOVIES_DATA,
-  };
-};
+export const getInitialMoviesFail = () => ({
+  type: MOVIES_ACTIONS.GET_INITIAL_MOVIES_FAIL,
+});

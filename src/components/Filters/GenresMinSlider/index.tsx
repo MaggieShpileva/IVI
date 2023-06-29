@@ -15,7 +15,9 @@ import { useRouter } from "next/router";
 const PrevButton: FC = (props: any) => {
   return (
     <Button
-      className={`${styles.prev} ${props.className.includes("slick-disabled") && styles.disabled}`}
+      className={`${styles.prev} ${
+        props.className.includes("slick-disabled") && styles.disabled
+      }`}
       onClick={props.onClick}
     >
       {" "}
@@ -27,7 +29,9 @@ const PrevButton: FC = (props: any) => {
 const NextButton: FC = (props: any) => {
   return (
     <Button
-      className={`${styles.next} ${props.className.includes("slick-disabled") && styles.disabled}`}
+      className={`${styles.next} ${
+        props.className.includes("slick-disabled") && styles.disabled
+      }`}
       onClick={props.onClick}
     >
       <BsChevronCompactRight />
@@ -61,15 +65,15 @@ const GenresMinSlider: FC = () => {
     ],
   };
 
-  const { genresEn, genresRu } = useAppSelector(selectMovies);
+  // const { genresEn, genresRu } = useAppSelector(selectMovies);
   const dispatch = useAppDispatch();
   const router = useRouter();
   const lang = router.asPath.includes("lang=en") ? "en" : "ru";
-  const genres = lang === "en" ? genresEn : genresRu;
+  // const genres = lang === "en" ? genresEn : genresRu;
 
   return (
     <Slider {...settings} className={styles.container}>
-      {genres.map((item, i) => {
+      {/* {genres.map((item, i) => {
         const findItem = genresIcons.find((elem) => elem.title === item.name);
         return (
           <GenresButton
@@ -81,7 +85,7 @@ const GenresMinSlider: FC = () => {
             iconClass={findItem?.icon || ""}
           />
         );
-      })}
+      })} */}
     </Slider>
   );
 };

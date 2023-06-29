@@ -22,11 +22,11 @@ export const ContextSubMenu: FC<ContextSubProps> = ({
 }) => {
   const { t } = useTranslation();
   const router = useRouter();
-  const { genresRu, genresEn, countriesRu, countriesEn } =
-    useAppSelector(selectMovies);
+  // const { genresRu, genresEn, countriesRu, countriesEn } =
+  //   useAppSelector(selectMovies);
   const lang = router.asPath.includes("lang=en") ? "en" : "ru";
-  const genres = lang === "en" ? genresEn : genresRu;
-  const countries = lang === "en" ? countriesEn : countriesRu;
+  // const genres = lang === "en" ? genresEn : genresRu;
+  // const countries = lang === "en" ? countriesEn : countriesRu;
   const dispatch = useAppDispatch();
 
   return (
@@ -35,7 +35,7 @@ export const ContextSubMenu: FC<ContextSubProps> = ({
       <div className={styles.content}>
         <div>
           <h3>{t("contextSubMenu.genres")}</h3>
-          {genres === undefined ? (
+          {/* {genres === undefined ? (
             <Loader type="loading_genres" />
           ) : (
             <ul>
@@ -48,7 +48,7 @@ export const ContextSubMenu: FC<ContextSubProps> = ({
                 </li>
               ))}
             </ul>
-          )}
+          )} */}
         </div>
         <div>
           <h3>{t("contextSubMenu.countries")}</h3>
