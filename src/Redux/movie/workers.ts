@@ -16,7 +16,6 @@ export const getDatMovieWorker = async (id: string | string[]) => {
           "id names enName type year description rating votes movieLength ageRating videos genres countries persons",
       },
     });
-    console.log(res.data);
     return res.data;
   } catch (e) {
     console.log("movie axios error", e);

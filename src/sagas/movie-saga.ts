@@ -10,7 +10,6 @@ import { call, put } from "redux-saga/effects";
 
 export function* getDataMovieSaga({ id }: ReturnType<typeof getMovieData>) {
   yield put(getMovieDataStart());
-  console.log(id);
   try {
     // const res: MovieKinopoiskT = yield call(getDatMovieWorker, id);
     // yield put(getMovieDataSuccess(res));

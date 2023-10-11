@@ -41,7 +41,7 @@ const Home: NextPage = ({ movies, banner }: any) => {
         <meta httpEquiv="Permissions-Policy" content="interest-cohort=()" />
       </Head>
 
-      {/* <Banner movies={banner} /> */}
+      <Banner movies={banner} />
 
       <SliderContinueBrowsing
         title={t("sliders_title.continue_browsing")}

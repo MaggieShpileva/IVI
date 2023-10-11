@@ -31,7 +31,7 @@ const Poster: FC<PosterMovieProps> = ({ film }) => {
   };
 
   const handleMouseLeave = () => {
-    setIsOpen(true);
+    setIsOpen(false);
   };
 
   return (
