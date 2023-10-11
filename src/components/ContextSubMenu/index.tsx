@@ -1,13 +1,13 @@
 import { FC, ReactNode } from "react";
 import Link from "next/link";
-import { useLanguageQuery, useTranslation } from "next-export-i18n";
+import { useTranslation } from "next-export-i18n";
 import styles from "./index.module.scss";
-import { RiH2 } from "react-icons/ri";
-import { useAppDispatch, useAppSelector } from "@/hooks/hooks";
-import { selectMovies } from "@/Redux/movies/selectors";
+import { useAppDispatch } from "@/hooks/hooks";
 import { setGenres, setYears, setCountries } from "@/Redux/filter/actions";
 import { useRouter } from "next/router";
 import { Loader } from "../Loader";
+import data from "../../data/movies.json";
+import { MoviesForFilmsPageT } from "@/types/types";
 
 type ContextSubProps = {
   children?: ReactNode | ReactNode[];
@@ -23,7 +23,7 @@ export const ContextSubMenu: FC<ContextSubProps> = ({
   const { t } = useTranslation();
   const router = useRouter();
   const { genresRu, genresEn, countriesRu, countriesEn } =
-    useAppSelector(selectMovies);
+    data as MoviesForFilmsPageT;
   const lang = router.asPath.includes("lang=en") ? "en" : "ru";
   const genres = lang === "en" ? genresEn : genresRu;
   const countries = lang === "en" ? countriesEn : countriesRu;

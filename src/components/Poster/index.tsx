@@ -11,6 +11,7 @@ const posterImage = require("../../images/posterImage.jpeg");
 export type PosterMovieProps = {
   film: ISimpleMovie;
 };
+
 const Poster: FC<PosterMovieProps> = ({ film }) => {
   const [isOpen, setIsOpen] = useState(false);
   const router = useRouter();
@@ -24,12 +25,21 @@ const Poster: FC<PosterMovieProps> = ({ film }) => {
       setLocale("ru");
     }
   }, [router]);
+
+  const handleMouseEnter = () => {
+    setIsOpen(true);
+  };
+
+  const handleMouseLeave = () => {
+    setIsOpen(true);
+  };
+
   return (
     <div className={styles.wrapper}>
       <div
         className={styles.container}
-        onMouseEnter={() => setIsOpen(true)}
-        onMouseLeave={() => setIsOpen(false)}
+        onMouseEnter={handleMouseEnter}
+        onMouseLeave={handleMouseLeave}
       >
         <div className={styles.poster}>
           <Image
@@ -39,7 +49,8 @@ const Poster: FC<PosterMovieProps> = ({ film }) => {
             fill
             sizes="100%"
           ></Image>
-          {isOpen && (
+
+          {isOpen && film.filmGrade && (
             <Info
               raiting={film.filmGrade}
               filmYear={film.filmYear}

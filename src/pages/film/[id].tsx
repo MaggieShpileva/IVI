@@ -13,7 +13,12 @@ import {
   PreviewData,
 } from "next";
 import { useRouter } from "next/router";
-import { IMovieRes, MovieKinopoiskT } from "@/types/types";
+import {
+  FilmLangType,
+  IMovieRes,
+  ISimpleMovie,
+  MovieKinopoiskT,
+} from "@/types/types";
 import { useTranslation } from "next-export-i18n";
 import SimpleSlider from "@/components/Sliders/SimpleSlider";
 import React, { useEffect, useState } from "react";
@@ -43,17 +48,15 @@ const CardId = ({ movie }: InferGetStaticPropsType<typeof getStaticProps>) => {
   const continueBrowsing = useSelector(selectBrowsingMovie);
   const put = useDispatch();
   const movieData = useSelector(selectMovieUser);
+  const [similarMovies, setSimilarMovies] = useState<ISimpleMovie[]>([]);
 
-  // useEffect(() => {
-  //   put(getMovieData({ id: idTest }));
-  // }, []);
-  // const breadcrumbs: Breadcrumb[] = [
-  //   { item: "Фильмы", path: "/movies" },
-  //   {
-  //     item: movieData.genres !== undefined ? movieData?.genres[0].name : "",
-  //     path: "/movies",
-  //   },
-  // ];
+  const breadcrumbs: Breadcrumb[] = [
+    { item: "Фильмы", path: "/movies" },
+    {
+      item: movieData.genres !== undefined ? movieData?.genres[0].name : "",
+      path: "/movies",
+    },
+  ];
 
   useEffect(() => {
     put(
@@ -71,7 +74,25 @@ const CardId = ({ movie }: InferGetStaticPropsType<typeof getStaticProps>) => {
       })
     );
     setId(router.asPath);
+
+    const movies = movie.similarMovies.map((item) => ({
+      id: item.id,
+      filmLang: [
+        {
+          lang: "ru",
+          filmName: item.name,
+        },
+        {
+          lang: "en",
+          filmName: item.enName,
+        },
+      ] as FilmLangType[],
+
+      filmPoster: item.poster.url,
+    }));
+    setSimilarMovies(movies);
   }, []);
+  console.log(similarMovies);
 
   useEffect(() => {
     if (router.asPath !== id) {
@@ -103,19 +124,19 @@ const CardId = ({ movie }: InferGetStaticPropsType<typeof getStaticProps>) => {
             <InfoMovie className={styles.info} movie={movie} />
           </div>
           <Comments />
-          {/* <SimpleSlider
+          <SimpleSlider
             title={t("sliders_title.watching_with_a_movie")}
-            films={movie.similarMovies}
+            films={similarMovies}
             isLoading={isLoading}
             setIsLoading={setIsLoading}
-          /> */}
-          {/* <SliderContinueBrowsing
+          />
+          <SliderContinueBrowsing
             title={t("movie.trailers")}
             type={"detailed"}
             movies={continueBrowsing}
             isLoading={isLoading}
             setIsLoading={setIsLoading}
-          /> */}
+          />
           {/* {isOpenModal && (
             <TrailerModal
               isOpenModal={isOpenModal}

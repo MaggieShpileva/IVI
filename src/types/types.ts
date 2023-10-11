@@ -29,13 +29,13 @@ export type FilmLangType = {
 export interface ISimpleMovie {
   id: number;
   filmPoster: string;
-  filmGrade: number;
-  filmYear: number;
-  filmTime: number;
-  filmAge: string;
   filmLang: FilmLangType[];
-  genres: GenresType[];
-  countries: CountriesType[];
+  filmGrade?: number;
+  filmYear?: number;
+  filmTime?: number;
+  filmAge?: string;
+  genres?: GenresType[];
+  countries?: CountriesType[];
   actors?: ActorsType[];
   directors?: DirectorsType[];
 }
@@ -385,8 +385,8 @@ export type Person = {
 export type SimilarMovie = {
   id: number;
   name: string;
-  enName: null | any;
+  enName: string;
   alternativeName: string;
   type: string;
-  poster: Poster[];
+  poster: Poster;
 };

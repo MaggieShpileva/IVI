@@ -13,52 +13,52 @@ type Actions = ReturnType<InferValueTypes<typeof actions>>;
 export type MovieSearchT = {
   data: IMovieRes[];
 };
-const initialState: IMovieRes = {
-  id: 0,
-  filmType: "",
-  filmLink: "",
-  filmTrailer: "",
-  filmYear: 0,
-  filmTime: 0,
-  filmGrade: 0,
-  filmTotalGrade: 0,
-  filmR: "",
-  filmAge: "",
-  filmPoster: "",
-  directors: [
-    {
-      id: 0,
-      name: "",
-    },
-  ],
-  similarFilms: [
-    {
-      id: 0,
-      filmPoster: "",
-      filmGrade: 0,
-      filmYear: 0,
-      filmTime: 0,
-      filmAge: "",
-      filmLang: [
-        {
-          lang: "",
-          filmName: "",
-        },
-      ],
-      genres: [
-        {
-          id: 0,
-          name: "",
-        },
-      ],
-      countries: [
-        {
-          id: 0,
-          name: "",
-        },
-      ],
-    },
-  ],
+const initialState: any = {
+  // id: 0,
+  // filmType: "",
+  // filmLink: "",
+  // filmTrailer: "",
+  // filmYear: 0,
+  // filmTime: 0,
+  // filmGrade: 0,
+  // filmTotalGrade: 0,
+  // filmR: "",
+  // filmAge: "",
+  // filmPoster: "",
+  // directors: [
+  //   {
+  //     id: 0,
+  //     name: "",
+  //   },
+  // ],
+  // similarFilms: [
+  //   {
+  //     id: 0,
+  //     filmPoster: "",
+  //     filmGrade: 0,
+  //     filmYear: 0,
+  //     filmTime: 0,
+  //     filmAge: "",
+  //     filmLang: [
+  //       {
+  //         lang: "",
+  //         filmName: "",
+  //       },
+  //     ],
+  //     genres: [
+  //       {
+  //         id: 0,
+  //         name: "",
+  //       },
+  //     ],
+  //     countries: [
+  //       {
+  //         id: 0,
+  //         name: "",
+  //       },
+  //     ],
+  //   },
+  // ],
 };
 
 export const MovieReducer = (state = initialState, action: Actions) => {
