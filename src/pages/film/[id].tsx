@@ -123,7 +123,7 @@ const CardId = ({ movie }: InferGetStaticPropsType<typeof getStaticProps>) => {
             />
             <InfoMovie className={styles.info} movie={movie} />
           </div>
-          <Comments />
+          {/* <Comments /> */}
           <SimpleSlider
             title={t("sliders_title.watching_with_a_movie")}
             films={similarMovies}

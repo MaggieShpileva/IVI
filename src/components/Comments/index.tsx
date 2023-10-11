@@ -84,26 +84,26 @@ export const Comments: FC = () => {
   }, [newComment]);
 
   //оправка комментария
-  useEffect(() => {
-    if (id) {
-      sendNewComment();
-    }
-  }, [id]);
+  // useEffect(() => {
+  //   if (id) {
+  //     sendNewComment();
+  //   }
+  // }, [id]);
 
-  const sendNewComment = async () => {
-    const dataComment = {
-      id: id,
-      review: newComment,
-      parentReviewId: null,
-      profileId: localStorage.getItem("id"),
-      filmId: router.query?.id,
-    };
-    try {
-      const sentNewComment = await sendComment(dataComment);
-    } catch (e) {
-      console.log("comment", e);
-    }
-  };
+  // const sendNewComment = async () => {
+  //   const dataComment = {
+  //     id: id,
+  //     review: newComment,
+  //     parentReviewId: null,
+  //     profileId: localStorage.getItem("id"),
+  //     filmId: router.query?.id,
+  //   };
+  //   try {
+  //     const sentNewComment = await sendComment(dataComment);
+  //   } catch (e) {
+  //     console.log("comment", e);
+  //   }
+  // };
 
   return (
     <div className={styles.container}>

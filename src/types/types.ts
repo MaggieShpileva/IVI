@@ -76,7 +76,7 @@ export interface IPerson {
 }
 
 export type PersonForSliderType = {
-  filmsNumber: number;
+  filmsNumber: any;
   person: IPerson;
 };
 
