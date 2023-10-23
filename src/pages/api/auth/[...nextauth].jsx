@@ -10,8 +10,8 @@ const GOOGLE_SECRET = "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";
 export const authOptions = {
   providers: [
     GoogleProvider({
-      clientId: GOOGLE_CLIENT_ID,
-      clientSecret: GOOGLE_SECRET,
+      clientId: process.env.GOOGLE_CLIENT_ID,
+      clientSecret: process.env.GOOGLE_CLIENT_SECRET,
     }),
     Credentials({
       credentials: {
