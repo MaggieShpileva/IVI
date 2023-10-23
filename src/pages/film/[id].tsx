@@ -1,43 +1,31 @@
-import Breadcrumbs, { Breadcrumb } from "@/components/Breadcrumbs";
+import { Breadcrumb } from "@/components/Breadcrumbs";
 import styles from "./index.module.scss";
 import { DescriptionCard } from "@/components/DescriptionCard";
 import SliderContinueBrowsing from "@/components/Sliders/SliderContinueBrowsing";
 import moviesData from "@/data/One_film_response_v2.json";
-import { Comments } from "@/components/Comments";
 import {
   GetStaticPaths,
-  GetStaticProps,
   GetStaticPropsContext,
   InferGetStaticPropsType,
-  NextPage,
   PreviewData,
 } from "next";
 import { useRouter } from "next/router";
-import {
-  FilmLangType,
-  IMovieRes,
-  ISimpleMovie,
-  MovieKinopoiskT,
-} from "@/types/types";
+import { FilmLangType, ISimpleMovie, MovieKinopoiskT } from "@/types/types";
 import { useTranslation } from "next-export-i18n";
 import SimpleSlider from "@/components/Sliders/SimpleSlider";
 import React, { useEffect, useState } from "react";
 import ActorsSlider from "@/components/Sliders/ActorsSlider";
-import { TrailerModal } from "@/components/Modals/TrailerModal";
-import WatchOnAllDevices from "../../components/WatchOnAllDevices";
 import axios from "axios";
 import InfoMovie from "@/components/InfoMovie";
 import { getContinueBrowsing } from "@/Redux/continue_browsing/actions";
 import { connect, useDispatch, useSelector } from "react-redux";
 import { Loader } from "@/components/Loader";
-import dataForTrailers from "../../data/trailers_for_movie.json";
 import TrailerCard from "@/components/TrailerCard";
-import { getMovieData } from "@/Redux/movie/actions";
 import { selectMovieUser } from "@/Redux/movie/selectors";
-import { RootState, wrapper } from "@/Redux/store";
 import { selectBrowsingMovie } from "@/Redux/continue_browsing/selectors";
-import { END } from "redux-saga";
 import { ParsedUrlQuery } from "querystring";
+import { TrailerModal } from "@/components/Modals/TrailerModal";
+import WatchOnAllDevices from "@/components/WatchOnAllDevices";
 
 const CardId = ({ movie }: InferGetStaticPropsType<typeof getStaticProps>) => {
   const [id, setId] = useState<any>();
@@ -92,14 +80,13 @@ const CardId = ({ movie }: InferGetStaticPropsType<typeof getStaticProps>) => {
     }));
     setSimilarMovies(movies);
   }, []);
-  console.log(similarMovies);
 
   useEffect(() => {
     if (router.asPath !== id) {
       setIsLoading(false);
     }
   }, [router]);
-
+  console.log(movie);
   return (
     <div className={styles.container}>
       {movie.id === 0 || movie === undefined ? (
@@ -131,23 +118,26 @@ const CardId = ({ movie }: InferGetStaticPropsType<typeof getStaticProps>) => {
             setIsLoading={setIsLoading}
           />
           <SliderContinueBrowsing
-            title={t("movie.trailers")}
+            title={t("sliders_title.continue_browsing")}
             type={"detailed"}
             movies={continueBrowsing}
             isLoading={isLoading}
             setIsLoading={setIsLoading}
           />
-          {/* {isOpenModal && (
+          {isOpenModal && (
             <TrailerModal
               isOpenModal={isOpenModal}
               setIsOpenModal={setIsOpenModal}
-              trailer={movie.filmTrailer}
+              trailer={movie.videos.trailers[0].url}
             />
           )}
           <WatchOnAllDevices
-            filmLang={movie.filmLang}
-            filmPicture={movie.filmPoster}
-          /> */}
+            filmLang={[
+              { lang: "ru", filmName: movie.name },
+              { lang: "en", filmName: movie.enName },
+            ]}
+            filmPicture={movie.poster.url}
+          />
         </div>
       )}
       {isLoading && <Loader type={"loading_page"} />}

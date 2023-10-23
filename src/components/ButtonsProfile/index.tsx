@@ -2,9 +2,7 @@ import Link from "next/link";
 import { Button } from "@/components/Button/Button";
 import styles from "./styles.module.scss";
 import { FC } from "react";
-import { TiPencil } from "react-icons/ti";
 import { useTranslation } from "next-export-i18n";
-import { IUser } from "@/types/types";
 import { TbBellRinging, TbVectorTriangle } from "react-icons/tb";
 import Image from "next/image";
 import presentImage from "@/images/profileImages/present.png";
@@ -16,9 +14,9 @@ import codeImage from "../../images/profileImages/code.svg";
 import supportImage from "../../images/profileImages/support.svg";
 import cardImage from "../../images/profileImages/card.svg";
 
-type Props = {};
 export const ButtonsProfile: FC = () => {
   const { t } = useTranslation();
+
   return (
     <div>
       <div className={styles.topBtnRow}>

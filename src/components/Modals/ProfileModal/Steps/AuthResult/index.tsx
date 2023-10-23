@@ -2,7 +2,7 @@ import { FC, Dispatch, SetStateAction, useState, useEffect } from "react";
 import styles from "../index.module.scss";
 import { Button } from "@/components/Button/Button";
 import CompanyPolicy from "../../PolicyBlock";
-import { SignInResponse } from "next-auth/react";
+import { SignInResponse, useSession } from "next-auth/react";
 import { useSelector } from "react-redux";
 import { selectAuthUser } from "@/Redux/auth/selectors";
 import { useTranslation } from "next-export-i18n";
@@ -25,7 +25,7 @@ const AuthResult: FC<Props> = (props) => {
   const [nicknameUser, setNicknameUser] = useState<string | null>();
   const resAuth = useSelector(selectAuthUser);
   const resRegistr = useSelector(selectRegistrUser);
-
+  const session = useSession();
   const authHandleClick = () => {
     props.setOpenModal(false);
     props.setIsRegistration(false);
@@ -38,12 +38,8 @@ const AuthResult: FC<Props> = (props) => {
   }, []);
 
   useEffect(() => {
-    if (
-      localStorage.getItem("email") !== "" &&
-      localStorage.getItem("nickname") === ""
-    ) {
+    if (session.status == "authenticated") {
       setTitle("profile.success_auth");
-      setEmailUser(localStorage.getItem("email"));
     } else if (
       localStorage.getItem("email") !== "" &&
       localStorage.getItem("nickname") !== ""
@@ -56,13 +52,14 @@ const AuthResult: FC<Props> = (props) => {
     ) {
       setTitle("profile.error_auth");
     }
-  }, [resAuth, resRegistr]);
+  }, [resAuth, resRegistr, session]);
 
   useEffect(() => {
     if (props.openModal === false) {
       setTitle("");
     }
   }, [props.openModal]);
+
   return (
     <div className={styles.content}>
       <div className={styles.message}>
@@ -71,7 +68,7 @@ const AuthResult: FC<Props> = (props) => {
 
       <div className={styles.enter_data}>
         <div className={styles.continue}>
-          {emailUser !== "" || nicknameUser !== "" ? (
+          {session.status === "authenticated" ? (
             <Button
               className={`${styles.continue_btn} ${styles.activeContinue} `}
               color="pink"

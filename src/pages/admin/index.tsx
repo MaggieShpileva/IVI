@@ -1,22 +1,7 @@
-import {
-  GetServerSideProps,
-  GetServerSidePropsContext,
-  InferGetServerSidePropsType,
-  NextPage,
-} from "next";
 import styles from "./index.module.scss";
 import Head from "next/head";
-import {
-  useSession,
-  signIn,
-  signOut,
-  getSession,
-  getProviders,
-} from "next-auth/react";
-import nextAuth, { getServerSession } from "next-auth";
-import authOptions from "../api/auth/[...nextauth]";
+
 import { useEffect, useState } from "react";
-import ProfileButton from "@/components/Header/Buttons/Profile";
 
 const admin = ({}) => {
   const [nicknameUser, setNicknameUser] = useState<string | null>();

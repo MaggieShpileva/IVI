@@ -3,6 +3,7 @@ import Link from "next/link";
 import styles from "./index.module.scss";
 import { t } from "i18next";
 import { useTranslation } from "next-export-i18n";
+import { signOut } from "next-auth/react";
 
 const CompanyPolicy: FC = () => {
   const { t } = useTranslation();

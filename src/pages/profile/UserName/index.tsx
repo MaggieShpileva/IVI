@@ -6,8 +6,8 @@ import { TiPencil } from "react-icons/ti";
 import { GiSave } from "react-icons/gi";
 
 type Props = {
-  name: string | undefined;
-  email: string | undefined;
+  name: string;
+  email: string;
 };
 const UserName: FC<Props> = (props) => {
   const { t } = useTranslation();

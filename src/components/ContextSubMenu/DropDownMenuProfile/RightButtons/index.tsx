@@ -6,12 +6,14 @@ import { useRouter } from "next/router";
 import { useSelector } from "react-redux";
 import { selectAuthUser } from "@/Redux/auth/selectors";
 import { selectRegistrUser } from "@/Redux/registration/selectors";
+import { useSession } from "next-auth/react";
 
 export const RightButtons: FC = () => {
   const { t } = useTranslation();
   const router = useRouter();
-
+  const session = useSession();
   const [locale, setLocale] = useState<any>("ru");
+
   useEffect(() => {
     if (router.query?.lang) {
       setLocale(router.query?.lang);
@@ -19,32 +21,13 @@ export const RightButtons: FC = () => {
       setLocale("ru");
     }
   }, [router]);
-  const [emailUser, setEmailUser] = useState<string | null>();
-  const [nicknameUser, setNicknameUser] = useState<string | null>();
-  const resAuth = useSelector(selectAuthUser);
-  const resRegistr = useSelector(selectRegistrUser);
-
-  useEffect(() => {
-    if (localStorage.getItem("email") === null) {
-      localStorage.setItem("email", "");
-      localStorage.setItem("nickname", "");
-    } else {
-      setEmailUser(localStorage.getItem("email"));
-      setNicknameUser(localStorage.getItem("nickname"));
-    }
-  }, []);
-
-  useEffect(() => {
-    setEmailUser(localStorage.getItem("email"));
-    setNicknameUser(localStorage.getItem("nickname"));
-  }, [resAuth, resRegistr]);
 
   return (
     <div className={styles.right_buttons}>
-      {emailUser !== "" ? (
+      {session.status == "authenticated" ? (
         <div className={styles.user_data}>
-          <h1>{nicknameUser !== "" ? nicknameUser : t("profile.user")}</h1>
-          <h2> {emailUser}</h2>
+          <h1>{session.data.user.name}</h1>
+          <h2> {session.data.user.email}</h2>
         </div>
       ) : (
         <Link href={`/profile?lang=${locale}`}>

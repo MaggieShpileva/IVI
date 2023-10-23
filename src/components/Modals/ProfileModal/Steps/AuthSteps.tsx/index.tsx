@@ -12,8 +12,9 @@ import styles from "../index.module.scss";
 import { Button } from "@/components/Button/Button";
 import CompanyPolicy from "../../PolicyBlock";
 import { useLanguageSwitcherIsActive, useTranslation } from "next-export-i18n";
-import { SlSocialVkontakte } from "react-icons/sl";
+import { SlSocialGoogle, SlSocialVkontakte } from "react-icons/sl";
 import { signIn, useSession } from "next-auth/react";
+import GoogleButton from "@/components/Buttons/GoogleButton";
 type Props = {
   step: number;
   setStep: Dispatch<SetStateAction<number>>;
@@ -56,15 +57,15 @@ const AuthSteps: FC<Props> = (props) => {
         <div className={styles.subtitle}>{t(props.content[props.step][0])}</div>
         <span>{t("profile.least_characters")}</span>
       </div>
-      {props.step === 0 && (
+      {/* {props.step === 0 && (
         <div
           className={[styles.message, styles.vk].join(" ")}
-          onClick={() => signIn("vk")}
+          onClick={() => signIn("google")}
         >
-          <SlSocialVkontakte />
+          <SlSocialGoogle />
           {t("profile.Vkontakte")}
         </div>
-      )}
+      )} */}
 
       <div className={styles.enter_data}>
         <div
@@ -72,9 +73,6 @@ const AuthSteps: FC<Props> = (props) => {
           onFocus={onFocusHandler}
           onBlur={onBlurHandler}
         >
-          {/* <div className={styles.label} ref={labelRef} onClick={onFocusHandler}>
-            {props.content[props.step][1]}
-          </div> */}
           <input
             className={styles.enter_login}
             type="text"
@@ -93,6 +91,7 @@ const AuthSteps: FC<Props> = (props) => {
             {t("buttons.continue")}
           </Button>
         </div>
+        <GoogleButton />
         <CompanyPolicy />
       </div>
     </div>

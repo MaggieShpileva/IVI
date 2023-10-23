@@ -1,4 +1,4 @@
-import { useState, FC, useEffect } from "react";
+import { MouseEventHandler, useState } from "react";
 import Head from "next/head";
 import styles from "./index.module.scss";
 import { Button } from "@/components/Button/Button";
@@ -7,37 +7,18 @@ import { ButtonsProfile } from "@/components/ButtonsProfile";
 import UserName from "./UserName";
 import LogOut from "./LogOut";
 import ProfileModal from "@/components/Modals/ProfileModal";
-import { useSelector } from "react-redux";
-import { selectAuthUser } from "@/Redux/auth/selectors";
-import { selectRegistrUser } from "@/Redux/registration/selectors";
-import { useSession } from "next-auth/react";
+import { signIn, useSession } from "next-auth/react";
 
 const Profile = () => {
   const { t } = useTranslation();
   const [openModal, setOpenModal] = useState(false);
-  const [emailUser, setEmailUser] = useState<string | null>();
-  const [nicknameUser, setNicknameUser] = useState<string | null>();
-  const resAuth = useSelector(selectAuthUser);
-  const resRegistr = useSelector(selectRegistrUser);
-
-  useEffect(() => {
-    setEmailUser(localStorage.getItem("email"));
-    setNicknameUser(localStorage.getItem("nickname"));
-  }, []);
-
-  useEffect(() => {
-    setEmailUser(localStorage.getItem("email"));
-    setNicknameUser(localStorage.getItem("nickname"));
-  }, [resAuth, resRegistr]);
-
   const session = useSession();
-  useEffect(() => {
-    console.log(session.status);
-    if (session.data?.user.name) {
-      localStorage.setItem("session", session.data?.user.name);
-    }
-  }, [session]);
+  console.log(session);
 
+  const handleClick: MouseEventHandler<HTMLButtonElement> = async (event) => {
+    event.preventDefault();
+    setOpenModal(true);
+  };
   return (
     <>
       <Head>
@@ -45,17 +26,17 @@ const Profile = () => {
       </Head>
       {!openModal ? (
         <div className={styles.profile}>
-          {emailUser ? (
+          {session.status == "authenticated" ? (
             <UserName
-              name={nicknameUser ? nicknameUser : emailUser}
-              email={emailUser}
+              name={session.data.user.name}
+              email={session.data.user?.email}
             />
           ) : (
             <Button
               type="loginButton"
               color="pink"
               className={styles.loginBtn}
-              onClick={() => setOpenModal(true)}
+              onClick={handleClick}
             >
               <div className="nbl-icon nbl-icon_avatar_16 nbl-button__nbl-icon"></div>
               {t("buttons.enter_register")}

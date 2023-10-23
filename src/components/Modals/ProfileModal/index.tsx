@@ -8,6 +8,7 @@ import { useDispatch } from "react-redux";
 import { getDataUserFail, getDataUserSuccess } from "@/Redux/auth/actions";
 import { getDataUserRegistrationFail } from "@/Redux/registration/actions";
 import { useTranslation } from "next-export-i18n";
+import data from "@/data/users.json";
 
 type ProfileModalProps = {
   openModal: boolean;
@@ -52,16 +53,22 @@ const ProfileModal: FC<ProfileModalProps> = ({ openModal, setOpenModal }) => {
 
   //авторизация пользователя
   const authorization = async () => {
-    try {
-      const res = await Login(dataUser.login, dataUser.password);
-      localStorage.setItem("token", res.data.tokens.accessToken);
-      localStorage.setItem("idUser", res.data.user.id.toString());
-      localStorage.setItem("email", res.data.user.email);
-      put(getDataUserSuccess(res.data));
-    } catch (e) {
-      put(getDataUserFail());
-      console.log(`authorization ${e}`);
-    }
+    console.log(dataUser);
+    await signIn("credentials", {
+      email: dataUser.login,
+      password: dataUser.password,
+      redirect: false,
+    });
+    // try {
+    //   const res = await Login(dataUser.login, dataUser.password);
+    //   localStorage.setItem("token", res.data.tokens.accessToken);
+    //   localStorage.setItem("idUser", res.data.user.id.toString());
+    //   localStorage.setItem("email", res.data.user.email);
+    //   put(getDataUserSuccess(res.data));
+    // } catch (e) {
+    //   put(getDataUserFail());
+    //   console.log(`authorization ${e}`);
+    // }
   };
 
   const registration = async () => {
@@ -149,12 +156,32 @@ const ProfileModal: FC<ProfileModalProps> = ({ openModal, setOpenModal }) => {
     }
   }, [isRegistration]);
 
+  const click = async () => {
+    const response = await fetch("/api/users/route", {
+      method: "POST",
+    });
+    console.log(response);
+    // try {
+    //   const response = await fetch("/api/addNewObject", {
+    //     method: "POST",
+    //   });
+
+    //   if (response.status === 200) {
+    //     console.log("Новый объект успешно добавлен в файл JSON.");
+    //   } else {
+    //     console.error("Произошла ошибка при добавлении объекта в файл JSON.");
+    //   }
+    // } catch (error) {
+    //   console.error("Ошибка:", error);
+    // }
+  };
   return (
     <div
       className={`${styles.profileModal} ${
         openModal && styles.profileModal_open
       }`}
     >
+      <button onClick={click}>regist</button>
       <div className={styles.headerRow}>
         <h1 className={styles.title}>{t("buttons.enter_or_regist")}</h1>
         <button className={styles.closeBtn} onClick={() => setOpenModal(false)}>
