@@ -3,7 +3,6 @@ import Link from "next/link";
 import { useTranslation } from "next-export-i18n";
 import styles from "./index.module.scss";
 import { useAppDispatch } from "@/hooks/hooks";
-import { setGenres, setYears, setCountries } from "@/Redux/filter/actions";
 import { useRouter } from "next/router";
 import { Loader } from "../Loader";
 import data from "../../data/movies.json";
@@ -43,7 +42,7 @@ export const ContextSubMenu: FC<ContextSubProps> = ({
               {genres?.map((item, index) => (
                 <li
                   key={item.id}
-                  onClick={() => dispatch(setGenres(item.name))}
+                  // onClick={() => dispatch(setGenres(item.name))}
                 >
                   <Link href={`/movies?lang=${lang}`}>{item.name}</Link>
                 </li>
@@ -54,17 +53,17 @@ export const ContextSubMenu: FC<ContextSubProps> = ({
         <div>
           <h3>{t("contextSubMenu.countries")}</h3>
           <ul>
-            <li key={0} onClick={() => dispatch(setCountries("Россия"))}>
+            <li key={0}>
               <Link href={`/movies?lang=${lang}`}>
                 {t("contextSubMenu.countries_russian")}
               </Link>
             </li>
-            <li key={1} onClick={() => dispatch(setCountries("США"))}>
+            <li key={1}>
               <Link href={`/movies?lang=${lang}`}>
                 {t("contextSubMenu.countries_usa")}
               </Link>
             </li>
-            <li key={2} onClick={() => dispatch(setCountries("СССР"))}>
+            <li key={2}>
               <Link href={`/movies?lang=${lang}`}>
                 {t("contextSubMenu.countries_ussr")}
               </Link>
@@ -72,22 +71,22 @@ export const ContextSubMenu: FC<ContextSubProps> = ({
           </ul>
           <h3>{t("contextSubMenu.years")}</h3>
           <ul>
-            <li key={0} onClick={() => dispatch(setYears([2010, 2023]))}>
+            <li key={0}>
               <Link href={`/movies?lang=${lang}`}>
                 {t("header.movies")} 2010 - 2023
               </Link>
             </li>
-            <li key={1} onClick={() => dispatch(setYears([2000, 2010]))}>
+            <li key={1}>
               <Link href={`/movies?lang=${lang}`}>
                 {t("header.movies")} 2000 - 2010
               </Link>
             </li>
-            <li key={2} onClick={() => dispatch(setYears([1990, 2000]))}>
+            <li key={2}>
               <Link href={`/movies?lang=${lang}`}>
                 {t("header.movies")} 1990 - 2000
               </Link>
             </li>
-            <li key={3} onClick={() => dispatch(setYears([1940, 1990]))}>
+            <li key={3}>
               <Link href={`/movies?lang=${lang}`}>
                 {t("filters.before_year")} 1990
               </Link>

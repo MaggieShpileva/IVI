@@ -4,13 +4,11 @@ import { BsChevronCompactDown, BsChevronCompactUp } from "react-icons/bs";
 import { useLanguageQuery, useTranslation } from "next-export-i18n";
 import { SortType } from "@/types/types";
 import { useDispatch, useSelector } from "react-redux";
-import { selectFilters } from "../../Redux/filter/selectors";
-import { setSortFilter } from "../../Redux/filter/actions";
 
 const Sort: FC = () => {
   const { t } = useTranslation();
   const dispatch = useDispatch();
-  const { sort } = useSelector(selectFilters);
+  const sort = "SCORE";
 
   const SortList = {
     SCORE: `${t("filters.by_score")}`,
@@ -23,7 +21,7 @@ const Sort: FC = () => {
 
   const onClickSort = (value: SortType) => {
     setIsOpen(false);
-    dispatch(setSortFilter(value));
+    // dispatch(setSortFilter(value));
   };
 
   return (
@@ -38,6 +36,7 @@ const Sort: FC = () => {
           {isOpen ? <BsChevronCompactUp /> : <BsChevronCompactDown />}
         </div>
       </div>
+      {/*  
       {isOpen && (
         <div className={styles.sort__popup}>
           <div className={styles.label}>{t("filters.sort")}</div>
@@ -68,6 +67,7 @@ const Sort: FC = () => {
           </div>
         </div>
       )}
+      */}
     </div>
   );
 };

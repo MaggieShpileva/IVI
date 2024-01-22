@@ -17,7 +17,6 @@ type Props = {
   popularActors: PersonForSliderType[];
 };
 const PersonsSlider: FC<Props> = ({ popularActors }) => {
-  console.log(popularActors);
   const newSettings = {
     ...settings, // текущие настройки слайдера
     centerMode: false, // дополнительные свойства

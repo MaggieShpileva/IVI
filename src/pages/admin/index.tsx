@@ -2,12 +2,14 @@ import styles from "./index.module.scss";
 import Head from "next/head";
 
 import { useEffect, useState } from "react";
+import mongoose, { Schema } from "mongoose";
 
 const admin = ({}) => {
   const [nicknameUser, setNicknameUser] = useState<string | null>();
   useEffect(() => {
     setNicknameUser(localStorage.getItem("nickname"));
   }, []);
+
   return (
     <>
       <Head>

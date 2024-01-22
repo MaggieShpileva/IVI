@@ -27,7 +27,7 @@ import { ParsedUrlQuery } from "querystring";
 import { TrailerModal } from "@/components/Modals/TrailerModal";
 import WatchOnAllDevices from "@/components/WatchOnAllDevices";
 
-const CardId = ({ movie }: InferGetStaticPropsType<typeof getStaticProps>) => {
+const CardId = (movie: MovieKinopoiskT) => {
   const [id, setId] = useState<any>();
   const { t } = useTranslation();
   const [isLoading, setIsLoading] = useState(false);
@@ -86,69 +86,63 @@ const CardId = ({ movie }: InferGetStaticPropsType<typeof getStaticProps>) => {
       setIsLoading(false);
     }
   }, [router]);
-  console.log(movie);
+
   return (
     <div className={styles.container}>
-      {movie.id === 0 || movie === undefined ? (
-        <Loader type={"loading_page"} />
-      ) : (
-        <div>
-          <div className={styles.wrapper}>
-            <TrailerCard
-              filmPicture={movie.poster.url}
-              filmLink={movie.videos.trailers[0].url}
-              isOpenModal={isOpenModal}
-              setIsOpenModal={setIsOpenModal}
-              className={styles.trailer}
-            />
-            <DescriptionCard movie={movie} className={styles.discription} />
-            <ActorsSlider
-              persons={movie.persons || []}
-              className={styles.slider_actors}
-              isLoading={isLoading}
-              setIsLoading={setIsLoading}
-            />
-            <InfoMovie className={styles.info} movie={movie} />
-          </div>
-          {/* <Comments /> */}
-          <SimpleSlider
-            title={t("sliders_title.watching_with_a_movie")}
-            films={similarMovies}
-            isLoading={isLoading}
-            setIsLoading={setIsLoading}
-          />
-          <SliderContinueBrowsing
-            title={t("sliders_title.continue_browsing")}
-            type={"detailed"}
-            movies={continueBrowsing}
-            isLoading={isLoading}
-            setIsLoading={setIsLoading}
-          />
-          {isOpenModal && (
-            <TrailerModal
-              isOpenModal={isOpenModal}
-              setIsOpenModal={setIsOpenModal}
-              trailer={movie.videos.trailers[0].url}
-            />
-          )}
-          <WatchOnAllDevices
-            filmLang={[
-              { lang: "ru", filmName: movie.name },
-              { lang: "en", filmName: movie.enName },
-            ]}
+      <div>
+        <div className={styles.wrapper}>
+          <TrailerCard
             filmPicture={movie.poster.url}
+            filmLink={movie.videos.trailers[0].url}
+            isOpenModal={isOpenModal}
+            setIsOpenModal={setIsOpenModal}
+            className={styles.trailer}
           />
+          <DescriptionCard movie={movie} className={styles.discription} />
+          <ActorsSlider
+            persons={movie.persons || []}
+            className={styles.slider_actors}
+            isLoading={isLoading}
+            setIsLoading={setIsLoading}
+          />
+          <InfoMovie className={styles.info} movie={movie} />
         </div>
-      )}
-      {isLoading && <Loader type={"loading_page"} />}
+        {/* <Comments /> */}
+        {/* <SimpleSlider
+          title={t("sliders_title.watching_with_a_movie")}
+          films={similarMovies}
+          isLoading={isLoading}
+          setIsLoading={setIsLoading}
+        /> */}
+        <SliderContinueBrowsing
+          title={t("sliders_title.continue_browsing")}
+          type={"detailed"}
+          movies={continueBrowsing}
+          isLoading={isLoading}
+          setIsLoading={setIsLoading}
+        />
+        {isOpenModal && (
+          <TrailerModal
+            isOpenModal={isOpenModal}
+            setIsOpenModal={setIsOpenModal}
+            trailer={movie.videos.trailers[0].url}
+          />
+        )}
+        <WatchOnAllDevices
+          filmLang={[
+            { lang: "ru", filmName: movie.name },
+            { lang: "en", filmName: movie.enName },
+          ]}
+          filmPicture={movie.poster.url}
+        />
+      </div>
+      {/* {isLoading && <Loader type={"loading_page"} />} */}
     </div>
   );
 };
 
-export const getStaticProps = async (
-  context: GetStaticPropsContext<ParsedUrlQuery, PreviewData>
-) => {
-  const movieResponse = await axios.get(
+export const getServerSideProps = async (context: any) => {
+  const { data } = await axios(
     `https://api.kinopoisk.dev/v1.3/movie/${context.params?.id}`,
     {
       headers: {
@@ -157,24 +151,8 @@ export const getStaticProps = async (
       },
     }
   );
-  return {
-    props: { movie: movieResponse.data as MovieKinopoiskT },
-    revalidate: 60,
-  };
+
+  return { props: data };
 };
 
-export const getStaticPaths: GetStaticPaths = async (context) => {
-  const locales = ["ru", "en"];
-
-  const paths = locales.flatMap((locale) => {
-    return [Array(1)].map((movie) => ({
-      params: { id: moviesData.id.toString(), lang: locale },
-    }));
-  });
-
-  return {
-    paths,
-    fallback: "blocking",
-  };
-};
 export default CardId;

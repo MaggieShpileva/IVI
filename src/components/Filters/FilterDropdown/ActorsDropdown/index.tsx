@@ -8,7 +8,7 @@ const ActorsDropdown: FC = () => {
 
   return (
     <div className={styles.actorsDropdown}>
-      <Search placeholder={t("filters.actor")} className={styles.search} type="actors" />
+      {/* <Search placeholder={t("filters.actor")} className={styles.search} type="actors" /> */}
     </div>
   );
 };

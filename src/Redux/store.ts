@@ -10,13 +10,14 @@ import createSagaMiddleware from "redux-saga";
 import { rootSaga } from "@/sagas/RootSaga";
 import { topMovieReducer } from "./topTenMovies/reducer";
 import { moviesReducer } from "./movies/reducer";
-import { filterReducer } from "./filter/reducer";
 import { homePageReducer } from "./homePage/reducer";
 import { continueBrowsingReducer } from "./continue_browsing/reducer";
 import { AuthUserReducer } from "./auth/reducer";
 import { RegistrationUserReducer } from "./registration/reducer";
 import { commentReducer } from "./comments/reducer";
 import { MovieReducer } from "./movie/reducer";
+import { filtersReducer } from "./filters/reducer";
+import { moviesWithFiltersReducer } from "./moviesWithFilters/reducer";
 
 const sagaMiddleware = createSagaMiddleware();
 const makeStore = () => {
@@ -25,13 +26,14 @@ const makeStore = () => {
       banner: bannerReducer,
       topMovies: topMovieReducer,
       movies: moviesReducer,
-      filters: filterReducer,
+      filters: filtersReducer,
       homePage: homePageReducer,
       continueBrowsing: continueBrowsingReducer,
       authData: AuthUserReducer,
       registrationData: RegistrationUserReducer,
       comment: commentReducer,
       movie: MovieReducer,
+      moviesWithFilters: moviesWithFiltersReducer,
     },
     middleware: [...getDefaultMiddleware(), sagaMiddleware],
   });

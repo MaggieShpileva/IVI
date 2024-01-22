@@ -124,9 +124,19 @@ export type ProfileType = {
   createdAt: string;
 };
 export type RegistrationUserType = {
-  tokens: TokenType;
-  user: UserType;
-  profile: ProfileType;
+  message: string;
+  user: {
+    email: string;
+    name: string;
+    password: string;
+    role: string;
+  };
+  // id: string;
+  // _id: string;
+  // email: string;
+  // name: string;
+  // password: string;
+  // role: string;
 };
 
 export type AuthResponseType = {
@@ -269,8 +279,8 @@ export type MovieKinopoiskT = {
   budget: Price;
   poster: Poster;
   facts: Facts[];
-  genres: Name[];
-  countries: Name[];
+  genres: NameT[];
+  countries: NameT[];
   videos: Videos;
   seasonsInfo: any;
   persons: Person[];
@@ -278,7 +288,7 @@ export type MovieKinopoiskT = {
   typeNumber: number;
   alternativeName: string;
   enName: any;
-  names: Name[];
+  names: NameT[];
   ageRating: number;
   ratingMpaa: string;
   updateDates: any;
@@ -355,10 +365,10 @@ type Facts = {
   spoiler: boolean;
 };
 
-export type Name = {
+export type NameT = {
   name: string;
   language?: string;
-  type: any;
+  type?: any;
 };
 
 type Videos = {

@@ -17,13 +17,21 @@
       grid-template-columns: 1fr;
     }
   }
+
   .rangeRow {
     margin: 30px 0;
     display: flex;
     justify-content: space-around;
+    align-items: center;
     flex-wrap: wrap;
     gap: 20px;
   }
+
+  .selectBtn {
+    height: 40px;
+    width: 100px;
+  }
+
   .filtersBtn {
     margin-top: 16px;
     height: 32px;

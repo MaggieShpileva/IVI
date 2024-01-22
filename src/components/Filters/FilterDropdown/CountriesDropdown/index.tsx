@@ -6,32 +6,30 @@ import { BsChevronCompactRight, BsChevronCompactLeft } from "react-icons/bs";
 import { Button } from "@/components/Button/Button";
 import CountriesSlider from "../../CountriesSlider";
 import { useAppDispatch, useAppSelector } from "@/hooks/hooks";
-import { selectMovies } from "@/Redux/movies/selectors";
-import { setCountries } from "@/Redux/filter/actions";
-import { selectFilters } from "@/Redux/filter/selectors";
 import { useRouter } from "next/router";
+import cointriesData from "../../../../data/new_data/countries.json";
 
 const CountriesDropdown: FC = () => {
+  console.log("cointriesData", cointriesData);
   const router = useRouter();
   const lang = router.asPath.includes("lang=en") ? "en" : "ru";
-  const { countriesEn, countriesRu } = useAppSelector(selectMovies);
-  const countries = lang === "en" ? countriesEn : countriesRu;
-  const { countries: countriesFilter } = useAppSelector(selectFilters);
-  const dispatch = useAppDispatch();
+  // const { countriesEn, countriesRu } = useAppSelector(selectMovies);
+  // const countries = lang === "en" ? countriesEn : countriesRu;
+  // const { countries: countriesFilter } = useAppSelector(selectFilters);
 
   return (
     <div className={styles.countriesDropdown}>
       <div className={styles.sliderRow}>
-        <CountriesSlider />
+        <CountriesSlider countries={cointriesData} />
       </div>
       <ul className={styles.content}>
-        {countries.map((item, i) => (
+        {cointriesData.map((item, i) => (
           <ListItem
             item={item.name}
-            key={item.id}
+            key={item.name}
             icon={BsCheckLg}
-            onClick={() => dispatch(setCountries(item.name))}
-            activeFilter={countriesFilter.includes(item.name)}
+            // onClick={() => dispatch(setCountries(item.name))}
+            // activeFilter={countriesFilter.includes(item.name)}
           />
         ))}
       </ul>

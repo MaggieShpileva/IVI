@@ -1,4 +1,4 @@
-import { IMovie, MoviesForFilmsPageT } from "@/types/types";
+import { IMovie, ISimpleMovie, MoviesForFilmsPageT } from "@/types/types";
 import { MOVIES_ACTIONS } from "./action-types";
 
 export const getMoviesError = (error: string) => {
@@ -28,7 +28,7 @@ export const getMoviesDataStart = () => {
   };
 };
 
-export const getMoviesDataSuccess = (data: MoviesForFilmsPageT) => {
+export const getMoviesDataSuccess = (data: ISimpleMovie[]) => {
   return {
     type: MOVIES_ACTIONS.GET_MOVIES_DATA_SUCCESS,
     payload: data,

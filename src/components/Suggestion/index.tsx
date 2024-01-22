@@ -7,7 +7,6 @@ import { BsChevronCompactLeft, BsChevronCompactRight } from "react-icons/bs";
 import styles from "./index.module.scss";
 import { Button } from "../Button/Button";
 import { useAppDispatch } from "@/hooks/hooks";
-import { setCountries, setGenres, setYears } from "@/Redux/filter/actions";
 import { useTranslation } from "next-export-i18n";
 
 const PrevButton: FC = (props: any) => {
@@ -53,7 +52,7 @@ const Suggestion: FC = () => {
 
   return (
     <Slider {...settings} className={styles.container}>
-      <Button
+      {/* <Button
         className={styles.slide}
         key={"2022"}
         onClick={() => dispatch(setYears([2022, 2022]))}
@@ -136,7 +135,7 @@ const Suggestion: FC = () => {
         onClick={() => dispatch(setGenres("драма"))}
       >
         {t("filters.drama")}
-      </Button>
+      </Button> */}
     </Slider>
   );
 };

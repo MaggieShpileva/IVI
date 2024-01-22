@@ -16,17 +16,24 @@ const PosterPerson: FC<PosterPersonProps> = ({ person, lang }) => {
 
   if (lang === "ru") {
     personNameLang =
-      person.person.personLang[0].personName || person.person.personLang[1].personName || "";
+      person.person.personLang[0].personName ||
+      person.person.personLang[1].personName ||
+      "";
   } else {
     personNameLang =
-      person.person.personLang[1].personName || person.person.personLang[0].personName || "";
+      person.person.personLang[1].personName ||
+      person.person.personLang[0].personName ||
+      "";
   }
 
   const name = personNameLang.match(/.*\s/i) || personNameLang;
   const surname = personNameLang.slice(name[0]?.length) || "";
 
   return (
-    <Link href={`/person/${person.person.id}?lang=${lang}`} className={styles.container}>
+    <Link
+      href={`/person/${person.person.id}?lang=${lang}`}
+      className={styles.container}
+    >
       <div className={styles.poster}>
         <Image
           src={person.person.personPicture}
@@ -34,13 +41,17 @@ const PosterPerson: FC<PosterPersonProps> = ({ person, lang }) => {
           className={styles.img}
           fill
           sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+          placeholder="blur"
+          blurDataURL={person.person.personPicture}
         ></Image>
         <div className={styles.label}>{person.filmsNumber}</div>
       </div>
       <div className={styles.description}>
         <div className={styles.name}>{name}</div>
         <div className={styles.surname}>{surname}</div>
-        <div className={styles.countFilms}>{strHandler(person.filmsNumber)}</div>
+        <div className={styles.countFilms}>
+          {strHandler(person.filmsNumber)}
+        </div>
       </div>
     </Link>
   );

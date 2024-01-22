@@ -28,6 +28,7 @@ const AuthSteps: FC<Props> = (props) => {
   const labelRef = useRef<HTMLDivElement>(null);
   const [inputValue, setInputValue] = useState(props.inputData);
   const { t } = useTranslation();
+
   const onFocusHandler = () => {
     inputRef.current?.focus();
     labelRef.current?.classList.add(`${styles.active}`);

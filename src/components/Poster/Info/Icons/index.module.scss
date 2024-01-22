@@ -12,4 +12,8 @@
   align-items: center;
   justify-content: center;
   float: right;
+
+  @include mobile_m {
+    display: none;
+  }
 }

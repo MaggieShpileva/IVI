@@ -9,13 +9,14 @@ import styles from "./index.module.scss";
 import { useAppDispatch, useAppSelector } from "@/hooks/hooks";
 import { selectMovies } from "@/Redux/movies/selectors";
 import { genresIcons } from "@/data/filters";
-import { setGenres } from "@/Redux/filter/actions";
 import { useRouter } from "next/router";
 
 const PrevButton: FC = (props: any) => {
   return (
     <Button
-      className={`${styles.prev} ${props.className.includes("slick-disabled") && styles.disabled}`}
+      className={`${styles.prev} ${
+        props.className.includes("slick-disabled") && styles.disabled
+      }`}
       onClick={props.onClick}
     >
       {" "}
@@ -27,7 +28,9 @@ const PrevButton: FC = (props: any) => {
 const NextButton: FC = (props: any) => {
   return (
     <Button
-      className={`${styles.next} ${props.className.includes("slick-disabled") && styles.disabled}`}
+      className={`${styles.next} ${
+        props.className.includes("slick-disabled") && styles.disabled
+      }`}
       onClick={props.onClick}
     >
       <BsChevronCompactRight />
@@ -35,7 +38,14 @@ const NextButton: FC = (props: any) => {
   );
 };
 
-const GenresMinSlider: FC = () => {
+type Props = {
+  genres: {
+    id: number;
+    name: string;
+  }[];
+};
+
+const GenresMinSlider: FC<Props> = ({ genres }) => {
   const settings = {
     dots: false,
     infinite: false,
@@ -61,11 +71,10 @@ const GenresMinSlider: FC = () => {
     ],
   };
 
-  const { genresEn, genresRu } = useAppSelector(selectMovies);
   const dispatch = useAppDispatch();
   const router = useRouter();
   const lang = router.asPath.includes("lang=en") ? "en" : "ru";
-  const genres = lang === "en" ? genresEn : genresRu;
+  // const genres = lang === "en" ? genresEn : genresRu;
 
   return (
     <Slider {...settings} className={styles.container}>
@@ -77,7 +86,6 @@ const GenresMinSlider: FC = () => {
             genres={item.name}
             id={findItem?.id || 1}
             key={item.id}
-            onClick={() => dispatch(setGenres(item.name))}
             iconClass={findItem?.icon || ""}
           />
         );

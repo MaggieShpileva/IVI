@@ -12,7 +12,6 @@ import {
   MoviesForFilmsPageT,
 } from "@/types/types";
 import { movieAllApi } from "@/Redux/movies/worker";
-import { setResultsFilter } from "@/Redux/filter/actions";
 import { editGenresApi } from "@/Redux/movies/worker";
 import { MOVIES_ACTIONS } from "@/Redux/movies/action-types";
 
@@ -24,7 +23,7 @@ export function* watchMoviesSaga() {
 export function* getMoviesSaga() {
   yield put(getMoviesDataStart());
   try {
-    const responseMovies: MoviesForFilmsPageT = yield call(movieAllApi);
+    const responseMovies: ISimpleMovie[] = yield call(movieAllApi);
     yield put(getMoviesDataSuccess(responseMovies));
   } catch (error) {
     console.log("error in getMoviesSaga", error);
@@ -36,7 +35,6 @@ export function* editGenreSaga(args: any) {
   console.log("start saga edit genre");
   try {
     const response: GenresType = yield call(editGenresApi, args);
-    console.log("response", response);
   } catch (error) {
     console.log("error in editGenreSaga", error);
     yield put(getMoviesError(String(error)));

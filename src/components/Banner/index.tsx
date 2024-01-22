@@ -26,13 +26,16 @@ const Banner: FC<Props> = ({ movies }) => {
         <div key={`${item}-${index}`} className={styles.slide}>
           <iframe
             className={styles.slide_img}
-            src={`${item.trailer}?version=3&controls=0&autoplay=1&&controls=0disablekb=1&fs=0&loop=1&modestbranding=1&playsinline=1&iv_load_policy=3&mute=1`}
+            src={`${item.trailer}?controls=0&autoplay=1&disablekb=1&fs=0&loop=1&modestbranding=1&iv_load_policy=3&mute=1`}
+            title={`${item.id}`}
             frameBorder="0"
             width="720"
             height="405"
             allowFullScreen
-            allow="autoplay; encrypted-media"
+            allow="autoplay; encrypted-media;"
+            loading="lazy"
           ></iframe>
+
           <div
             className={styles.bg}
             onClick={() => {

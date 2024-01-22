@@ -3,6 +3,7 @@ import {
   GenresType,
   IMovie,
   ISimpleMovie,
+  MovieKinopoiskT,
   PersonForSearchType,
   PersonForSliderType,
 } from "@/types/types";
@@ -11,29 +12,11 @@ import { MOVIES_ACTIONS } from "./action-types";
 import { createWrapper, Context, HYDRATE } from "next-redux-wrapper";
 
 export interface IMoviesState {
-  start: string;
-  actors: PersonForSearchType[];
-  directors: PersonForSearchType[];
-  genresRu: GenresType[];
-  genresEn: GenresType[];
-  countriesRu: CountriesType[];
-  countriesEn: CountriesType[];
-  popularActors: PersonForSliderType[];
-  bestFilmsSet: ISimpleMovie[];
-  error: string;
+  data: MovieKinopoiskT[];
 }
 
 const initialState: IMoviesState = {
-  start: "",
-  actors: [],
-  directors: [],
-  genresRu: [],
-  genresEn: [],
-  countriesRu: [],
-  countriesEn: [],
-  popularActors: [],
-  bestFilmsSet: [],
-  error: "",
+  data: [],
 };
 
 export const moviesReducer = (
@@ -45,7 +28,7 @@ export const moviesReducer = (
       return action.payload;
 
     case MOVIES_ACTIONS.GET_MOVIES_ERROR:
-      return { ...state, error: action.payload };
+      return action.type;
 
     case MOVIES_ACTIONS.GET_MOVIES_START:
       return action.type;

@@ -9,7 +9,6 @@ import { settings } from "./../settings";
 import { useAppDispatch, useAppSelector } from "@/hooks/hooks";
 import { selectMovies } from "@/Redux/movies/selectors";
 import { genresIcons } from "@/data/filters";
-import { setGenres } from "@/Redux/filter/actions";
 
 import { useSelector } from "react-redux";
 
@@ -32,7 +31,7 @@ const GenresSlider: FC<Props> = ({ genresRu, genresEn }) => {
   const router = useRouter();
   const lang = router.asPath.includes("lang=en") ? "en" : "ru";
   const genres = lang === "en" ? genresEn : genresRu;
-  console.log(genres);
+
   return (
     <div>
       {genres === undefined ? (
@@ -49,7 +48,7 @@ const GenresSlider: FC<Props> = ({ genresRu, genresEn }) => {
                 size="big"
                 genres={item.name}
                 id={findItem?.id || 1}
-                onClick={() => dispatch(setGenres(item.name))}
+                // onClick={() => dispatch(setGenres(item.name))}
                 iconClass={findItem?.icon || ""}
               />
             );

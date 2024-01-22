@@ -7,13 +7,14 @@ import { BsChevronCompactLeft, BsChevronCompactRight } from "react-icons/bs";
 import styles from "./index.module.scss";
 import { useAppDispatch, useAppSelector } from "@/hooks/hooks";
 import { selectMovies } from "@/Redux/movies/selectors";
-import { setCountries } from "@/Redux/filter/actions";
 import { useRouter } from "next/router";
 
 const PrevButton: FC = (props: any) => {
   return (
     <Button
-      className={`${styles.prev} ${props.className.includes("slick-disabled") && styles.disabled}`}
+      className={`${styles.prev} ${
+        props.className.includes("slick-disabled") && styles.disabled
+      }`}
       onClick={props.onClick}
     >
       <BsChevronCompactLeft />
@@ -24,7 +25,9 @@ const PrevButton: FC = (props: any) => {
 const NextButton: FC = (props: any) => {
   return (
     <Button
-      className={`${styles.next} ${props.className.includes("slick-disabled") && styles.disabled}`}
+      className={`${styles.next} ${
+        props.className.includes("slick-disabled") && styles.disabled
+      }`}
       onClick={props.onClick}
     >
       <BsChevronCompactRight />
@@ -32,7 +35,11 @@ const NextButton: FC = (props: any) => {
   );
 };
 
-const CountriesSlider: FC = () => {
+type Props = {
+  countries: { name: string; slug: string }[];
+};
+
+const CountriesSlider: FC<Props> = ({ countries }) => {
   const settings = {
     dots: false,
     infinite: false,
@@ -43,20 +50,16 @@ const CountriesSlider: FC = () => {
     nextArrow: <NextButton />,
   };
 
-  const { countriesRu, countriesEn } = useAppSelector(selectMovies);
+  // const { countriesRu, countriesEn } = useAppSelector(selectMovies);
   const dispatch = useAppDispatch();
   const router = useRouter();
   const lang = router.asPath.includes("lang=en") ? "en" : "ru";
-  const countries = lang === "en" ? countriesEn : countriesRu;
+  // const countries = lang === "en" ? countriesEn : countriesRu;
 
   return (
     <Slider {...settings} className={styles.container}>
       {countries.map((item, i) => (
-        <Button
-          className={styles.slide}
-          key={item.id}
-          onClick={() => dispatch(setCountries(item.name))}
-        >
+        <Button className={styles.slide} key={item.name}>
           {item.name}
         </Button>
       ))}

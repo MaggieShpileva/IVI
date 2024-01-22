@@ -3,13 +3,13 @@ import styles from "./index.module.scss";
 import Image from "next/image";
 import Icons from "./Info/Icons";
 import Info from "./Info";
-import { ISimpleMovie, SimilarMovie } from "@/types/types";
+import { ISimpleMovie, MovieKinopoiskT, SimilarMovie } from "@/types/types";
 import { useRouter } from "next/router";
 import { useTranslation } from "next-export-i18n";
 const posterImage = require("../../images/posterImage.jpeg");
 
 export type PosterMovieProps = {
-  film: ISimpleMovie;
+  film: MovieKinopoiskT;
 };
 
 const Poster: FC<PosterMovieProps> = ({ film }) => {
@@ -43,30 +43,29 @@ const Poster: FC<PosterMovieProps> = ({ film }) => {
       >
         <div className={styles.poster}>
           <Image
-            src={film?.filmPoster}
+            src={film?.poster.url ? film.poster.url : film.backdrop.previewUrl}
             alt=""
             className={styles.img}
             fill
             sizes="100%"
+            priority={true}
           ></Image>
 
-          {isOpen && film.filmGrade && (
+          {isOpen && film.rating && (
             <Info
-              raiting={film.filmGrade}
-              filmYear={film.filmYear}
+              raiting={film.rating.kp}
+              filmYear={film.year}
               country={film.countries}
               genres={film.genres}
             />
           )}
         </div>
-        <div className={styles.description}>
+        {/* <div className={styles.description}>
           <span className={styles.name}>
-            {locale === "ru"
-              ? film?.filmLang[0].filmName
-              : film?.filmLang[1].filmName}
+            {locale === "ru" ? film?.name : film?.enName}
           </span>
           <span className={styles.tariff}>{t("movie.free")}</span>
-        </div>
+        </div> */}
       </div>
     </div>
   );

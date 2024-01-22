@@ -7,18 +7,20 @@ import $api from "./configeAxios";
 export const Login = (
   email: string,
   password: string
-): Promise<AxiosResponse<AuthResponseType>> => {
-  return $api.post("/users/login", { email, password });
+): Promise<AxiosResponse<any>> => {
+  return $api.get("/users");
 };
 
 export const Registration = (
   nickname: string,
   email: string,
   password: string
-): Promise<AxiosResponse<RegistrationUserType>> => {
-  return $api.post("/users/registration", {
-    userDto: { email: email, password: password },
-    profileDto: { nickname: nickname },
+) => {
+  return $api.post("/users", {
+    email: email,
+    name: nickname,
+    password: password,
+    role: "user",
   });
 };
 

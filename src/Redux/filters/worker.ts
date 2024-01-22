@@ -6,39 +6,21 @@ import { useAppSelector } from "@/hooks/hooks";
 import { selectFilters } from "./selectors";
 import { SortType } from "@/types/types";
 import axios from "axios";
-import movies from "@/data/home_data.json";
-export const filterApi = async (body?: any) => {
-  const { data } = await axios({
-    method: "post",
-    url: `https://84.201.131.92:5003/movies?lang=ru`,
-    data: body,
-    headers: {
-      "Content-type": "application/json; charset=UTF-8",
-    },
+import movies from "../../data/new_data/movies.json";
+
+export const MoviesFiltersWorker = (raiting: number[], score: number[]) => {
+  const result = movies.docs.filter((item) => {
+    return (
+      item.rating.kp >= raiting[0] &&
+      item.rating.kp <= raiting[1] &&
+      item.votes.kp >= score[0] &&
+      item.votes.kp <= score[1]
+    );
   });
-  //console.log("dataafter", data);
-  return data;
+  return result;
 };
 
-export const filterRangesHandler = (
-  movies: IMovie[],
-  yearsMin: number,
-  yearsMax: number,
-  ratingMin: number,
-  ratingMax: number,
-  scoreMin: number,
-  scoreMax: number
-): IMovie[] => {
-  return movies
-    .filter((item) => item.filmYear >= yearsMin && item.filmYear <= yearsMax)
-    .filter(
-      (item) => item.filmGrade >= ratingMin && item.filmGrade <= ratingMax
-    )
-    .filter(
-      (item) =>
-        item.filmTotalGrade >= scoreMin && item.filmTotalGrade <= scoreMax
-    );
-};
+// -----------------
 
 export const filterPersons = (
   movies: IMovie[],

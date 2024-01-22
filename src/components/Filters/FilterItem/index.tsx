@@ -5,7 +5,7 @@ import { Button } from "../../Button/Button";
 import FilterDropdown from "../FilterDropdown";
 
 type Props = {
-  item?: any;
+  item?: { title: string; value: string };
   isOpen?: string;
   setIsOpen?: Dispatch<SetStateAction<string>>;
 };
@@ -18,11 +18,17 @@ const FilterItem: FC<Props> = ({ item, isOpen, setIsOpen }) => {
   return (
     <div className={styles.filtersItem}>
       <Button
-        className={`${styles.content} ${isOpen === item.title && styles.content_active}`}
+        className={`${styles.content} ${
+          isOpen === item.title && styles.content_active
+        }`}
         onClick={onClickhandler}
       >
         {item.value}
-        {isOpen === item.title ? <BsChevronCompactUp /> : <BsChevronCompactDown />}
+        {isOpen === item.title ? (
+          <BsChevronCompactUp />
+        ) : (
+          <BsChevronCompactDown />
+        )}
       </Button>
       {isOpen === item.title && <FilterDropdown filter={item.title} />}
     </div>

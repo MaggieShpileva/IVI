@@ -1,13 +1,19 @@
-import { FC, useState, useRef, useEffect } from "react";
+import {
+  FC,
+  useState,
+  useRef,
+  useEffect,
+  Dispatch,
+  SetStateAction,
+} from "react";
 import styles from "./index.module.scss";
 import { Range, getTrackBackground, useThumbOverlap } from "react-range";
 import { useLanguageQuery, useTranslation } from "next-export-i18n";
 import { useAppDispatch } from "../../hooks/hooks";
-import { setScore } from "../../Redux/filter/actions";
 
 const STEP = 1000;
 const MIN = 0;
-const MAX = 1000000;
+const MAX = 1500000;
 
 const ThumbLabel = ({
   rangeRef,
@@ -24,9 +30,8 @@ const ThumbLabel = ({
     index,
     0,
     " - ",
-    (value) => `${value}`,
+    (value) => `${value}`
   );
-
   return (
     <div
       data-label={index}
@@ -44,49 +49,35 @@ const ThumbLabel = ({
         ...(labelStyle as React.CSSProperties),
       }}
     >
-      {index === 1 ? `${labelValue}` : `от ${labelValue}`}
+      {index === 1 ? `до ${labelValue}` : `от ${labelValue}`}
     </div>
   );
 };
 
 type Props = {
-  rtl: boolean;
-  scoreMin: number;
-  scoreMax: number;
+  score: number[];
+  setScore: Dispatch<SetStateAction<number[]>>;
 };
 
-const RangeScore: FC<Props> = ({ rtl, scoreMin, scoreMax }) => {
+const RangeScore: FC<Props> = ({ score, setScore }) => {
   const { t } = useTranslation();
-  const [values, setValues] = useState([scoreMin, scoreMax]);
-  const [finalValues, setFinalValues] = useState([scoreMin, scoreMax]);
+  const [values, setValues] = useState(score);
   const rangeRef: any = useRef<Range>();
-  const isMounted = useRef(false);
-
-  const dispatch = useAppDispatch();
 
   useEffect(() => {
-    if (isMounted.current) {
-      dispatch(setScore([finalValues[0], finalValues[1]]));
-    }
-    isMounted.current = true;
-  }, [finalValues]);
-
-  useEffect(() => {
-    setValues([scoreMin, scoreMax]);
-  }, [scoreMin, scoreMax]);
+    setScore(values);
+  }, [values]);
 
   return (
     <div className={styles.rangeContainer}>
       <h3 className={styles.title}>{t("filters.score")}</h3>
       <Range
         ref={rangeRef}
-        step={STEP}
+        step={1000}
         min={MIN}
         max={MAX}
         values={values}
-        rtl={rtl}
-        onChange={(values) => setValues(values)}
-        onFinalChange={(values) => setFinalValues(values)}
+        onChange={(val) => setValues(val)}
         renderTrack={({ props, children }) => (
           <div
             onMouseDown={props.onMouseDown}
@@ -109,7 +100,6 @@ const RangeScore: FC<Props> = ({ rtl, scoreMin, scoreMax }) => {
                   colors: ["#a5a1b2", "#ea003d", "#a5a1b2"],
                   min: MIN,
                   max: MAX,
-                  rtl,
                 }),
                 alignSelf: "center",
               }}
@@ -132,7 +122,11 @@ const RangeScore: FC<Props> = ({ rtl, scoreMin, scoreMax }) => {
               alignItems: "center",
             }}
           >
-            <ThumbLabel rangeRef={rangeRef.current} values={values} index={index} />
+            <ThumbLabel
+              rangeRef={rangeRef.current}
+              values={values}
+              index={index}
+            />
             <div
               style={{
                 height: "16px",

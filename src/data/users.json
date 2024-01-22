@@ -19,5 +19,12 @@
     "name": "Just a Guest",
     "password": "12345",
     "role": "guest"
+  },
+  {
+    "id": "4",
+    "email": "test",
+    "name": "test",
+    "password": "test",
+    "role": "guest"
   }
 ]

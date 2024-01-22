@@ -30,6 +30,8 @@ const nextConfig = {
       "kinopoiskapiunofficial.tech",
       "widgets.kinopoisk.ru",
       "www.themoviedb.org",
+      "img02.rl0.ru",
+      "ic.pics.livejournal.com",
     ],
     remotePatterns: [
       {
@@ -39,6 +41,13 @@ const nextConfig = {
         pathname: "/account123/**",
       },
     ],
+  },
+  contentSecurityPolicy: {
+    directives: {
+      defaultSrc: ["'self'"],
+      frameSrc: ["https://www.youtube.com"],
+      // ...
+    },
   },
 };
 

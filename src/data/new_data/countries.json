@@ -1,0 +1,265 @@
+[
+  {
+    "name": "Австралия",
+    "slug": "Avstraliya"
+  },
+  {
+    "name": "Австрия",
+    "slug": "Avstriya"
+  },
+  {
+    "name": "Азербайджан",
+    "slug": "Azerbaydzhan"
+  },
+
+  {
+    "name": "Аргентина",
+    "slug": "Argentina"
+  },
+  {
+    "name": "Армения",
+    "slug": "Armeniya"
+  },
+
+  {
+    "name": "Беларусь",
+    "slug": "Belarus"
+  },
+
+  {
+    "name": "Бельгия",
+    "slug": "Belgiya"
+  },
+
+  {
+    "name": "Болгария",
+    "slug": "Bolgariya"
+  },
+
+  {
+    "name": "Бразилия",
+    "slug": "Braziliya"
+  },
+
+  {
+    "name": "Великобритания",
+    "slug": "Velikobritaniya"
+  },
+  {
+    "name": "Венгрия",
+    "slug": "Vengriya"
+  },
+  {
+    "name": "Венесуэла",
+    "slug": "Venesuela"
+  },
+
+  {
+    "name": "Вьетнам",
+    "slug": "Vetnam"
+  },
+
+  {
+    "name": "Германия",
+    "slug": "Germaniya"
+  },
+
+  {
+    "name": "Гонконг",
+    "slug": "Gonkong"
+  },
+
+  {
+    "name": "Греция",
+    "slug": "Greciya"
+  },
+  {
+    "name": "Грузия",
+    "slug": "Gruziya"
+  },
+
+  {
+    "name": "Дания",
+    "slug": "Daniya"
+  },
+
+  {
+    "name": "Доминикана",
+    "slug": "Dominikana"
+  },
+
+  {
+    "name": "Израиль",
+    "slug": "Izrail"
+  },
+  {
+    "name": "Индия",
+    "slug": "Indiya"
+  },
+
+  {
+    "name": "Ирак",
+    "slug": "Irak"
+  },
+  {
+    "name": "Иран",
+    "slug": "Iran"
+  },
+
+  {
+    "name": "Испания",
+    "slug": "Ispaniya"
+  },
+  {
+    "name": "Италия",
+    "slug": "Italiya"
+  },
+
+  {
+    "name": "Казахстан",
+    "slug": "Kazahstan"
+  },
+
+  {
+    "name": "Канада",
+    "slug": "Kanada"
+  },
+
+  {
+    "name": "Киргизия",
+    "slug": "Kirgiziya"
+  },
+
+  {
+    "name": "Китай",
+    "slug": "Kitay"
+  },
+  {
+    "name": "Колумбия",
+    "slug": "Kolumbiya"
+  },
+
+  {
+    "name": "Северная Корея ",
+    "slug": "Koreya-Severnaya"
+  },
+  {
+    "name": "Южная Корея ",
+    "slug": "Koreya-Yuzhnaya"
+  },
+
+  {
+    "name": "Латвия",
+    "slug": "Latviya"
+  },
+
+  {
+    "name": "Литва",
+    "slug": "Litva"
+  },
+
+  {
+    "name": "Мексика",
+    "slug": "Meksika"
+  },
+
+  {
+    "name": "Нидерланды",
+    "slug": "Niderlandy"
+  },
+
+  {
+    "name": "Новая Зеландия",
+    "slug": "Novaya-Zelandiya"
+  },
+
+  {
+    "name": "Россия",
+    "slug": "Rossiya"
+  },
+
+  {
+    "name": "Румыния",
+    "slug": "Rumyniya"
+  },
+
+  {
+    "name": "США",
+    "slug": "USA"
+  },
+
+  {
+    "name": "Сербия",
+    "slug": "Serbiya"
+  },
+  {
+    "name": "Сербия и Черногория",
+    "slug": "Serbiya-i-Chernogoriya"
+  },
+
+  {
+    "name": "Сингапур",
+    "slug": "Singapur"
+  },
+
+  {
+    "name": "Туркменистан",
+    "slug": "Turkmenistan"
+  },
+  {
+    "name": "Турция",
+    "slug": "Turciya"
+  },
+
+  {
+    "name": "Узбекистан",
+    "slug": "Uzbekistan"
+  },
+  {
+    "name": "Украина",
+    "slug": "Ukraina"
+  },
+
+  {
+    "name": "Финляндия",
+    "slug": "Finlyandiya"
+  },
+
+  {
+    "name": "Франция",
+    "slug": "Franciya"
+  },
+
+  {
+    "name": "Хорватия",
+    "slug": "Horvatiya"
+  },
+
+  {
+    "name": "Черногория",
+    "slug": "Chernogoriya"
+  },
+  {
+    "name": "Чехия",
+    "slug": "Chehiya"
+  },
+
+  {
+    "name": "Швейцария",
+    "slug": "Shveycariya"
+  },
+  {
+    "name": "Швеция",
+    "slug": "Shveciya"
+  },
+
+  {
+    "name": "Эстония",
+    "slug": "Estoniya"
+  },
+
+  {
+    "name": "Япония",
+    "slug": "Yaponiya"
+  }
+]

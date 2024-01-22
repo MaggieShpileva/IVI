@@ -6,14 +6,11 @@ import { BiCircle } from "react-icons/bi";
 import { TbCircleDot } from "react-icons/tb";
 import { useTranslation } from "next-export-i18n";
 import { useAppDispatch, useAppSelector } from "@/hooks/hooks";
-import { setYears } from "@/Redux/filter/actions";
 import { FilterRangeType } from "@/types/types";
-import { selectFilters } from "@/Redux/filter/selectors";
 
 const YearsDropdown: FC = () => {
   const { t } = useTranslation();
   const dispatch = useAppDispatch();
-  const { yearsMin, yearsMax } = useAppSelector(selectFilters);
 
   type yearsFilterType = {
     years: string;
@@ -28,12 +25,12 @@ const YearsDropdown: FC = () => {
     { years: `${t("filters.before_year")} 1980`, range: [1940, 1980] },
   ];
 
-  const findFilter = yearsFilter.find(
-    (item) => item.range[0] === yearsMin && item.range[1] === yearsMax,
-  );
+  // const findFilter = yearsFilter.find(
+  //   (item) => item.range[0] === yearsMin && item.range[1] === yearsMax,
+  // );
 
   const onClickHandler = (range: [number, number]) => {
-    dispatch(setYears(range));
+    // dispatch(setYears(range));
   };
 
   return (
@@ -44,7 +41,7 @@ const YearsDropdown: FC = () => {
           key={100}
           icon={TbCircleDot}
           onClick={() => onClickHandler([1940, 2023])}
-          activeFilter={!findFilter}
+          // activeFilter={!findFilter}
         />
         {yearsFilter.map((item, index) => (
           <ListItem
@@ -52,7 +49,7 @@ const YearsDropdown: FC = () => {
             key={index}
             icon={BiCircle}
             onClick={() => onClickHandler(item.range)}
-            activeFilter={findFilter && item.years === findFilter.years}
+            // activeFilter={findFilter && item.years === findFilter.years}
           />
         ))}
       </ul>

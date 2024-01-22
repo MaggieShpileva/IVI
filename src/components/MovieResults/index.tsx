@@ -1,52 +1,51 @@
-import { FC, useState, useEffect } from "react";
+import { FC, useState, useEffect, Dispatch, SetStateAction } from "react";
 import styles from "./index.module.scss";
 import Poster from "../Poster";
 import Link from "next/link";
-import { IMovie, ISimpleMovie } from "@/types/types";
-import { Button } from "../Button/Button";
-import { useAppSelector } from "@/hooks/hooks";
-import { selectFilters } from "@/Redux/filter/selectors";
+import { MovieKinopoiskT } from "@/types/types";
 import { useTranslation } from "next-export-i18n";
 import { useRouter } from "next/router";
 import { useSelector } from "react-redux";
-import { selectMovies } from "@/Redux/movies/selectors";
+import { selectFilters } from "@/Redux/filters/selectors";
 
 const SHOW_SIZE = 14;
-
-const MovieResults: FC = () => {
+type Props = {
+  data: MovieKinopoiskT[];
+};
+const MovieResults: FC<Props> = ({ data }) => {
   const { t } = useTranslation();
-  const { results } = useAppSelector(selectFilters);
-  const [itemsToShow, setItemsToShow] = useState<ISimpleMovie[]>([]);
+  const [itemsToShow, setItemsToShow] = useState<MovieKinopoiskT[]>([]);
   const [next, setNext] = useState(0);
   const [locale, setLocale] = useState<any>("ru");
   const router = useRouter();
-  const { bestFilmsSet } = useSelector(selectMovies);
+  // const { bestFilmsSet } = useSelector(selectMovies);
 
   useEffect(() => {
-    setItemsToShow([...results.slice(0, SHOW_SIZE)]);
-    setNext(SHOW_SIZE);
-  }, [results]);
+    setItemsToShow(data);
+    // setItemsToShow([...data.slice(0, SHOW_SIZE)]);
+    // setNext(SHOW_SIZE);
+  }, []);
 
-  useEffect(() => {
-    if (
-      router.query?.filter === "Best films" ||
-      router.query?.filter === "Лучшие фильмы"
-    ) {
-      console.log(router.query?.filter);
-      console.log(bestFilmsSet);
-      setItemsToShow(bestFilmsSet);
-    }
-    console.log(router.query?.filter);
-  }, [router.query]);
+  // useEffect(() => {
+  //   if (
+  //     router.query?.filter === "Best films" ||
+  //     router.query?.filter === "Лучшие фильмы"
+  //   ) {
+  //     console.log(router.query?.filter);
+  //     console.log(bestFilmsSet);
+  //     setItemsToShow(bestFilmsSet);
+  //   }
+  //   console.log(router.query?.filter);
+  // }, [router.query]);
 
-  const sliceArray = (start: number, end: number): void => {
-    setItemsToShow((state) => [...state, ...results.slice(start, end)]);
-  };
+  // const sliceArray = (start: number, end: number): void => {
+  //   setItemsToShow((state) => [...state, ...results.slice(start, end)]);
+  // };
 
-  const clickHandler = () => {
-    sliceArray(next, next + SHOW_SIZE);
-    setNext((state) => (state < results.length ? state + SHOW_SIZE : state));
-  };
+  // const clickHandler = () => {
+  //   sliceArray(next, next + SHOW_SIZE);
+  //   setNext((state) => (state < results.length ? state + SHOW_SIZE : state));
+  // };
 
   useEffect(() => {
     if (router.query?.lang) {
@@ -59,7 +58,7 @@ const MovieResults: FC = () => {
   return (
     <div className={styles.results}>
       <div className={styles.results__list}>
-        {itemsToShow.map((item, i) => (
+        {data.map((item, i) => (
           <Link
             href={`/film/${item.id}?lang=${
               router.asPath.includes("lang=en") ? "en" : "ru"
@@ -70,14 +69,14 @@ const MovieResults: FC = () => {
           </Link>
         ))}
       </div>
-      <Button
+      {/* <Button
         className={`${styles.results__moreBtn} ${
           itemsToShow.length >= results.length && styles.results__moreBtn_none
         }`}
-        onClick={clickHandler}
+        // onClick={clickHandler}
       >
         {t("buttons.show_more")}
-      </Button>
+      </Button> */}
     </div>
   );
 };

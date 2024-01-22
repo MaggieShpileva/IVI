@@ -1,3 +1,4 @@
+import { BannerType } from "@/types/types";
 import { DATA_BANNER } from "./action-types";
 
 export const getDataBanner = () => {
@@ -12,7 +13,7 @@ export const getDataBannerStart = () => {
   };
 };
 
-export const getDataBannerSuccess = (value: any) => {
+export const getDataBannerSuccess = (value: BannerType[]) => {
   return {
     type: DATA_BANNER.GET_DATA_BANNER_SUCCESS,
     payload: value,

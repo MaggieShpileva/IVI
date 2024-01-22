@@ -1,11 +1,16 @@
-import { FC, useState, useRef, ReactNode, useEffect } from "react";
+import {
+  FC,
+  useState,
+  useRef,
+  ReactNode,
+  useEffect,
+  SetStateAction,
+  Dispatch,
+} from "react";
 import styles from "./index.module.scss";
 import { Range, getTrackBackground, useThumbOverlap } from "react-range";
-import { useLanguageQuery, useTranslation } from "next-export-i18n";
-import { useDispatch } from "react-redux";
-import { setRating } from "../../Redux/filter/actions";
+import { useTranslation } from "next-export-i18n";
 
-const STEP = 0.1;
 const MIN = 0;
 const MAX = 10.0;
 
@@ -42,29 +47,17 @@ const ThumbLabel = ({
 };
 
 export type RangeRatingProps = {
-  rtl: boolean;
-  ratingMin: number;
-  ratingMax: number;
+  raiting: number[];
+  setRaiting: Dispatch<SetStateAction<number[]>>;
 };
 
-const RangeRating: FC<RangeRatingProps> = ({ rtl, ratingMin, ratingMax }) => {
+const RangeRating: FC<RangeRatingProps> = ({ raiting, setRaiting }) => {
   const { t } = useTranslation();
-  const [values, setValues] = useState([ratingMin, ratingMax]);
-  const [finalValues, setFinalValues] = useState([ratingMin, ratingMax]);
-  const isMounted = useRef(false);
-
-  const dispatch = useDispatch();
+  const [values, setValues] = useState(raiting);
 
   useEffect(() => {
-    if (isMounted.current) {
-      dispatch(setRating([finalValues[0], finalValues[1]]));
-    }
-    isMounted.current = true;
-  }, [finalValues]);
-
-  useEffect(() => {
-    setValues([ratingMin, ratingMax]);
-  }, [ratingMin, ratingMax]);
+    setRaiting(values);
+  }, [values]);
 
   const rangeRef: any = useRef<Range>();
 
@@ -73,13 +66,11 @@ const RangeRating: FC<RangeRatingProps> = ({ rtl, ratingMin, ratingMax }) => {
       <h3 className={styles.title}>{t("filters.rating")}</h3>
       <Range
         ref={rangeRef}
-        step={STEP}
-        min={MIN}
-        max={MAX}
+        step={0.1}
+        min={0}
+        max={10.0}
         values={values}
-        rtl={rtl}
         onChange={(values) => setValues(values)}
-        onFinalChange={(values) => setFinalValues(values)}
         renderTrack={({ props, children }) => (
           <div
             onMouseDown={props.onMouseDown}
@@ -102,7 +93,6 @@ const RangeRating: FC<RangeRatingProps> = ({ rtl, ratingMin, ratingMax }) => {
                   colors: ["#a5a1b2", "#ea003d", "#a5a1b2"],
                   min: MIN,
                   max: MAX,
-                  rtl,
                 }),
                 alignSelf: "center",
               }}

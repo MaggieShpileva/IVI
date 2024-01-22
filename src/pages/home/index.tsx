@@ -5,23 +5,25 @@ import { useTranslation } from "next-export-i18n";
 import { FC, useEffect, useState } from "react";
 import SimpleSlider from "@/components/Sliders/SimpleSlider";
 import main_banner from "@/data/Main_banner.json";
-import { ISimpleMovie, MoviesForSlidersOnHomePageT } from "@/types/types";
+import {
+  ISimpleMovie,
+  MovieKinopoiskT,
+  MoviesForSlidersOnHomePageT,
+} from "@/types/types";
 import { connect, useDispatch, useSelector } from "react-redux";
 import { wrapper } from "@/Redux/store";
-import { DATA_BANNER } from "@/Redux/banner/action-types";
-import { selectBanner } from "@/Redux/banner/selectors";
-import { RootState } from "@/Redux/RootState";
 import SliderContinueBrowsing from "@/components/Sliders/SliderContinueBrowsing";
 import { Loader } from "@/components/Loader";
 import styles from "./Home.module.scss";
 import { getDataBanner } from "@/Redux/banner/actions";
 import { getDataHomePage } from "@/Redux/homePage/actions";
 import SliderTopTen from "@/components/Sliders/SliderTopTen";
-import { selectHomePage } from "@/Redux/homePage/selectors";
 import { selectBrowsingMovie } from "@/Redux/continue_browsing/selectors";
 import { BrowsingMovie } from "@/Redux/continue_browsing/reducer";
 import { NextPage } from "next";
-
+import bestMovies from "../../data/new_data/movies.json";
+import comedies from "../../data/new_data/comedy.json";
+import adventure_time from "../../data/new_data/adventure_time.json";
 const inter = Inter({ subsets: ["latin"] });
 
 const Home: NextPage = ({ movies, banner }: any) => {
@@ -54,32 +56,38 @@ const Home: NextPage = ({ movies, banner }: any) => {
       {isLoading && <Loader type="loading_page" />}
       <SimpleSlider
         title={t("sliders_title.best_films")}
-        films={movies.bestFantasyFilmsSet as ISimpleMovie[]}
+        films={bestMovies.docs as MovieKinopoiskT[]}
         isLoading={isLoading}
         setIsLoading={setIsLoading}
       />
 
       <SimpleSlider
         title={t("sliders_title.family_comedies")}
-        films={movies.familyFriendlyComediesSet as ISimpleMovie[]}
+        films={comedies.docs as MovieKinopoiskT[]}
         isLoading={isLoading}
         setIsLoading={setIsLoading}
       />
       <SliderTopTen />
 
       <SimpleSlider
+        title={"Захватывающее кино"}
+        films={adventure_time.docs as MovieKinopoiskT[]}
+        isLoading={isLoading}
+        setIsLoading={setIsLoading}
+      />
+      {/* <SimpleSlider
         title={t("sliders_title.best_fantasy_films")}
         films={movies.bestFantasyFilmsSet as ISimpleMovie[]}
         isLoading={isLoading}
         setIsLoading={setIsLoading}
-      />
+      /> */}
     </div>
   );
 };
 export const getStaticProps = wrapper.getServerSideProps(
   (store) => async (context) => {
-    await store.dispatch(getDataHomePage());
-    await store.dispatch(getDataBanner());
+    store.dispatch(getDataHomePage());
+    store.dispatch(getDataBanner());
     await new Promise((resolve) => setTimeout(resolve, 1000));
     const movies = (await store.getState()
       .homePage) as MoviesForSlidersOnHomePageT;

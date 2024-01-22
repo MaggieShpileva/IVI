@@ -2,8 +2,13 @@ import { AuthResponseType, RegistrationUserType } from "@/types/types";
 import { REGISTRATION_DATA } from "./action-types";
 
 const initialData = {
-  tokens: { accessToken: "", refreshToken: "" },
-  user: { id: 0, email: "", password: "", createdAt: "", updatedAt: "" },
+  message: "User created",
+  user: {
+    email: "",
+    password: "",
+    name: "",
+    role: "",
+  },
   profile: { id: 0, userId: 0, nickname: "", updatedAt: "", createdAt: "" },
 };
 

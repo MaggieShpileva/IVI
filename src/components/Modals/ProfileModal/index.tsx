@@ -1,14 +1,24 @@
 import { FC, Dispatch, SetStateAction, useState, useEffect } from "react";
 import styles from "./index.module.scss";
-import { signIn, SignInResponse, useSession } from "next-auth/react";
+import {
+  getSession,
+  signIn,
+  SignInResponse,
+  signOut,
+  useSession,
+} from "next-auth/react";
 import AuthSteps from "./Steps/AuthSteps.tsx";
 import AuthResult from "./Steps/AuthResult";
 import { Login, Registration } from "@/profileRequests/AuthService";
 import { useDispatch } from "react-redux";
 import { getDataUserFail, getDataUserSuccess } from "@/Redux/auth/actions";
-import { getDataUserRegistrationFail } from "@/Redux/registration/actions";
+import {
+  getDataUserRegistrationFail,
+  getDataUserRegistrationSuccess,
+} from "@/Redux/registration/actions";
 import { useTranslation } from "next-export-i18n";
 import data from "@/data/users.json";
+import $api from "@/profileRequests/configeAxios";
 
 type ProfileModalProps = {
   openModal: boolean;
@@ -37,7 +47,7 @@ const ProfileModal: FC<ProfileModalProps> = ({ openModal, setOpenModal }) => {
 
   const [step, setStep] = useState<number>(0);
   const [inputData, setInputData] = useState("");
-  const { data: session } = useSession();
+  const session = useSession();
   const [isRequest, setIsRequest] = useState(false);
   const [isRegistration, setIsRegistration] = useState<boolean>(false);
   const [isAuthorization, setIsAuthorization] = useState<boolean>(false);
@@ -53,22 +63,11 @@ const ProfileModal: FC<ProfileModalProps> = ({ openModal, setOpenModal }) => {
 
   //авторизация пользователя
   const authorization = async () => {
-    console.log(dataUser);
     await signIn("credentials", {
       email: dataUser.login,
       password: dataUser.password,
       redirect: false,
     });
-    // try {
-    //   const res = await Login(dataUser.login, dataUser.password);
-    //   localStorage.setItem("token", res.data.tokens.accessToken);
-    //   localStorage.setItem("idUser", res.data.user.id.toString());
-    //   localStorage.setItem("email", res.data.user.email);
-    //   put(getDataUserSuccess(res.data));
-    // } catch (e) {
-    //   put(getDataUserFail());
-    //   console.log(`authorization ${e}`);
-    // }
   };
 
   const registration = async () => {
@@ -79,10 +78,7 @@ const ProfileModal: FC<ProfileModalProps> = ({ openModal, setOpenModal }) => {
         dataUser.login,
         dataUser.password
       );
-      localStorage.setItem("token", res.data.tokens.accessToken);
-      localStorage.setItem("idUser", res.data.user.id.toString());
-      localStorage.setItem("email", res.data.user.email);
-      localStorage.setItem("nickname", res.data.profile.nickname);
+      put(getDataUserRegistrationSuccess(res.data.user));
     } catch (e) {
       put(getDataUserRegistrationFail());
       console.log("registration", e);
@@ -156,32 +152,14 @@ const ProfileModal: FC<ProfileModalProps> = ({ openModal, setOpenModal }) => {
     }
   }, [isRegistration]);
 
-  const click = async () => {
-    const response = await fetch("/api/users/route", {
-      method: "POST",
-    });
-    console.log(response);
-    // try {
-    //   const response = await fetch("/api/addNewObject", {
-    //     method: "POST",
-    //   });
+  
 
-    //   if (response.status === 200) {
-    //     console.log("Новый объект успешно добавлен в файл JSON.");
-    //   } else {
-    //     console.error("Произошла ошибка при добавлении объекта в файл JSON.");
-    //   }
-    // } catch (error) {
-    //   console.error("Ошибка:", error);
-    // }
-  };
   return (
     <div
       className={`${styles.profileModal} ${
         openModal && styles.profileModal_open
       }`}
     >
-      <button onClick={click}>regist</button>
       <div className={styles.headerRow}>
         <h1 className={styles.title}>{t("buttons.enter_or_regist")}</h1>
         <button className={styles.closeBtn} onClick={() => setOpenModal(false)}>

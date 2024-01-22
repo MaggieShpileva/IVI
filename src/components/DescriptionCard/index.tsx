@@ -6,7 +6,6 @@ import {
   FilmLangType,
   GenresType,
   MovieKinopoiskT,
-  Name,
 } from "@/types/types";
 import { useRouter } from "next/router";
 import { useTranslation } from "next-export-i18n";

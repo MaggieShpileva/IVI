@@ -10,7 +10,7 @@ import { call, put } from "redux-saga/effects";
 export function* getDataBannerSaga() {
   yield put(getDataBannerStart());
   try {
-    const response: BannerType = yield call(getDataBannerWorker);
+    const response: BannerType[] = yield call(getDataBannerWorker);
     yield put(getDataBannerSuccess(response));
     return response;
   } catch (error: any) {

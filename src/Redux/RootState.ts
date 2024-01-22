@@ -1,14 +1,15 @@
 import { BannerReducerT } from "./banner/reducer";
 import { TopMovieReducerT } from "./topTenMovies/reducer";
 import { IMoviesState } from "./movies/reducer";
-import { IFilterState } from "./filter/reducer";
+
 import {
   AuthResponseType,
-  ISimpleMovie,
+  MovieKinopoiskT,
   MoviesForSlidersOnHomePageT,
   RegistrationUserType,
 } from "@/types/types";
 import { BrowsingMovie } from "./continue_browsing/reducer";
+import { IFilterState } from "./filters/reducer";
 
 export type RootState = {
   banner: BannerReducerT;
@@ -21,4 +22,5 @@ export type RootState = {
   registrationData: RegistrationUserType;
   comment: any;
   movie: any;
+  moviesWithFilters: MovieKinopoiskT[];
 };

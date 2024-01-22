@@ -1,4 +1,4 @@
-import { CountriesType, GenresType } from "@/types/types";
+import { CountriesType, GenresType, NameT } from "@/types/types";
 import { FC, useState } from "react";
 import styles from "./index.module.scss";
 import ProgressBar from "./ProgressBar";
@@ -6,14 +6,14 @@ import ProgressBar from "./ProgressBar";
 type Props = {
   raiting: number;
   filmYear: number;
-  country: CountriesType[];
-  genres: GenresType[];
+  country: NameT[];
+  genres: NameT[];
 };
 
 const Rating: FC<Props> = ({ raiting, filmYear, country, genres }) => {
   const renderValue = (array: any) => {
-    return array.map((item: any, index: number) => {
-      if (index == array.length - 1) {
+    return array.slice(0, 2).map((item: any, index: number) => {
+      if (index == 1) {
         return ` ${item.name}`;
       } else {
         return `${item.name}, `;
@@ -45,9 +45,9 @@ const Rating: FC<Props> = ({ raiting, filmYear, country, genres }) => {
 
       <div className={styles.info}>
         <p>
-          {filmYear}, {countryValue}
+          {filmYear}, {renderValue(country)}
         </p>
-        <p>{genresValue}</p>
+        <p>{renderValue(genres)}</p>
       </div>
     </div>
   );
