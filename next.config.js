@@ -81,7 +81,7 @@ module.exports = async (phase, { defaultConfig }) => {
         },
       ];
     },
-    reactStrictMode: false,
+    reactStrictMode: true,
 
     images: {
       unoptimized: true,
