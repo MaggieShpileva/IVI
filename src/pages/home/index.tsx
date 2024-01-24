@@ -13,6 +13,13 @@ import SliderTopTen from "@/components/Sliders/SliderTopTen";
 import { selectBrowsingMovie } from "@/Redux/continue_browsing/selectors";
 import { BrowsingMovie } from "@/Redux/continue_browsing/reducer";
 import { GetStaticProps, NextPage } from "next";
+import adventureMovies from "@/data/new_data/adventure_time.json";
+import banner from "@/data/new_data/Main_banner.json";
+import comediesMovies from "@/data/new_data/comedy.json";
+import horrorMovies from "@/data/new_data/horror_movies.json";
+import popularActors from "@/data/new_data/popularActors.json";
+
+import bestMovies from "@/data/new_data/best-films.json";
 
 import axios from "axios";
 import $api from "@/profileRequests/configeAxios";
@@ -25,13 +32,7 @@ type Props = {
   horrorMovies: PosterKinopoiskType[];
 };
 
-const Home: NextPage<Props> = ({
-  banner,
-  bestMovies,
-  comediesMovies,
-  adventureMovies,
-  horrorMovies,
-}) => {
+const Home: NextPage = () => {
   const { t } = useTranslation();
   const ContinueBrowingmovies: BrowsingMovie[] =
     useSelector(selectBrowsingMovie);
@@ -88,42 +89,42 @@ const Home: NextPage<Props> = ({
     </div>
   );
 };
-export const getStaticProps: GetStaticProps = async (context) => {
-  const banner = await axios
-    .get(`/api/sliders/banner`)
-    .then((response) => response.data);
+// export const getStaticProps: GetStaticProps = async (context) => {
+//   const banner = await axios
+//     .get(`/api/sliders/banner`)
+//     .then((response) => response.data);
 
-  const bestMovies = await axios
-    .get("/api/sliders/bestMovies")
-    .then((response) => response.data);
+//   const bestMovies = await axios
+//     .get("/api/sliders/bestMovies")
+//     .then((response) => response.data);
 
-  const comediesMovies = await axios
-    .get("/api/sliders/comediesMovies")
-    .then((response) => response.data);
+//   const comediesMovies = await axios
+//     .get("/api/sliders/comediesMovies")
+//     .then((response) => response.data);
 
-  const adventureMovies = await axios
-    .get("/api/sliders/adventureMovies")
-    .then((response) => response.data);
+//   const adventureMovies = await axios
+//     .get("/api/sliders/adventureMovies")
+//     .then((response) => response.data);
 
-  const horrorMovies = await axios
-    .get("/api/sliders/horrorMovies")
-    .then((response) => response.data);
+//   const horrorMovies = await axios
+//     .get("/api/sliders/horrorMovies")
+//     .then((response) => response.data);
 
-  const movies = {
-    banner,
-    bestMovies,
-    comediesMovies,
-    adventureMovies,
-    horrorMovies,
-  };
-  return {
-    props: {
-      banner,
-      bestMovies,
-      comediesMovies,
-      adventureMovies,
-      horrorMovies,
-    },
-  };
-};
+//   const movies = {
+//     banner,
+//     bestMovies,
+//     comediesMovies,
+//     adventureMovies,
+//     horrorMovies,
+//   };
+//   return {
+//     props: {
+//       banner,
+//       bestMovies,
+//       comediesMovies,
+//       adventureMovies,
+//       horrorMovies,
+//     },
+//   };
+// };
 export default Home;
