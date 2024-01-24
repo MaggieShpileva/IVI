@@ -1,0 +1,1166 @@
+[
+  {
+    "status": null,
+    "rating": {
+      "kp": 8.819,
+      "imdb": 8.5,
+      "filmCritics": 6.8,
+      "russianFilmCritics": 100,
+      "await": null
+    },
+    "votes": {
+      "kp": 1905100,
+      "imdb": 913027,
+      "filmCritics": 129,
+      "russianFilmCritics": 12,
+      "await": 15
+    },
+    "backdrop": {
+      "url": "https://imagetmdb.com/t/p/original/bGksau9GGu0uJ8DJQ8DYc9JW5LM.jpg",
+      "previewUrl": "https://imagetmdb.com/t/p/w500/bGksau9GGu0uJ8DJQ8DYc9JW5LM.jpg"
+    },
+    "movieLength": 112,
+    "id": 535341,
+    "type": "movie",
+    "name": "1+1",
+    "description": "Пострадав в результате несчастного случая, богатый аристократ Филипп нанимает в помощники человека, который менее всего подходит для этой работы, – молодого жителя предместья Дрисса, только что освободившегося из тюрьмы. Несмотря на то, что Филипп прикован к инвалидному креслу, Дриссу удается привнести в размеренную жизнь аристократа дух приключений.",
+    "year": 2011,
+    "poster": {
+      "url": "https://avatars.mds.yandex.net/get-kinopoisk-image/1946459/bf93b465-1189-4155-9dd1-cb9fb5cb1bb5/orig",
+      "previewUrl": "https://avatars.mds.yandex.net/get-kinopoisk-image/1946459/bf93b465-1189-4155-9dd1-cb9fb5cb1bb5/x1000"
+    },
+    "genres": [
+      {
+        "name": "драма"
+      },
+      {
+        "name": "комедия"
+      },
+      {
+        "name": "биография"
+      }
+    ],
+    "countries": [
+      {
+        "name": "Франция"
+      }
+    ],
+    "typeNumber": 1,
+    "alternativeName": "Intouchables",
+    "enName": "Intouchables",
+    "names": [
+      {
+        "name": "1+1"
+      },
+      {
+        "name": "Intouchables"
+      },
+      {
+        "name": "不可触碰",
+        "language": "CN",
+        "type": null
+      },
+      {
+        "name": "最佳拍档",
+        "language": "CN",
+        "type": null
+      },
+      {
+        "name": "无法触碰",
+        "language": "CN",
+        "type": null
+      },
+      {
+        "name": "Untouchable",
+        "language": "GB",
+        "type": null
+      },
+      {
+        "name": "不可触摸",
+        "language": "CN",
+        "type": null
+      },
+      {
+        "name": "Неприкасаемые",
+        "language": "RU",
+        "type": "Literal"
+      },
+      {
+        "name": "1+1 [Intouchables]",
+        "language": "RU",
+        "type": null
+      },
+      {
+        "name": "Saikyô no futari",
+        "language": "JP",
+        "type": null
+      },
+      {
+        "name": "Amigos",
+        "language": "CL",
+        "type": null
+      },
+      {
+        "name": "Mehubarim la'hayim",
+        "language": "IL",
+        "type": "Hebrew title"
+      },
+      {
+        "name": "Amigos para siempre",
+        "language": "VE",
+        "type": null
+      },
+      {
+        "name": "Prijatelja",
+        "language": "SI",
+        "type": null
+      },
+      {
+        "name": "En oväntad vänskap",
+        "language": "SE",
+        "type": null
+      },
+      {
+        "name": "Intocáveis",
+        "language": "BR",
+        "type": null
+      },
+      {
+        "name": "Intouchables – Ziemlich beste Freunde",
+        "language": "DE",
+        "type": null
+      },
+      {
+        "name": "언터처블 1%의 우정",
+        "language": "KR",
+        "type": null
+      },
+      {
+        "name": "De Uroerlige",
+        "language": "DK",
+        "type": null
+      },
+      {
+        "name": "Intocable",
+        "language": "ES",
+        "type": null
+      },
+      {
+        "name": "Недоторканні",
+        "language": "UA",
+        "type": "Unofficial Title"
+      }
+    ],
+    "ratingMpaa": "r",
+    "shortDescription": "Аристократ на коляске нанимает в сиделки бывшего заключенного. Искрометная французская комедия с Омаром Си",
+    "ticketsOnSale": false,
+    "ageRating": 18,
+    "logo": {
+      "url": "https://avatars.mds.yandex.net/get-ott/1531675/2a0000017f0262661cde61dc260cb86f7830/orig"
+    },
+    "top10": null,
+    "top250": 2,
+    "isSeries": false,
+    "seriesLength": null,
+    "totalSeriesLength": null
+  },
+  {
+    "status": null,
+    "rating": {
+      "kp": 8.564,
+      "imdb": 7.8,
+      "filmCritics": 6.5,
+      "russianFilmCritics": 86.3636,
+      "await": null
+    },
+    "votes": {
+      "kp": 1609439,
+      "imdb": 379868,
+      "filmCritics": 279,
+      "russianFilmCritics": 22,
+      "await": 13639
+    },
+    "backdrop": {
+      "url": "https://imagetmdb.com/t/p/original/tintsaQ0WLzZsTMkTiqtMB3rfc8.jpg",
+      "previewUrl": "https://imagetmdb.com/t/p/w500/tintsaQ0WLzZsTMkTiqtMB3rfc8.jpg"
+    },
+    "movieLength": 113,
+    "id": 1143242,
+    "type": "movie",
+    "name": "Джентльмены",
+    "description": "Один ушлый американец ещё со студенческих лет приторговывал наркотиками, а теперь придумал схему нелегального обогащения с использованием поместий обедневшей английской аристократии и очень неплохо на этом разбогател. Другой пронырливый журналист приходит к Рэю, правой руке американца, и предлагает тому купить киносценарий, в котором подробно описаны преступления его босса при участии других представителей лондонского криминального мира — партнёра-еврея, китайской диаспоры, чернокожих спортсменов и даже русского олигарха.",
+    "year": 2019,
+    "poster": {
+      "url": "https://avatars.mds.yandex.net/get-kinopoisk-image/1599028/637271d5-61b4-4e46-ac83-6d07494c7645/orig",
+      "previewUrl": "https://avatars.mds.yandex.net/get-kinopoisk-image/1599028/637271d5-61b4-4e46-ac83-6d07494c7645/x1000"
+    },
+    "genres": [
+      {
+        "name": "криминал"
+      },
+      {
+        "name": "комедия"
+      },
+      {
+        "name": "боевик"
+      }
+    ],
+    "countries": [
+      {
+        "name": "США"
+      },
+      {
+        "name": "Великобритания"
+      }
+    ],
+    "typeNumber": 1,
+    "alternativeName": "The Gentlemen",
+    "enName": null,
+    "names": [
+      {
+        "name": "Джентльмены"
+      },
+      {
+        "name": "The Gentlemen"
+      },
+      {
+        "name": "Toff Guys",
+        "language": "GB",
+        "type": "working title"
+      },
+      {
+        "name": "Los Caballeros de la mafia",
+        "language": "ES",
+        "type": null
+      },
+      {
+        "name": "Busha",
+        "language": "GB",
+        "type": "working title"
+      },
+      {
+        "name": "Los caballeros: criminales con clase",
+        "language": "AR",
+        "type": null
+      },
+      {
+        "name": "紳士追殺令",
+        "language": "TW",
+        "type": null
+      },
+      {
+        "name": "Джентльмени",
+        "language": "UA",
+        "type": null
+      },
+      {
+        "name": "Εγκληματίες πρώτης τάξεως",
+        "language": "GR",
+        "type": null
+      },
+      {
+        "name": "ジェントルメン：2020",
+        "language": "JP",
+        "type": null
+      }
+    ],
+    "shortDescription": "Наркобарон хочет уйти на покой, но криминальный мир не отпускает. Успешное возвращение Гая Ричи к корням",
+    "ratingMpaa": "r",
+    "ticketsOnSale": false,
+    "ageRating": 18,
+    "logo": {
+      "url": "https://avatars.mds.yandex.net/get-ott/1534341/2a00000176f18064fd95abb74cbcc02873b8/orig"
+    },
+    "top10": null,
+    "top250": 30,
+    "isSeries": false,
+    "seriesLength": null,
+    "totalSeriesLength": null
+  },
+  {
+    "status": null,
+    "rating": {
+      "kp": 8.003,
+      "imdb": 8.2,
+      "filmCritics": 7.8,
+      "russianFilmCritics": 77.4194,
+      "await": null
+    },
+    "votes": {
+      "kp": 1251248,
+      "imdb": 1545452,
+      "filmCritics": 289,
+      "russianFilmCritics": 31,
+      "await": 43022
+    },
+    "backdrop": {
+      "url": "https://imagetmdb.com/t/p/original/2P0toWq3feNvFAzf28j7vNc1IuZ.jpg",
+      "previewUrl": "https://imagetmdb.com/t/p/w500/2P0toWq3feNvFAzf28j7vNc1IuZ.jpg"
+    },
+    "movieLength": 180,
+    "id": 462682,
+    "type": "movie",
+    "name": "Волк с Уолл-стрит",
+    "description": "1987 год. Джордан Белфорт становится брокером в успешном инвестиционном банке. Вскоре банк закрывается после внезапного обвала индекса Доу-Джонса. По совету жены Терезы Джордан устраивается в небольшое заведение, занимающееся мелкими акциями. Его настойчивый стиль общения с клиентами и врождённая харизма быстро даёт свои плоды. Он знакомится с соседом по дому Донни, торговцем, который сразу находит общий язык с Джорданом и решает открыть с ним собственную фирму. В качестве сотрудников они нанимают нескольких друзей Белфорта, его отца Макса и называют компанию «Стрэттон Оукмонт». В свободное от работы время Джордан прожигает жизнь: лавирует от одной вечеринки к другой, вступает в сексуальные отношения с проститутками, употребляет множество наркотических препаратов, в том числе кокаин и кваалюд. Однажды наступает момент, когда быстрым обогащением Белфорта начинает интересоваться агент ФБР...",
+    "year": 2013,
+    "poster": {
+      "url": "https://avatars.mds.yandex.net/get-kinopoisk-image/1946459/5c758ac0-7a5c-4f00-a94f-1be680a312fb/orig",
+      "previewUrl": "https://avatars.mds.yandex.net/get-kinopoisk-image/1946459/5c758ac0-7a5c-4f00-a94f-1be680a312fb/x1000"
+    },
+    "genres": [
+      {
+        "name": "драма"
+      },
+      {
+        "name": "криминал"
+      },
+      {
+        "name": "биография"
+      },
+      {
+        "name": "комедия"
+      }
+    ],
+    "countries": [
+      {
+        "name": "США"
+      }
+    ],
+    "typeNumber": 1,
+    "alternativeName": "The Wolf of Wall Street",
+    "enName": null,
+    "names": [
+      {
+        "name": "Волк с Уолл-стрит"
+      },
+      {
+        "name": "The Wolf of Wall Street"
+      },
+      {
+        "name": "Para Avcisi",
+        "language": "TR",
+        "type": null
+      },
+      {
+        "name": "华尔街狼人",
+        "language": "HK",
+        "type": null
+      },
+      {
+        "name": "华尔街之狼",
+        "language": "CN",
+        "type": null
+      },
+      {
+        "name": "Wilk z Wall Street",
+        "language": "PL",
+        "type": null
+      },
+      {
+        "name": "더 울프 오브 월 스트리트",
+        "language": "KR",
+        "type": null
+      },
+      {
+        "name": "คนจะรวย ช่วยไม่ได้",
+        "language": "TH",
+        "type": null
+      },
+      {
+        "name": "El lobo de Wall Street",
+        "language": "ES",
+        "type": null
+      },
+      {
+        "name": "Wall Streeti hunt",
+        "language": "EE",
+        "type": null
+      }
+    ],
+    "shortDescription": "Восхождение циника-гедониста на бизнес-олимп 1980-х. Блистательный тандем Леонардо ДиКаприо и Мартина Скорсезе",
+    "ageRating": 18,
+    "ratingMpaa": "r",
+    "ticketsOnSale": false,
+    "logo": {
+      "url": "https://avatars.mds.yandex.net/get-ott/1534341/2a00000178c64fe43f3b567acaaa73e861f0/orig"
+    },
+    "top10": null,
+    "top250": 67,
+    "isSeries": false,
+    "seriesLength": null,
+    "totalSeriesLength": null
+  },
+  {
+    "id": 41519,
+    "type": "movie",
+    "name": "Брат",
+    "rating": {
+      "kp": 8.309,
+      "imdb": 7.8,
+      "filmCritics": 7.6,
+      "russianFilmCritics": 0,
+      "await": null
+    },
+    "description": "Демобилизовавшись, Данила Багров вернулся в родной городок. Но скучная жизнь российской провинции не устраивала его, и он решился податься в Петербург, где, по слухам, уже несколько лет процветает его старший брат. Данила нашел брата. Но все оказалось не так просто — брат работает наемным убийцей.",
+    "votes": {
+      "kp": 1235959,
+      "imdb": 23925,
+      "filmCritics": 5,
+      "russianFilmCritics": 2,
+      "await": 0
+    },
+    "year": 1997,
+    "poster": {
+      "url": "https://avatars.mds.yandex.net/get-kinopoisk-image/1704946/e9008e2f-433f-43b0-b9b8-2ea8e3fb6c9b/orig",
+      "previewUrl": "https://avatars.mds.yandex.net/get-kinopoisk-image/1704946/e9008e2f-433f-43b0-b9b8-2ea8e3fb6c9b/x1000"
+    },
+    "genres": [
+      {
+        "name": "драма"
+      },
+      {
+        "name": "криминал"
+      },
+      {
+        "name": "боевик"
+      }
+    ],
+    "countries": [
+      {
+        "name": "Россия"
+      }
+    ],
+    "typeNumber": 1,
+    "alternativeName": null,
+    "backdrop": {
+      "url": "https://imagetmdb.com/t/p/original/cRQq2VXKP9Vt9NHLXoHailKVhrW.jpg",
+      "previewUrl": "https://imagetmdb.com/t/p/w500/cRQq2VXKP9Vt9NHLXoHailKVhrW.jpg"
+    },
+    "enName": "Brat",
+    "movieLength": 100,
+    "names": [
+      {
+        "name": "Брат"
+      },
+      {
+        "name": "Brat",
+        "language": "US",
+        "type": null
+      },
+      {
+        "name": "Brother",
+        "language": "US",
+        "type": null
+      }
+    ],
+    "status": null,
+    "ratingMpaa": null,
+    "shortDescription": "Дембель Данила Багров защищает слабых в Петербурге 1990-х. Фильм, сделавший Сергея Бодрова народным героем",
+    "ticketsOnSale": false,
+    "ageRating": 18,
+    "logo": {
+      "url": "https://avatars.mds.yandex.net/get-ott/2439731/2a0000017c61da4f185f94d808f4d90182a8/orig"
+    },
+    "top10": null,
+    "top250": 46,
+    "isSeries": false,
+    "seriesLength": null,
+    "totalSeriesLength": null
+  },
+  {
+    "status": null,
+    "rating": {
+      "kp": 8.775,
+      "imdb": 8.5,
+      "filmCritics": 8.5,
+      "russianFilmCritics": 0,
+      "await": null
+    },
+    "votes": {
+      "kp": 687174,
+      "imdb": 1123221,
+      "filmCritics": 137,
+      "russianFilmCritics": 2,
+      "await": 0
+    },
+    "backdrop": {
+      "url": "https://imagetmdb.com/t/p/original/wXsQvli6tWqja51pYxXNG1LFIGV.jpg",
+      "previewUrl": "https://imagetmdb.com/t/p/w500/wXsQvli6tWqja51pYxXNG1LFIGV.jpg"
+    },
+    "movieLength": 88,
+    "id": 2360,
+    "type": "cartoon",
+    "name": "Король Лев",
+    "description": "У величественного Короля-Льва Муфасы рождается наследник по имени Симба. Уже в детстве любознательный малыш становится жертвой интриг своего завистливого дяди Шрама, мечтающего о власти.\n\nСимба познаёт горе утраты, предательство и изгнание, но в конце концов обретает верных друзей и находит любимую. Закалённый испытаниями, он в нелёгкой борьбе отвоёвывает своё законное место в «Круге жизни», осознав, что значит быть настоящим Королём. ",
+    "year": 1994,
+    "poster": {
+      "url": "https://avatars.mds.yandex.net/get-kinopoisk-image/1704946/60aa1abc-b754-4817-ad9c-0bcda427a12b/orig",
+      "previewUrl": "https://avatars.mds.yandex.net/get-kinopoisk-image/1704946/60aa1abc-b754-4817-ad9c-0bcda427a12b/x1000"
+    },
+    "genres": [
+      {
+        "name": "мультфильм"
+      },
+      {
+        "name": "мюзикл"
+      },
+      {
+        "name": "драма"
+      },
+      {
+        "name": "приключения"
+      },
+      {
+        "name": "семейный"
+      }
+    ],
+    "countries": [
+      {
+        "name": "США"
+      }
+    ],
+    "typeNumber": 3,
+    "alternativeName": "The Lion King",
+    "enName": null,
+    "names": [
+      {
+        "name": "Король Лев"
+      },
+      {
+        "name": "The Lion King"
+      },
+      {
+        "name": "Der König der Löwen",
+        "language": "DE",
+        "type": null
+      },
+      {
+        "name": "Kralj lavova",
+        "language": "HR",
+        "type": null
+      },
+      {
+        "name": "Il re leone",
+        "language": "IT",
+        "type": null
+      },
+      {
+        "name": "ライオン・キング",
+        "language": "JP",
+        "type": null
+      }
+    ],
+    "ratingMpaa": "g",
+    "shortDescription": "Львенок Симба бросает вызов дяде-убийце. Величественный саундтрек, рисованная анимация и шекспировский размах",
+    "ticketsOnSale": false,
+    "ageRating": 0,
+    "logo": {
+      "url": "https://avatars.mds.yandex.net/get-ott/1672343/2a0000016e044a3db74ffde3e15fc9a558cc/orig"
+    },
+    "top10": null,
+    "top250": 25,
+    "isSeries": false,
+    "seriesLength": null,
+    "totalSeriesLength": null
+  },
+  {
+    "status": null,
+    "rating": {
+      "kp": 9.109,
+      "imdb": 9.3,
+      "filmCritics": 8.4,
+      "russianFilmCritics": 0,
+      "await": null
+    },
+    "votes": {
+      "kp": 1002576,
+      "imdb": 2847215,
+      "filmCritics": 79,
+      "russianFilmCritics": 1,
+      "await": 2
+    },
+    "backdrop": {
+      "url": "https://imagetmdb.com/t/p/original/kXfqcdQKsToO0OUXHcrrNCHDBzO.jpg",
+      "previewUrl": "https://imagetmdb.com/t/p/w500/kXfqcdQKsToO0OUXHcrrNCHDBzO.jpg"
+    },
+    "movieLength": 142,
+    "id": 326,
+    "type": "movie",
+    "name": "Побег из Шоушенка",
+    "description": "Бухгалтер Энди Дюфрейн обвинён в убийстве собственной жены и её любовника. Оказавшись в тюрьме под названием Шоушенк, он сталкивается с жестокостью и беззаконием, царящими по обе стороны решётки. Каждый, кто попадает в эти стены, становится их рабом до конца жизни. Но Энди, обладающий живым умом и доброй душой, находит подход как к заключённым, так и к охранникам, добиваясь их особого к себе расположения.",
+    "year": 1994,
+    "poster": {
+      "url": "https://avatars.mds.yandex.net/get-kinopoisk-image/1599028/0b76b2a2-d1c7-4f04-a284-80ff7bb709a4/orig",
+      "previewUrl": "https://avatars.mds.yandex.net/get-kinopoisk-image/1599028/0b76b2a2-d1c7-4f04-a284-80ff7bb709a4/x1000"
+    },
+    "genres": [
+      {
+        "name": "драма"
+      }
+    ],
+    "countries": [
+      {
+        "name": "США"
+      }
+    ],
+    "typeNumber": 1,
+    "alternativeName": "The Shawshank Redemption",
+    "enName": null,
+    "names": [
+      {
+        "name": "Побег из Шоушенка"
+      },
+      {
+        "name": "The Shawshank Redemption"
+      },
+      {
+        "name": "Xiao shen ke de jiu shu",
+        "language": "CN",
+        "type": "Mandarin title"
+      },
+      {
+        "name": "Gaqceva shoushenkidan",
+        "language": "GE",
+        "type": null
+      },
+      {
+        "name": "Rita Hayworth - nyckel till flykten",
+        "language": "SE",
+        "type": null
+      },
+      {
+        "name": "Şouşenkdən qaçış",
+        "language": "AZ",
+        "type": null
+      },
+      {
+        "name": "Shawshank Redemption – Avain pakoon",
+        "language": "FI",
+        "type": "DVD"
+      },
+      {
+        "name": "Искупление Шоушенком",
+        "language": "RU",
+        "type": null
+      },
+      {
+        "name": "Shoushenkden Qacish",
+        "language": "AZ",
+        "type": null
+      },
+      {
+        "name": "Rastgari Dar Shawshank",
+        "language": "IR",
+        "type": null
+      },
+      {
+        "name": "Homot Shel Tikva",
+        "language": "IL",
+        "type": null
+      },
+      {
+        "name": "Shôshanku no sora ni",
+        "language": "JP",
+        "type": null
+      },
+      {
+        "name": "Бекство из Шошенка",
+        "language": "RS",
+        "type": null
+      },
+      {
+        "name": "쇼생크 탈출",
+        "language": "KR",
+        "type": null
+      },
+      {
+        "name": "Les Évadés",
+        "language": "FR",
+        "type": null
+      },
+      {
+        "name": "刺激1995",
+        "language": "TW",
+        "type": null
+      },
+      {
+        "name": "Die Verurteilten",
+        "language": "DE",
+        "type": null
+      },
+      {
+        "name": "Skazani na Shawshank",
+        "language": "PL",
+        "type": null
+      },
+      {
+        "name": "月黑高飛",
+        "language": "TW",
+        "type": null
+      },
+      {
+        "name": "ショーシャンクの空に：1994",
+        "language": "JP",
+        "type": null
+      },
+      {
+        "name": "Cadena perpetua",
+        "language": "ES",
+        "type": "Castilian Spanish"
+      }
+    ],
+    "ratingMpaa": "r",
+    "shortDescription": "Несправедливо осужденный банкир готовит побег из тюрьмы. Тим Роббинс в выдающейся экранизации Стивена Кинга",
+    "ticketsOnSale": false,
+    "ageRating": 16,
+    "logo": {
+      "url": "https://avatars.mds.yandex.net/get-ott/1648503/2a000001705c8bf514c033f1019473a4caae/orig"
+    },
+    "top10": null,
+    "top250": 3,
+    "isSeries": false,
+    "seriesLength": null,
+    "totalSeriesLength": null
+  },
+  {
+    "status": null,
+    "rating": {
+      "kp": 8.845,
+      "imdb": 9,
+      "filmCritics": 9.2,
+      "russianFilmCritics": 0,
+      "await": null
+    },
+    "votes": {
+      "kp": 498336,
+      "imdb": 1427359,
+      "filmCritics": 135,
+      "russianFilmCritics": 1,
+      "await": 5
+    },
+    "backdrop": {
+      "url": "https://imagetmdb.com/t/p/original/3f92DMBTFqr3wgXpfxzrb0qv8nG.jpg",
+      "previewUrl": "https://imagetmdb.com/t/p/w500/3f92DMBTFqr3wgXpfxzrb0qv8nG.jpg"
+    },
+    "movieLength": 195,
+    "id": 329,
+    "type": "movie",
+    "name": "Список Шиндлера",
+    "description": "Фильм рассказывает реальную историю загадочного Оскара Шиндлера, члена нацистской партии, преуспевающего фабриканта, спасшего во время Второй мировой войны почти 1200 евреев.",
+    "year": 1993,
+    "poster": {
+      "url": "https://avatars.mds.yandex.net/get-kinopoisk-image/6201401/1e1ac6d9-c658-4f5f-937e-d080bca0d893/orig",
+      "previewUrl": "https://avatars.mds.yandex.net/get-kinopoisk-image/6201401/1e1ac6d9-c658-4f5f-937e-d080bca0d893/x1000"
+    },
+    "genres": [
+      {
+        "name": "драма"
+      },
+      {
+        "name": "биография"
+      },
+      {
+        "name": "история"
+      },
+      {
+        "name": "военный"
+      }
+    ],
+    "countries": [
+      {
+        "name": "США"
+      }
+    ],
+    "typeNumber": 1,
+    "alternativeName": "Schindler's List",
+    "enName": "Schindlers List",
+    "names": [
+      {
+        "name": "Список Шиндлера"
+      },
+      {
+        "name": "Schindler's List"
+      },
+      {
+        "name": "قائمة شندلر",
+        "language": "AE",
+        "type": null
+      },
+      {
+        "name": "舒特拉的名單",
+        "language": "HK",
+        "type": null
+      },
+      {
+        "name": "Lista Shindlera",
+        "language": "PL",
+        "type": null
+      },
+      {
+        "name": "シンドラーのリスト",
+        "language": "JP",
+        "type": null
+      },
+      {
+        "name": "シンドラーのリスト：1993",
+        "language": "JP",
+        "type": null
+      },
+      {
+        "name": "Schindlers List",
+        "language": "US",
+        "type": null
+      },
+      {
+        "name": "La lista de Schindler",
+        "language": "ES",
+        "type": "Castilian Spanish"
+      },
+      {
+        "name": "Η Λίστα του Σίντλερ",
+        "language": "GR",
+        "type": null
+      }
+    ],
+    "ratingMpaa": "r",
+    "shortDescription": "История немецкого промышленника, спасшего тысячи жизней во время Холокоста. Драма Стивена Спилберга",
+    "ticketsOnSale": false,
+    "ageRating": 16,
+    "logo": {
+      "url": "https://avatars.mds.yandex.net/get-ott/239697/2a000001720e1f85284d601f1a7a4188545b/orig"
+    },
+    "top10": null,
+    "top250": 8,
+    "isSeries": false,
+    "seriesLength": null,
+    "totalSeriesLength": null
+  },
+  {
+    "status": null,
+    "rating": {
+      "kp": 7.974,
+      "imdb": 7.9,
+      "filmCritics": 7.5,
+      "russianFilmCritics": 75,
+      "await": null
+    },
+    "votes": {
+      "kp": 1056580,
+      "imdb": 1370886,
+      "filmCritics": 335,
+      "russianFilmCritics": 12,
+      "await": 38689
+    },
+    "backdrop": {
+      "url": "https://imagetmdb.com/t/p/original/vL5LR6WdxWPjLPFRLe133jXWsh5.jpg",
+      "previewUrl": "https://imagetmdb.com/t/p/w500/vL5LR6WdxWPjLPFRLe133jXWsh5.jpg"
+    },
+    "movieLength": 162,
+    "id": 251733,
+    "type": "movie",
+    "name": "Аватар",
+    "description": "Бывший морпех Джейк Салли прикован к инвалидному креслу. Несмотря на немощное тело, Джейк в душе по-прежнему остается воином. Он получает задание совершить путешествие в несколько световых лет к базе землян на планете Пандора, где корпорации добывают редкий минерал, имеющий огромное значение для выхода Земли из энергетического кризиса.",
+    "year": 2009,
+    "poster": {
+      "url": "https://avatars.mds.yandex.net/get-kinopoisk-image/1599028/4adf61aa-3cb7-4381-9245-523971e5b4c8/orig",
+      "previewUrl": "https://avatars.mds.yandex.net/get-kinopoisk-image/1599028/4adf61aa-3cb7-4381-9245-523971e5b4c8/x1000"
+    },
+    "genres": [
+      {
+        "name": "фантастика"
+      },
+      {
+        "name": "боевик"
+      },
+      {
+        "name": "драма"
+      },
+      {
+        "name": "приключения"
+      }
+    ],
+    "countries": [
+      {
+        "name": "США"
+      }
+    ],
+    "typeNumber": 1,
+    "alternativeName": "Avatar",
+    "enName": "Avatar: An IMAX 3D Experience",
+    "names": [
+      {
+        "name": "Аватар"
+      },
+      {
+        "name": "Avatar"
+      },
+      {
+        "name": "Project 880465wtgsdtg",
+        "language": "US",
+        "type": "working title"
+      },
+      {
+        "name": "Avatar Edicion Coleccionista",
+        "language": "ES",
+        "type": null
+      },
+      {
+        "name": "Avatar: Extended Version",
+        "language": "US",
+        "type": "extended version"
+      },
+      {
+        "name": "Avatar - Collector's Extended Edition",
+        "language": "GB",
+        "type": null
+      },
+      {
+        "name": "Avatar - Edição Estendida de Colecionador",
+        "language": "BR",
+        "type": null
+      },
+      {
+        "name": "Avatar 3D",
+        "language": "US",
+        "type": "3D version"
+      },
+      {
+        "name": "Avatar: An IMAX 3D Experience",
+        "language": "US",
+        "type": "IMAX version"
+      },
+      {
+        "name": "James Cameron's Avatar",
+        "language": "US",
+        "type": "promotional title"
+      },
+      {
+        "name": "Avatar: Special Edition",
+        "language": "US",
+        "type": "longer version"
+      },
+      {
+        "name": "아바타",
+        "language": "KR",
+        "type": null
+      },
+      {
+        "name": "Аватар 3D",
+        "language": "RU",
+        "type": null
+      },
+      {
+        "name": "Avatar - Wersja Specjalna",
+        "language": "PL",
+        "type": null
+      },
+      {
+        "name": "Avatar - Wersja Rozszerzona",
+        "language": "PL",
+        "type": null
+      },
+      {
+        "name": "Avatar - Collector's Edition",
+        "language": "DE",
+        "type": null
+      },
+      {
+        "name": "Avatar - Extended Collector's Edition",
+        "language": "US",
+        "type": "box set"
+      },
+      {
+        "name": "અવતાર",
+        "language": "IN",
+        "type": "Gujarati"
+      },
+      {
+        "name": "अवतार",
+        "language": "IN",
+        "type": "Hindi"
+      },
+      {
+        "name": "অবতার",
+        "language": "IN",
+        "type": "Bengali"
+      },
+      {
+        "name": "Avatar 1 - Aufbruch nach Pandora",
+        "language": "DE",
+        "type": null
+      },
+      {
+        "name": "Ավատար",
+        "language": "AM",
+        "type": null
+      },
+      {
+        "name": "Avatar 1",
+        "language": "US",
+        "type": "Series Title"
+      },
+      {
+        "name": "アバター",
+        "language": "JP",
+        "type": null
+      },
+      {
+        "name": "アバター：2009",
+        "language": "JP",
+        "type": null
+      },
+      {
+        "name": "アバター（Avatar 1）",
+        "language": "JP",
+        "type": null
+      }
+    ],
+    "ageRating": 12,
+    "ratingMpaa": "pg13",
+    "shortDescription": "Парализованный морпех становится мессией для жителей Пандоры. Самый кассовый фильм в истории кино",
+    "ticketsOnSale": false,
+    "logo": {
+      "url": "https://avatars.mds.yandex.net/get-ott/2385704/2a00000176f1bb64212c9df414a8909c8f44/orig"
+    },
+    "top10": null,
+    "top250": 180,
+    "isSeries": false,
+    "seriesLength": null,
+    "totalSeriesLength": null
+  },
+  {
+    "status": null,
+    "rating": {
+      "kp": 8.722,
+      "imdb": 8.4,
+      "filmCritics": 8.3,
+      "russianFilmCritics": 94.1176,
+      "await": null
+    },
+    "votes": {
+      "kp": 699704,
+      "imdb": 572842,
+      "filmCritics": 358,
+      "russianFilmCritics": 17,
+      "await": 2830
+    },
+    "backdrop": {
+      "url": "https://imagetmdb.com/t/p/original/askg3SMvhqEl4OL52YuvdtY40Yb.jpg",
+      "previewUrl": "https://imagetmdb.com/t/p/w500/askg3SMvhqEl4OL52YuvdtY40Yb.jpg"
+    },
+    "movieLength": 105,
+    "id": 679486,
+    "type": "cartoon",
+    "name": "Тайна Коко",
+    "description": "12-летний Мигель живёт в мексиканской деревушке в семье сапожников и тайно мечтает стать музыкантом. Тайно, потому что в его семье музыка считается проклятием. Когда-то его прапрадед оставил жену, прапрабабку Мигеля, ради мечты, которая теперь не даёт спокойно жить и его праправнуку. С тех пор музыкальная тема в семье стала табу. Мигель обнаруживает, что между ним и его любимым певцом Эрнесто де ла Крусом, ныне покойным, существует некая связь. Паренёк отправляется к своему кумиру в Страну Мёртвых, где встречает души предков. Мигель знакомится там с духом-скелетом по имени Гектор, который становится его проводником. Вдвоём они отправляются на поиски де ла Круса.",
+    "year": 2017,
+    "poster": {
+      "url": "https://avatars.mds.yandex.net/get-kinopoisk-image/1946459/6e11a16e-c9e7-491f-9162-01098a7d8dd9/orig",
+      "previewUrl": "https://avatars.mds.yandex.net/get-kinopoisk-image/1946459/6e11a16e-c9e7-491f-9162-01098a7d8dd9/x1000"
+    },
+    "genres": [
+      {
+        "name": "мультфильм"
+      },
+      {
+        "name": "фэнтези"
+      },
+      {
+        "name": "комедия"
+      },
+      {
+        "name": "приключения"
+      },
+      {
+        "name": "семейный"
+      },
+      {
+        "name": "музыка"
+      }
+    ],
+    "countries": [
+      {
+        "name": "США"
+      },
+      {
+        "name": "Мексика"
+      },
+      {
+        "name": "Япония"
+      }
+    ],
+    "typeNumber": 3,
+    "alternativeName": "Coco",
+    "enName": null,
+    "names": [
+      {
+        "name": "Тайна Коко"
+      },
+      {
+        "name": "Coco"
+      },
+      {
+        "name": "โคโค่: วันอลวน วิญญาณอลเวง",
+        "language": "TH",
+        "type": null
+      },
+      {
+        "name": "Coco: Το Γεύμα του Δάντη",
+        "language": "GR",
+        "type": null
+      },
+      {
+        "name": "ΚΟΚΟ: ΤΟ ΓΕΥΜΑ ΤΟΥ ΔΑΝΤΗ",
+        "language": "GR",
+        "type": null
+      },
+      {
+        "name": "COCO: ΤΟ ΓΕΥΜΑ ΤΟΥ ΔΑΝΤΗ",
+        "language": "GR",
+        "type": null
+      },
+      {
+        "name": "寻梦环游记",
+        "language": "CN",
+        "type": null
+      },
+      {
+        "name": "Viva: A Vida é uma Festa",
+        "language": "BR",
+        "type": null
+      },
+      {
+        "name": "玩轉極樂園",
+        "language": "HK",
+        "type": null
+      },
+      {
+        "name": "リメンバー・ミー",
+        "language": "JP",
+        "type": null
+      },
+      {
+        "name": "Коконың құпиясы",
+        "language": "KZ",
+        "type": null
+      },
+      {
+        "name": "Koko in velika skrivnost",
+        "language": "SI",
+        "type": null
+      }
+    ],
+    "ratingMpaa": "pg",
+    "shortDescription": "Юный музыкант Мигель попадает в мир мертвых. Трогательная история о любви без границ, получившая два «Оскара»",
+    "ticketsOnSale": false,
+    "ageRating": 12,
+    "logo": {
+      "url": "https://avatars.mds.yandex.net/get-ott/2419418/2a0000016e043a226253ed309d7a01d84b6f/orig"
+    },
+    "top10": null,
+    "top250": 16,
+    "isSeries": false,
+    "seriesLength": null,
+    "totalSeriesLength": null
+  }
+]

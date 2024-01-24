@@ -12,13 +12,13 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Link from "next/link";
 import { settings } from "../settings";
-import { MovieKinopoiskT } from "@/types/types";
+import { MovieKinopoiskT, PosterKinopoiskType } from "@/types/types";
 import { Loader } from "@/components/Loader";
 import { useRouter } from "next/router";
 
 type Props = {
   title: string;
-  films: MovieKinopoiskT[];
+  films: PosterKinopoiskType[];
   isLoading: boolean;
   setIsLoading: Dispatch<SetStateAction<boolean>>;
 };
@@ -37,7 +37,6 @@ const SimpleSlider: FC<Props> = ({ title, films, isLoading, setIsLoading }) => {
       setLocale("ru");
     }
   }, [router]);
-
   return (
     <div className={styles.container}>
       <div className={styles.title}>

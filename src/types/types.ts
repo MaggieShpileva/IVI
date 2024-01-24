@@ -50,7 +50,7 @@ export interface IMovie extends ISimpleMovie {
 }
 
 export type PersonLangType = {
-  lang: "ru" | "en";
+  lang: string;
   personName: string | null;
   career?: string | null;
   birthPlace?: string | null;
@@ -153,9 +153,7 @@ export interface IFilters {}
 
 export type BannerType = {
   id: number;
-  logo: string;
   poster: string;
-  trailer: string;
   name: string;
 };
 
@@ -257,10 +255,9 @@ interface ISimilarFilmRes {
 }
 
 ///////////////////////////////////////////////////
-export type MovieKinopoiskT = {
-  fees: MovieFees;
+
+export interface PosterKinopoiskType {
   status: any;
-  externalId: ExternalId;
   id: number;
   type: string;
   name: string;
@@ -269,46 +266,52 @@ export type MovieKinopoiskT = {
   votes: Grade;
   backdrop: Poster;
   movieLength: number;
-  images?: any;
-  productionCompanies: ProductionCompanies[];
-  spokenLanguages?: SpokenLanguages[];
-  distributors: Distributors;
-  premiere: Premiere;
-  slogan: string;
+  productionCompanies?: ProductionCompanies[];
   year: number;
-  budget: Price;
   poster: Poster;
-  facts: Facts[];
   genres: NameT[];
   countries: NameT[];
-  videos: Videos;
-  seasonsInfo: any;
-  persons: Person[];
-  lists: any;
   typeNumber: number;
   alternativeName: string;
   enName: any;
   names: NameT[];
   ageRating: number;
   ratingMpaa: string;
-  updateDates: any;
-  sequelsAndPrequels: any;
-  updatedAt: string;
   shortDescription: string;
-  technology?: any;
-  ticketsOnSale?: any;
-  similarMovies: SimilarMovie[];
-  imagesInfo: any;
-  logo: Poster;
-  watchability: any;
+  logo?: Poster;
   top10: null | number;
   top250: null | number;
-  audience: any;
-  deletedAt: null | string;
   isSeries: boolean;
   seriesLength: any;
   totalSeriesLength: any;
-};
+}
+
+export interface MovieKinopoiskT extends PosterKinopoiskType {
+  fees: MovieFees;
+  externalId: ExternalId;
+  images: any;
+  productionCompanies?: ProductionCompanies[];
+  spokenLanguages?: SpokenLanguages[];
+  distributors?: Distributors;
+  premiere?: Premiere;
+  slogan?: string;
+  budget?: Price;
+  facts: Facts[];
+  videos: Videos;
+  seasonsInfo: any;
+  persons: Person[];
+  lists: any;
+  updateDates: any;
+  sequelsAndPrequels: any;
+  updatedAt: string;
+  technology: any;
+  ticketsOnSale: any;
+  similarMovies: SimilarMovie[];
+  imagesInfo: any;
+  watchability: any;
+  audience: any;
+  deletedAt: null | string;
+}
 
 ////////////////////////////////
 type MovieFees = {

@@ -1,6 +1,3 @@
-import NextButton from "./NextButton";
-import PrevButton from "./PrevButton";
-
 export const settings = {
   dots: false,
   infinite: true,
@@ -9,7 +6,5 @@ export const settings = {
   autoplaySpeed: 4000,
   slidesToShow: 1,
   slidesToScroll: 1,
-  arrows: true,
-  prevArrow: <PrevButton />,
-  nextArrow: <NextButton />,
+  arrows: false,
 };

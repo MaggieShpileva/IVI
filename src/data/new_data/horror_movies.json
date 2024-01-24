@@ -1,0 +1,2855 @@
+[
+  {
+    "status": null,
+    "rating": {
+      "kp": 6.929,
+      "imdb": 6.6,
+      "filmCritics": 4.5,
+      "russianFilmCritics": 38.8889,
+      "await": null
+    },
+    "votes": {
+      "kp": 877313,
+      "imdb": 527706,
+      "filmCritics": 365,
+      "russianFilmCritics": 18,
+      "await": 59975
+    },
+    "backdrop": {
+      "url": "https://imagetmdb.com/t/p/original/VuukZLgaCrho2Ar8Scl9HtV3yD.jpg",
+      "previewUrl": "https://imagetmdb.com/t/p/w500/VuukZLgaCrho2Ar8Scl9HtV3yD.jpg"
+    },
+    "movieLength": 112,
+    "id": 463634,
+    "type": "movie",
+    "name": "Веном",
+    "description": "Что, если в один прекрасный день в тебя вселится симбиот, который наделит тебя сверхчеловеческими способностями? Вот только Веном — симбиот совсем недобрый, и договориться с ним невозможно. А нужно ли договариваться? Ведь в какой-то момент ты понимаешь, что быть плохим вовсе не так уж и плохо, так даже веселее. А в мире и так слишком много супергероев.",
+    "year": 2018,
+    "poster": {
+      "url": "https://avatars.mds.yandex.net/get-kinopoisk-image/1704946/16b82307-bdcc-4b9b-a427-55a07771c33a/orig",
+      "previewUrl": "https://avatars.mds.yandex.net/get-kinopoisk-image/1704946/16b82307-bdcc-4b9b-a427-55a07771c33a/x1000"
+    },
+    "genres": [
+      {
+        "name": "фантастика"
+      },
+      {
+        "name": "боевик"
+      },
+      {
+        "name": "триллер"
+      },
+      {
+        "name": "ужасы"
+      }
+    ],
+    "countries": [
+      {
+        "name": "США"
+      },
+      {
+        "name": "Китай"
+      }
+    ],
+    "typeNumber": 1,
+    "alternativeName": "Venom",
+    "enName": "Venom 1",
+    "names": [
+      {
+        "name": "Веном"
+      },
+      {
+        "name": "Venom"
+      },
+      {
+        "name": "베놈",
+        "language": "KR",
+        "type": null
+      },
+      {
+        "name": "Venom: Zehirli Öfke",
+        "language": "TR",
+        "type": null
+      },
+      {
+        "name": "毒液",
+        "language": "CN",
+        "type": null
+      },
+      {
+        "name": "فينوم",
+        "language": "SY",
+        "type": null
+      },
+      {
+        "name": "سم",
+        "language": "SA",
+        "type": null
+      },
+      {
+        "name": "毒魔",
+        "language": "HK",
+        "type": null
+      },
+      {
+        "name": "猛毒",
+        "language": "TW",
+        "type": null
+      },
+      {
+        "name": "毒液：致命守护者",
+        "language": "CN",
+        "type": null
+      },
+      {
+        "name": "Venom 2018",
+        "language": "JP",
+        "type": null
+      },
+      {
+        "name": "ヴェノム：2018",
+        "language": "JP",
+        "type": null
+      },
+      {
+        "name": "Venom 1",
+        "language": "US",
+        "type": "Series Titel"
+      }
+    ],
+    "ageRating": 18,
+    "ratingMpaa": "pg13",
+    "shortDescription": "В настырного журналиста вселяется симбиот. Том Харди в образе обаятельного суперзлодея из комиксов Marvel",
+    "ticketsOnSale": false,
+    "logo": {
+      "url": "https://avatars.mds.yandex.net/get-ott/2419418/2a0000016ff9c596afa217a90031b3ed8750/orig"
+    },
+    "top10": null,
+    "top250": null,
+    "isSeries": false,
+    "seriesLength": null,
+    "totalSeriesLength": null
+  },
+  {
+    "id": 178707,
+    "type": "tv-series",
+    "name": "Сверхъестественное",
+    "rating": {
+      "kp": 8.236,
+      "imdb": 8.4,
+      "filmCritics": 0,
+      "russianFilmCritics": 0,
+      "await": null
+    },
+    "description": "Сериал рассказывает о приключениях братьев Сэма и Дина Винчестеров, которые путешествуют по Соединённым Штатам на чёрном автомобиле Chevrolet Impala 1967 года, расследуют паранормальные явления, многие из которых основаны на американских городских легендах и фольклоре, и сражаются с порождениями зла, такими как демоны и призраки.",
+    "votes": {
+      "kp": 539177,
+      "imdb": 474830,
+      "filmCritics": 0,
+      "russianFilmCritics": 0,
+      "await": 0
+    },
+    "year": 2005,
+    "poster": {
+      "url": "https://avatars.mds.yandex.net/get-kinopoisk-image/4303601/c2c45ca9-0270-4bb2-bb82-5de3f01effbc/orig",
+      "previewUrl": "https://avatars.mds.yandex.net/get-kinopoisk-image/4303601/c2c45ca9-0270-4bb2-bb82-5de3f01effbc/x1000"
+    },
+    "genres": [
+      {
+        "name": "фэнтези"
+      },
+      {
+        "name": "ужасы"
+      },
+      {
+        "name": "триллер"
+      },
+      {
+        "name": "драма"
+      },
+      {
+        "name": "детектив"
+      }
+    ],
+    "countries": [
+      {
+        "name": "США"
+      }
+    ],
+    "typeNumber": 2,
+    "alternativeName": "Supernatural",
+    "enName": "Supernatural",
+    "names": [
+      {
+        "name": "Сверхъестественное"
+      },
+      {
+        "name": "Supernatural"
+      },
+      {
+        "name": "凶鬼恶灵",
+        "language": "CN",
+        "type": null
+      },
+      {
+        "name": "邪恶力量",
+        "language": "CN",
+        "type": null
+      },
+      {
+        "name": "Zebunebrivi",
+        "language": "GE",
+        "type": "transliterated title"
+      },
+      {
+        "name": "SUPERNATURAL スーパーナチュラル",
+        "language": "JP",
+        "type": null
+      }
+    ],
+    "shortDescription": "Братья Винчестеры стараются не выпустить демонов. Фантастический сериал, вдохновленный «Сумеречной зоной»",
+    "backdrop": {
+      "url": "https://imagetmdb.com/t/p/original/nVRyd8hlg0ZLxBn9RaI7mUMQLnz.jpg",
+      "previewUrl": "https://imagetmdb.com/t/p/w500/nVRyd8hlg0ZLxBn9RaI7mUMQLnz.jpg"
+    },
+    "movieLength": null,
+    "status": "completed",
+    "ratingMpaa": null,
+    "ticketsOnSale": false,
+    "ageRating": 18,
+    "logo": {
+      "url": "https://avatars.mds.yandex.net/get-ott/1534341/2a00000176f1c7a5e490d2cc87712f94573e/orig"
+    },
+    "releaseYears": [
+      {
+        "start": 2005,
+        "end": 2020
+      }
+    ],
+    "top10": null,
+    "top250": 180,
+    "isSeries": true,
+    "seriesLength": 43,
+    "totalSeriesLength": null
+  },
+  {
+    "status": null,
+    "rating": {
+      "kp": 7.857,
+      "imdb": 7,
+      "filmCritics": 5.5,
+      "russianFilmCritics": 75,
+      "await": null
+    },
+    "votes": {
+      "kp": 535858,
+      "imdb": 368556,
+      "filmCritics": 227,
+      "russianFilmCritics": 4,
+      "await": 0
+    },
+    "backdrop": {
+      "url": "https://imagetmdb.com/t/p/original/tIG8FwHRiHLOlWJdizp2oxdkSL2.jpg",
+      "previewUrl": "https://imagetmdb.com/t/p/w500/tIG8FwHRiHLOlWJdizp2oxdkSL2.jpg"
+    },
+    "movieLength": 121,
+    "id": 3793,
+    "type": "movie",
+    "name": "Константин: Повелитель тьмы",
+    "description": "Джону Константину удалось не только побывать в аду, но и вернуться обратно. Родившись с неугодным самому себе талантом — способностью распознавать помесь ангелов и демонов, которые бродят по земле в облике людей, — Константин под давлением обстоятельств пытается совершить самоубийство, лишь бы избавиться от мучительных видений. Но неудачно. Воскрешенный против собственной воли он снова оказывается в мире живых. Теперь, отмеченный печатью суицида и получивший временное право на жизнь, он патрулирует границу, разделяющую рай и ад, тщетно надеясь на обретение спасения путем сражения с земными ставленниками зла.",
+    "year": 2005,
+    "poster": {
+      "url": "https://avatars.mds.yandex.net/get-kinopoisk-image/4486454/73e1c12a-7b14-408f-b5e9-b01765b29d36/orig",
+      "previewUrl": "https://avatars.mds.yandex.net/get-kinopoisk-image/4486454/73e1c12a-7b14-408f-b5e9-b01765b29d36/x1000"
+    },
+    "genres": [
+      {
+        "name": "фэнтези"
+      },
+      {
+        "name": "ужасы"
+      },
+      {
+        "name": "боевик"
+      },
+      {
+        "name": "детектив"
+      }
+    ],
+    "countries": [
+      {
+        "name": "США"
+      },
+      {
+        "name": "Германия"
+      }
+    ],
+    "typeNumber": 1,
+    "alternativeName": "Constantine",
+    "enName": null,
+    "names": [
+      {
+        "name": "Константин: Повелитель тьмы"
+      },
+      {
+        "name": "Constantine"
+      },
+      {
+        "name": "Konstantin",
+        "language": "BG",
+        "type": null
+      },
+      {
+        "name": "Konstantínos",
+        "language": "GR",
+        "type": null
+      },
+      {
+        "name": "Konstantin: Povelitel' t'my",
+        "language": "RU",
+        "type": null
+      },
+      {
+        "name": "Konstantin",
+        "language": "RS",
+        "type": null
+      },
+      {
+        "name": "Konstantyn",
+        "language": "UA",
+        "type": null
+      },
+      {
+        "name": "地狱神探",
+        "language": "CN",
+        "type": null
+      },
+      {
+        "name": "コンスタンティン",
+        "language": "JP",
+        "type": null
+      },
+      {
+        "name": "콘스탄틴",
+        "language": "KR",
+        "type": null
+      }
+    ],
+    "ageRating": 16,
+    "ratingMpaa": "r",
+    "shortDescription": "Умирающий от рака экзорцист защищает людей от демонов. Киану Ривз в мистическом триллере по комиксам Vertigo",
+    "ticketsOnSale": false,
+    "logo": {
+      "url": "https://avatars.mds.yandex.net/get-ott/223007/2a0000017298c1b0900a0043eef1cb396999/orig"
+    },
+    "top10": null,
+    "top250": null,
+    "isSeries": false,
+    "seriesLength": null,
+    "totalSeriesLength": null
+  },
+  {
+    "id": 345,
+    "type": "movie",
+    "name": "Молчание ягнят",
+    "rating": {
+      "kp": 8.335,
+      "imdb": 8.6,
+      "filmCritics": 8.8,
+      "russianFilmCritics": 0,
+      "await": null
+    },
+    "description": "Психопат похищает и убивает молодых женщин по всему Среднему Западу. ФБР, уверенное, что все преступления совершены одним и тем же человеком, поручает агенту Клариссе Старлинг встретиться с заключенным-маньяком Ганнибалом Лектером, который мог бы помочь составить психологический портрет убийцы. Сам Лектер отбывает наказание за убийства и каннибализм. Он согласен помочь Клариссе лишь в том случае, если она попотчует его больное воображение подробностями своей личной жизни.",
+    "votes": {
+      "kp": 514931,
+      "imdb": 1520650,
+      "filmCritics": 153,
+      "russianFilmCritics": 1,
+      "await": 4
+    },
+    "year": 1990,
+    "poster": {
+      "url": "https://avatars.mds.yandex.net/get-kinopoisk-image/6201401/9c655ce1-2b59-4941-97aa-f9e928ed0ff4/orig",
+      "previewUrl": "https://avatars.mds.yandex.net/get-kinopoisk-image/6201401/9c655ce1-2b59-4941-97aa-f9e928ed0ff4/x1000"
+    },
+    "genres": [
+      {
+        "name": "триллер"
+      },
+      {
+        "name": "детектив"
+      },
+      {
+        "name": "криминал"
+      },
+      {
+        "name": "драма"
+      },
+      {
+        "name": "ужасы"
+      }
+    ],
+    "countries": [
+      {
+        "name": "США"
+      }
+    ],
+    "typeNumber": 1,
+    "alternativeName": "The Silence of the Lambs",
+    "enName": null,
+    "names": [
+      {
+        "name": "Молчание ягнят"
+      },
+      {
+        "name": "The Silence of the Lambs"
+      },
+      {
+        "name": "De schreeuw van het lam",
+        "language": "NL",
+        "type": "informal literal title"
+      },
+      {
+        "name": "Kravta dumili",
+        "language": "GE",
+        "type": null
+      },
+      {
+        "name": "Hitsujitachi no Chinmoku",
+        "language": "JP",
+        "type": null
+      },
+      {
+        "name": "O Silêncio dos Inocentes",
+        "language": "BR",
+        "type": null
+      },
+      {
+        "name": "양들의 침묵",
+        "language": "KR",
+        "type": null
+      },
+      {
+        "name": "한니발 1",
+        "language": "KR",
+        "type": null
+      },
+      {
+        "name": "Milczenie Owiec",
+        "language": "PL",
+        "type": null
+      },
+      {
+        "name": "03 - Le Silence des agneaux - 1991",
+        "language": "FR",
+        "type": null
+      },
+      {
+        "name": "El Silencio de los Inocentes",
+        "language": "MX",
+        "type": null
+      },
+      {
+        "name": "El silencio de los corderos",
+        "language": "ES",
+        "type": "Castilian Spanish"
+      },
+      {
+        "name": "Quzuların Səssizliyi",
+        "language": "AZ",
+        "type": null
+      }
+    ],
+    "movieLength": 118,
+    "ratingMpaa": "r",
+    "shortDescription": "Интеллектуал-людоед помогает молодой сотруднице ФБР. Веха в жанре триллера — и гениальная игра Энтони Хопкинса",
+    "ticketsOnSale": false,
+    "ageRating": 18,
+    "backdrop": {
+      "url": "https://imagetmdb.com/t/p/original/mfwq2nMBzArzQ7Y9RKE8SKeeTkg.jpg",
+      "previewUrl": "https://imagetmdb.com/t/p/w500/mfwq2nMBzArzQ7Y9RKE8SKeeTkg.jpg"
+    },
+    "logo": {
+      "url": "https://avatars.mds.yandex.net/get-ott/223007/2a0000017e784ff271fc875aab288e58c6eb/orig"
+    },
+    "top10": null,
+    "top250": 118,
+    "status": null,
+    "isSeries": false,
+    "seriesLength": null,
+    "totalSeriesLength": null
+  },
+  {
+    "status": null,
+    "rating": {
+      "kp": 7.178,
+      "imdb": 7.6,
+      "filmCritics": 7.7,
+      "russianFilmCritics": 100,
+      "await": null
+    },
+    "votes": {
+      "kp": 506293,
+      "imdb": 249694,
+      "filmCritics": 128,
+      "russianFilmCritics": 13,
+      "await": 985
+    },
+    "backdrop": {
+      "url": "https://imagetmdb.com/t/p/original/brnfCYyz8EMbBrHgmh8sCwBi5i1.jpg",
+      "previewUrl": "https://imagetmdb.com/t/p/w500/brnfCYyz8EMbBrHgmh8sCwBi5i1.jpg"
+    },
+    "movieLength": 118,
+    "id": 977288,
+    "type": "movie",
+    "name": "Поезд в Пусан",
+    "description": "У маленькой Су-ан день рождения. Девочка живет с отцом в Сеуле и очень хочет отправиться к маме в Пусан. По дороге случается непредвиденное, и на страну обрушивается загадочный вирус. Пассажирам поезда в Пусан — единственного города, отразившего атаки вируса — придется бороться за выживание. 442 километра в пути. Добро пожаловать на борт и помните — в этой гонке недостаточно выжить, чтобы остаться человеком.",
+    "year": 2016,
+    "poster": {
+      "url": "https://avatars.mds.yandex.net/get-kinopoisk-image/1898899/12feddd0-1f10-4608-b6c7-2d0bad2bdceb/orig",
+      "previewUrl": "https://avatars.mds.yandex.net/get-kinopoisk-image/1898899/12feddd0-1f10-4608-b6c7-2d0bad2bdceb/x1000"
+    },
+    "genres": [
+      {
+        "name": "ужасы"
+      },
+      {
+        "name": "боевик"
+      }
+    ],
+    "countries": [
+      {
+        "name": "Корея Южная"
+      }
+    ],
+    "typeNumber": 1,
+    "alternativeName": "Busanhaeng",
+    "enName": "Train to Bushan",
+    "names": [
+      {
+        "name": "Поезд в Пусан"
+      },
+      {
+        "name": "Busanhaeng"
+      },
+      {
+        "name": "부산행",
+        "language": "KR",
+        "type": null
+      },
+      {
+        "name": "Invasión Zombie",
+        "language": "AR",
+        "type": null
+      },
+      {
+        "name": "Voz za Pusan",
+        "language": "RS",
+        "type": null
+      },
+      {
+        "name": "Invasão Zumbi",
+        "language": "BR",
+        "type": null
+      },
+      {
+        "name": "Train to Bushan",
+        "language": "US",
+        "type": null
+      },
+      {
+        "name": "釜山行1",
+        "language": "CN",
+        "type": null
+      },
+      {
+        "name": "Estación Zombie",
+        "language": "CO",
+        "type": null
+      },
+      {
+        "name": "Tren a Busan",
+        "language": "ES",
+        "type": null
+      },
+      {
+        "name": "ด่วนนรก ซอมบี้คลั่ง",
+        "language": "TH",
+        "type": null
+      },
+      {
+        "name": "Invasión zombie",
+        "language": "UY",
+        "type": null
+      },
+      {
+        "name": "屍速列車",
+        "language": "TW",
+        "type": null
+      },
+      {
+        "name": "הרכבת לבוסאן",
+        "language": "IL",
+        "type": null
+      },
+      {
+        "name": "Vlak do Pusanu",
+        "language": "CZ",
+        "type": null
+      },
+      {
+        "name": "屍殺列車",
+        "language": "HK",
+        "type": null
+      },
+      {
+        "name": "新 感染  ファイナル・エクスプレス",
+        "language": "JP",
+        "type": null
+      },
+      {
+        "name": "Train to Busan",
+        "language": "US",
+        "type": null
+      },
+      {
+        "name": "新感染 ファイナル・エクスプレス：2016",
+        "language": "JP",
+        "type": null
+      },
+      {
+        "name": "Train To Busan",
+        "language": "KR",
+        "type": "Daum Movie"
+      },
+      {
+        "name": "قطار بوسان",
+        "language": "IR",
+        "type": null
+      }
+    ],
+    "ageRating": 18,
+    "ratingMpaa": null,
+    "shortDescription": "Беспощадный вирус превращает скоростной поезд в смертельную ловушку. Самый популярный южнокорейский хоррор",
+    "ticketsOnSale": false,
+    "logo": {
+      "url": "https://avatars.mds.yandex.net/get-ott/2419418/2a000001705c8ec2b34f19de4120ee0d8095/orig"
+    },
+    "top10": null,
+    "top250": null,
+    "isSeries": false,
+    "seriesLength": null,
+    "totalSeriesLength": null
+  },
+  {
+    "id": 195524,
+    "type": "movie",
+    "name": "Я — легенда",
+    "rating": {
+      "kp": 7.867,
+      "imdb": 7.2,
+      "filmCritics": 6.3,
+      "russianFilmCritics": 71.4286,
+      "await": null
+    },
+    "description": "Неизвестный вирус унёс жизни половины населения земного шара, а остальную половину превратил в вампиров. Единственный уцелевший человек с иммунитетом к заболеванию ночами держит осаду упырей, а днем пытается найти противоядие и докопаться до причин эпидемии.",
+    "votes": {
+      "kp": 504246,
+      "imdb": 802140,
+      "filmCritics": 215,
+      "russianFilmCritics": 7,
+      "await": 0
+    },
+    "year": 2007,
+    "poster": {
+      "url": "https://avatars.mds.yandex.net/get-kinopoisk-image/1704946/60692c49-3ca0-46ed-92d4-db37636f8d5b/orig",
+      "previewUrl": "https://avatars.mds.yandex.net/get-kinopoisk-image/1704946/60692c49-3ca0-46ed-92d4-db37636f8d5b/x1000"
+    },
+    "genres": [
+      {
+        "name": "ужасы"
+      },
+      {
+        "name": "фантастика"
+      },
+      {
+        "name": "боевик"
+      },
+      {
+        "name": "триллер"
+      },
+      {
+        "name": "драма"
+      }
+    ],
+    "countries": [
+      {
+        "name": "США"
+      }
+    ],
+    "typeNumber": 1,
+    "alternativeName": "I Am Legend",
+    "backdrop": {
+      "url": "https://imagetmdb.com/t/p/original/aTLq0TMKdsmIy1ZyFM1LfPs326d.jpg",
+      "previewUrl": "https://imagetmdb.com/t/p/w500/aTLq0TMKdsmIy1ZyFM1LfPs326d.jpg"
+    },
+    "enName": null,
+    "movieLength": 96,
+    "names": [
+      {
+        "name": "Я — легенда"
+      },
+      {
+        "name": "I Am Legend"
+      },
+      {
+        "name": "末日传奇",
+        "language": "CN",
+        "type": null
+      },
+      {
+        "name": "Soy leyenda",
+        "language": "ES",
+        "type": null
+      },
+      {
+        "name": "Jestem Legendą",
+        "language": "PL",
+        "type": null
+      },
+      {
+        "name": "魔间传奇",
+        "language": "CN",
+        "type": null
+      },
+      {
+        "name": "Eu Sou a Lenda",
+        "language": "BR",
+        "type": null
+      },
+      {
+        "name": "من افسانه‌ام",
+        "language": "IR",
+        "type": null
+      },
+      {
+        "name": "אני האגדה",
+        "language": "IL",
+        "type": null
+      },
+      {
+        "name": "Tôi Là Huyền Thoại",
+        "language": "VN",
+        "type": null
+      },
+      {
+        "name": "魔間傳奇",
+        "language": "HK",
+        "type": null
+      },
+      {
+        "name": "魔間傳奇",
+        "language": "TW",
+        "type": null
+      }
+    ],
+    "status": null,
+    "ageRating": 16,
+    "ratingMpaa": "pg13",
+    "shortDescription": "Роберт и его собака — последние выжившие в Нью-Йорке, населенном хищными мутантами. Блокбастер с Уиллом Смитом",
+    "ticketsOnSale": false,
+    "logo": {
+      "url": "https://avatars.mds.yandex.net/get-ott/1672343/2a000001732e3d616c3fb7b66e1546644f4d/orig"
+    },
+    "top10": null,
+    "top250": null,
+    "isSeries": false,
+    "seriesLength": null,
+    "totalSeriesLength": null
+  },
+  {
+    "id": 508161,
+    "type": "tv-series",
+    "name": "Ходячие мертвецы",
+    "rating": {
+      "kp": 7.977,
+      "imdb": 8.1,
+      "filmCritics": 0,
+      "russianFilmCritics": 62.5,
+      "await": null
+    },
+    "description": "Зомби-эпидемия захлестнула планету. Шериф Рик Граймс путешествует с семьей и небольшой группой выживших в поисках безопасного места. Но постоянный страх смерти каждый день приносит тяжелые потери, заставляя товарищей по несчастью чувствовать глубины человеческой жестокости. Рик пытается спасти близких и понимает, что всепоглощающий страх людей может быть опаснее ходячих мертвецов.",
+    "votes": {
+      "kp": 493781,
+      "imdb": 1062241,
+      "filmCritics": 0,
+      "russianFilmCritics": 8,
+      "await": 1752
+    },
+    "year": 2010,
+    "poster": {
+      "url": "https://avatars.mds.yandex.net/get-kinopoisk-image/4774061/b201e596-2429-42da-81d0-7e0736f4c588/orig",
+      "previewUrl": "https://avatars.mds.yandex.net/get-kinopoisk-image/4774061/b201e596-2429-42da-81d0-7e0736f4c588/x1000"
+    },
+    "genres": [
+      {
+        "name": "ужасы"
+      },
+      {
+        "name": "триллер"
+      },
+      {
+        "name": "драма"
+      }
+    ],
+    "countries": [
+      {
+        "name": "США"
+      }
+    ],
+    "typeNumber": 2,
+    "alternativeName": "The Walking Dead",
+    "enName": "The Walking Dead",
+    "names": [
+      {
+        "name": "Ходячие мертвецы"
+      },
+      {
+        "name": "The Walking Dead"
+      },
+      {
+        "name": "Të vdekurit e gjallë",
+        "language": "AL",
+        "type": null
+      },
+      {
+        "name": "Живите мъртви",
+        "language": "BG",
+        "type": null
+      },
+      {
+        "name": "Les morcheurs",
+        "language": "CA",
+        "type": null
+      },
+      {
+        "name": "行尸走肉",
+        "language": "CN",
+        "type": null
+      },
+      {
+        "name": "行尸走肉（2010）",
+        "language": "CN",
+        "type": null
+      },
+      {
+        "name": "行屍",
+        "language": "CN",
+        "type": null
+      },
+      {
+        "name": "Živí mrtví",
+        "language": "CZ",
+        "type": null
+      },
+      {
+        "name": "Elavad surnud",
+        "language": "EE",
+        "type": null
+      },
+      {
+        "name": "Οι Ζωντανοί Νεκροί",
+        "language": "GR",
+        "type": null
+      },
+      {
+        "name": "行屍",
+        "language": "HK",
+        "type": null
+      },
+      {
+        "name": "Živi mrtvaci",
+        "language": "HR",
+        "type": null
+      },
+      {
+        "name": "מתים מהלכים",
+        "language": "IL",
+        "type": null
+      },
+      {
+        "name": "Mordeye moteharrek",
+        "language": "IR",
+        "type": null
+      },
+      {
+        "name": "ウォーキング・デッド",
+        "language": "JP",
+        "type": null
+      },
+      {
+        "name": "워킹 데드",
+        "language": "KR",
+        "type": null
+      },
+      {
+        "name": "Gyvieji numirėliai",
+        "language": "LT",
+        "type": null
+      },
+      {
+        "name": "Vaikstantys numireliai",
+        "language": "LT",
+        "type": null
+      },
+      {
+        "name": "Gyvi numirėliai",
+        "language": "LT",
+        "type": null
+      },
+      {
+        "name": "Staigajosie mironi",
+        "language": "LV",
+        "type": null
+      },
+      {
+        "name": "Живи Мртовци",
+        "language": "MK",
+        "type": null
+      },
+      {
+        "name": "Żywe trupy",
+        "language": "PL",
+        "type": null
+      },
+      {
+        "name": "The Walking Dead: Invazia zombi",
+        "language": "RO",
+        "type": null
+      },
+      {
+        "name": "Okružen mrtvima",
+        "language": "RS",
+        "type": null
+      },
+      {
+        "name": "Zivi mrtveci",
+        "language": "SI",
+        "type": null
+      },
+      {
+        "name": "Živí mŕtvi",
+        "language": "SK",
+        "type": "HBO translation"
+      },
+      {
+        "name": "ล่าสยอง...กองทัพผีดิบ",
+        "language": "TH",
+        "type": "DVD"
+      },
+      {
+        "name": "ฝ่าวงล้อม ซอมบี้ล้างโลก",
+        "language": "TH",
+        "type": "Television"
+      },
+      {
+        "name": "Yürüyen Ölüler",
+        "language": "TR",
+        "type": null
+      },
+      {
+        "name": "陰屍路",
+        "language": "TW",
+        "type": null
+      },
+      {
+        "name": "Ходячі мерці",
+        "language": "UA",
+        "type": null
+      },
+      {
+        "name": "І мертві підуть",
+        "language": "UA",
+        "type": null
+      },
+      {
+        "name": "TWD",
+        "language": "US",
+        "type": "common initialization"
+      },
+      {
+        "name": "Yuradigan murdalar",
+        "language": "UZ",
+        "type": null
+      },
+      {
+        "name": "Xac Song",
+        "language": "VN",
+        "type": null
+      },
+      {
+        "name": "行屍走肉",
+        "language": "TW",
+        "type": null
+      }
+    ],
+    "backdrop": {
+      "url": "https://imagetmdb.com/t/p/original/x4salpjB11umlUOltfNvSSrjSXm.jpg",
+      "previewUrl": "https://imagetmdb.com/t/p/w500/x4salpjB11umlUOltfNvSSrjSXm.jpg"
+    },
+    "movieLength": null,
+    "shortDescription": "Как сохранить человеческое лицо в условиях зомби-апокалипсиса? Сериал-эпопея, совместивший хоррор и драму",
+    "status": "completed",
+    "ageRating": 18,
+    "ratingMpaa": null,
+    "ticketsOnSale": false,
+    "logo": {
+      "url": "https://avatars.mds.yandex.net/get-ott/239697/2a0000017f206c8eaa0dcea1fb92d1beb652/orig"
+    },
+    "releaseYears": [
+      {
+        "start": 2010,
+        "end": 2022
+      }
+    ],
+    "top10": null,
+    "top250": null,
+    "isSeries": true,
+    "seriesLength": 43,
+    "totalSeriesLength": null
+  },
+  {
+    "status": null,
+    "rating": {
+      "kp": 8.37,
+      "imdb": 8.7,
+      "filmCritics": 0,
+      "russianFilmCritics": 95,
+      "await": null
+    },
+    "votes": {
+      "kp": 491869,
+      "imdb": 1304232,
+      "filmCritics": 0,
+      "russianFilmCritics": 20,
+      "await": 664
+    },
+    "backdrop": {
+      "url": "https://imagetmdb.com/t/p/original/56v2KjBlU4XaOv9rVYEQypROD7P.jpg",
+      "previewUrl": "https://imagetmdb.com/t/p/w500/56v2KjBlU4XaOv9rVYEQypROD7P.jpg"
+    },
+    "id": 915196,
+    "type": "tv-series",
+    "name": "Очень странные дела",
+    "description": "1980-е годы, тихий провинциальный американский городок. Благоприятное течение местной жизни нарушает загадочное исчезновение подростка по имени Уилл. Выяснить обстоятельства дела полны решимости родные мальчика и местный шериф, также события затрагивают лучшего друга Уилла – Майка. Он начинает собственное расследование. Майк уверен, что близок к разгадке, и теперь ему предстоит оказаться в эпицентре ожесточенной битвы потусторонних сил.",
+    "year": 2016,
+    "poster": {
+      "url": "https://avatars.mds.yandex.net/get-kinopoisk-image/4303601/4639b97f-1ff6-4f63-b7f6-02ea1a14f553/orig",
+      "previewUrl": "https://avatars.mds.yandex.net/get-kinopoisk-image/4303601/4639b97f-1ff6-4f63-b7f6-02ea1a14f553/x1000"
+    },
+    "genres": [
+      {
+        "name": "ужасы"
+      },
+      {
+        "name": "фантастика"
+      },
+      {
+        "name": "фэнтези"
+      },
+      {
+        "name": "триллер"
+      },
+      {
+        "name": "драма"
+      },
+      {
+        "name": "детектив"
+      }
+    ],
+    "countries": [
+      {
+        "name": "США"
+      }
+    ],
+    "typeNumber": 2,
+    "alternativeName": "Stranger Things",
+    "enName": "Stranger Things",
+    "names": [
+      {
+        "name": "Очень странные дела"
+      },
+      {
+        "name": "Stranger Things"
+      },
+      {
+        "name": "Bagulhos Sinistros",
+        "language": "BR",
+        "type": null
+      },
+      {
+        "name": "怪奇物语",
+        "language": "CN",
+        "type": "剧情 / 恐怖 / 奇幻"
+      },
+      {
+        "name": "უცნაური საქმეები",
+        "language": "GE",
+        "type": null
+      },
+      {
+        "name": "Παράξενα Πράγματα",
+        "language": "GR",
+        "type": null
+      },
+      {
+        "name": "اتفاقات عجیب",
+        "language": "IR",
+        "type": null
+      },
+      {
+        "name": "ストレンジャー・シングス",
+        "language": "JP",
+        "type": null
+      },
+      {
+        "name": "기묘한 이야기",
+        "language": "KR",
+        "type": null
+      },
+      {
+        "name": "Чудни Нешта",
+        "language": "MK",
+        "type": null
+      },
+      {
+        "name": "Странные вещи",
+        "language": "RU",
+        "type": null
+      },
+      {
+        "name": "Крайне странные события",
+        "language": "RU",
+        "type": null
+      },
+      {
+        "name": "Загадочные события",
+        "language": "RU",
+        "type": null
+      },
+      {
+        "name": "Zvláštne veci",
+        "language": "SK",
+        "type": null
+      },
+      {
+        "name": "Tuhaf Şeyler",
+        "language": "TR",
+        "type": null
+      },
+      {
+        "name": "Загадкові справи",
+        "language": "UA",
+        "type": null
+      },
+      {
+        "name": "Дивні дива 2",
+        "language": "UA",
+        "type": "season 2 title"
+      },
+      {
+        "name": "Дивні дива 3",
+        "language": "UA",
+        "type": "season 3 title"
+      },
+      {
+        "name": "Stranger Things: Keményebb leckék",
+        "language": "HU",
+        "type": "Alternative title"
+      },
+      {
+        "name": "Stranger Things 2",
+        "language": "US",
+        "type": "season 2"
+      },
+      {
+        "name": "Stranger Things 3",
+        "language": "US",
+        "type": "season 3"
+      },
+      {
+        "name": "Stranger Things 4",
+        "language": "US",
+        "type": "season 4"
+      }
+    ],
+    "movieLength": null,
+    "ratingMpaa": null,
+    "shortDescription": null,
+    "ticketsOnSale": false,
+    "ageRating": 16,
+    "logo": {
+      "url": "https://imagetmdb.com/t/p/original/bEwnnnFg9WOOKtXxc3eRu2SjqPb.png"
+    },
+    "releaseYears": [
+      {
+        "start": 2016,
+        "end": null
+      }
+    ],
+    "top10": null,
+    "top250": 221,
+    "isSeries": true,
+    "seriesLength": 51,
+    "totalSeriesLength": null
+  },
+  {
+    "status": null,
+    "rating": {
+      "kp": 7.302,
+      "imdb": 7.3,
+      "filmCritics": 7.3,
+      "russianFilmCritics": 100,
+      "await": null
+    },
+    "votes": {
+      "kp": 469968,
+      "imdb": 594667,
+      "filmCritics": 390,
+      "russianFilmCritics": 16,
+      "await": 29256
+    },
+    "backdrop": {
+      "url": "https://imagetmdb.com/t/p/original/tcheoA2nPATCm2vvXw2hVQoaEFD.jpg",
+      "previewUrl": "https://imagetmdb.com/t/p/w500/tcheoA2nPATCm2vvXw2hVQoaEFD.jpg"
+    },
+    "movieLength": 135,
+    "id": 453397,
+    "type": "movie",
+    "name": "Оно",
+    "description": "Когда в городке Дерри штата Мэн начинают пропадать дети, несколько ребят сталкиваются со своими величайшими страхами — не только с группой школьных хулиганов, но со злобным клоуном Пеннивайзом, список жертв которого уходит вглубь веков.",
+    "year": 2017,
+    "poster": {
+      "url": "https://avatars.mds.yandex.net/get-kinopoisk-image/6201401/c2554fb1-0c11-49b7-8c99-3a32e696b2ab/orig",
+      "previewUrl": "https://avatars.mds.yandex.net/get-kinopoisk-image/6201401/c2554fb1-0c11-49b7-8c99-3a32e696b2ab/x1000"
+    },
+    "genres": [
+      {
+        "name": "ужасы"
+      },
+      {
+        "name": "фэнтези"
+      },
+      {
+        "name": "драма"
+      },
+      {
+        "name": "детектив"
+      }
+    ],
+    "countries": [
+      {
+        "name": "США"
+      },
+      {
+        "name": "Канада"
+      }
+    ],
+    "typeNumber": 1,
+    "alternativeName": "It",
+    "enName": "It: Chapter One",
+    "names": [
+      {
+        "name": "Оно"
+      },
+      {
+        "name": "It"
+      },
+      {
+        "name": "Oraşul bântuIT",
+        "language": "MD",
+        "type": "Romanian title"
+      },
+      {
+        "name": "It: Chapter One",
+        "language": "US",
+        "type": "closing credits title"
+      },
+      {
+        "name": "ES - Kapitel 1",
+        "language": "DE",
+        "type": "closing credits title"
+      },
+      {
+        "name": "To It",
+        "language": "CZ",
+        "type": null
+      },
+      {
+        "name": "It - Capitolo uno",
+        "language": "IT",
+        "type": null
+      },
+      {
+        "name": "To Kapitola 1",
+        "language": "CZ",
+        "type": null
+      },
+      {
+        "name": "Ça - Chapitre 1",
+        "language": "FR",
+        "type": null
+      },
+      {
+        "name": "It/イット　それ が見えたら終わり",
+        "language": "JP",
+        "type": null
+      },
+      {
+        "name": "זה (2017)",
+        "language": "IL",
+        "type": null
+      },
+      {
+        "name": "小丑回魂",
+        "language": "CN",
+        "type": null
+      },
+      {
+        "name": "זה: חלק 1",
+        "language": "IL",
+        "type": null
+      },
+      {
+        "name": "זה: פרק ראשון",
+        "language": "IL",
+        "type": null
+      },
+      {
+        "name": "ES Chapter 1",
+        "language": "DE",
+        "type": null
+      },
+      {
+        "name": "Det",
+        "language": "SE",
+        "type": null
+      }
+    ],
+    "ageRating": 18,
+    "ratingMpaa": "r",
+    "shortDescription": "Злобный клоун терроризирует подростков. Экранизация романа Стивена Кинга с жутким Биллом Скарсгардом",
+    "ticketsOnSale": false,
+    "logo": {
+      "url": "https://imagetmdb.com/t/p/original/y7ZkE7lZDIrzhGbKkSarBY3gKZ1.png"
+    },
+    "top10": null,
+    "top250": null,
+    "isSeries": false,
+    "seriesLength": null,
+    "totalSeriesLength": null
+  },
+  {
+    "status": null,
+    "rating": {
+      "kp": 6.159,
+      "imdb": 5.9,
+      "filmCritics": 5.4,
+      "russianFilmCritics": 21.4286,
+      "await": null
+    },
+    "votes": {
+      "kp": 445871,
+      "imdb": 253313,
+      "filmCritics": 281,
+      "russianFilmCritics": 14,
+      "await": 96874
+    },
+    "backdrop": {
+      "url": "https://imagetmdb.com/t/p/original/vIgyYkXkg6NC2whRbYjBD7eb3Er.jpg",
+      "previewUrl": "https://imagetmdb.com/t/p/w500/vIgyYkXkg6NC2whRbYjBD7eb3Er.jpg"
+    },
+    "movieLength": 96,
+    "id": 1227967,
+    "type": "movie",
+    "name": "Веном 2",
+    "description": "Более чем через год после того как в него вселился инопланетный симбиот Веном, журналист Эдди Брок пытается приспособиться к новой жизни с суперспособностями и постоянным желанием Венома откусывать людям головы. Брок пытается возродить свою карьеру и берет интервью у серийного убийцы Клетуса Кэседи, а тот случайно становится хозяином симбиота Карнажа и сбегает из тюрьмы прямо во время собственной казни.",
+    "year": 2021,
+    "poster": {
+      "url": "https://avatars.mds.yandex.net/get-kinopoisk-image/4774061/58a86807-b6e2-45dc-8780-c38f24e6a4ea/orig",
+      "previewUrl": "https://avatars.mds.yandex.net/get-kinopoisk-image/4774061/58a86807-b6e2-45dc-8780-c38f24e6a4ea/x1000"
+    },
+    "genres": [
+      {
+        "name": "фантастика"
+      },
+      {
+        "name": "боевик"
+      },
+      {
+        "name": "ужасы"
+      }
+    ],
+    "countries": [
+      {
+        "name": "США"
+      },
+      {
+        "name": "Китай"
+      }
+    ],
+    "typeNumber": 1,
+    "alternativeName": "Venom: Let There Be Carnage",
+    "enName": "Venom 2",
+    "names": [
+      {
+        "name": "Веном 2"
+      },
+      {
+        "name": "Venom: Let There Be Carnage"
+      },
+      {
+        "name": "请以你的舌头亲吻我",
+        "language": "CN",
+        "type": null
+      },
+      {
+        "name": "Venom 2",
+        "language": "US",
+        "type": null
+      },
+      {
+        "name": "베놈 2 렛 데어 비 카니지",
+        "language": "KR",
+        "type": null
+      },
+      {
+        "name": "Venom: Carnage liberado",
+        "language": "AR",
+        "type": null
+      },
+      {
+        "name": "Venom: Carnage liberado",
+        "language": "CL",
+        "type": null
+      },
+      {
+        "name": "Venom: Carnage liberado",
+        "language": "CO",
+        "type": null
+      },
+      {
+        "name": "Venom 2. - Vérontó",
+        "language": "HU",
+        "type": null
+      },
+      {
+        "name": "Venom: Carnage liberado",
+        "language": "MX",
+        "type": null
+      },
+      {
+        "name": "Venom: Tempo de Carnificina",
+        "language": "PT",
+        "type": null
+      },
+      {
+        "name": "Отров: Нека Буде Покољ",
+        "language": "RS",
+        "type": null
+      },
+      {
+        "name": "毒液：屠杀开始",
+        "language": "CN",
+        "type": null
+      },
+      {
+        "name": "毒液：放纵屠杀",
+        "language": "CN",
+        "type": null
+      },
+      {
+        "name": "毒液2：屠杀将至",
+        "language": "CN",
+        "type": null
+      },
+      {
+        "name": "Venom 2 - Let There be Carnage",
+        "language": "CA",
+        "type": null
+      },
+      {
+        "name": "Venom - Tempo de Carnificina",
+        "language": "BR",
+        "type": null
+      },
+      {
+        "name": "Venom - Let There Be Carnage",
+        "language": "DE",
+        "type": null
+      },
+      {
+        "name": "Venom - Let There Be Carnage",
+        "language": "FR",
+        "type": null
+      },
+      {
+        "name": "Venom 2 - Let There be Carnage",
+        "language": "US",
+        "type": null
+      },
+      {
+        "name": "베놈 렛 데어 비 카니지",
+        "language": "KR",
+        "type": null
+      },
+      {
+        "name": "毒液2：屠杀开始",
+        "language": "CN",
+        "type": null
+      },
+      {
+        "name": "毒液2",
+        "language": "CN",
+        "type": null
+      },
+      {
+        "name": "毒魔：血战大屠杀",
+        "language": "HK",
+        "type": null
+      },
+      {
+        "name": "猛毒2：血蜘蛛",
+        "language": "TW",
+        "type": null
+      },
+      {
+        "name": "Venom 2: Đối Mặt Tử Thù",
+        "language": "VN",
+        "type": null
+      },
+      {
+        "name": "ヴェノム：レット・ゼア・ビー・カーネイジ：2021",
+        "language": "JP",
+        "type": null
+      },
+      {
+        "name": "Venom Let There Be Carnage",
+        "language": "US",
+        "type": null
+      },
+      {
+        "name": "Venom: Habrá matanza",
+        "language": "ES",
+        "type": null
+      },
+      {
+        "name": "Venom 2 - Let There Be Carnage",
+        "language": "DE",
+        "type": null
+      }
+    ],
+    "ageRating": 18,
+    "ratingMpaa": "pg13",
+    "shortDescription": "Репортер Эдди Брок обретает достойного врага — маньяка с симбиотом внутри. Вуди Харрельсон в роли злодея",
+    "ticketsOnSale": false,
+    "logo": {
+      "url": "https://avatars.mds.yandex.net/get-ott/1652588/2a0000017ce647a876a2c2114b35ff896b25/orig"
+    },
+    "top10": null,
+    "top250": null,
+    "isSeries": false,
+    "seriesLength": null,
+    "totalSeriesLength": null
+  },
+  {
+    "status": null,
+    "rating": {
+      "kp": 7.174,
+      "imdb": 8,
+      "filmCritics": 0,
+      "russianFilmCritics": 69.2308,
+      "await": null
+    },
+    "votes": {
+      "kp": 432517,
+      "imdb": 561475,
+      "filmCritics": 0,
+      "russianFilmCritics": 26,
+      "await": 20051
+    },
+    "backdrop": {
+      "url": "https://imagetmdb.com/t/p/original/foGkPxpw9h8zln81j63mix5B7m8.jpg",
+      "previewUrl": "https://imagetmdb.com/t/p/w500/foGkPxpw9h8zln81j63mix5B7m8.jpg"
+    },
+    "id": 1044004,
+    "type": "tv-series",
+    "name": "Ведьмак",
+    "description": "Ведьмак Геральт, мутант и убийца чудовищ, на своей верной лошади по кличке Плотва путешествует по Континенту. За тугой мешочек чеканных монет этот мужчина избавит вас от всякой настырной нечисти — хоть от чудищ болотных, оборотней и даже заколдованных принцесс. В сельской глуши местную девушку Йеннифэр, которой сильно не повезло с внешностью, зато посчастливилось иметь способности к магии, отец продаёт колдунье в ученицы. А малолетняя наследница королевства Цинтра по имени Цири вынуждена пуститься в бега, когда их страну захватывает империя Нильфгаард. Судьбы этих троих окажутся тесно связаны, но скоро сказка сказывается, да не скоро дело делается.",
+    "year": 2019,
+    "poster": {
+      "url": "https://avatars.mds.yandex.net/get-kinopoisk-image/6201401/96a25d67-aa56-4496-bcac-1471e811582a/orig",
+      "previewUrl": "https://avatars.mds.yandex.net/get-kinopoisk-image/6201401/96a25d67-aa56-4496-bcac-1471e811582a/x1000"
+    },
+    "genres": [
+      {
+        "name": "фэнтези"
+      },
+      {
+        "name": "приключения"
+      },
+      {
+        "name": "драма"
+      },
+      {
+        "name": "ужасы"
+      }
+    ],
+    "countries": [
+      {
+        "name": "США"
+      },
+      {
+        "name": "Польша"
+      }
+    ],
+    "typeNumber": 2,
+    "alternativeName": "The Witcher",
+    "enName": null,
+    "names": [
+      {
+        "name": "Ведьмак"
+      },
+      {
+        "name": "The Witcher"
+      },
+      {
+        "name": "巫师",
+        "language": "CN",
+        "type": null
+      },
+      {
+        "name": "Zaklínač",
+        "language": "CZ",
+        "type": null
+      },
+      {
+        "name": "Ο Γητευτής",
+        "language": "GR",
+        "type": null
+      },
+      {
+        "name": "Vaják",
+        "language": "HU",
+        "type": null
+      },
+      {
+        "name": "Wiedźmin",
+        "language": "PL",
+        "type": null
+      },
+      {
+        "name": "Zaklínač",
+        "language": "SK",
+        "type": null
+      },
+      {
+        "name": "เดอะ วิทเชอร์ นักล่าจอมอสูร",
+        "language": "TH",
+        "type": null
+      },
+      {
+        "name": "Thợ Săn Quái Vật",
+        "language": "VN",
+        "type": null
+      }
+    ],
+    "movieLength": null,
+    "ratingMpaa": null,
+    "shortDescription": null,
+    "ticketsOnSale": false,
+    "ageRating": 18,
+    "logo": {
+      "url": "https://imagetmdb.com/t/p/original/tZR8BERsQa8ZXpGxb9x3PuR6RQU.png"
+    },
+    "releaseYears": [
+      {
+        "start": 2019,
+        "end": null
+      }
+    ],
+    "top10": null,
+    "top250": null,
+    "isSeries": true,
+    "seriesLength": 60,
+    "totalSeriesLength": 474
+  },
+  {
+    "status": null,
+    "rating": {
+      "kp": 7.004,
+      "imdb": 7,
+      "filmCritics": 6.2,
+      "russianFilmCritics": 43.75,
+      "await": null
+    },
+    "votes": {
+      "kp": 412351,
+      "imdb": 708239,
+      "filmCritics": 283,
+      "russianFilmCritics": 16,
+      "await": 50223
+    },
+    "backdrop": {
+      "url": "https://imagetmdb.com/t/p/original/kg2FOT2Oe5PSCgs3L4vLel6B7ck.jpg",
+      "previewUrl": "https://imagetmdb.com/t/p/w500/kg2FOT2Oe5PSCgs3L4vLel6B7ck.jpg"
+    },
+    "movieLength": 116,
+    "id": 261636,
+    "type": "movie",
+    "name": "Война миров Z",
+    "description": "Бывший сотрудник ООН Джерри Лэйн оказывается в эпицентре эпидемии неизвестного вируса, который за считанные секунды превращает людей в зомби. Пытаясь найти противоядие против вируса, Лэйн путешествует вместе со своей группой почти по всему миру, поражённому эпидемией. Теперь судьба всего мира висит на волоске, и Джерри — его единственная надежда.",
+    "year": 2013,
+    "poster": {
+      "url": "https://avatars.mds.yandex.net/get-kinopoisk-image/1599028/59c333df-cee3-4626-b917-92ecdb2f837f/orig",
+      "previewUrl": "https://avatars.mds.yandex.net/get-kinopoisk-image/1599028/59c333df-cee3-4626-b917-92ecdb2f837f/x1000"
+    },
+    "genres": [
+      {
+        "name": "ужасы"
+      },
+      {
+        "name": "фантастика"
+      },
+      {
+        "name": "боевик"
+      },
+      {
+        "name": "приключения"
+      }
+    ],
+    "countries": [
+      {
+        "name": "США"
+      }
+    ],
+    "typeNumber": 1,
+    "alternativeName": "World War Z",
+    "enName": "World War Z (Unrated)",
+    "names": [
+      {
+        "name": "Война миров Z"
+      },
+      {
+        "name": "World War Z"
+      },
+      {
+        "name": "地球末日战",
+        "language": "CN",
+        "type": "literal title"
+      },
+      {
+        "name": "World War Z (Unrated)",
+        "language": "US",
+        "type": null
+      },
+      {
+        "name": "World War Z - 3D",
+        "language": "US",
+        "type": "3D version"
+      },
+      {
+        "name": "World War Z (Extended Version)",
+        "language": "US",
+        "type": null
+      },
+      {
+        "name": "World War Z (Extended Cut)",
+        "language": "US",
+        "type": null
+      },
+      {
+        "name": "Guerra mundial Z",
+        "language": "MX",
+        "type": null
+      },
+      {
+        "name": "WWZ: Guerra Mundial",
+        "language": "PT",
+        "type": null
+      },
+      {
+        "name": "ワールド・ウォーZ",
+        "language": "JP",
+        "type": null
+      },
+      {
+        "name": "월드 워 Z",
+        "language": "KR",
+        "type": null
+      },
+      {
+        "name": "Guerra Mundial z",
+        "language": "BR",
+        "type": null
+      },
+      {
+        "name": "מלחמת העולם זי",
+        "language": "IL",
+        "type": null
+      },
+      {
+        "name": "מלחמת העולם זד",
+        "language": "IL",
+        "type": null
+      },
+      {
+        "name": "ワールド・ウォーZ：2013",
+        "language": "JP",
+        "type": null
+      }
+    ],
+    "ageRating": 12,
+    "ratingMpaa": "pg13",
+    "shortDescription": "Следователь ООН спасает семью в разгар зомби-пандемии. Масштабный экшен с Брэдом Питтом и треками Muse",
+    "ticketsOnSale": false,
+    "logo": {
+      "url": "https://avatars.mds.yandex.net/get-ott/236744/2a00000170e55abf671f1b1ea225be577270/orig"
+    },
+    "top10": null,
+    "top250": null,
+    "isSeries": false,
+    "seriesLength": null,
+    "totalSeriesLength": null
+  },
+  {
+    "id": 427122,
+    "type": "movie",
+    "name": "Добро пожаловать в Zомбилэнд",
+    "rating": {
+      "kp": 7.43,
+      "imdb": 7.6,
+      "filmCritics": 7.4,
+      "russianFilmCritics": 75,
+      "await": null
+    },
+    "description": "После нашествия зомби в США небольшая группа выживших скитается по стране от побережья к побережью, сражаясь с живыми мертвецами. Они решают остановиться  в парке развлечений, надеясь, что там будут в безопасности.",
+    "votes": {
+      "kp": 357199,
+      "imdb": 612218,
+      "filmCritics": 260,
+      "russianFilmCritics": 4,
+      "await": 4882
+    },
+    "year": 2009,
+    "poster": {
+      "url": "https://avatars.mds.yandex.net/get-kinopoisk-image/4774061/415e27f0-b748-4acb-b548-871fb368184d/orig",
+      "previewUrl": "https://avatars.mds.yandex.net/get-kinopoisk-image/4774061/415e27f0-b748-4acb-b548-871fb368184d/x1000"
+    },
+    "genres": [
+      {
+        "name": "ужасы"
+      },
+      {
+        "name": "комедия"
+      },
+      {
+        "name": "боевик"
+      }
+    ],
+    "countries": [
+      {
+        "name": "США"
+      }
+    ],
+    "typeNumber": 1,
+    "alternativeName": "Zombieland",
+    "enName": null,
+    "movieLength": 84,
+    "names": [
+      {
+        "name": "Добро пожаловать в Zомбилэнд"
+      },
+      {
+        "name": "Zombieland"
+      },
+      {
+        "name": "Добро пожаловать в Зомбилэнд",
+        "language": "RU",
+        "type": null
+      },
+      {
+        "name": "Зомбiленд",
+        "language": "UA",
+        "type": null
+      },
+      {
+        "name": "Земя на зомбита",
+        "language": "BG",
+        "type": null
+      },
+      {
+        "name": "Zumbilândia",
+        "language": "BR",
+        "type": null
+      },
+      {
+        "name": "Bienvenue à Zombieland",
+        "language": "CA",
+        "type": "Français"
+      },
+      {
+        "name": "Bem-vindo a Zombieland",
+        "language": "PT",
+        "type": "Poster title"
+      },
+      {
+        "name": "ゾンビランド",
+        "language": "JP",
+        "type": null
+      },
+      {
+        "name": "ゾンビランド：2009",
+        "language": "JP",
+        "type": null
+      },
+      {
+        "name": "喪屍樂園",
+        "language": "TW",
+        "type": null
+      },
+      {
+        "name": "喪屍樂園",
+        "language": "HK",
+        "type": null
+      }
+    ],
+    "ratingMpaa": "r",
+    "shortDescription": "Только зомби-апокалипсис может заставить социофоба найти друзей. Комедия с уморительным камео Билла Мюррея",
+    "ticketsOnSale": false,
+    "ageRating": 18,
+    "backdrop": {
+      "url": "https://imagetmdb.com/t/p/original/oihWVx3imvRKujnGmSDYhfG1gI5.jpg",
+      "previewUrl": "https://imagetmdb.com/t/p/w500/oihWVx3imvRKujnGmSDYhfG1gI5.jpg"
+    },
+    "logo": {
+      "url": "https://avatars.mds.yandex.net/get-ott/2385704/2a00000170e558bbfcec653b3c6579f41779/orig"
+    },
+    "top10": null,
+    "top250": null,
+    "status": null,
+    "isSeries": false,
+    "seriesLength": null,
+    "totalSeriesLength": null
+  },
+  {
+    "id": 655800,
+    "type": "tv-series",
+    "name": "Черное зеркало",
+    "rating": {
+      "kp": 8.49,
+      "imdb": 8.7,
+      "filmCritics": 0,
+      "russianFilmCritics": 77.7778,
+      "await": null
+    },
+    "description": "За последние годы технологии всесторонне изменили нашу жизнь, прежде чем мы успели опомниться и усомниться в них. В каждом доме, на каждом столе, на каждой ладони — плазменный телевизор, монитор компьютера, дисплей смартфона — чёрное зеркало нашего существования в XXI веке.",
+    "votes": {
+      "kp": 343144,
+      "imdb": 625526,
+      "filmCritics": 0,
+      "russianFilmCritics": 9,
+      "await": 0
+    },
+    "year": 2011,
+    "poster": {
+      "url": "https://avatars.mds.yandex.net/get-kinopoisk-image/1773646/a3ae9e25-5b10-42f3-96ae-5d707fc6a1bc/orig",
+      "previewUrl": "https://avatars.mds.yandex.net/get-kinopoisk-image/1773646/a3ae9e25-5b10-42f3-96ae-5d707fc6a1bc/x1000"
+    },
+    "genres": [
+      {
+        "name": "фантастика"
+      },
+      {
+        "name": "триллер"
+      },
+      {
+        "name": "драма"
+      },
+      {
+        "name": "детектив"
+      },
+      {
+        "name": "ужасы"
+      }
+    ],
+    "countries": [
+      {
+        "name": "Великобритания"
+      }
+    ],
+    "typeNumber": 2,
+    "alternativeName": "Black Mirror",
+    "enName": "Black Mirror",
+    "names": [
+      {
+        "name": "Черное зеркало"
+      },
+      {
+        "name": "Black Mirror"
+      },
+      {
+        "name": "Miroir noir",
+        "language": "FR",
+        "type": null
+      },
+      {
+        "name": "შავი სარკე",
+        "language": "GE",
+        "type": null
+      },
+      {
+        "name": "블랙 미러",
+        "language": "KR",
+        "type": null
+      },
+      {
+        "name": "Црно Огледало",
+        "language": "RS",
+        "type": null
+      },
+      {
+        "name": "Kara Ayna",
+        "language": "TR",
+        "type": null
+      },
+      {
+        "name": "بلاك ميرور",
+        "language": "AE",
+        "type": null
+      },
+      {
+        "name": "Qara güzgü",
+        "language": "AZ",
+        "type": null
+      },
+      {
+        "name": "Черното огледало",
+        "language": "BG",
+        "type": null
+      },
+      {
+        "name": "Чорнае люстэрка",
+        "language": "BY",
+        "type": null
+      },
+      {
+        "name": "黑鏡",
+        "language": "CN",
+        "type": null
+      },
+      {
+        "name": "Espejo Negro",
+        "language": "ES",
+        "type": null
+      },
+      {
+        "name": "Ispilu Beltza",
+        "language": "ES",
+        "type": null
+      },
+      {
+        "name": "מראה שחורה",
+        "language": "IL",
+        "type": null
+      },
+      {
+        "name": "ブラック・ミラー",
+        "language": "JP",
+        "type": null
+      },
+      {
+        "name": "Juodasis veidrodis",
+        "language": "LT",
+        "type": null
+      },
+      {
+        "name": "Црно огледало",
+        "language": "MK",
+        "type": null
+      },
+      {
+        "name": "Czarne lustro",
+        "language": "PL",
+        "type": null
+      },
+      {
+        "name": "Neynika Reş",
+        "language": "SY",
+        "type": null
+      },
+      {
+        "name": "แบล็ก มิร์เรอร์",
+        "language": "TH",
+        "type": null
+      },
+      {
+        "name": "Чорне дзеркало",
+        "language": "UA",
+        "type": null
+      }
+    ],
+    "movieLength": null,
+    "ratingMpaa": null,
+    "shortDescription": "Гаджеты начинают управлять жизнью, любовью и смертью людей. Сериал-антология о том, на что способны технологии",
+    "ticketsOnSale": false,
+    "ageRating": 18,
+    "backdrop": {
+      "url": "https://imagetmdb.com/t/p/original/wZMY9X8jtSS5GXFue2lvhgaJkii.jpg",
+      "previewUrl": "https://imagetmdb.com/t/p/w500/wZMY9X8jtSS5GXFue2lvhgaJkii.jpg"
+    },
+    "logo": {
+      "url": "https://avatars.mds.yandex.net/get-ott/236744/2a00000172747e8bf51887054a858be66dc0/orig"
+    },
+    "releaseYears": [
+      {
+        "start": 2011,
+        "end": null
+      }
+    ],
+    "top10": null,
+    "top250": 145,
+    "status": null,
+    "isSeries": true,
+    "seriesLength": 43,
+    "totalSeriesLength": null
+  },
+  {
+    "id": 930534,
+    "type": "movie",
+    "name": "Сплит",
+    "rating": {
+      "kp": 7.018,
+      "imdb": 7.3,
+      "filmCritics": 6.6,
+      "russianFilmCritics": 88.8889,
+      "await": null
+    },
+    "description": "Cредь бела дня с многолюдной парковки незнакомец похищает трёх школьниц. Они приходят в себя в закрытом помещении, а в душе владельца таятся 23 лика страха. Сменяя друг друга, личности ведут обычную для них жизнь — работают и ходят к психотерапевту, периодически напоминая пленницам, что они дожидаются 24-ю личность, которая скоро явит себя миру.",
+    "votes": {
+      "kp": 336333,
+      "imdb": 536931,
+      "filmCritics": 313,
+      "russianFilmCritics": 18,
+      "await": 8689
+    },
+    "year": 2017,
+    "poster": {
+      "url": "https://avatars.mds.yandex.net/get-kinopoisk-image/1898899/66244461-bc57-4f36-ad81-e2633a127b6b/orig",
+      "previewUrl": "https://avatars.mds.yandex.net/get-kinopoisk-image/1898899/66244461-bc57-4f36-ad81-e2633a127b6b/x1000"
+    },
+    "genres": [
+      {
+        "name": "триллер"
+      },
+      {
+        "name": "ужасы"
+      }
+    ],
+    "countries": [
+      {
+        "name": "США"
+      },
+      {
+        "name": "Япония"
+      }
+    ],
+    "typeNumber": 1,
+    "ageRating": 18,
+    "alternativeName": "Split",
+    "enName": null,
+    "movieLength": 117,
+    "names": [
+      {
+        "name": "Сплит"
+      },
+      {
+        "name": "Split"
+      }
+    ],
+    "ratingMpaa": "pg13",
+    "shortDescription": "Маньяк-психопат с 23 личностями держит заложниц и борется сам с собой. Триллер с Джеймсом МакЭвоем",
+    "ticketsOnSale": false,
+    "backdrop": {
+      "url": "https://avatars.mds.yandex.net/get-ott/224348/2a0000017acd7b68747562ace3b148ea0f9b/orig",
+      "previewUrl": "https://avatars.mds.yandex.net/get-ott/224348/2a0000017acd7b68747562ace3b148ea0f9b/x1000"
+    },
+    "logo": {
+      "url": "https://avatars.mds.yandex.net/get-ott/1534341/2a0000017acd7b3b0e62ff4362cb3b00ffcc/orig"
+    },
+    "top10": null,
+    "top250": null,
+    "status": null,
+    "isSeries": false,
+    "seriesLength": null,
+    "totalSeriesLength": null
+  },
+  {
+    "status": null,
+    "rating": {
+      "kp": 7.02,
+      "imdb": 7,
+      "filmCritics": 7,
+      "russianFilmCritics": 38.0952,
+      "await": null
+    },
+    "votes": {
+      "kp": 332465,
+      "imdb": 636716,
+      "filmCritics": 315,
+      "russianFilmCritics": 21,
+      "await": 46947
+    },
+    "backdrop": {
+      "url": "https://imagetmdb.com/t/p/original/hO97RyNjBIMfzfFpUjNhsm4zImh.jpg",
+      "previewUrl": "https://imagetmdb.com/t/p/w500/hO97RyNjBIMfzfFpUjNhsm4zImh.jpg"
+    },
+    "movieLength": 124,
+    "id": 467099,
+    "type": "movie",
+    "name": "Прометей",
+    "description": "В поисках сакрального знания группа ученых отправляется в самые темные и неизведанные чертоги вселенной. Именно там, в отдаленных мирах, находясь на пределе своих умственных и физических возможностей, им предстоит вступить в безжалостную схватку за будущее всего человечества.",
+    "year": 2012,
+    "poster": {
+      "url": "https://avatars.mds.yandex.net/get-kinopoisk-image/1946459/b4410674-5bfd-4a22-8e6f-92ec2395df96/orig",
+      "previewUrl": "https://avatars.mds.yandex.net/get-kinopoisk-image/1946459/b4410674-5bfd-4a22-8e6f-92ec2395df96/x1000"
+    },
+    "genres": [
+      {
+        "name": "фантастика"
+      },
+      {
+        "name": "ужасы"
+      }
+    ],
+    "countries": [
+      {
+        "name": "Великобритания"
+      },
+      {
+        "name": "США"
+      }
+    ],
+    "typeNumber": 1,
+    "alternativeName": "Prometheus",
+    "enName": "Prometheus 3D",
+    "names": [
+      {
+        "name": "Прометей"
+      },
+      {
+        "name": "Prometheus"
+      },
+      {
+        "name": "Prometeo",
+        "language": "AR",
+        "type": null
+      },
+      {
+        "name": "Prometeo",
+        "language": "SV",
+        "type": null
+      },
+      {
+        "name": "Prometheus 3D",
+        "language": "US",
+        "type": "3D version"
+      },
+      {
+        "name": "Alien: Prometheus",
+        "language": "US",
+        "type": "working title"
+      },
+      {
+        "name": "프로메테우스",
+        "language": "KR",
+        "type": null
+      },
+      {
+        "name": "הנוסע השמיני: פרומתיאוס",
+        "language": "IL",
+        "type": null
+      },
+      {
+        "name": "프로메테우스-확장",
+        "language": "KR",
+        "type": null
+      },
+      {
+        "name": "Prometeusz",
+        "language": "PL",
+        "type": null
+      },
+      {
+        "name": "Alien 5 - Prometheus Dunkle Zeichen",
+        "language": "DE",
+        "type": null
+      },
+      {
+        "name": "Hành Trình Đến Hành Tinh Chết",
+        "language": "VN",
+        "type": null
+      },
+      {
+        "name": "异形：普罗米修斯",
+        "language": "CN",
+        "type": null
+      }
+    ],
+    "ratingMpaa": "r",
+    "shortDescription": "Ученые ищут колыбель человечества, а находят древнее зло. Возвращение Ридли Скотта во франшизу о Чужих",
+    "ticketsOnSale": false,
+    "ageRating": 16,
+    "logo": {
+      "url": "https://avatars.mds.yandex.net/get-ott/223007/2a0000017255245b2596b181b8e12cceaa57/orig"
+    },
+    "top10": null,
+    "top250": null,
+    "isSeries": false,
+    "seriesLength": null,
+    "totalSeriesLength": null
+  },
+  {
+    "status": null,
+    "rating": {
+      "kp": 6.833,
+      "imdb": 7.5,
+      "filmCritics": 8.2,
+      "russianFilmCritics": 92.3077,
+      "await": null
+    },
+    "votes": {
+      "kp": 326971,
+      "imdb": 571721,
+      "filmCritics": 387,
+      "russianFilmCritics": 13,
+      "await": 6808
+    },
+    "backdrop": {
+      "url": "https://imagetmdb.com/t/p/original/roYyPiQDQKmIKUEhO912693tSja.jpg",
+      "previewUrl": "https://imagetmdb.com/t/p/w500/roYyPiQDQKmIKUEhO912693tSja.jpg"
+    },
+    "movieLength": 90,
+    "id": 1044906,
+    "type": "movie",
+    "name": "Тихое место",
+    "description": "Семья с двумя детьми живёт на отдалённой ферме. Казалось бы, жизнь этих людей совершенно не отличается от жизни других таких семей, но они живут в месте, которое наполнено ужасными монстрами, реагирующими на любой звук. Семейство разучило целый комплекс специальных жестов, которые помогают им общаться друг с другом, не издавая ни единого звука. Кроме того, каждый из членов семьи должен очень тихо передвигаться, чтобы опасные существа их не услышали. Однако дом, где живут дети, не может быть самым тихим местом на земле.",
+    "year": 2018,
+    "poster": {
+      "url": "https://avatars.mds.yandex.net/get-kinopoisk-image/1777765/43e1945c-38a8-4477-bf35-2095c36f9a22/orig",
+      "previewUrl": "https://avatars.mds.yandex.net/get-kinopoisk-image/1777765/43e1945c-38a8-4477-bf35-2095c36f9a22/x1000"
+    },
+    "genres": [
+      {
+        "name": "ужасы"
+      },
+      {
+        "name": "фантастика"
+      },
+      {
+        "name": "драма"
+      }
+    ],
+    "countries": [
+      {
+        "name": "США"
+      }
+    ],
+    "typeNumber": 1,
+    "alternativeName": "A Quiet Place",
+    "enName": "Quiet Place 1",
+    "names": [
+      {
+        "name": "Тихое место"
+      },
+      {
+        "name": "A Quiet Place"
+      },
+      {
+        "name": "Un posto tranquillo",
+        "language": "IT",
+        "type": null
+      },
+      {
+        "name": "Quiet Place 1",
+        "language": "US",
+        "type": "series title"
+      },
+      {
+        "name": "Kena vaikne kohake",
+        "language": "EE",
+        "type": null
+      },
+      {
+        "name": "Sans un bruit",
+        "language": "FR",
+        "type": null
+      },
+      {
+        "name": "Un coin tranquille",
+        "language": "CA",
+        "type": null
+      },
+      {
+        "name": "A Quiet Place Part 1",
+        "language": "CA",
+        "type": null
+      },
+      {
+        "name": "クワイエット・プレイス：2018",
+        "language": "JP",
+        "type": null
+      },
+      {
+        "name": "Vùng Đất Câm Lặng",
+        "language": "VN",
+        "type": null
+      },
+      {
+        "name": "無聲絕境",
+        "language": "HK",
+        "type": null
+      },
+      {
+        "name": "無聲絕境",
+        "language": "TW",
+        "type": null
+      },
+      {
+        "name": "Un lugar tranquilo",
+        "language": "ES",
+        "type": null
+      }
+    ],
+    "shortDescription": "Семья живет в полной тишине, опасаясь жутких монстров. Молчаливый хоррор с Эмили Блант, где пугает любой шорох",
+    "ageRating": 18,
+    "ratingMpaa": "pg13",
+    "ticketsOnSale": false,
+    "logo": {
+      "url": "https://avatars.mds.yandex.net/get-ott/239697/2a00000170d0d06ba7e5fc7d9e13ddec2ff4/orig"
+    },
+    "top10": null,
+    "top250": null,
+    "isSeries": false,
+    "seriesLength": null,
+    "totalSeriesLength": null
+  },
+  {
+    "status": null,
+    "rating": {
+      "kp": 6.932,
+      "imdb": 6.9,
+      "filmCritics": 7.2,
+      "russianFilmCritics": 0,
+      "await": null
+    },
+    "votes": {
+      "kp": 315293,
+      "imdb": 176654,
+      "filmCritics": 321,
+      "russianFilmCritics": 2,
+      "await": 2789
+    },
+    "backdrop": {
+      "url": "https://imagetmdb.com/t/p/original/oJ1MIABA0WF0a7MDVQnnMvBdex8.jpg",
+      "previewUrl": "https://imagetmdb.com/t/p/w500/oJ1MIABA0WF0a7MDVQnnMvBdex8.jpg"
+    },
+    "movieLength": 95,
+    "id": 1198736,
+    "type": "movie",
+    "name": "Я иду искать",
+    "description": "Молодая невеста — теперь часть семьи своего новоиспеченного мужа, богатого эксцентричного рода, чтящего вековые традиции. Кто бы мог подумать, что первая брачная ночь превратится в смертельную игру с новообретёнными родственниками, в которой девушке нужно будет очень постараться, чтобы дожить до рассвета.",
+    "year": 2019,
+    "poster": {
+      "url": "https://avatars.mds.yandex.net/get-kinopoisk-image/1599028/fbd455e5-4516-4079-9af8-0da26a34f2ba/orig",
+      "previewUrl": "https://avatars.mds.yandex.net/get-kinopoisk-image/1599028/fbd455e5-4516-4079-9af8-0da26a34f2ba/x1000"
+    },
+    "genres": [
+      {
+        "name": "триллер"
+      },
+      {
+        "name": "комедия"
+      },
+      {
+        "name": "ужасы"
+      }
+    ],
+    "countries": [
+      {
+        "name": "США"
+      }
+    ],
+    "typeNumber": 1,
+    "alternativeName": "Ready or Not",
+    "enName": "Family Ritual",
+    "names": [
+      {
+        "name": "Я иду искать"
+      },
+      {
+        "name": "Ready or Not"
+      },
+      {
+        "name": "Boda sangrienta",
+        "language": "AR",
+        "type": null
+      },
+      {
+        "name": "Casamento Sangrento",
+        "language": "BR",
+        "type": null
+      },
+      {
+        "name": "Докато смъртта ни раздели",
+        "language": "BG",
+        "type": null
+      },
+      {
+        "name": "Prêt pas prêt",
+        "language": "CA",
+        "type": "French title"
+      },
+      {
+        "name": "Boda sangrienta",
+        "language": "CL",
+        "type": null
+      },
+      {
+        "name": "准备好了没",
+        "language": "CN",
+        "type": "Mandarin title"
+      },
+      {
+        "name": "Boda sangrienta",
+        "language": "CO",
+        "type": null
+      },
+      {
+        "name": "Wedding Nightmare",
+        "language": "FR",
+        "type": null
+      },
+      {
+        "name": "Είσαι Έτοιμος",
+        "language": "GR",
+        "type": null
+      },
+      {
+        "name": "Aki bújt",
+        "language": "HU",
+        "type": null
+      },
+      {
+        "name": "तैयार है या नहीं",
+        "language": "IN",
+        "type": "Hindi title"
+      },
+      {
+        "name": "Mi She'Omed Me'Akhorai",
+        "language": "IL",
+        "type": "Hebrew title"
+      },
+      {
+        "name": "Finché morte non ci separi",
+        "language": "IT",
+        "type": null
+      },
+      {
+        "name": "レディ・オア・ノット",
+        "language": "JP",
+        "type": null
+      },
+      {
+        "name": "Boda sangrienta",
+        "language": "MX",
+        "type": null
+      },
+      {
+        "name": "Boda sangrienta",
+        "language": "PE",
+        "type": null
+      },
+      {
+        "name": "Zabawa w pochowanego",
+        "language": "PL",
+        "type": null
+      },
+      {
+        "name": "Ready or Not - O Ritual",
+        "language": "PT",
+        "type": null
+      },
+      {
+        "name": "Spremna ili ne",
+        "language": "RS",
+        "type": null
+      },
+      {
+        "name": "Nevesta na zabitie",
+        "language": "SK",
+        "type": "alternative title"
+      },
+      {
+        "name": "Pripravená alebo nie",
+        "language": "SK",
+        "type": null
+      },
+      {
+        "name": "Noche de bodas",
+        "language": "ES",
+        "type": null
+      },
+      {
+        "name": "Saklambaç",
+        "language": "TR",
+        "type": null
+      },
+      {
+        "name": "Гра в хованки",
+        "language": "UA",
+        "type": null
+      },
+      {
+        "name": "Family Ritual",
+        "language": "US",
+        "type": "working title"
+      },
+      {
+        "name": "Boda sangrienta",
+        "language": "UY",
+        "type": "original subtitled version"
+      }
+    ],
+    "ageRating": 18,
+    "ratingMpaa": "r",
+    "shortDescription": "Когда брачная ночь — кровавая игра на выживание. Хоррор-комедия с Самарой Уивинг о безумной семейной традиции",
+    "ticketsOnSale": false,
+    "logo": {
+      "url": "https://avatars.mds.yandex.net/get-ott/212840/2a0000016ec6d6223ba4aceb207f973a27d3/orig"
+    },
+    "top10": null,
+    "top250": null,
+    "isSeries": false,
+    "seriesLength": null,
+    "totalSeriesLength": null
+  },
+  {
+    "id": 818981,
+    "type": "movie",
+    "name": "Реальные упыри",
+    "rating": {
+      "kp": 7.451,
+      "imdb": 7.6,
+      "filmCritics": 7.9,
+      "russianFilmCritics": 100,
+      "await": null
+    },
+    "description": "История жизни Виаго, Дикона и Владислава — трёх соседей и по совместительству бессмертных вампиров, которые всего лишь пытаются выжить в современном мире, где есть арендная плата, фейсконтроль в ночных клубах, губительный солнечный свет и другие неприятности.",
+    "votes": {
+      "kp": 313688,
+      "imdb": 197181,
+      "filmCritics": 194,
+      "russianFilmCritics": 12,
+      "await": 103
+    },
+    "year": 2014,
+    "poster": {
+      "url": "https://avatars.mds.yandex.net/get-kinopoisk-image/1704946/76d373e2-54ae-4755-a543-0ff633948003/orig",
+      "previewUrl": "https://avatars.mds.yandex.net/get-kinopoisk-image/1704946/76d373e2-54ae-4755-a543-0ff633948003/x1000"
+    },
+    "genres": [
+      {
+        "name": "комедия"
+      },
+      {
+        "name": "ужасы"
+      }
+    ],
+    "countries": [
+      {
+        "name": "Новая Зеландия"
+      }
+    ],
+    "typeNumber": 1,
+    "alternativeName": "What We Do in the Shadows",
+    "backdrop": {
+      "url": "https://imagetmdb.com/t/p/original/k4AVaOboquMcd3zbFSSgCEbzabz.jpg",
+      "previewUrl": "https://imagetmdb.com/t/p/w500/k4AVaOboquMcd3zbFSSgCEbzabz.jpg"
+    },
+    "enName": null,
+    "movieLength": 85,
+    "names": [
+      {
+        "name": "Реальные упыри"
+      },
+      {
+        "name": "What We Do in the Shadows"
+      },
+      {
+        "name": "Mi folyik a sötétben",
+        "language": "HU",
+        "type": "literal title"
+      },
+      {
+        "name": "чем мы занимаемся в тени",
+        "language": "RU",
+        "type": "literal title"
+      },
+      {
+        "name": "KP15: Ką mes veikiame šešėliuose",
+        "language": "LT",
+        "type": "VIFF Kino pavasaris"
+      },
+      {
+        "name": "Що ми робимо у тінях",
+        "language": "UA",
+        "type": null
+      },
+      {
+        "name": "5 Zimmer Küche Sarg",
+        "language": "DE",
+        "type": null
+      },
+      {
+        "name": "뱀파이어에 관한 아주 특별한 다큐멘터리",
+        "language": "KR",
+        "type": null
+      },
+      {
+        "name": "Lo que hacemos en las sombras",
+        "language": "ES",
+        "type": null
+      }
+    ],
+    "status": null,
+    "ratingMpaa": "r",
+    "shortDescription": "Очаровательные вампиры-соседи становятся героями фильма. Безумно смешная мокьюментари-комедия Тайки Вайтити",
+    "ticketsOnSale": false,
+    "ageRating": 18,
+    "logo": {
+      "url": "https://avatars.mds.yandex.net/get-ott/223007/2a00000171ad00b4d651391667474ab71359/orig"
+    },
+    "top10": null,
+    "top250": null,
+    "isSeries": false,
+    "seriesLength": null,
+    "totalSeriesLength": null
+  },
+  {
+    "status": null,
+    "rating": {
+      "kp": 7.935,
+      "imdb": 7.3,
+      "filmCritics": 6.4,
+      "russianFilmCritics": 0,
+      "await": null
+    },
+    "votes": {
+      "kp": 308922,
+      "imdb": 380098,
+      "filmCritics": 129,
+      "russianFilmCritics": 1,
+      "await": 0
+    },
+    "backdrop": {
+      "url": "https://imagetmdb.com/t/p/original/u1YU0pKfdDXD1KNQdOeZnYJ8VbE.jpg",
+      "previewUrl": "https://imagetmdb.com/t/p/w500/u1YU0pKfdDXD1KNQdOeZnYJ8VbE.jpg"
+    },
+    "movieLength": 105,
+    "id": 5622,
+    "type": "movie",
+    "name": "Сонная Лощина",
+    "description": "Нью-Йорк, 1799 год. Икабода Крэйна, молодого констебля, отправляют в местечко Сонная лощина для расследования загадочных убийств. Все жертвы, как сообщает местное население, погибают от меча всадника без головы.\n\nВсе они обезглавлены, а головы исчезли. Крэйну приходится убедиться, что это не легенда, а страшная правда. Становится очевидно, что убийца приходит с того света, что в преступлениях замешаны ведьмы и иная нечисть. Всадника нельзя убить пулей, всех смельчаков он побеждает в схватках. Но каковы мотивы злодеяний?..",
+    "year": 1999,
+    "poster": {
+      "url": "https://avatars.mds.yandex.net/get-kinopoisk-image/6201401/a300ae16-fb12-4305-aa3f-34c9edd33398/orig",
+      "previewUrl": "https://avatars.mds.yandex.net/get-kinopoisk-image/6201401/a300ae16-fb12-4305-aa3f-34c9edd33398/x1000"
+    },
+    "genres": [
+      {
+        "name": "триллер"
+      },
+      {
+        "name": "фэнтези"
+      },
+      {
+        "name": "ужасы"
+      },
+      {
+        "name": "детектив"
+      }
+    ],
+    "countries": [
+      {
+        "name": "США"
+      },
+      {
+        "name": "Германия"
+      }
+    ],
+    "typeNumber": 1,
+    "alternativeName": "Sleepy Hollow",
+    "enName": null,
+    "names": [
+      {
+        "name": "Сонная Лощина"
+      },
+      {
+        "name": "Sleepy Hollow"
+      },
+      {
+        "name": "Sleepy Hollow, la légende du cavalier sans tête",
+        "language": "FR",
+        "type": null
+      },
+      {
+        "name": "Sleepy Hollow - Köpfe werden rollen",
+        "language": "DE",
+        "type": null
+      },
+      {
+        "name": "La légende de Sleepy Hollow",
+        "language": "FR",
+        "type": null
+      },
+      {
+        "name": "La leyenda del jinete sin cabeza",
+        "language": "MX",
+        "type": null
+      },
+      {
+        "name": "سوار بی سر",
+        "language": "IR",
+        "type": null
+      },
+      {
+        "name": "افسانه سوار بی سر",
+        "language": "IR",
+        "type": null
+      }
+    ],
+    "ageRating": 18,
+    "ratingMpaa": "r",
+    "shortDescription": "Нью-йоркский констебль ищет встречи с инфернальным убийцей. Тим Бёртон готично экранизирует Вашингтона Ирвинга",
+    "ticketsOnSale": false,
+    "logo": {
+      "url": "https://avatars.mds.yandex.net/get-ott/2419418/2a0000017f91fdfc8d3e779871a0408d0ec0/orig"
+    },
+    "top10": null,
+    "top250": null,
+    "isSeries": false,
+    "seriesLength": null,
+    "totalSeriesLength": null
+  }
+]

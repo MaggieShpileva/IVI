@@ -3,13 +3,18 @@ import styles from "./index.module.scss";
 import Image from "next/image";
 import Icons from "./Info/Icons";
 import Info from "./Info";
-import { ISimpleMovie, MovieKinopoiskT, SimilarMovie } from "@/types/types";
+import {
+  ISimpleMovie,
+  MovieKinopoiskT,
+  PosterKinopoiskType,
+  SimilarMovie,
+} from "@/types/types";
 import { useRouter } from "next/router";
 import { useTranslation } from "next-export-i18n";
 const posterImage = require("../../images/posterImage.jpeg");
 
 export type PosterMovieProps = {
-  film: MovieKinopoiskT;
+  film: MovieKinopoiskT | PosterKinopoiskType;
 };
 
 const Poster: FC<PosterMovieProps> = ({ film }) => {

@@ -1,10 +1,9 @@
 import { BannerType } from "@/types/types";
-import main_banner from "@/data/Main_banner.json";
 
 export const Worker = () => {
-  return new Promise<BannerType[]>((resolve, reject) => {
+  return new Promise<string>((resolve, reject) => {
     setTimeout(() => {
-      resolve(main_banner);
+      resolve("");
     }, 1000);
   });
 };

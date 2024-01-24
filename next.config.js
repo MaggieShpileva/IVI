@@ -32,6 +32,12 @@ const nextConfig = {
       "www.themoviedb.org",
       "img02.rl0.ru",
       "ic.pics.livejournal.com",
+      "seeklogo.com",
+      "static.vl.ru",
+      "thumbs.dfs.ivi.ru",
+      "i0.wp.com",
+      "static.okko.tv",
+      "images.kinorium.com",
     ],
     remotePatterns: [
       {

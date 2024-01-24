@@ -20,9 +20,6 @@ const Rating: FC<Props> = ({ raiting, filmYear, country, genres }) => {
       }
     });
   };
-  const countryValue = renderValue(country);
-
-  const genresValue = renderValue(genres);
 
   return (
     <div className={styles.container}>

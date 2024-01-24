@@ -9,23 +9,24 @@ import GenresSlider from "@/components/Sliders/GenresSlider";
 import { MovieKinopoiskT, PersonForSliderType } from "@/types/types";
 import SimpleSlider from "@/components/Sliders/SimpleSlider";
 import PersonsSlider from "@/components/Sliders/PersonsSlider";
-import { connect, useDispatch, useSelector } from "react-redux";
+import { useSelector } from "react-redux";
 import { wrapper } from "@/Redux/store";
-import { useRouter } from "next/router";
 import { Loader } from "@/components/Loader";
 // import { getMoviesData, getMoviesDataStart } from "@/Redux/movies/actions";
 import axios from "axios";
-import { getMoviesData } from "@/Redux/movies/actions";
 import { selectMoviesWithFilters } from "@/Redux/moviesWithFilters/selectors";
 
-import bestMovies from "../../data/new_data/movies.json";
+import bestMovies from "../../data/new_data/movies.json"; //сделать 10 фильмов
 import popularActors from "../../data/new_data/popularActors.json";
 import dataMovie from "../../data/new_data/genres.json";
 import { NextPage } from "next";
 
-const Movies: NextPage = () => {
+const Movies: NextPage = ({
+  genresData,
+  bestMoviesData,
+  popularActorsData,
+}: any) => {
   const { t } = useTranslation();
-  const put = useDispatch();
   const data = useSelector(selectMoviesWithFilters);
   const [isFilter, setIsFilter] = useState(false);
   // useEffect(() => {
@@ -56,13 +57,13 @@ const Movies: NextPage = () => {
                 {t("contextSubMenu.genres")}
               </h2>
               <GenresSlider
-                genresRu={dataMovie.genresRu}
-                genresEn={dataMovie.genresEn}
+                genresRu={genresData.genresRu}
+                genresEn={genresData.genresEn}
               />
             </div>
             <SimpleSlider
               title={t("sliders_title.top_movies")}
-              films={bestMovies.docs as MovieKinopoiskT[]}
+              films={bestMoviesData.docs as MovieKinopoiskT[]}
               isLoading={isLoading}
               setIsLoading={setIsLoading}
             />
@@ -71,7 +72,7 @@ const Movies: NextPage = () => {
                 {t("sliders_title.persons")}{" "}
               </h2>
               <PersonsSlider
-                popularActors={popularActors as PersonForSliderType[]}
+                popularActors={popularActorsData as PersonForSliderType[]}
               />
             </div>
           </>
@@ -81,6 +82,14 @@ const Movies: NextPage = () => {
   );
 };
 
+export const getStaticProps = wrapper.getServerSideProps(
+  (store) => async (context) => {
+    const popularActorsData = popularActors;
+    const bestMoviesData = bestMovies;
+    const genresData = dataMovie;
+    return { props: { genresData, bestMoviesData, popularActorsData } };
+  }
+);
 // export const getStaticProps: GetStaticProps = wrapper.getStaticProps(
 //   (store) => async (context) => {
 //     store.dispatch(getMoviesData());

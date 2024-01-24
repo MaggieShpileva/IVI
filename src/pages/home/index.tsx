@@ -4,33 +4,37 @@ import Banner from "@/components/Banner";
 import { useTranslation } from "next-export-i18n";
 import { FC, useEffect, useState } from "react";
 import SimpleSlider from "@/components/Sliders/SimpleSlider";
-import main_banner from "@/data/Main_banner.json";
-import {
-  ISimpleMovie,
-  MovieKinopoiskT,
-  MoviesForSlidersOnHomePageT,
-} from "@/types/types";
-import { connect, useDispatch, useSelector } from "react-redux";
-import { wrapper } from "@/Redux/store";
+import { BannerType, PosterKinopoiskType } from "@/types/types";
+import { useSelector } from "react-redux";
 import SliderContinueBrowsing from "@/components/Sliders/SliderContinueBrowsing";
 import { Loader } from "@/components/Loader";
 import styles from "./Home.module.scss";
-import { getDataBanner } from "@/Redux/banner/actions";
-import { getDataHomePage } from "@/Redux/homePage/actions";
 import SliderTopTen from "@/components/Sliders/SliderTopTen";
 import { selectBrowsingMovie } from "@/Redux/continue_browsing/selectors";
 import { BrowsingMovie } from "@/Redux/continue_browsing/reducer";
-import { NextPage } from "next";
-import bestMovies from "../../data/new_data/movies.json";
-import comedies from "../../data/new_data/comedy.json";
-import adventure_time from "../../data/new_data/adventure_time.json";
-const inter = Inter({ subsets: ["latin"] });
+import { GetStaticProps, NextPage } from "next";
 
-const Home: NextPage = ({ movies, banner }: any) => {
+import axios from "axios";
+import $api from "@/profileRequests/configeAxios";
+
+type Props = {
+  banner: BannerType[];
+  bestMovies: PosterKinopoiskType[];
+  comediesMovies: PosterKinopoiskType[];
+  adventureMovies: PosterKinopoiskType[];
+  horrorMovies: PosterKinopoiskType[];
+};
+
+const Home: NextPage<Props> = ({
+  banner,
+  bestMovies,
+  comediesMovies,
+  adventureMovies,
+  horrorMovies,
+}) => {
   const { t } = useTranslation();
   const ContinueBrowingmovies: BrowsingMovie[] =
     useSelector(selectBrowsingMovie);
-
   const [isLoading, setIsLoading] = useState(false);
 
   return (
@@ -43,7 +47,7 @@ const Home: NextPage = ({ movies, banner }: any) => {
         <meta httpEquiv="Permissions-Policy" content="interest-cohort=()" />
       </Head>
 
-      <Banner movies={banner} />
+      <Banner posters={banner} />
 
       <SliderContinueBrowsing
         title={t("sliders_title.continue_browsing")}
@@ -56,14 +60,14 @@ const Home: NextPage = ({ movies, banner }: any) => {
       {isLoading && <Loader type="loading_page" />}
       <SimpleSlider
         title={t("sliders_title.best_films")}
-        films={bestMovies.docs as MovieKinopoiskT[]}
+        films={bestMovies as PosterKinopoiskType[]}
         isLoading={isLoading}
         setIsLoading={setIsLoading}
       />
 
       <SimpleSlider
         title={t("sliders_title.family_comedies")}
-        films={comedies.docs as MovieKinopoiskT[]}
+        films={comediesMovies as PosterKinopoiskType[]}
         isLoading={isLoading}
         setIsLoading={setIsLoading}
       />
@@ -71,28 +75,55 @@ const Home: NextPage = ({ movies, banner }: any) => {
 
       <SimpleSlider
         title={"Захватывающее кино"}
-        films={adventure_time.docs as MovieKinopoiskT[]}
+        films={adventureMovies as PosterKinopoiskType[]}
         isLoading={isLoading}
         setIsLoading={setIsLoading}
       />
-      {/* <SimpleSlider
-        title={t("sliders_title.best_fantasy_films")}
-        films={movies.bestFantasyFilmsSet as ISimpleMovie[]}
+      <SimpleSlider
+        title={"Ужасы"}
+        films={horrorMovies as PosterKinopoiskType[]}
         isLoading={isLoading}
         setIsLoading={setIsLoading}
-      /> */}
+      />
     </div>
   );
 };
-export const getStaticProps = wrapper.getServerSideProps(
-  (store) => async (context) => {
-    store.dispatch(getDataHomePage());
-    store.dispatch(getDataBanner());
-    await new Promise((resolve) => setTimeout(resolve, 1000));
-    const movies = (await store.getState()
-      .homePage) as MoviesForSlidersOnHomePageT;
-    const banner = await store.getState().banner.data;
-    return { props: { movies, banner } };
-  }
-);
+export const getStaticProps: GetStaticProps = async (context) => {
+  const banner = await $api
+    .get(`/sliders/banner`)
+    .then((response) => response.data);
+
+  const bestMovies = await $api
+    .get("/sliders/bestMovies")
+    .then((response) => response.data);
+
+  const comediesMovies = await $api
+    .get("/sliders/comediesMovies")
+    .then((response) => response.data);
+
+  const adventureMovies = await $api
+    .get("/sliders/adventureMovies")
+    .then((response) => response.data);
+
+  const horrorMovies = await $api
+    .get("/sliders/horrorMovies")
+    .then((response) => response.data);
+
+  const movies = {
+    banner,
+    bestMovies,
+    comediesMovies,
+    adventureMovies,
+    horrorMovies,
+  };
+  return {
+    props: {
+      banner,
+      bestMovies,
+      comediesMovies,
+      adventureMovies,
+      horrorMovies,
+    },
+  };
+};
 export default Home;

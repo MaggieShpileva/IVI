@@ -1,10 +1,12 @@
 import axios, { AxiosRequestConfig } from "axios";
+axios.defaults.baseURL = "http://localhost:3000/api";
 
 export const API_URL = "http://localhost:3000/api";
+export const VERCEL_UTL = "https://ivi-maggieshpileva.vercel.app/api";
 
 const $api = axios.create({
   withCredentials: true,
-  baseURL: API_URL,
+  baseURL: API_URL || VERCEL_UTL,
 });
 
 // $api.interceptors.request.use((config) => {
