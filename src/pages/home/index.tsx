@@ -89,24 +89,24 @@ const Home: NextPage<Props> = ({
   );
 };
 export const getStaticProps: GetStaticProps = async (context) => {
-  const banner = await $api
-    .get(`/sliders/banner`)
+  const banner = await axios
+    .get(`/api/sliders/banner`)
     .then((response) => response.data);
 
-  const bestMovies = await $api
-    .get("/sliders/bestMovies")
+  const bestMovies = await axios
+    .get("/api/sliders/bestMovies")
     .then((response) => response.data);
 
-  const comediesMovies = await $api
-    .get("/sliders/comediesMovies")
+  const comediesMovies = await axios
+    .get("/api/sliders/comediesMovies")
     .then((response) => response.data);
 
-  const adventureMovies = await $api
-    .get("/sliders/adventureMovies")
+  const adventureMovies = await axios
+    .get("/api/sliders/adventureMovies")
     .then((response) => response.data);
 
-  const horrorMovies = await $api
-    .get("/sliders/horrorMovies")
+  const horrorMovies = await axios
+    .get("/api/sliders/horrorMovies")
     .then((response) => response.data);
 
   const movies = {
