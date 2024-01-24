@@ -1,6 +1,5 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  output: "export",
   mode: "development",
   experimental: {
     appDir: true,
@@ -24,6 +23,7 @@ const nextConfig = {
   reactStrictMode: false,
 
   images: {
+    unoptimized: true,
     domains: [
       "avatars.mds.yandex.net",
       "www.kinopoisk.ru",
