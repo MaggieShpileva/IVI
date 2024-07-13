@@ -13,7 +13,7 @@ const Profile = () => {
   const { t } = useTranslation();
   const [openModal, setOpenModal] = useState(false);
   const session = useSession();
-
+  console.log("session", session);
   const handleClick: MouseEventHandler<HTMLButtonElement> = async (event) => {
     event.preventDefault();
     setOpenModal(true);

@@ -23,7 +23,6 @@ export const ContextSubMenu: FC<ContextSubProps> = ({
   const router = useRouter();
   const { genresRu, genresEn, countriesRu, countriesEn } =
     data as MoviesForFilmsPageT;
-  console.log(data);
   const lang = router.asPath.includes("lang=en") ? "en" : "ru";
   const genres = lang === "en" ? genresEn : genresRu;
   const countries = lang === "en" ? countriesEn : countriesRu;

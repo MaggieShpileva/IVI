@@ -17,7 +17,6 @@ const DesktopMenu: FC<Props> = (props) => {
   const router = useRouter();
 
   const [locale, setLocale] = useState<any>("ru");
-
   useEffect(() => {
     if (router.query?.lang) {
       setLocale(router.query?.lang);
@@ -28,6 +27,7 @@ const DesktopMenu: FC<Props> = (props) => {
 
   const handleClick = () => {
     props.setIsLoader(true);
+    props.setIsOpenSubMenu(false);
   };
   return (
     <div className={styles.navigation}>

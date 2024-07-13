@@ -1,4 +1,4 @@
-import { FC } from "react";
+import { Dispatch, FC, MouseEvent, SetStateAction } from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -10,6 +10,8 @@ import { useAppDispatch, useAppSelector } from "@/hooks/hooks";
 import { selectMovies } from "@/Redux/movies/selectors";
 import { genresIcons } from "@/data/filters";
 import { useRouter } from "next/router";
+import { getMoviesWithGender } from "@/Redux/moviesWithFilters/actions";
+import { useDispatch } from "react-redux";
 
 const PrevButton: FC = (props: any) => {
   return (
@@ -43,9 +45,10 @@ type Props = {
     id: number;
     name: string;
   }[];
+  setIsFilter: Dispatch<SetStateAction<boolean>>;
 };
 
-const GenresMinSlider: FC<Props> = ({ genres }) => {
+const GenresMinSlider: FC<Props> = ({ genres, setIsFilter }) => {
   const settings = {
     dots: false,
     infinite: false,
@@ -71,10 +74,15 @@ const GenresMinSlider: FC<Props> = ({ genres }) => {
     ],
   };
 
-  const dispatch = useAppDispatch();
+  const put = useDispatch();
   const router = useRouter();
   const lang = router.asPath.includes("lang=en") ? "en" : "ru";
   // const genres = lang === "en" ? genresEn : genresRu;
+  const handleClick = (event: MouseEvent) => {
+    setIsFilter(true);
+    const target = event.target as HTMLButtonElement;
+    put(getMoviesWithGender(target.textContent));
+  };
 
   return (
     <Slider {...settings} className={styles.container}>
@@ -87,6 +95,7 @@ const GenresMinSlider: FC<Props> = ({ genres }) => {
             id={findItem?.id || 1}
             key={item.id}
             iconClass={findItem?.icon || ""}
+            onClick={handleClick}
           />
         );
       })}

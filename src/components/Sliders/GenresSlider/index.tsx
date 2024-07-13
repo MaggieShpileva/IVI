@@ -1,4 +1,4 @@
-import React, { FC } from "react";
+import React, { Dispatch, FC, MouseEventHandler, SetStateAction } from "react";
 import styles from "../index.module.scss";
 import Slider from "react-slick";
 import Poster from "@/components/Poster";
@@ -10,28 +10,35 @@ import { useAppDispatch, useAppSelector } from "@/hooks/hooks";
 import { selectMovies } from "@/Redux/movies/selectors";
 import { genresIcons } from "@/data/filters";
 
-import { useSelector } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 
 import { useRouter } from "next/router";
 import { Loader } from "@/components/Loader";
 import { GenresType } from "@/types/types";
+import { getMoviesWithGender } from "@/Redux/moviesWithFilters/actions";
 
 type Props = {
   genresRu: GenresType[];
   genresEn: GenresType[];
+  setIsFilter: Dispatch<SetStateAction<boolean>>;
 };
-const GenresSlider: FC<Props> = ({ genresRu, genresEn }) => {
+const GenresSlider: FC<Props> = ({ genresRu, genresEn, setIsFilter }) => {
   const newSettings = {
     ...settings, // текущие настройки слайдера
     centerMode: false, // дополнительные свойства
     slidesToShow: 7,
   };
 
-  const dispatch = useAppDispatch();
+  const put = useDispatch();
   const router = useRouter();
   const lang = router.asPath.includes("lang=en") ? "en" : "ru";
   const genres = lang === "en" ? genresEn : genresRu;
 
+  const handleClick: MouseEventHandler<HTMLButtonElement> = (event) => {
+    setIsFilter(true);
+    const target = event.target as HTMLButtonElement;
+    put(getMoviesWithGender(target.textContent));
+  };
   return (
     <div>
       {genres === undefined ? (
@@ -48,7 +55,7 @@ const GenresSlider: FC<Props> = ({ genresRu, genresEn }) => {
                 size="big"
                 genres={item.name}
                 id={findItem?.id || 1}
-                // onClick={() => dispatch(setGenres(item.name))}
+                onClick={handleClick}
                 iconClass={findItem?.icon || ""}
               />
             );

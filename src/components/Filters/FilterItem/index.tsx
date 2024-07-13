@@ -8,9 +8,10 @@ type Props = {
   item?: { title: string; value: string };
   isOpen?: string;
   setIsOpen?: Dispatch<SetStateAction<string>>;
+  setIsFilter: Dispatch<SetStateAction<boolean>>;
 };
 
-const FilterItem: FC<Props> = ({ item, isOpen, setIsOpen }) => {
+const FilterItem: FC<Props> = ({ item, isOpen, setIsOpen, setIsFilter }) => {
   const onClickhandler = () => {
     setIsOpen && setIsOpen((state) => (state === item.title ? "" : item.title));
   };
@@ -30,7 +31,9 @@ const FilterItem: FC<Props> = ({ item, isOpen, setIsOpen }) => {
           <BsChevronCompactDown />
         )}
       </Button>
-      {isOpen === item.title && <FilterDropdown filter={item.title} />}
+      {isOpen === item.title && (
+        <FilterDropdown filter={item.title} setIsFilter={setIsFilter} />
+      )}
     </div>
   );
 };

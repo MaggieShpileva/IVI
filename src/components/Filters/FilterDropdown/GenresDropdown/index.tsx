@@ -1,25 +1,24 @@
-import { FC, useState, useEffect } from "react";
+import { FC, useState, useEffect, Dispatch, SetStateAction } from "react";
 import styles from "./index.module.scss";
 import ListItem from "../ListItem";
 import { BsCheckLg } from "react-icons/bs";
 import GenresMinSlider from "../../GenresMinSlider";
 import { useAppDispatch, useAppSelector } from "@/hooks/hooks";
-import { selectMovies } from "@/Redux/movies/selectors";
 import { TiPencil } from "react-icons/ti";
 import { BiExit } from "react-icons/bi";
 import { Button } from "@/components/Button/Button";
-import { GenresType } from "@/types/types";
 import { useRouter } from "next/router";
 import genresData from "../../../../data/new_data/genres.json";
 
-const GenresDropdown: FC = () => {
+type Props = {
+  setIsFilter: Dispatch<SetStateAction<boolean>>;
+};
+
+const GenresDropdown: FC<Props> = ({ setIsFilter }) => {
   const router = useRouter();
   const lang = router.asPath.includes("lang=en") ? "en" : "ru";
 
-  // const { genresRu, genresEn } = useAppSelector(selectMovies);
   const genres = lang === "en" ? genresData.genresEn : genresData.genresRu;
-  // const genresCopy = [...genres];
-  // const { genres: genresFilter } = useAppSelector(selectFilters);
 
   // связать с правами пользователя
   const [adminMode, setAdminMode] = useState(true);
@@ -37,7 +36,7 @@ const GenresDropdown: FC = () => {
   return (
     <div className={styles.genresDropdown}>
       <div className={styles.sliderRow}>
-        <GenresMinSlider genres={genres} />
+        <GenresMinSlider genres={genres} setIsFilter={setIsFilter} />
       </div>
       <div className={styles.content}>
         {adminMode && (

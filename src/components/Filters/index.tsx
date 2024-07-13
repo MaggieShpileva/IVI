@@ -54,7 +54,12 @@ const Filters: FC<Props> = ({ isFilter, setIsFilter }) => {
       <div className={styles.filtersRow}>
         {filtersTitle.map((item) => (
           <div key={item.title}>
-            <FilterItem item={item} isOpen={isOpen} setIsOpen={setIsOpen} />
+            <FilterItem
+              item={item}
+              isOpen={isOpen}
+              setIsOpen={setIsOpen}
+              setIsFilter={setIsFilter}
+            />
           </div>
         ))}
       </div>

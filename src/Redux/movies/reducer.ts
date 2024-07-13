@@ -1,15 +1,6 @@
-import {
-  CountriesType,
-  GenresType,
-  IMovie,
-  ISimpleMovie,
-  MovieKinopoiskT,
-  PersonForSearchType,
-  PersonForSliderType,
-} from "@/types/types";
+import { MovieKinopoiskT } from "@/types/types";
 import { AnyAction } from "@reduxjs/toolkit";
 import { MOVIES_ACTIONS } from "./action-types";
-import { createWrapper, Context, HYDRATE } from "next-redux-wrapper";
 
 export interface IMoviesState {
   data: MovieKinopoiskT[];

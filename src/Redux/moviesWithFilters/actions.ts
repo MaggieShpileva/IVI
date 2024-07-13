@@ -12,3 +12,11 @@ export const getMoviesDataSuccess = (data: MovieKinopoiskT[]) => {
     payload: data,
   };
 };
+
+export const getMoviesWithGender = (payload: any) => {
+  console.log("payload", payload);
+  return {
+    type: MOVIES_WITH_FILTERS_ACTIONS.GET_MOVIES_WITH_GENDER,
+    payload,
+  };
+};

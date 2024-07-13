@@ -15,7 +15,10 @@ const GenresButton: FC<Props> = ({ size, genres, id, onClick, iconClass }) => {
 
   return (
     <div className={styles.container}>
-      <Button className={size === "big" ? styles.bigButton : styles.smallButton} onClick={onClick}>
+      <Button
+        className={size === "big" ? styles.bigButton : styles.smallButton}
+        onClick={onClick}
+      >
         <div className={iconCssClass}></div>
         <div className={styles.text}>{genres}</div>
       </Button>

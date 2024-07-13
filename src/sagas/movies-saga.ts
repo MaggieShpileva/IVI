@@ -14,6 +14,7 @@ import {
 import { movieAllApi } from "@/Redux/movies/worker";
 import { editGenresApi } from "@/Redux/movies/worker";
 import { MOVIES_ACTIONS } from "@/Redux/movies/action-types";
+import { filterGender } from "@/Redux/moviesWithFilters/worker";
 
 export function* watchMoviesSaga() {
   yield takeEvery(MOVIES_ACTIONS.WATCH_EDIT_GENRE, editGenreSaga);
@@ -40,4 +41,9 @@ export function* editGenreSaga(args: any) {
     yield put(getMoviesError(String(error)));
   }
   //yield put(editGenre(response));
+}
+
+export function* getGenresMoviesSaga(args: any) {
+  const response: ISimpleMovie[] = yield call(filterGender, args);
+  yield put(getMoviesDataSuccess(response));
 }

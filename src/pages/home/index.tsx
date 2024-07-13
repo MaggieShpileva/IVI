@@ -17,20 +17,7 @@ import adventureMovies from "@/data/new_data/adventure_time.json";
 import banner from "@/data/new_data/Main_banner.json";
 import comediesMovies from "@/data/new_data/comedy.json";
 import horrorMovies from "@/data/new_data/horror_movies.json";
-import popularActors from "@/data/new_data/popularActors.json";
-
 import bestMovies from "@/data/new_data/best-films.json";
-
-import axios from "axios";
-import $api from "@/profileRequests/configeAxios";
-
-type Props = {
-  banner: BannerType[];
-  bestMovies: PosterKinopoiskType[];
-  comediesMovies: PosterKinopoiskType[];
-  adventureMovies: PosterKinopoiskType[];
-  horrorMovies: PosterKinopoiskType[];
-};
 
 const Home: NextPage = () => {
   const { t } = useTranslation();
