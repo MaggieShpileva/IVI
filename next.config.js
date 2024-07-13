@@ -62,6 +62,7 @@ module.exports = async (phase, { defaultConfig }) => {
    */
   const nextConfig = {
     mode: "development",
+    basePath: "/IVI",
     experimental: {
       appDir: true,
     },
