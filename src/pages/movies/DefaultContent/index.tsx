@@ -13,34 +13,23 @@ type Props = {
   setIsFilter: Dispatch<SetStateAction<boolean>>;
 };
 
-export const DefaultContent: FC<Props> = ({ setIsFilter }) => {
+const DefaultContent: FC<Props> = ({ setIsFilter }) => {
   const { t } = useTranslation();
   const [isLoading, setIsLoading] = useState(false);
 
   return (
     <>
       <div className={styles.genresRow}>
-        <h2 className={styles.genresRow__title}>
-          {t("contextSubMenu.genres")}
-        </h2>
-        <GenresSlider
-          genresRu={dataMovie.genresRu}
-          genresEn={dataMovie.genresEn}
-          setIsFilter={setIsFilter}
-        />
+        <h2 className={styles.genresRow__title}>{t("contextSubMenu.genres")}</h2>
+        <GenresSlider genresRu={dataMovie.genresRu} genresEn={dataMovie.genresEn} setIsFilter={setIsFilter} />
       </div>
-      <SimpleSlider
-        title={t("sliders_title.top_movies")}
-        films={bestMovies.docs as MovieKinopoiskT[]}
-        isLoading={isLoading}
-        setIsLoading={setIsLoading}
-      />
+      <SimpleSlider title={t("sliders_title.top_movies")} films={bestMovies.docs as MovieKinopoiskT[]} isLoading={isLoading} setIsLoading={setIsLoading} />
       <div className={styles.personRow}>
-        <h2 className={styles.personRow__title}>
-          {t("sliders_title.persons")}{" "}
-        </h2>
+        <h2 className={styles.personRow__title}>{t("sliders_title.persons")} </h2>
         <PersonsSlider popularActors={popularActors as PersonForSliderType[]} />
       </div>
     </>
   );
 };
+
+export default DefaultContent;
