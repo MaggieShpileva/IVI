@@ -1,8 +1,4 @@
-import { IMovie, MoviesForFilmsPageT } from "@/types/types";
-import dataFilms from "@/data/Search_films_v2.json";
-import { ISimpleMovie } from "@/types/types";
 import axios from "axios";
-import { useRouter } from "next/router";
 import movies from "@/data/new_data/movies.json";
 
 export const movieAllApi = async () => {
@@ -40,8 +36,6 @@ export const editGenresApi = async (args: any) => {
 };
 
 export const filterGender = async (args: any) => {
-  const data = movies.docs.filter((movie) =>
-    movie.genres.some((genre) => genre.name === args.payload)
-  );
+  const data = movies.docs.filter((movie) => movie.genres.some((genre) => genre.name === args.payload));
   return data;
 };

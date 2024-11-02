@@ -1,46 +1,27 @@
 import { IMovie } from "@/types/types";
-import dataFilms from "@/data/Search_films_v2.json";
-import { ISimpleMovie } from "@/types/types";
-import { select } from "redux-saga/effects";
-import { useAppSelector } from "@/hooks/hooks";
-import { selectFilters } from "./selectors";
 import { SortType } from "@/types/types";
-import axios from "axios";
 import movies from "../../data/new_data/movies.json";
 
 export const MoviesFiltersWorker = (raiting: number[], score: number[]) => {
   const result = movies.docs.filter((item) => {
-    return (
-      item.rating.kp >= raiting[0] &&
-      item.rating.kp <= raiting[1] &&
-      item.votes.kp >= score[0] &&
-      item.votes.kp <= score[1]
-    );
+    return item.rating.kp >= raiting[0] && item.rating.kp <= raiting[1] && item.votes.kp >= score[0] && item.votes.kp <= score[1];
   });
   return result;
 };
 
 // -----------------
 
-export const filterPersons = (
-  movies: IMovie[],
-  persons: string[],
-  type: string
-): IMovie[] => {
+export const filterPersons = (movies: IMovie[], persons: string[], type: string): IMovie[] => {
   let res: IMovie[] = [];
 
   for (const film of movies) {
     if (type === "actors") {
-      const findActors = film.actors?.filter((item) =>
-        persons.includes(item.name)
-      );
+      const findActors = film.actors?.filter((item) => persons.includes(item.name));
       if (findActors?.length) {
         res.push(film);
       }
     } else {
-      const findDirectors = film.directors?.filter((item) =>
-        persons.includes(item.name)
-      );
+      const findDirectors = film.directors?.filter((item) => persons.includes(item.name));
       if (findDirectors?.length) {
         res.push(film);
       }
@@ -63,9 +44,7 @@ export const sortHandler = (sort: SortType, movies: IMovie[]): IMovie[] => {
       res.sort((a, b) => b.filmYear - a.filmYear);
       break;
     case "TITLE":
-      res.sort((a, b) =>
-        a.filmLang[0].filmName.localeCompare(b.filmLang[0].filmName)
-      );
+      res.sort((a, b) => a.filmLang[0].filmName.localeCompare(b.filmLang[0].filmName));
       break;
   }
   return res;

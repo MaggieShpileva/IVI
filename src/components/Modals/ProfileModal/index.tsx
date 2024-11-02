@@ -1,24 +1,13 @@
 import { FC, Dispatch, SetStateAction, useState, useEffect } from "react";
 import styles from "./index.module.scss";
-import {
-  getSession,
-  signIn,
-  SignInResponse,
-  signOut,
-  useSession,
-} from "next-auth/react";
+import { getSession, signIn, SignInResponse, signOut, useSession } from "next-auth/react";
 import AuthSteps from "./Steps/AuthSteps.tsx";
 import AuthResult from "./Steps/AuthResult";
 import { Login, Registration } from "@/profileRequests/AuthService";
 import { useDispatch } from "react-redux";
 import { getDataUserFail, getDataUserSuccess } from "@/Redux/auth/actions";
-import {
-  getDataUserRegistrationFail,
-  getDataUserRegistrationSuccess,
-} from "@/Redux/registration/actions";
+import { getDataUserRegistrationFail, getDataUserRegistrationSuccess } from "@/Redux/registration/actions";
 import { useTranslation } from "next-export-i18n";
-import data from "@/data/users.json";
-import $api from "@/profileRequests/configeAxios";
 
 type ProfileModalProps = {
   openModal: boolean;
@@ -73,11 +62,7 @@ const ProfileModal: FC<ProfileModalProps> = ({ openModal, setOpenModal }) => {
   const registration = async () => {
     setIsNewAccout(true);
     try {
-      const res = await Registration(
-        dataUser.nickName,
-        dataUser.login,
-        dataUser.password
-      );
+      const res = await Registration(dataUser.nickName, dataUser.login, dataUser.password);
       put(getDataUserRegistrationSuccess(res.data.user));
     } catch (e) {
       put(getDataUserRegistrationFail());
@@ -129,11 +114,7 @@ const ProfileModal: FC<ProfileModalProps> = ({ openModal, setOpenModal }) => {
   useEffect(() => {
     if (dataUser.nickName === "" && dataUser.password !== "") {
       authorization();
-    } else if (
-      dataUser.nickName !== "" &&
-      dataUser.login !== "" &&
-      dataUser.password !== ""
-    ) {
+    } else if (dataUser.nickName !== "" && dataUser.login !== "" && dataUser.password !== "") {
       registration();
     }
   }, [dataUser]);
@@ -152,46 +133,21 @@ const ProfileModal: FC<ProfileModalProps> = ({ openModal, setOpenModal }) => {
     }
   }, [isRegistration]);
 
-  
-
   return (
-    <div
-      className={`${styles.profileModal} ${
-        openModal && styles.profileModal_open
-      }`}
-    >
+    <div className={`${styles.profileModal} ${openModal && styles.profileModal_open}`}>
       <div className={styles.headerRow}>
         <h1 className={styles.title}>{t("buttons.enter_or_regist")}</h1>
         <button className={styles.closeBtn} onClick={() => setOpenModal(false)}>
           <div className="nbl-icon nbl-icon_close_20 nbl-simpleControlButton__nbl-icon"></div>
         </button>
         <div className={styles.bar}>
-          <div
-            className={styles.bar_line}
-            style={{ width: `calc(33.33% * ${step})` }}
-          ></div>
+          <div className={styles.bar_line} style={{ width: `calc(33.33% * ${step})` }}></div>
         </div>
       </div>
 
-      {step < endStep && (
-        <AuthSteps
-          step={step}
-          setStep={setStep}
-          inputData={inputData}
-          setInputData={setInputData}
-          content={enterData}
-        />
-      )}
+      {step < endStep && <AuthSteps step={step} setStep={setStep} inputData={inputData} setInputData={setInputData} content={enterData} />}
       {step === endStep && (
-        <AuthResult
-          openModal={openModal}
-          setOpenModal={setOpenModal}
-          isRegistration={isRegistration}
-          setIsRegistration={setIsRegistration}
-          isAuthorization={isAuthorization}
-          setIsAuthorization={setIsAuthorization}
-          isNewAccout={isNewAccout}
-        />
+        <AuthResult openModal={openModal} setOpenModal={setOpenModal} isRegistration={isRegistration} setIsRegistration={setIsRegistration} isAuthorization={isAuthorization} setIsAuthorization={setIsAuthorization} isNewAccout={isNewAccout} />
       )}
     </div>
   );

@@ -1,6 +1,4 @@
 import axios from "axios";
-import data from "@/data/One_film_response_v2.json";
-import { IMovieRes } from "@/types/types";
 
 export const getDatMovieWorker = async (id: string | string[]) => {
   try {

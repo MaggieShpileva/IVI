@@ -14,8 +14,8 @@ import bestMovies from "../../data/new_data/movies.json"; //сделать 10 ф
 import popularActors from "../../data/new_data/popularActors.json";
 import dataMovie from "../../data/new_data/genres.json";
 import { NextPage } from "next";
-import { DefaultContent } from "./DefaultContent";
 import MovieResults from "@/components/MovieResults";
+import DefaultContent from "./DefaultContent";
 
 const Movies: NextPage = () => {
   const { t } = useTranslation();
@@ -33,19 +33,7 @@ const Movies: NextPage = () => {
         <section className={styles.filtersRow}>
           <Filters isFilter={isFilter} setIsFilter={setIsFilter} />
         </section>
-        {isFilter ? (
-          <div className={styles.resultsRow}>
-            {data.length !== 0 ? (
-              <MovieResults data={data} />
-            ) : (
-              <div className={styles.resultsEmpty}>
-                {t("filters.not_found")}
-              </div>
-            )}
-          </div>
-        ) : (
-          <DefaultContent setIsFilter={setIsFilter} />
-        )}
+        {isFilter ? <div className={styles.resultsRow}>{data.length !== 0 ? <MovieResults data={data} /> : <div className={styles.resultsEmpty}>{t("filters.not_found")}</div>}</div> : <DefaultContent setIsFilter={setIsFilter} />}
       </section>
     </>
   );
